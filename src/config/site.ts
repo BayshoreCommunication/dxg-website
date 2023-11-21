@@ -1,12 +1,12 @@
-export const siteConfig = {
+export const SITECONFIG = {
   siteMetadata: {
-    title: 'Gatsby Starter Tailwind',
-    description:
-      'A Gatsby starter styled using Tailwind with dark mode enabled by default.',
+    title: 'DXG ',
+    description: 'DXG Website',
   },
   mainNav: [
     {
       title: 'Home',
+
       slug: '/',
     },
     {
