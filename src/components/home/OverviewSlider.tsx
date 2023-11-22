@@ -11,7 +11,6 @@ import '@/style/custom.css';
 import Link from 'next/link';
 import { Icons } from '../Icons';
 import { Button } from '../ui/button';
-import { ChevronLeftCircle, ChevronRightCircle } from 'lucide-react';
 
 // data array obejct type
 interface Data {
@@ -29,7 +28,7 @@ interface SliderProps {
 
 export default function OverviewSlider({ data }: SliderProps) {
   return (
-    <div className="relative">
+    <div className='relative'>
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -41,33 +40,29 @@ export default function OverviewSlider({ data }: SliderProps) {
           return (
             <SwiperSlide
               key={index}
-              className="h-full w-full bg-[url('/banner/engage.png')] bg-no-repeat bg-center bg-cover"
+              className="h-full w-full bg-[url('/banner/engage.png')] bg-cover bg-center bg-no-repeat"
             >
               <div
-                className={`flex flex-col bg-sky-700 bg-opacity-50  justify-center items-center  group `}
+                className={`group flex flex-col items-center  justify-center bg-sky-700  bg-opacity-50 `}
               >
-                <div className="relative text-white mt-10">
-                  {item.icon === 'man' && (
-                    <Icons.man className="h-20 w-20" />
-                  )}
+                <div className='relative mt-10 text-white'>
+                  {item.icon === 'man' && <Icons.man className='h-20 w-20' />}
                   {item.icon === 'media' && (
-                    <Icons.media className="h-20 w-20" />
+                    <Icons.media className='h-20 w-20' />
                   )}
                   {item.icon === 'monitor' && (
-                    <Icons.monitor className="h-20 w-20" />
+                    <Icons.monitor className='h-20 w-20' />
                   )}
                 </div>
-                <div className="py-5 px-20 text-center">
-                  <h1 className="text-2xl font-bold text-white uppercase py-2">
+                <div className='px-20 py-5 text-center'>
+                  <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     {item.title}
                   </h1>
-                  <p className="text-base text-white">
-                    {item.description}
-                  </p>
+                  <p className='text-base text-white'>{item.description}</p>
 
-                  <div className="h-20 mt-6">
+                  <div className='mt-6 h-20'>
                     <Button
-                      className=" bg-white text-sky-400 rounded-full  hover:bg-white"
+                      className=' rounded-full bg-white text-sky-400  hover:bg-white'
                       asChild
                     >
                       <Link href={item.href}>Read More</Link>
@@ -79,11 +74,11 @@ export default function OverviewSlider({ data }: SliderProps) {
           );
         })}
       </Swiper>
-      <div className="swiper-button-next">
-        <ChevronRightCircle className=" text-white" />
+      <div className='swiper-button-next'>
+        <Icons.rightArrow className=' text-white' />
       </div>
-      <div className="swiper-button-prev">
-        <ChevronLeftCircle className=" text-white" />
+      <div className='swiper-button-prev'>
+        <Icons.leftArrow className=' text-white' />
       </div>
     </div>
   );
