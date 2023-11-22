@@ -1,4 +1,4 @@
-import bgFooter from '../public/bgFooter.png';
+// import bgFooter from '../public/bgFooter.png';
 import MaxWidthWrapper from './MaxWidthWrapper';
 
 export default function Footer() {
@@ -7,7 +7,7 @@ export default function Footer() {
       <footer
         className='relative bg-slate-600'
         style={{
-          backgroundImage: `url(${bgFooter.src})`,
+          // backgroundImage: `url(${bgFooter.src})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
