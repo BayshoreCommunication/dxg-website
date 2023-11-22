@@ -2,14 +2,11 @@
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
-// Import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import '@/style/custom.css';
 
-import { useRef } from 'react';
+import '@/style/custom.css';
 
 import Link from 'next/link';
 import { Icons } from '../Icons';
@@ -31,8 +28,6 @@ interface SliderProps {
 }
 
 export default function OverviewSlider({ data }: SliderProps) {
-  const swiperRef = useRef(null);
-
   return (
     <div className="relative">
       <Swiper
