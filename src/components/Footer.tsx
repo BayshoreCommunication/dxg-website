@@ -13,13 +13,13 @@ export default function Footer() {
       <footer
         className='relative'
         style={{
-          backgroundImage: `linear-gradient(rgba(44, 44, 44, 0.5), rgba(44, 44, 44, 0.5)), url(${image.src})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${image.src})`,
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
         }}
       >
         <MaxWidthWrapper>
-          <div className='flex h-[600px] flex-col '>
+          <div className='flex h-[500px] flex-col md:h-[300px] '>
             {/* First Row */}
             <div className='mt-10 grid h-[500px] grid-cols-2 gap-4 md:mt-5 md:h-[400px] md:grid-cols-4'>
               <div className='mt-2 px-2 md:mt-4'>
@@ -98,16 +98,17 @@ export default function Footer() {
             </div>
 
             {/* Separator */}
-            <div className='mt-5 h-[3px] w-full bg-gray-500'></div>
-
-            {/* Second Row */}
-            <div className='flex h-[100px] flex-col justify-center'>
-              <p className='text-center text-xs text-white'>
-                ©2022 Digital Xperience Group (DXG) ®All Rights Reserved.
-              </p>
-            </div>
+            {/* <div className='mt-5 h-[3px] w-full bg-gray-500'></div> */}
           </div>
         </MaxWidthWrapper>
+        <hr className='border-gray-500' />
+
+        {/* Second Row */}
+        <div className='flex h-[80px] flex-col justify-center'>
+          <p className='text-center text-xs text-white'>
+            ©2022 Digital Xperience Group (DXG) ®All Rights Reserved.
+          </p>
+        </div>
       </footer>
     </div>
   );
