@@ -41,7 +41,7 @@ export const SITECONFIG = {
         slug: '/',
       },
       {
-        title: 'Event Platform',
+        title: 'Event Platform Service',
         slug: '/',
       },
     ],

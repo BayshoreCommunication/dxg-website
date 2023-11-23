@@ -1,8 +1,16 @@
 import {
-  LucideProps,
   ChevronLeftCircle,
   ChevronRightCircle,
+  Facebook,
+  Instagram,
+  Linkedin,
+  LucideProps,
+  Mail,
+  Menu,
+  Phone,
   Quote,
+  Twitter,
+  X,
 } from 'lucide-react';
 
 export const Icons = {
@@ -54,4 +62,12 @@ export const Icons = {
   leftArrow: ChevronLeftCircle,
   rightArrow: ChevronRightCircle,
   quote: Quote,
+  phone: (props: LucideProps) => <Phone {...props} />,
+  mail: (props: LucideProps) => <Mail {...props} />,
+  facebook: (props: LucideProps) => <Facebook {...props} />,
+  linkedIn: (props: LucideProps) => <Linkedin {...props} />,
+  twitter: (props: LucideProps) => <Twitter {...props} />,
+  instagram: (props: LucideProps) => <Instagram {...props} />,
+  burger: (props: LucideProps) => <Menu {...props} />,
+  cancel: (props: LucideProps) => <X {...props} />,
 };
