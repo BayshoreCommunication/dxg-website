@@ -15,4 +15,12 @@ export const TESTIMONIAL_DATA = [
     quote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
+  {
+    id: 3,
+    name: 'John Smith',
+    title: 'CFO',
+    image: '/testimonial/client-3.png',
+    quote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+  },
 ];

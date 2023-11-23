@@ -1,11 +1,17 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  position: absolute;
-  top: 50%;
+position: absolute;
   height: 50px;
   width: 50px;
   cursor: pointer;
+  right: 0;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: auto !important;
+  right: 0 !important;
+  top: 30%;
 }
 
 /* Remove default content for all screen sizes */
@@ -21,10 +27,17 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: 90%;
+    top: 92%;
     bottom: auto;
 
   }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: 0 !important;
+      right: 0 !important;
+      top: 92%;
+    }
 
     /* Adjust the margin or padding to reduce the gap */
     .swiper-button-next {
