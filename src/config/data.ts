@@ -24,3 +24,41 @@ export const TESTIMONIAL_DATA = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
 ];
+
+export const SERVICE_DATA = [
+  {
+    id: 1,
+    title: 'Production Management',
+    image: '/service/product-management.png',
+    excerpt:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+  },
+  {
+    id: 2,
+    title: 'Audio Visual Technology',
+    image: '/service/audio-visual.png',
+    excerpt:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+  },
+  {
+    id: 3,
+    title: 'Event Platform Service',
+    image: '/service/event-platform.png',
+    excerpt:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+  },
+  {
+    id: 4,
+    title: 'Event Experience Design',
+    image: '/service/event-experience.png',
+    excerpt:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+  },
+  {
+    id: 5,
+    title: 'Graphics And Animation',
+    image: '/service/graphics.png',
+    excerpt:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+  },
+];
