@@ -10,7 +10,7 @@ export default function NewsLetter() {
           <h1 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>
             See our latest and greatest
           </h1>
-          <h2 className='line my-1 text-center text-xl uppercase text-white md:text-left md:text-2xl'>
+          <h2 className='line my-1 text-center text-xl capitalize text-white md:text-left md:text-2xl'>
             Subscribe to our NewsLetter
           </h2>
           <p className='text-center text-sm text-white md:text-left md:text-base'>
