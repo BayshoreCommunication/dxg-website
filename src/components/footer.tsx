@@ -16,7 +16,7 @@ export default function Footer() {
           <div className=''>
             <div className='flex h-16 items-center'>
               {/* TODO: Mobile nav */}
-              <div className='ml-4 flex lg:ml-0'></div>
+              <div className='ml-4 flex lg:ml-0'>Footer</div>
             </div>
           </div>
         </MaxWidthWrapper>
