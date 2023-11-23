@@ -1,0 +1,52 @@
+
+.swiper-button-next,
+.swiper-button-prev {
+position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  right: 0;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: auto !important;
+  right: 0 !important;
+  top: 30%;
+}
+
+/* Remove default content for all screen sizes */
+.swiper-button-next::before,
+.swiper-button-next::after,
+.swiper-button-prev::before,
+.swiper-button-prev::after {
+  content: "";
+}
+
+/* Media query for small devices */
+@media (max-width: 767px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 92%;
+    bottom: auto;
+
+  }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+      left: 0 !important;
+      right: 0 !important;
+      top: 92%;
+    }
+
+    /* Adjust the margin or padding to reduce the gap */
+    .swiper-button-next {
+      transform: translateX(-240%);
+      /* Adjust the value as needed */
+    }
+
+    .swiper-button-prev {
+    transform: translateX(240%);
+      /* Adjust the value as needed */
+    }
+}

@@ -1,22 +1,26 @@
-import React from 'react';
+// import bgFooter from '../public/bgFooter.png';
 import MaxWidthWrapper from './MaxWidthWrapper';
-import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <div className="bg-slate-600 sticky z-50 top-0 inset-x-0 h-16">
-      <header className="relative bg-slate-600">
+    <div className='sticky inset-x-0 top-0 z-50 h-16 bg-slate-600'>
+      <footer
+        className='relative bg-slate-600'
+        style={{
+          // backgroundImage: `url(${bgFooter.src})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         <MaxWidthWrapper>
-          <div className="">
-            <div className="flex h-16 items-center">
+          <div className=''>
+            <div className='flex h-16 items-center'>
               {/* TODO: Mobile nav */}
-              <div className="ml-4 flex lg:ml-0">
-                <Link href={'/'}>Footer</Link>
-              </div>
+              <div className='ml-4 flex lg:ml-0'></div>
             </div>
           </div>
         </MaxWidthWrapper>
-      </header>
+      </footer>
     </div>
   );
 }
