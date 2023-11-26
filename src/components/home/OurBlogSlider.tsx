@@ -20,7 +20,7 @@ export default function OurBlogSlider() {
   return (
     <div className='relative'>
       <Swiper
-        slidesPerView={1.5}
+        slidesPerView={1.2}
         spaceBetween={10}
         pagination={{
           clickable: true,
@@ -31,7 +31,7 @@ export default function OurBlogSlider() {
           const slideStyles = {
             marginLeft: 'auto',
             marginRight: 'auto',
-            width: '60%',
+            width: '80%',
             paddingBottom: '1rem',
           };
 

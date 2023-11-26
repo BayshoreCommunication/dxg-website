@@ -1,6 +1,7 @@
 import React from 'react';
 import MaxWidthWrapper from './MaxWidthWrapper';
 import TestimonialSlider from './TestimonialSlider';
+import { Icons } from './Icons';
 function Testimonial() {
   return (
     <div className='bg-header'>
