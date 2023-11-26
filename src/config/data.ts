@@ -28,6 +28,7 @@ export const TESTIMONIAL_DATA = [
 export const SERVICE_DATA = [
   {
     id: 1,
+    heading: 'Production;Management',
     title: 'Production Management',
     image: '/service/product-management.png',
     excerpt:
@@ -35,6 +36,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 2,
+    heading: 'Audio;Visual Technology',
     title: 'Audio Visual Technology',
     image: '/service/audio-visual.png',
     excerpt:
@@ -42,6 +44,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 3,
+    heading: 'Event;Platform Service',
     title: 'Event Platform Service',
     image: '/service/event-platform.png',
     excerpt:
@@ -49,6 +52,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 4,
+    heading: 'Event;Platform Service',
     title: 'Event Experience Design',
     image: '/service/event-experience.png',
     excerpt:
@@ -56,6 +60,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 5,
+    heading: 'Graphics;And Animation',
     title: 'Graphics And Animation',
     image: '/service/graphics.png',
     excerpt:
