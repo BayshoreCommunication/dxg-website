@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { SERVICE_DATA } from '@/config/data';
-import { Icons } from '../Icons';
+import { Icons } from '@/components/Icons';
 
 export default function Services() {
   return (

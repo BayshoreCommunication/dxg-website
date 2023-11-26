@@ -55,3 +55,21 @@ position: absolute;
   -webkit-text-stroke: 2px #2DC6F5;
   -webkit-text-fill-color: transparent;
 }
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0 !important;
+
+}
+
+.swiper-pagination-bullet{
+  background: #fff !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: #2DC6F5 !important;
+  opacity: 1 !important;
+}
