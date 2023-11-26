@@ -50,3 +50,8 @@ position: absolute;
       /* Adjust the value as needed */
     }
 }
+
+.outline-text{
+  -webkit-text-stroke: 2px #2DC6F5;
+  -webkit-text-fill-color: transparent;
+}
