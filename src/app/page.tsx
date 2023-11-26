@@ -1,14 +1,14 @@
-import Image from 'next/image';
-
 import NewsLetter from '@/components/NewsLetter';
-import Overview from '@/components/home/Overview';
+import { OurBlogSection } from '@/components/Sections';
 import Testimonial from '@/components/Testimonial';
+import Overview from '@/components/home/Overview';
 import WhyDxg from '@/components/home/WhyDxg';
 import Services from '@/components/home/Services';
 export default function Home() {
   return (
     <div>
       <Overview />
+      <OurBlogSection />
       <Services />
       <WhyDxg />
       <Testimonial />

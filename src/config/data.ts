@@ -25,9 +25,40 @@ export const TESTIMONIAL_DATA = [
   },
 ];
 
+export const BlogData = [
+  {
+    image: 'https://picsum.photos/797/547',
+    date: 1700973637000,
+    feature: "10 YEAR's COMBINED",
+    title: 'We won against criminal',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro blanditiis earum veniam quia non rerum quasi! Ipsum, iure vitae.',
+    link: 'https://youtube.com',
+  },
+  {
+    image: 'https://picsum.photos/797/547',
+    date: 1700973637000,
+    feature: "10 YEAR's COMBINED",
+    title: 'We won against criminal',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro blanditiis earum veniam quia non rerum quasi! Ipsum, iure vitae.',
+    link: 'https://youtube.com',
+  },
+  {
+    image: 'https://picsum.photos/797/547',
+    date: 1700973637000,
+    feature: "10 YEAR's COMBINED",
+    title: 'We won against criminal',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro blanditiis earum veniam quia non rerum quasi! Ipsum, iure vitae.',
+    link: 'https://youtube.com',
+  }
+];
+
 export const SERVICE_DATA = [
   {
     id: 1,
+    heading: 'Production;Management',
     title: 'Production Management',
     image: '/service/product-management.png',
     excerpt:
@@ -35,6 +66,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 2,
+    heading: 'Audio;Visual Technology',
     title: 'Audio Visual Technology',
     image: '/service/audio-visual.png',
     excerpt:
@@ -42,6 +74,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 3,
+    heading: 'Event;Platform Service',
     title: 'Event Platform Service',
     image: '/service/event-platform.png',
     excerpt:
@@ -49,6 +82,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 4,
+    heading: 'Event;Platform Service',
     title: 'Event Experience Design',
     image: '/service/event-experience.png',
     excerpt:
@@ -56,6 +90,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 5,
+    heading: 'Graphics;And Animation',
     title: 'Graphics And Animation',
     image: '/service/graphics.png',
     excerpt:
