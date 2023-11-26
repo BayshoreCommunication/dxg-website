@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { SERVICE_DATA } from '@/config/data';
 import { Icons } from '../Icons';
-import ServiceSlider from './ServiceSlider';
+
 export default function Services() {
   return (
     <div>
