@@ -1,24 +1,41 @@
-import React from 'react';
-import Image from 'next/image';
-import { SERVICE_DATA } from '@/config/data';
+'use client';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import '@/style/custom.css';
+
+import Link from 'next/link';
 import { Icons } from '../Icons';
-import ServiceSlider from './ServiceSlider';
-export default function Services() {
+import { Button } from '../ui/button';
+
+import { SERVICE_DATA } from '@/config/data';
+
+export default function ServiceSlider() {
   return (
-    <div>
-      <div className='flex flex-col md:flex-row'>
+    <div className='relative'>
+      <Swiper
+        modules={[Navigation]}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }}
+      >
         {SERVICE_DATA.map((item, index) => {
           return (
-            <div
+            <SwiperSlide
               key={index}
-              className={`min-h-[200px] flex-1 justify-center overflow-hidden bg-cover bg-center bg-no-repeat md:min-h-[420px]`}
+              className={`h-full w-full overflow-hidden bg-cover bg-center bg-no-repeat`}
               style={{ backgroundImage: `url('${item.image}')` }}
             >
               <div
                 className={`group relative  h-full  bg-black bg-opacity-60 hover:bg-sky-700 hover:bg-opacity-80`}
               >
-                <div className='flex flex-row items-center justify-between px-10 group-hover:hidden md:flex-col '>
-                  <div className='flex min-h-[200px] transform flex-col items-start justify-center md:min-h-[380px] md:-rotate-90 '>
+                <div className='group-hover:hidden '>
+                  <div className='flex min-h-[380px] -rotate-90 transform flex-col items-start justify-center '>
                     {item.heading.split(';').map((word, index) => {
                       return (
                         <div key={index} className=''>
@@ -34,21 +51,27 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className='hidden flex-row  px-5 group-hover:flex md:flex-col'>
-                  <div className='min-h-[300px] pt-16 md:min-h-[380px]'>
+                <div className='hidden  flex-col px-5 group-hover:flex'>
+                  <div className='min-h-[380px] pt-16'>
                     <h1 className='py-2 text-xl font-bold uppercase text-white'>
                       {item.title}
                     </h1>
                     <p className='text-base text-white'>{item.excerpt}</p>
                   </div>
-                  <div className='flex justify-center pt-12 md:pt-0'>
+                  <div className='flex justify-center'>
                     <Icons.customRightArrow className='h-20 w-20  pb-5 text-white ' />
                   </div>
                 </div>
               </div>
-            </div>
+            </SwiperSlide>
           );
         })}
+      </Swiper>
+      <div className='swiper-button-next'>
+        <Icons.rightArrow className=' text-white' />
+      </div>
+      <div className='swiper-button-prev'>
+        <Icons.leftArrow className=' text-white' />
       </div>
     </div>
   );
