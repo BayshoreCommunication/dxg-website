@@ -6,12 +6,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import '@/style/custom.css';
-
-import Link from 'next/link';
-import { Icons } from '../Icons';
-import { Button } from '../ui/button';
 
 import { BlogData } from '@/config/data';
 import { BlogCard } from '../BlogCard';
