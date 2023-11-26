@@ -1,13 +1,17 @@
-import React from 'react';
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import { Button } from '../ui/button';
-import Link from 'next/link';
+'use client';
+import { useState } from 'react';
 import SupportCard from '../Cards/SupportCard';
+import MaxWidthWrapper from '../MaxWidthWrapper';
 export default function WeSupport() {
+  const [activeCard, setActiveCard] = useState('');
+
+  const handleCardHover = (className: string) => {
+    setActiveCard(className);
+  };
   return (
     <div className='bg-black'>
       <MaxWidthWrapper>
-        <div className='flex flex-col'>
+        {/* <div className='flex flex-col'>
           <div className='flex flex-col  items-end py-10'>
             <h1 className=' text-2xl font-bold text-white md:text-4xl'>
               <span className='border-b border-b-brand text-brand'>Who</span> We
@@ -40,6 +44,12 @@ export default function WeSupport() {
               <SupportCard />
             </div>
           </div>
+        </div> */}
+        <div className='options'>
+          <SupportCard cardIndex={1} />
+          <SupportCard cardIndex={2} />
+          <SupportCard cardIndex={3} />
+          <SupportCard cardIndex={4} />
         </div>
       </MaxWidthWrapper>
     </div>
