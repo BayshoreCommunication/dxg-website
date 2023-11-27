@@ -27,7 +27,7 @@ export const SectionInformationWithImage: React.FC<
               imagePosition === 'left' && 'order-last'
             } lg:col-span-5 `}
           >
-            <h2 className='mb-3 text-2xl font-semibold capitalize leading-tight text-brand'>
+            <h2 className='mb-3 text-3xl font-semibold capitalize leading-tight text-brand'>
               {sectionTitle}
             </h2>
             {sectionDescription?.map((section, index) => {
