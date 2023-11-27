@@ -40,7 +40,7 @@ export default function TripleExperience() {
           'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
           'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
         ]}
-        sectionImage={EngageImage}
+        sectionImage={EnlightImage}
         sectionImageOverlay={''}
       />
       <SectionInformationWithImage
