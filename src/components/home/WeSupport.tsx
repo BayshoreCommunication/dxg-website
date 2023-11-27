@@ -67,7 +67,7 @@ export default function WeSupport() {
             <Link href='/'>Read More</Link>
           </Button>
         </div>
-        <div className='options elementor-element elementor-element-fdde399 e-transform flexservices e-con-full e-flex e-con '>
+        <div className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
           <SupportCard cardIndex={1} />
           <SupportCard cardIndex={2} />
           <SupportCard cardIndex={3} />
