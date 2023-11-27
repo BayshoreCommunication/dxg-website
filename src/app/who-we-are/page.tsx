@@ -58,7 +58,9 @@ export default function WhoWeAre() {
           </div>
         </div>
       </div>
+
       <Testimonial />
+
       <div className='bg-black'>
         <NewsLetter />
       </div>

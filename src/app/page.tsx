@@ -8,7 +8,7 @@ import WeSupport from '@/components/home/WeSupport';
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-black'>
       <Overview />
       <WeSupport />
       <Services />

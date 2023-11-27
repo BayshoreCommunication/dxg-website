@@ -4,7 +4,7 @@ import TestimonialSlider from './TestimonialSlider';
 import { Icons } from './Icons';
 function Testimonial() {
   return (
-    <div className='bg-header'>
+    <div className='bg-differentBackground'>
       <MaxWidthWrapper>
         <div className='flex flex-col items-center justify-center'>
           <div className='my-10'>
