@@ -52,7 +52,7 @@ export const BlogData = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro blanditiis earum veniam quia non rerum quasi! Ipsum, iure vitae.',
     link: 'https://youtube.com',
-  }
+  },
 ];
 
 export const SERVICE_DATA = [

@@ -1,7 +1,6 @@
-
 .swiper-button-next,
 .swiper-button-prev {
-position: absolute;
+  position: absolute;
   height: 50px;
   width: 50px;
   cursor: pointer;
@@ -19,39 +18,50 @@ position: absolute;
 .swiper-button-next::after,
 .swiper-button-prev::before,
 .swiper-button-prev::after {
-  content: "";
+  content: '';
 }
 
 /* Media query for small devices */
 @media (max-width: 767px) {
-
   .swiper-button-next,
   .swiper-button-prev {
     top: 92%;
     bottom: auto;
-
   }
 
-    .swiper-button-prev,
-    .swiper-rtl .swiper-button-next {
-      left: 0 !important;
-      right: 0 !important;
-      top: 92%;
-    }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 0 !important;
+    right: 0 !important;
+    top: 92%;
+  }
 
-    /* Adjust the margin or padding to reduce the gap */
-    .swiper-button-next {
-      transform: translateX(-240%);
-      /* Adjust the value as needed */
-    }
+  /* Adjust the margin or padding to reduce the gap */
+  .swiper-button-next {
+    transform: translateX(-240%);
+    /* Adjust the value as needed */
+  }
 
-    .swiper-button-prev {
+  .swiper-button-prev {
     transform: translateX(240%);
-      /* Adjust the value as needed */
-    }
+    /* Adjust the value as needed */
+  }
 }
 
-.outline-text{
-  -webkit-text-stroke: 2px #2DC6F5;
+.outline-text {
+  -webkit-text-stroke: 2px #2dc6f5;
   -webkit-text-fill-color: transparent;
+}
+@supports (-webkit-text-stroke: 1px #2dc6f5) {
+  .outline-with-shaddow {
+    -webkit-text-stroke: 1px #2dc6f5;
+    -webkit-text-fill-color: transparent;
+    /* color: white; */
+    /* text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; */
+  }
 }
