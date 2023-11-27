@@ -20,7 +20,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
 }) => {
   return (
     <div
-      className='bg-black bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat'
+      className='bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat'
       {...rest}
     >
       <div className='container py-9 xl:py-28'>
