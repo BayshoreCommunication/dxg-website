@@ -1,14 +1,14 @@
 import NewsLetter from '@/components/NewsLetter';
-import { OurBlogSection } from '@/components/Sections';
+import { BannerSection, OurBlogSection } from '@/components/Sections';
 import Testimonial from '@/components/Testimonial';
 import Overview from '@/components/home/Overview';
-import WhyDxg from '@/components/home/WhyDxg';
 import Services from '@/components/home/Services';
 import WeSupport from '@/components/home/WeSupport';
-
+import WhyDxg from '@/components/home/WhyDxg';
 export default function Home() {
   return (
-    <div>
+    <div className='bg-black'>
+      <BannerSection />
       <Overview />
       <WeSupport />
       <Services />

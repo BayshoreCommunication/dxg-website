@@ -81,7 +81,7 @@ export default function Footer() {
                 })}
               </div>
               <div className='ml-10 mt-2 px-2 md:mt-4'>
-                <p className='font-bold text-white'>Why DGX</p>
+                <p className='font-bold text-white'>Why DXG</p>
                 {SITECONFIG.footerNav.whyDXG.map((item, index) => {
                   return (
                     <Link key={index} href={item.slug}>
