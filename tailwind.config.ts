@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         brand: '#2DC6F5',
         header: '#2C2C2C',
+        differentBackground: 'rgba(73, 71, 72, 0.28)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
