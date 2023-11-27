@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import SupportCard from '../Cards/SupportCard';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import { Button } from '../ui/button';
+import Link from 'next/link';
+
 export default function WeSupport() {
   const [activeCard, setActiveCard] = useState('');
 
@@ -45,7 +48,26 @@ export default function WeSupport() {
             </div>
           </div>
         </div> */}
-        <div className='options'>
+
+        <div className='flex flex-col  items-end py-10'>
+          <h1 className=' text-2xl font-bold text-white md:text-4xl'>
+            <span className='border-b border-b-brand text-brand'>Who</span> We
+            Support
+          </h1>
+          <p className='my-4 text-right text-base text-white md:mt-6 md:max-w-lg'>
+            With the average experience of our team members being ten-plus years
+            in the event space, DXG is a sought-after resource by event
+            planners, event production companies, and event platforms.
+          </p>
+          <Button
+            asChild
+            variant={'outline'}
+            className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+          >
+            <Link href='/'>Read More</Link>
+          </Button>
+        </div>
+        <div className='options elementor-element elementor-element-fdde399 e-transform flexservices e-con-full e-flex e-con '>
           <SupportCard cardIndex={1} />
           <SupportCard cardIndex={2} />
           <SupportCard cardIndex={3} />

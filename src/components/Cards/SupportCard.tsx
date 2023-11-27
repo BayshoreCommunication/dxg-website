@@ -59,26 +59,26 @@ export default function SupportCard({ cardIndex }: SupportCardProps) {
     <div
       className={`option ${activeCard === cardIndex ? 'card-active' : ''}`}
       style={{
-        backgroundImage: `linear-gradient(rgba(45, 198, 245, 0.3), rgba(45, 198, 245, 0)), url('/support/production.png')`,
+        backgroundImage: `linear-gradient(rgba(45, 198, 245, 0.6), rgba(45, 198, 245, 0)), url('/support/production2.png')`,
       }}
       onMouseEnter={() => handleCardHover(cardIndex)}
       onMouseLeave={() => handleCardHover(0)}
     >
-      <div className='label flex-col items-center justify-center px-10'>
+      <div className='label'>
         <div className='title'>
           {' '}
-          <h1 className='text-3xl font-bold uppercase text-white'>
+          <h1 className='text-3xl font-extrabold uppercase text-white'>
             Production
           </h1>
         </div>
-        <div className='content'>
+        <div className='content flex flex-col items-center justify-center'>
           <div className='card-icon'>
             <Icons.monitor className='h-12 w-12 text-white' />
           </div>
           <h1 className=' py-4 text-3xl font-bold uppercase text-white'>
             Production
           </h1>
-          <p className='desc card-text text-base text-white'>
+          <p className='desc card-text px-20 text-base text-white'>
             With the average experience of our team members being ten-plus years
             in the event space, DXG is a sought-after resource by event
             planners, event production companies, and event platforms.
