@@ -1,11 +1,33 @@
 import React from 'react';
 import Image from 'next/image';
 import { SERVICE_DATA } from '@/config/data';
-import { Icons } from '../Icons';
-
+import { Icons } from '@/components/Icons';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import MaxWidthWrapper from '../MaxWidthWrapper';
 export default function Services() {
   return (
-    <div>
+    <div className='bg-black'>
+      <MaxWidthWrapper>
+        <div className='flex flex-col  items-start py-10'>
+          <h1 className=' text-2xl font-bold text-white md:text-4xl'>
+            <span className='border-b border-b-brand text-brand'>Our</span>{' '}
+            Service
+          </h1>
+          <p className='my-4 text-left text-base text-white md:mt-6 md:max-w-lg'>
+            With the average experience of our team members being ten-plus years
+            in the event space, DXG is a sought-after resource by event
+            planners, event production companies, and event platforms.
+          </p>
+          <Button
+            asChild
+            variant={'outline'}
+            className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+          >
+            <Link href='/'>Read More</Link>
+          </Button>
+        </div>
+      </MaxWidthWrapper>
       <div className='flex flex-col md:flex-row'>
         {SERVICE_DATA.map((item, index) => {
           return (
