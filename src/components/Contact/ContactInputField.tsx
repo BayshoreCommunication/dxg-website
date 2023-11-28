@@ -50,11 +50,11 @@ const ContactInputField = React.forwardRef<
               type={inputProperties?.type ?? 'text'}
               id={inputProperties?.name ?? 'name'}
               placeholder=' '
-              className=' focus:shadow-outline block w-full  appearance-none rounded-md border border-white bg-transparent px-5  py-3 leading-normal  text-white autofill:!bg-transparent focus:border-brand focus:outline-none'
+              className=' focus:shadow-outline block w-full  appearance-none rounded-md border border-white bg-transparent px-5  py-3 text-xl  leading-normal text-white autofill:!bg-transparent focus:border-brand focus:outline-none'
             />
             <label
               htmlFor={inputProperties?.name ?? 'name'}
-              className='pointer-events-none  absolute left-0 top-3 bg-transparent px-5 text-[#9B9B9B]  transition duration-200 ease-in-out'
+              className='pointer-events-none  absolute left-0 top-3 bg-transparent px-5 text-xl   text-[#9B9B9B] transition duration-200 ease-in-out'
             >
               {inputLabel}
             </label>
@@ -64,11 +64,11 @@ const ContactInputField = React.forwardRef<
             <textarea
               id={texAreaProperties?.name ?? 'name'}
               placeholder=' '
-              className='focus:shadow-outline block min-h-[160px] w-full appearance-none  rounded-md border border-white bg-transparent px-5  py-3 leading-normal  text-white autofill:!bg-transparent focus:border-brand focus:outline-none'
+              className='focus:shadow-outline block min-h-[160px] appearance-none rounded-md border  border-white bg-transparent px-5 py-3 text-xl  leading-normal text-white  first-letter:w-full autofill:!bg-transparent focus:border-brand focus:outline-none'
             />
             <label
               htmlFor={texAreaProperties?.name ?? 'name'}
-              className='pointer-events-none absolute left-0 top-3 bg-transparent px-5 text-[#9B9B9B] transition duration-200 ease-in-out'
+              className='pointer-events-none absolute left-0 top-3 bg-transparent px-5 text-xl text-[#9B9B9B] transition duration-200 ease-in-out'
             >
               {inputLabel}
             </label>
