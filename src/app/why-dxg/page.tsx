@@ -1,5 +1,15 @@
-import React from 'react';
+import {
+  DGXBreadCrumbSection,
+  OurMethodsSection,
+  WhyChooseUsSection,
+} from '@/components/Sections/WhyDGXPageSections';
 
 export default function WhyDxg() {
-  return <div>WhyDxg</div>;
+  return (
+    <div>
+      <DGXBreadCrumbSection />
+      <OurMethodsSection />
+      <WhyChooseUsSection />
+    </div>
+  );
 }
