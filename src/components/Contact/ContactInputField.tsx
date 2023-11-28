@@ -64,7 +64,7 @@ const ContactInputField = React.forwardRef<
             <textarea
               id={texAreaProperties?.name ?? 'name'}
               placeholder=' '
-              className='focus:shadow-outline block min-h-[160px] appearance-none rounded-md border  border-white bg-transparent px-5 py-3 text-xl  leading-normal text-white  first-letter:w-full autofill:!bg-transparent focus:border-brand focus:outline-none'
+              className='focus:shadow-outline block min-h-[160px] w-full appearance-none rounded-md border  border-white bg-transparent px-5 py-3 text-xl  leading-normal text-white  first-letter:w-full autofill:!bg-transparent focus:border-brand focus:outline-none'
             />
             <label
               htmlFor={texAreaProperties?.name ?? 'name'}
