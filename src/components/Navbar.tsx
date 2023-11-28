@@ -20,9 +20,9 @@ export default function Navbar() {
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
       <div className='container flex h-full items-center justify-between '>
-        <div className=''>
+        <Link href='/'>
           <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
-        </div>
+        </Link>
         <div className='hidden md:block'>
           {SITECONFIG.mainNav.map((item, index) => {
             return (

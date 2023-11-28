@@ -1,4 +1,5 @@
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import { ReactElement } from 'react';
 import { HeaderTextStyle } from '../TextStyle';
 import { Button } from '../ui/button';
 type HeaderTextProps = {
@@ -11,12 +12,14 @@ type HeaderTextProps = {
 interface BreadCrumbProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
   titleProps: HeaderTextProps;
   buttonTitle: string;
-  description: string;
+  description?: string;
+  customDescription?: ReactElement;
 }
 export const BreadCrumb: React.FC<BreadCrumbProps> = ({
   buttonTitle,
   description,
   titleProps,
+  customDescription,
   ...rest
 }) => {
   return (
@@ -38,9 +41,12 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
             </div>
 
             <div className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-6'>
-              <p className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
-                {description}
-              </p>
+              {description && (
+                <p className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
+                  {description}
+                </p>
+              )}
+              {customDescription && customDescription}
             </div>
           </div>
         </div>
