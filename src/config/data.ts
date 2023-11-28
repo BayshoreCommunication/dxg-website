@@ -1,3 +1,11 @@
+import { StaticImageData } from 'next/image';
+import Service1 from '../../public/service/service-1.png';
+import Service2 from '../../public/service/service-2.png';
+import Service3 from '../../public/service/service-3.png';
+import Service4 from '../../public/service/service-4.png';
+import Service5 from '../../public/service/service-5.png';
+import Service6 from '../../public/service/service-6.png';
+
 export const TESTIMONIAL_DATA = [
   {
     id: 1,
@@ -93,6 +101,52 @@ export const SERVICE_DATA = [
   },
 ];
 
+interface ServicesData {
+  id: number;
+  image: StaticImageData;
+  caption: string;
+  captionPosition: 'top' | 'bottom';
+}
+export const SERVICES_PAGE_DATA: ServicesData[] = [
+  {
+    id: 0,
+    image: Service1,
+    caption: 'PRODUCTION MANAGEMENT',
+    captionPosition: 'top',
+  },
+  {
+    id: 1,
+    image: Service2,
+    caption: 'AUDIOVISUAL TECHNOLOGY',
+    captionPosition: 'top',
+  },
+
+  {
+    id: 2,
+    image: Service2,
+    captionPosition: 'top',
+    caption: 'EVENT PLATFORM SERVICES',
+  },
+  {
+    id: 3,
+    image: Service4,
+    captionPosition: 'bottom',
+    caption: 'EVENT EXPERIENCE DESIGN',
+  },
+  {
+    id: 5,
+    image: Service5,
+    captionPosition: 'bottom',
+    caption: 'GRAPHICS & ANIMATION',
+  },
+  {
+    id: 5,
+    captionPosition: 'bottom',
+    image: Service6,
+    caption: 'VIDEO EDITING & PRODUCTION',
+  },
+];
+
 export const OurMethods = [
   {
     index: 1,
@@ -125,5 +179,5 @@ export const OurMethods = [
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
     image: 'https://picsum.photos/797/547',
-  },
-];
+  }
+]
