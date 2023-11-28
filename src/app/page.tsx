@@ -3,6 +3,7 @@ import { BannerSection, OurBlogSection } from '@/components/Sections';
 import Testimonial from '@/components/Testimonial';
 import Overview from '@/components/home/Overview';
 import Services from '@/components/home/Services';
+import WeAre from '@/components/home/WeAre';
 import WeSupport from '@/components/home/WeSupport';
 import WhyDxg from '@/components/home/WhyDxg';
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <div className='bg-black'>
       <BannerSection />
       <Overview />
+      <WeAre />
       <WeSupport />
       <Services />
       <WhyDxg />
