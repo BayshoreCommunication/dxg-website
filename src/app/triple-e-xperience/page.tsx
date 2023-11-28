@@ -9,7 +9,7 @@ export default function TripleExperience() {
   return (
     <div className='bg-black'>
       <BreadCrumb
-        buttonTitle='Book an appoinment'
+        buttonTitle='Book an appointment'
         description='When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:'
         titleProps={{
           preText: 'Triple',

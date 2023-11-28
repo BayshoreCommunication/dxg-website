@@ -5,7 +5,7 @@ export const DGXBreadCrumbSection = () => {
     <BreadCrumb
       titleProps={{
         coloredText: 'Why',
-        postText: 'DGX',
+        postText: 'DXG',
         texAlign: 'text-left',
         variant: 'caps',
       }}
