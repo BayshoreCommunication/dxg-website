@@ -66,7 +66,6 @@ export const BlogData = [
 export const SERVICE_DATA = [
   {
     id: 1,
-    heading: 'Production;Management',
     title: 'Production Management',
     image: '/service/product-management.png',
     excerpt:
@@ -74,7 +73,6 @@ export const SERVICE_DATA = [
   },
   {
     id: 2,
-    heading: 'Audio;Visual Technology',
     title: 'Audio Visual Technology',
     image: '/service/audio-visual.png',
     excerpt:
@@ -82,7 +80,6 @@ export const SERVICE_DATA = [
   },
   {
     id: 3,
-    heading: 'Event;Platform Service',
     title: 'Event Platform Service',
     image: '/service/event-platform.png',
     excerpt:
@@ -90,7 +87,6 @@ export const SERVICE_DATA = [
   },
   {
     id: 4,
-    heading: 'Event;Platform Service',
     title: 'Event Experience Design',
     image: '/service/event-experience.png',
     excerpt:
@@ -98,13 +94,13 @@ export const SERVICE_DATA = [
   },
   {
     id: 5,
-    heading: 'Graphics;And Animation',
     title: 'Graphics And Animation',
     image: '/service/graphics.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
 ];
+
 interface ServicesData {
   id: number;
   image: StaticImageData;
@@ -150,3 +146,38 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     caption: 'VIDEO EDITING & PRODUCTION',
   },
 ];
+
+export const OurMethods = [
+  {
+    index: 1,
+    title: 'OUR PROCESS',
+    icon: 'repeat' as const,
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    image: 'https://picsum.photos/797/547',
+  },
+  {
+    index: 2,
+    title: 'OUR SERVICE',
+    icon: 'happyFace' as const,
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    image: 'https://picsum.photos/797/547',
+  },
+  {
+    index: 3,
+    title: 'OUR MISSION',
+    icon: 'group' as const,
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    image: 'https://picsum.photos/797/547',
+  },
+  {
+    index: 4,
+    title: 'OUR EXPERIENCE',
+    icon: 'mechanics' as const,
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    image: 'https://picsum.photos/797/547',
+  }
+]

@@ -1,5 +1,15 @@
-import React from 'react';
+import {
+  DGXBreadCrumbSection,
+  OurMethodsSection,
+  WhyChooseUsSection,
+} from '@/components/Sections';
 
 export default function WhyDxg() {
-  return <div>WhyDxg</div>;
+  return (
+    <div className='bg-black'>
+      <DGXBreadCrumbSection />
+      <OurMethodsSection />
+      <WhyChooseUsSection />
+    </div>
+  );
 }
