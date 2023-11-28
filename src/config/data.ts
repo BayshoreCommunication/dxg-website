@@ -95,29 +95,33 @@ export const SERVICE_DATA = [
 
 export const OurMethods = [
   {
+    index: 1,
     title: 'OUR PROCESS',
-    icon: 'repeat',
+    icon: 'repeat' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
     image: 'https://picsum.photos/797/547',
   },
   {
-    title: 'OUR PROCESS',
-    icon: 'happyFace',
+    index: 2,
+    title: 'OUR SERVICE',
+    icon: 'happyFace' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
     image: 'https://picsum.photos/797/547',
   },
   {
-    title: 'OUR PROCESS',
-    icon: 'group',
+    index: 3,
+    title: 'OUR MISSION',
+    icon: 'group' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
     image: 'https://picsum.photos/797/547',
   },
   {
-    title: 'OUR PROCESS',
-    icon: 'mechanics',
+    index: 4,
+    title: 'OUR EXPERIENCE',
+    icon: 'mechanics' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
     image: 'https://picsum.photos/797/547',
