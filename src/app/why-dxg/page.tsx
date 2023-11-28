@@ -2,11 +2,11 @@ import {
   DGXBreadCrumbSection,
   OurMethodsSection,
   WhyChooseUsSection,
-} from '@/components/Sections/WhyDGXPageSections';
+} from '@/components/Sections';
 
 export default function WhyDxg() {
   return (
-    <div>
+    <div className='bg-black'>
       <DGXBreadCrumbSection />
       <OurMethodsSection />
       <WhyChooseUsSection />

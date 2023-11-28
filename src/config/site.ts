@@ -26,6 +26,10 @@ export const SITECONFIG = {
       slug: '/services',
     },
     {
+      title: 'Blog',
+      slug: '/blogs',
+    },
+    {
       title: 'Contact Us',
       slug: '/contact-us',
     },
