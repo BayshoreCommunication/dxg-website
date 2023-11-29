@@ -19,7 +19,7 @@ export default function Footer() {
       >
         {/* <MaxWidthWrapper> */}
         <div className='container py-8'>
-          <div className='flex h-[500px] flex-col md:h-[320px] '>
+          <div className='flex h-[500px] flex-col md:h-[300px] '>
             <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
               {/* First column */}
               <div className='flex flex-col '>

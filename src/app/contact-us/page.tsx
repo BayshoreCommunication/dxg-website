@@ -50,7 +50,7 @@ export default function Contact() {
         <div className=' lg:grid lg:grid-cols-12  lg:gap-14'>
           <div className=' mb-14  lg:col-span-6 lg:mb-0'>
             <div
-              className=' w-full bg-white px-5 py-4 '
+              className=' w-full bg-gray-200 px-5 py-4 '
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -73,7 +73,7 @@ export default function Contact() {
               </p>
             </div>
             <div
-              className='mt-5 bg-white px-5 py-4'
+              className='mt-5 bg-gray-200 px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -100,7 +100,7 @@ export default function Contact() {
               </p>
             </div>
             <div
-              className='mt-5 bg-white px-5 py-4'
+              className='mt-5 bg-gray-200 px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg

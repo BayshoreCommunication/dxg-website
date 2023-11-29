@@ -15,7 +15,7 @@ const infos = {
 export default function WeSupport() {
   return (
     <div className='bg-black'>
-      <MaxWidthWrapper>
+      <div className='container'>
         <div className='flex flex-col  items-end py-10'>
           <H1 text={infos.title} />
           <P className='md:max-w-lg' text={infos.description} />
@@ -34,7 +34,7 @@ export default function WeSupport() {
           <SupportCard cardIndex={3} />
           <SupportCard cardIndex={4} />
         </div>
-      </MaxWidthWrapper>
+      </div>
     </div>
   );
 }

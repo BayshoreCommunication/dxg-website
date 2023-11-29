@@ -34,7 +34,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
               <HeaderTextStyle {...titleProps} />
               <Button
                 variant='dashed'
-                className='mt-5 rounded-full px-10 py-3 uppercase md:px-14 lg:px-24'
+                className='mt-5 rounded-full px-10 py-3 capitalize md:px-14 lg:px-24'
               >
                 {buttonTitle}
               </Button>

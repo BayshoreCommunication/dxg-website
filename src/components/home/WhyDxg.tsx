@@ -133,7 +133,7 @@ export default function WhyDxg() {
             </div>
             <div className='hidden flex-1 md:block'>
               <Image
-                src='/xgd.png'
+                src='/DXG.png'
                 alt={SITECONFIG.siteMetadata.description}
                 width={500}
                 height={500}
