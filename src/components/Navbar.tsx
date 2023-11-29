@@ -2,6 +2,7 @@ import { SITECONFIG } from '@/config/site';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CapsuleButton } from './CapsuleButton';
+import MaxWidthWrapper from './MaxWidthWrapper';
 import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
 
@@ -19,27 +20,37 @@ const links = [
 export default function Navbar() {
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
-      <div className='container flex h-full items-center justify-between '>
-        <Link href='/'>
-          <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
-        </Link>
-        <div className='hidden md:block'>
-          {SITECONFIG.mainNav.map((item, index) => {
-            return (
-              <Link key={index} href={item.slug}>
-                <Button
-                  className='font-semibold text-white hover:text-brand active:text-brand'
-                  variant='link'
-                >
-                  {item.title}
-                </Button>
-              </Link>
-            );
-          })}
-          <CapsuleButton title='Request for Proposal' as='link' href='#' />
-        </div>
-        {/* Mobile view */}
-        <NavBarMobile />
+      <div className='flex h-full flex-1 '>
+        <MaxWidthWrapper>
+          {/* <div className='container flex h-full items-center justify-between '> */}
+          <div className='flex h-full items-center justify-between '>
+            <Link href='/'>
+              <Image
+                width={70}
+                height={20}
+                src={'/dxgLogo.svg'}
+                alt='DXG Logo'
+              />
+            </Link>
+            <div className='hidden md:block'>
+              {SITECONFIG.mainNav.map((item, index) => {
+                return (
+                  <Link key={index} href={item.slug}>
+                    <Button
+                      className='font-semibold text-white hover:text-brand active:text-brand'
+                      variant='link'
+                    >
+                      {item.title}
+                    </Button>
+                  </Link>
+                );
+              })}
+              <CapsuleButton title='Request for Proposal' as='link' href='#' />
+            </div>
+            {/* Mobile view */}
+            <NavBarMobile />
+          </div>
+        </MaxWidthWrapper>
       </div>
     </header>
   );

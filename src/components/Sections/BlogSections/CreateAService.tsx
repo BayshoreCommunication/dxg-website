@@ -13,11 +13,11 @@ export const CreateAService = () => {
             return (
               <div
                 key={item.id}
-                className='flex flex-col-reverse text-white md:flex-row'
+                className='flex flex-col-reverse gap-5 text-white md:flex-row'
               >
                 <div className='w-full md:w-1/2'>
                   <h1 className='mb-2 text-3xl font-bold'>{item.title}</h1>
-                  <p>{item.description}</p>
+                  <p className='text-justify'>{item.description}</p>
                   <div className='mt-5 flex gap-4'>
                     {item.tag.map((tagItem, index) => {
                       return (
