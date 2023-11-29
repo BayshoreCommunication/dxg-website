@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 export default function NewsLetter() {
   return (
-    <MaxWidthWrapper className='py-16'>
+    <div className='container py-16'>
       <div className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5'>
         <div className='col-span-3'>
           <h1 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>
@@ -25,6 +25,6 @@ export default function NewsLetter() {
           <Button className=' w-full bg-slate-800'>Subscribe</Button>
         </div>
       </div>
-    </MaxWidthWrapper>
+    </div>
   );
 }

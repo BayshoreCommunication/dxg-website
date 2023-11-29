@@ -1,5 +1,6 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import { ContactInputField } from '@/components/Contact';
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Button } from '@/components/ui/button';
 import React from 'react';
 

@@ -67,7 +67,7 @@ export const SERVICE_DATA = [
     id: 1,
     heading: 'Production;Management',
     title: 'Production Management',
-    image: '/service/product-management.png',
+    image: '/service/dxg-agency-project-management.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -75,7 +75,7 @@ export const SERVICE_DATA = [
     id: 2,
     heading: 'Audio;Visual Technology',
     title: 'Audio Visual Technology',
-    image: '/service/audio-visual.png',
+    image: '/service/dxg-agency-audiovisual-technology.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -83,7 +83,7 @@ export const SERVICE_DATA = [
     id: 3,
     heading: 'Event;Platform Service',
     title: 'Event Platform Service',
-    image: '/service/event-platform.png',
+    image: '/service/dxg-agency-event-platform-service.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -91,7 +91,7 @@ export const SERVICE_DATA = [
     id: 4,
     heading: 'Event;Platform Service',
     title: 'Event Experience Design',
-    image: '/service/event-experience.png',
+    image: '/service/dxg-agency-event-experience-design.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -99,7 +99,7 @@ export const SERVICE_DATA = [
     id: 5,
     heading: 'Graphics;And Animation',
     title: 'Graphics And Animation',
-    image: '/service/graphics.png',
+    image: '/service/dxg-agency-graphics-and-animation.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },

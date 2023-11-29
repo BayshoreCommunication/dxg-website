@@ -3,6 +3,7 @@ import MaxWidthWrapper from './MaxWidthWrapper';
 import TestimonialSlider from './TestimonialSlider';
 import { Icons } from './Icons';
 import { H1, P } from './Typography';
+import TestimonialSliderTwo from './TestimonialSliderTwo';
 
 const infos = {
   title: 'Client Testimonials',
@@ -15,13 +16,14 @@ function Testimonial() {
     <div className='bg-differentBackground'>
       <MaxWidthWrapper>
         <div className='flex flex-col items-center justify-center'>
-          <div className='my-10 text-center'>
+          <div className='my-10 max-w-3xl text-center'>
             <H1 text={infos.title} />
             <P className='text-center' text={infos.description} />
           </div>
 
-          <div className='relative w-full'>
-            <TestimonialSlider />
+          <div className='relative w-full '>
+            {/* <TestimonialSlider /> */}
+            <TestimonialSliderTwo />
           </div>
         </div>
       </MaxWidthWrapper>
