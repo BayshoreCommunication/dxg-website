@@ -1,8 +1,9 @@
+'use client';
 import { SITECONFIG } from '@/config/site';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { CapsuleButton } from './CapsuleButton';
-import MaxWidthWrapper from './MaxWidthWrapper';
 import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
 
@@ -19,6 +20,8 @@ const links = [
 ];
 
 export default function Navbar() {
+  const currentRoute = usePathname();
+  console.log('Current Route is => ', currentRoute);
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
       <div className='flex h-full items-center justify-between px-2.5 md:px-28 '>
@@ -30,7 +33,11 @@ export default function Navbar() {
             return (
               <Link key={index} href={item.slug}>
                 <Button
-                  className='font-semibold text-white hover:text-brand active:text-brand'
+                  className={`font-semibold text-white hover:text-brand active:text-brand ${
+                    currentRoute === item.slug
+                      ? 'font-extrabold text-brand underline'
+                      : ''
+                  }`}
                   variant='link'
                 >
                   {item.title}
