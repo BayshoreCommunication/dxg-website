@@ -17,40 +17,31 @@ const links = [
   { name: 'Our Blog', href: '#' },
   { name: 'Contact Us', href: '#' },
 ];
+
 export default function Navbar() {
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
-      <div className='flex h-full flex-1 '>
-        <MaxWidthWrapper>
-          {/* <div className='container flex h-full items-center justify-between '> */}
-          <div className='flex h-full items-center justify-between '>
-            <Link href='/'>
-              <Image
-                width={70}
-                height={20}
-                src={'/dxgLogo.svg'}
-                alt='DXG Logo'
-              />
-            </Link>
-            <div className='hidden md:block'>
-              {SITECONFIG.mainNav.map((item, index) => {
-                return (
-                  <Link key={index} href={item.slug}>
-                    <Button
-                      className='font-semibold text-white hover:text-brand active:text-brand'
-                      variant='link'
-                    >
-                      {item.title}
-                    </Button>
-                  </Link>
-                );
-              })}
-              <CapsuleButton title='Request for Proposal' as='link' href='#' />
-            </div>
-            {/* Mobile view */}
-            <NavBarMobile />
-          </div>
-        </MaxWidthWrapper>
+      <div className='flex h-full items-center justify-between px-2.5 md:px-28 '>
+        <Link href='/'>
+          <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
+        </Link>
+        <div className='hidden lg:block'>
+          {SITECONFIG.mainNav.map((item, index) => {
+            return (
+              <Link key={index} href={item.slug}>
+                <Button
+                  className='font-semibold text-white hover:text-brand active:text-brand'
+                  variant='link'
+                >
+                  {item.title}
+                </Button>
+              </Link>
+            );
+          })}
+          <CapsuleButton title='Request for Proposal' as='link' href='#' />
+        </div>
+        {/* Mobile view */}
+        <NavBarMobile />
       </div>
     </header>
   );

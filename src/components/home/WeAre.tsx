@@ -24,12 +24,12 @@ export default function WeAre() {
               {dotArray.map((dot, index) => (
                 <div
                   key={index}
-                  className='bg-dot mt-2 h-6 w-6 rounded-full'
+                  className='mt-2 h-6 w-6 rounded-full bg-dot'
                 ></div>
               ))}
             </div>
           </div>
-          <div className='absolute left-1/2 top-1/2   w-[60%] -translate-x-1/2 -translate-y-1/2 transform'>
+          <div className='absolute right-0 top-1/2 m-auto   w-[100%] -translate-x-1/2 -translate-y-1/2 transform border'>
             <Image src={infos.image} alt='headshot' width={400} height={400} />
           </div>
         </div>
