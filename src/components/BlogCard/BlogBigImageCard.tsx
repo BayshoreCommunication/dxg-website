@@ -21,8 +21,19 @@ export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
   const time = formatTimestamp(date);
   return (
     <div className='w-full text-white'>
-      <div className='w-full'>
-        <Image src={image} alt='Meeting Blog' width={523} height={430} />
+      <div className='relative h-[445px] w-full bg-red-200'>
+        {/* <Image src={image} alt='Meeting Blog' width={523} height={430} /> */}
+        <Image
+          src={image}
+          alt='Meeting Blog'
+          //   width={200}
+          //   height={200}
+          fill
+          style={{
+            objectFit: 'fill',
+            width: '100%',
+          }}
+        />
       </div>
       <p className='text-light mt-3'>{time}</p>
       <h4 className='text mb-3 text-xl font-bold text-brand'>{title}</h4>
