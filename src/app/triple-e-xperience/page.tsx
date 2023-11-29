@@ -20,44 +20,42 @@ export default function TripleExperience() {
           texAlign: 'text-left',
         }}
       />
-      <MaxWidthWrapper>
-        <SectionInformationWithImage
-          className='bg-differentBackground'
-          sectionTitle={'Engage'}
-          sectionDescription={[
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-          ]}
-          sectionImage={EngageImage}
-          sectionImageOverlay={''}
-        />
-        <SectionInformationWithImage
-          imagePosition='left'
-          sectionTitle={'Enlight'}
-          sectionDescription={[
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-          ]}
-          sectionImage={EnlightImage}
-          sectionImageOverlay={''}
-        />
-        <SectionInformationWithImage
-          className='bg-differentBackground'
-          sectionTitle={'Exchange'}
-          sectionDescription={[
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-            'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
-          ]}
-          sectionImage={ExchangeImage}
-          sectionImageOverlay={''}
-        />
-      </MaxWidthWrapper>
+      <SectionInformationWithImage
+        className='bg-differentBackground'
+        sectionTitle={'Engage'}
+        sectionDescription={[
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+        ]}
+        sectionImage={EngageImage}
+        sectionImageOverlay={''}
+      />
+      <SectionInformationWithImage
+        imagePosition='left'
+        sectionTitle={'Enlight'}
+        sectionDescription={[
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+        ]}
+        sectionImage={EnlightImage}
+        sectionImageOverlay={''}
+      />
+      <SectionInformationWithImage
+        className='bg-differentBackground'
+        sectionTitle={'Exchange'}
+        sectionDescription={[
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+          'When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver The Triple E Xperience:',
+        ]}
+        sectionImage={ExchangeImage}
+        sectionImageOverlay={''}
+      />
       <div className='bg-black'>
         <NewsLetter />
       </div>
