@@ -85,3 +85,12 @@
 .icon-hover {
   transition: transform 0.2s; /* Smooth transition for zoom out */
 }
+@keyframes shake {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+.shake:hover {
+  animation: shake 0.5s ease-in-out;
+}
