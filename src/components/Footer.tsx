@@ -23,7 +23,7 @@ export default function Footer() {
             <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
               {/* First column */}
               <div className='flex flex-col '>
-                <div className='w-3/4'>
+                <div className='w-2/3 md:w-1/2'>
                   <Image
                     src={logo}
                     alt='Texture Logo'
