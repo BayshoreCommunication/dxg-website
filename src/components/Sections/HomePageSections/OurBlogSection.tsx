@@ -3,7 +3,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { HeaderTextStyle } from '@/components/TextStyle';
 import { BlogData } from '@/config/data';
 import OurBlogSlider from '@/components/home/OurBlogSlider';
-
+import { P } from '@/components/Typography';
 export const OurBlogSection = () => {
   return (
     <div className='bg-black py-10'>
@@ -14,11 +14,12 @@ export const OurBlogSection = () => {
             postText='Blog'
             variant='section'
           />
-          <p className='mb-4 mt-4 px-6 text-center text-base text-white md:mt-6 md:px-12'>
-            With the average experience of our team members being ten-plus years
+          <P
+            text='With the average experience of our team members being ten-plus years
             in the event space, DXG is a sought-after resource by event
-            planners, event production companies, and event platforms.
-          </p>
+            planners, event production companies, and event platforms.'
+            className='py-6 text-center'
+          />
         </MaxWidthWrapper>
       </div>
       <div className='md:hidden'>

@@ -16,6 +16,7 @@ const links = [
   { name: 'Our Blog', href: '#' },
   { name: 'Contact Us', href: '#' },
 ];
+
 export default function Navbar() {
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
@@ -23,7 +24,7 @@ export default function Navbar() {
         <Link href='/'>
           <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
         </Link>
-        <div className='hidden md:block'>
+        <div className='hidden lg:block'>
           {SITECONFIG.mainNav.map((item, index) => {
             return (
               <Link key={index} href={item.slug}>

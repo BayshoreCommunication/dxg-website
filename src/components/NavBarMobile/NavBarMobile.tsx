@@ -17,7 +17,7 @@ export const NavBarMobile = () => {
     setShowDropdown(false);
   };
   return (
-    <div className='block md:hidden' onClick={dropDownShownHandler}>
+    <div className='block lg:hidden' onClick={dropDownShownHandler}>
       {/* <p className='text-white'>Burger</p> */}
       {<Icons.burger size={40} className='text-brand' />}
       <div

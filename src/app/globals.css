@@ -58,6 +58,21 @@
   }
 }
 
+::-webkit-scrollbar {
+  height: 12px;
+  width: 6px;
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2dc6f5;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
 .float-label-input:focus-within label,
 .float-label-input input:not(:placeholder-shown) + label {
   transform: translateY(-1.5rem) scale(0.75);
