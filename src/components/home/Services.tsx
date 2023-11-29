@@ -15,10 +15,9 @@ const infos = {
     'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
 };
 const delay = 0.5;
-const variants = {
-  hidden: { opacity: 0, x: 0, y: 25 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: -0, y: 25 },
+const iconVariants = {
+  hidden: { x: -50, opacity: 0 },
+  visible: { x: 0, opacity: 1 },
 };
 export default function Services() {
   return (
@@ -64,8 +63,6 @@ export default function Services() {
                   </div>
 
                   <motion.div
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
                     transition={{
                       duration: 0.4,
                       delay,
@@ -81,9 +78,15 @@ export default function Services() {
                       </h1>
                       <p className='text-base text-white'>{item.excerpt}</p>
                     </motion.div>
-                    <div className='flex justify-center pt-12 md:pt-0'>
+                    <motion.div
+                      className='flex justify-center pt-12 md:pt-0'
+                      initial='hidden'
+                      animate='visible'
+                      variants={iconVariants}
+                      transition={{ duration: 0.5 }}
+                    >
                       <Icons.customRightArrow className='h-20 w-20  pb-5 text-white ' />
-                    </div>
+                    </motion.div>
                   </motion.div>
                 </div>
               </div>
