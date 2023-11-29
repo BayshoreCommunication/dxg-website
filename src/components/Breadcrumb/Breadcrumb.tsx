@@ -24,12 +24,12 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
 }) => {
   return (
     <div
-      className='bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat'
+      className=' min-h-[300px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat'
       {...rest}
     >
       <MaxWidthWrapper>
         <div className='py-9 xl:py-28'>
-          <div className=' lg:gap-18 items-center lg:grid lg:grid-cols-12 xl:gap-28 '>
+          <div className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'>
             <div className='lg:col-span-7 xl:col-span-6'>
               <HeaderTextStyle {...titleProps} />
               <Button

@@ -45,11 +45,11 @@ export default function Footer() {
                   </div>
                 </div>
                 {/* icons */}
-                <div className='mt-2 flex gap-4 '>
-                  {<Icons.facebook className='h-7 w-7 rounded  text-brand' />}
-                  {<Icons.linkedIn className='h-7 w-7 rounded  text-brand' />}
-                  {<Icons.twitter className='h-7 w-7 rounded  text-brand' />}
-                  {<Icons.instagram className='h-7 w-7 rounded  text-brand' />}
+                <div className='mt-2 flex gap-4'>
+                  <Icons.facebook className='h-7 w-7 rounded text-brand icon-hover' />
+                  <Icons.linkedIn className='h-7 w-7 rounded text-brand icon-hover' />
+                  <Icons.twitter className='h-7 w-7 rounded text-brand icon-hover' />
+                  <Icons.instagram className='h-7 w-7 rounded text-brand icon-hover' />
                 </div>
               </div>
               {/* Second Column */}

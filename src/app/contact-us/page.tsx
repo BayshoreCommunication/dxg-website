@@ -50,7 +50,7 @@ export default function Contact() {
         <div className=' lg:grid lg:grid-cols-12  lg:gap-14'>
           <div className=' mb-14  lg:col-span-6 lg:mb-0'>
             <div
-              className=' w-full bg-gray-200 px-5 py-4 '
+              className=' w-full bg-[#192639] px-5 py-4 '
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -65,15 +65,15 @@ export default function Contact() {
                   fill='#2DC6F5'
                 />
               </svg>
-              <h2 className=' mb-1 mt-3 text-2xl font-normal leading-relaxed text-gray-900'>
+              <h2 className='mb-1 mt-3 text-2xl font-medium leading-relaxed text-brand'>
                 Your Company location here
               </h2>
-              <p className=' text-base font-semibold leading-normal text-gray-400'>
+              <p className=' text-base font-semibold leading-normal text-white'>
                 Our Location
               </p>
             </div>
             <div
-              className='mt-5 bg-gray-200 px-5 py-4'
+              className='mt-5 bg-[#192639] px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -95,12 +95,12 @@ export default function Contact() {
               <h2 className=' mb-1   mt-3 text-2xl font-medium leading-relaxed text-brand'>
                 (813) 560-3005
               </h2>
-              <p className=' text-base font-semibold leading-normal text-gray-400'>
+              <p className=' text-base font-semibold leading-normal text-white'>
                 Let’s Talk
               </p>
             </div>
             <div
-              className='mt-5 bg-gray-200 px-5 py-4'
+              className='mt-5 bg-[#192639] px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -115,10 +115,10 @@ export default function Contact() {
                   fill='#2DC6F5'
                 />
               </svg>
-              <h2 className=' mb-1 mt-3 text-2xl font-normal leading-relaxed text-gray-900'>
+              <h2 className=' mb-1 mt-3 text-2xl font-medium leading-relaxed text-brand'>
                 ace@dxg.agency
               </h2>
-              <p className=' text-base font-semibold leading-normal text-gray-400'>
+              <p className=' text-base font-semibold leading-normal text-white'>
                 Drop a Line
               </p>
             </div>
