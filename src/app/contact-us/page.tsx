@@ -1,7 +1,6 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import { ContactInputField } from '@/components/Contact';
 import { Button } from '@/components/ui/button';
-import React from 'react';
 
 export default function Contact() {
   return (
@@ -146,9 +145,9 @@ export default function Contact() {
             />
             <Button
               variant='default'
-              className='mt-5 w-full bg-brand text-white'
+              className='mt-5 w-full border-brand bg-brand font-bold text-white hover:border hover:text-brand'
             >
-              Submit
+              SUBMIT
             </Button>
             <p className='mt-10 text-justify text-base  font-normal text-white'>
               *I understand that the use of this form for communication with
