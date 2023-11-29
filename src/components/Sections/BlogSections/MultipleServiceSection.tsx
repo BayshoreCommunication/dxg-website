@@ -11,8 +11,8 @@ export const MultipleServiceSection = () => {
           <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
             {MULTIPLE_SERVICE.map((item, index) => {
               return (
-                <div key={index} className='px-5'>
-                  <div className='relative h-[278px] w-full'>
+                <div key={index} className=''>
+                  <div className='relative h-[300px] w-full'>
                     <Image
                       src={item.image}
                       alt='Meeting Blog'

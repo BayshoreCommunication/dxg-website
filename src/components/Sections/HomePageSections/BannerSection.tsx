@@ -86,17 +86,17 @@ export const BannerSection = () => {
                 </div>
                 <div className='flex items-center justify-between'>
                   <div className='w-1/2'>
-                    <p className=' text-xl font-light text-white'>{`DXG has truly revolutionized my real estate business! The microsite's personalized touch elegantly displays my listings and services, effortlessly.`}</p>
-                    <div className='flex-start mt-5 flex w-full gap-10'>
-                      <div className=''>
-                        <h1 className='text-xl font-bold text-brand'>20+</h1>
-                        <p className='text-lg font-light text-white'>
+                    <p className=' w-2/3 text-justify text-xl font-normal text-white'>{`DXG has truly revolutionized my real estate business! The microsite's personalized touch elegantly displays my listings and services, effortlessly.`}</p>
+                    <div className='flex-start mt-5 flex w-full gap-16'>
+                      <div className='mt-3'>
+                        <h1 className='text-3xl font-bold text-brand'>20+</h1>
+                        <p className='text-lg font-normal text-white'>
                           Years Experience
                         </p>
                       </div>
-                      <div className=''>
-                        <h1 className='text-xl font-bold text-brand'>70+</h1>
-                        <p className='text-lg font-light text-white'>
+                      <div className='mt-3'>
+                        <h1 className='text-3xl font-bold text-brand'>70+</h1>
+                        <p className='text-lg font-normal text-white'>
                           Completed Project
                         </p>
                       </div>
