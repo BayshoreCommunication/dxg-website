@@ -4,6 +4,7 @@ import Testimonial from '@/components/Testimonial';
 import NewsLetter from '@/components/NewsLetter';
 import { SERVICES_PAGE_DATA } from '@/config/data';
 import { ServiceCard } from '@/components/ServiceCard';
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 
 export default function Services() {
   return (
@@ -18,24 +19,26 @@ export default function Services() {
           texAlign: 'text-left',
         }}
       />
-      <div className='container py-9 lg:py-16'>
-        <div className='grid grid-cols-12 gap-5'>
-          {SERVICES_PAGE_DATA.map((service) => {
-            return (
-              <div
-                key={service.id}
-                className='col-span-12 md:col-span-6 lg:col-span-4'
-              >
-                <ServiceCard
-                  cardImage={service.image}
-                  captionPosition={service.captionPosition}
-                  cardTitle={service.caption}
-                />
-              </div>
-            );
-          })}
+      <MaxWidthWrapper>
+        <div className='py-9 lg:py-16'>
+          <div className='grid grid-cols-12 gap-5'>
+            {SERVICES_PAGE_DATA.map((service) => {
+              return (
+                <div
+                  key={service.id}
+                  className='col-span-12 md:col-span-6 lg:col-span-4'
+                >
+                  <ServiceCard
+                    cardImage={service.image}
+                    captionPosition={service.captionPosition}
+                    cardTitle={service.caption}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
       <Testimonial />
       <div className='bg-black'>
         <NewsLetter />

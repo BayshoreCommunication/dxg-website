@@ -12,12 +12,14 @@ export const NavBarMobile = () => {
   const dropDownShownHandler = () => {
     setShowDropdown(true);
   };
-  const dropDownDisableHandler = (e: MouseEvent<HTMLDivElement>) => {
+  const dropDownDisableHandler = (
+    e: MouseEvent<HTMLDivElement | HTMLAnchorElement>
+  ) => {
     e.stopPropagation();
     setShowDropdown(false);
   };
   return (
-    <div className='block md:hidden' onClick={dropDownShownHandler}>
+    <div className='block lg:hidden' onClick={dropDownShownHandler}>
       {/* <p className='text-white'>Burger</p> */}
       {<Icons.burger size={40} className='text-brand' />}
       <div
@@ -34,7 +36,11 @@ export const NavBarMobile = () => {
         <div className='mt-10 flex flex-col items-center justify-center '>
           {SITECONFIG.mainNav.map((item, index) => {
             return (
-              <Link key={index} href={item.slug}>
+              <Link
+                onClick={(e) => dropDownDisableHandler(e)}
+                key={index}
+                href={item.slug}
+              >
                 <Button
                   className='mt-5 text-2xl font-semibold text-white hover:text-brand active:text-brand'
                   variant='link'

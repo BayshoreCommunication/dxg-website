@@ -67,7 +67,7 @@ export const SERVICE_DATA = [
     id: 1,
     heading: 'Production;Management',
     title: 'Production Management',
-    image: '/service/product-management.png',
+    image: '/service/dxg-agency-project-management.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -75,7 +75,7 @@ export const SERVICE_DATA = [
     id: 2,
     heading: 'Audio;Visual Technology',
     title: 'Audio Visual Technology',
-    image: '/service/audio-visual.png',
+    image: '/service/dxg-agency-audiovisual-technology.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -83,7 +83,7 @@ export const SERVICE_DATA = [
     id: 3,
     heading: 'Event;Platform Service',
     title: 'Event Platform Service',
-    image: '/service/event-platform.png',
+    image: '/service/dxg-agency-event-platform-service.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -91,7 +91,7 @@ export const SERVICE_DATA = [
     id: 4,
     heading: 'Event;Platform Service',
     title: 'Event Experience Design',
-    image: '/service/event-experience.png',
+    image: '/service/dxg-agency-event-experience-design.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -99,7 +99,7 @@ export const SERVICE_DATA = [
     id: 5,
     heading: 'Graphics;And Animation',
     title: 'Graphics And Animation',
-    image: '/service/graphics.png',
+    image: '/service/dxg-agency-graphics-and-animation.png',
     excerpt:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
   },
@@ -183,5 +183,80 @@ export const OurMethods = [
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
     image: 'https://picsum.photos/797/547',
+  },
+];
+
+export const RECENT_BLOG_POST = [
+  {
+    id: 0,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+  {
+    id: 1,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+  {
+    id: 2,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+  {
+    id: 3,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+];
+
+export const SPECIAL_OFFER = [
+  {
+    id: 1,
+    title: 'Create a beautiful event platform services',
+    date: 1700973637000,
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.',
+    tag: ['design', 'research'],
+  },
+];
+
+export const MULTIPLE_SERVICE = [
+  {
+    id: 0,
+    title: 'Create a beautiful website for any device.',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.',
+  },
+  {
+    id: 1,
+    title: 'Create a beautiful website for any device.',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.',
+  },
+  {
+    id: 2,
+    title: 'Create a beautiful website for any device.',
+    image: 'https://picsum.photos/523/430',
+    description:
+      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.',
   },
 ];

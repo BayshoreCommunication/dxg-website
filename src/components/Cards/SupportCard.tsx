@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Icons } from '../Icons';
 import { Button } from '../ui/button';
+import { P } from '../Typography';
 // export default function SupportCard() {
 //   return (
 //     <div
@@ -84,11 +85,15 @@ export default function SupportCard({ cardIndex }: SupportCardProps) {
           <h1 className=' py-4 text-3xl font-bold uppercase text-white'>
             Production
           </h1>
-          <p className='desc card-text px-20 text-base text-white'>
+          <P
+            className=' desc px-20 text-center'
+            text='
             With the average experience of our team members being ten-plus years
             in the event space, DXG is a sought-after resource by event
             planners, event production companies, and event platforms.
-          </p>
+          '
+          />
+
           <div className='mt-10'>
             <Button
               variant='outline'

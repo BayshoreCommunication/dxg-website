@@ -1,6 +1,8 @@
+'use client';
 import { SITECONFIG } from '@/config/site';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { CapsuleButton } from './CapsuleButton';
 import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
@@ -16,19 +18,26 @@ const links = [
   { name: 'Our Blog', href: '#' },
   { name: 'Contact Us', href: '#' },
 ];
+
 export default function Navbar() {
+  const currentRoute = usePathname();
+  console.log('Current Route is => ', currentRoute);
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
-      <div className='container flex h-full items-center justify-between '>
+      <div className='flex h-full items-center justify-between px-2.5 md:px-28 '>
         <Link href='/'>
           <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
         </Link>
-        <div className='hidden md:block'>
+        <div className='hidden lg:block'>
           {SITECONFIG.mainNav.map((item, index) => {
             return (
               <Link key={index} href={item.slug}>
                 <Button
-                  className='font-semibold text-white hover:text-brand active:text-brand'
+                  className={`font-semibold text-white hover:text-brand active:text-brand ${
+                    currentRoute === item.slug
+                      ? 'font-extrabold text-brand underline'
+                      : ''
+                  }`}
                   variant='link'
                 >
                   {item.title}

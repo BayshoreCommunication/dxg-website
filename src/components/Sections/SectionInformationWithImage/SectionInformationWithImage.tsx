@@ -20,7 +20,7 @@ export const SectionInformationWithImage: React.FC<
 }) => {
   return (
     <div className='bg-black' {...rest}>
-      <div className='container py-9 lg:py-16'>
+      <div className=' py-9 lg:py-16'>
         <div className=' items-center lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-14 '>
           <div
             className={`${

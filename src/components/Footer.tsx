@@ -5,7 +5,6 @@ import Link from 'next/link';
 import image from '../../public/bgFooter.png';
 import logo from '../../public/dxgLogo.svg';
 import { Icons } from './Icons';
-import MaxWidthWrapper from './MaxWidthWrapper';
 import { Button } from './ui/button';
 export default function Footer() {
   return (
@@ -18,89 +17,104 @@ export default function Footer() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <MaxWidthWrapper>
+        {/* <MaxWidthWrapper> */}
+        <div className='container py-8'>
           <div className='flex h-[500px] flex-col md:h-[300px] '>
-            {/* First Row */}
-            <div className='mt-10 grid h-[500px] grid-cols-2 gap-4 md:mt-5 md:h-[400px] md:grid-cols-4'>
-              <div className='mt-2 px-2 md:mt-4'>
-                <div className='w-3/4'>
+            <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
+              {/* First column */}
+              <div className='flex flex-col '>
+                <div className='w-2/3 md:w-1/2'>
                   <Image
                     src={logo}
                     alt='Texture Logo'
                     style={{ width: '100%' }}
                   />
                 </div>
-                {/* phone */}
-                <div className='mt-2 flex'>
-                  {<Icons.phone size={20} className=' mr-2 text-brand' />}
-                  <p className='text-sm text-white'>+888.456.574</p>
-                </div>
-                {/* email */}
-                <div className='mt-2 flex items-center '>
-                  {<Icons.mail size={20} className='mr-2 text-brand' />}
-                  <p className='w-1/2 text-ellipsis text-sm text-white'>
-                    ace@dxg.agency
-                  </p>
+                <div className='my-4'>
+                  {/* phone */}
+                  <div className='my-2 flex'>
+                    {<Icons.phone size={20} className=' mr-2 text-brand' />}
+                    <p className='text-sm text-white'>+888.456.574</p>
+                  </div>
+                  {/* email */}
+                  <div className=' flex items-center '>
+                    {<Icons.mail size={20} className='mr-2 text-brand' />}
+                    <p className='w-1/2 text-ellipsis text-sm text-white'>
+                      ace@dxg.agency
+                    </p>
+                  </div>
                 </div>
                 {/* icons */}
-                <div className='mt-2 flex gap-4'>
+                <div className='mt-2 flex gap-4 '>
                   {<Icons.facebook className='h-7 w-7 rounded  text-brand' />}
                   {<Icons.linkedIn className='h-7 w-7 rounded  text-brand' />}
                   {<Icons.twitter className='h-7 w-7 rounded  text-brand' />}
                   {<Icons.instagram className='h-7 w-7 rounded  text-brand' />}
                 </div>
               </div>
-              <div className='ml-10 mt-2 px-2 md:mt-4'>
-                <p className='mb-2 font-bold text-white'>Service</p>
-                {SITECONFIG.footerNav.services.map((item, index) => {
-                  return (
-                    <Link key={index} href={item.slug}>
-                      <Button
-                        variant={'link'}
-                        className=' mb-4 whitespace-pre-line pl-0 text-start text-white hover:text-brand'
-                      >
-                        {item.title}
-                      </Button>
-                    </Link>
-                  );
-                })}
+              {/* Second Column */}
+              <div className='ml-5 flex flex-col md:items-center'>
+                <div className='  md:w-1/2'>
+                  <h2 className='mb-2 text-2xl font-bold text-brand'>
+                    Service
+                  </h2>
+                  {SITECONFIG.footerNav.services.map((item, index) => {
+                    return (
+                      <Link key={index} href={item.slug}>
+                        <Button
+                          variant={'link'}
+                          className=' mb-4 whitespace-pre-line pl-0 text-start text-white hover:text-brand'
+                        >
+                          {item.title}
+                        </Button>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-              <div className='mt-2 px-2 md:ml-10 md:mt-4'>
-                <p className='font-bold text-white'>Legal</p>
-                {SITECONFIG.footerNav.legal.map((item, index) => {
-                  return (
-                    <Link key={index} href={item.slug}>
-                      <Button
-                        variant={'link'}
-                        className='pl-0 text-white hover:text-brand'
-                      >
-                        {item.title}
-                      </Button>
-                    </Link>
-                  );
-                })}
+              {/* Third Column */}
+              <div className='ml-5 flex flex-col  md:items-center'>
+                <div className=' md:w-1/2'>
+                  <h2 className='mb-2 text-2xl font-bold text-brand'>
+                    Why DXG
+                  </h2>
+                  {SITECONFIG.footerNav.whyDXG.map((item, index) => {
+                    return (
+                      <Link key={index} href={item.slug}>
+                        <Button
+                          variant={'link'}
+                          className='pl-0 text-white hover:text-brand'
+                        >
+                          {item.title}
+                        </Button>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
-              <div className='ml-10 mt-2 px-2 md:mt-4'>
-                <p className='font-bold text-white'>Why DXG</p>
-                {SITECONFIG.footerNav.whyDXG.map((item, index) => {
-                  return (
-                    <Link key={index} href={item.slug}>
-                      <Button
-                        variant={'link'}
-                        className='pl-0 text-white hover:text-brand'
-                      >
-                        {item.title}
-                      </Button>
-                    </Link>
-                  );
-                })}
+
+              {/* Fourth Column */}
+              <div className='flex flex-col  md:items-center'>
+                <div className=' md:w-1/2'>
+                  <h2 className='mb-2 text-2xl font-bold text-brand'>Legal</h2>
+                  {SITECONFIG.footerNav.legal.map((item, index) => {
+                    return (
+                      <Link key={index} href={item.slug}>
+                        <Button
+                          variant={'link'}
+                          className='pl-0 text-white hover:text-brand'
+                        >
+                          {item.title}
+                        </Button>
+                      </Link>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-
-            {/* Separator */}
-            {/* <div className='mt-5 h-[3px] w-full bg-gray-500'></div> */}
           </div>
-        </MaxWidthWrapper>
+        </div>
+        {/* </MaxWidthWrapper> */}
         <hr className='border-gray-500' />
 
         {/* Second Row */}

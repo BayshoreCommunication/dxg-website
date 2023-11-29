@@ -1,7 +1,7 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import { ContactInputField } from '@/components/Contact';
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { Button } from '@/components/ui/button';
-import React from 'react';
 
 export default function Contact() {
   return (
@@ -46,11 +46,11 @@ export default function Contact() {
         }}
       />
 
-      <div className='container py-9 lg:py-16'>
-        <div className='lg:grid lg:grid-cols-12 lg:items-center lg:gap-14'>
-          <div className=' mb-14 lg:col-span-6 lg:mb-0'>
+      <div className='container  py-9 lg:py-16'>
+        <div className=' lg:grid lg:grid-cols-12  lg:gap-14'>
+          <div className=' mb-14  lg:col-span-6 lg:mb-0'>
             <div
-              className=' w-full bg-white px-5 py-4'
+              className=' w-full bg-gray-200 px-5 py-4 '
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -73,7 +73,7 @@ export default function Contact() {
               </p>
             </div>
             <div
-              className='mt-5 bg-white px-5 py-4'
+              className='mt-5 bg-gray-200 px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -100,7 +100,7 @@ export default function Contact() {
               </p>
             </div>
             <div
-              className='mt-5 bg-white px-5 py-4'
+              className='mt-5 bg-gray-200 px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
               <svg
@@ -146,9 +146,9 @@ export default function Contact() {
             />
             <Button
               variant='default'
-              className='mt-5 w-full bg-brand text-white'
+              className='mt-5 w-full border-brand bg-brand font-bold text-white hover:border hover:text-brand'
             >
-              Submit
+              SUBMIT
             </Button>
             <p className='mt-10 text-justify text-base  font-normal text-white'>
               *I understand that the use of this form for communication with
