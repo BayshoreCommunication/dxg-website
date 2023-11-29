@@ -15,22 +15,22 @@ const WHY_DXG_DATA = [
   {
     title: 'Our Process',
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'The process of choosing a partner to work with is challenging however clients recognize that we view them as more than just another customer. Our client management tools allows for transparency in task management.',
   },
   {
     title: 'Our Services',
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'Our approach is service with a smile. We love what we do, the people who help us do it and the purpose of why we do it. We focus on making our clients raving fans of their investment in us.',
   },
   {
     title: 'Our Mission',
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology.',
   },
   {
     title: 'Our Experience',
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'Though established in 2018. Our core team has worked together since 2006. We have done thousands of live events and hundreds of digital events in our careers which is why the "pivot" or evolution as we like to say was not a challenge for us and helped our company grow during what for most was a challenging time.',
   },
 ];
 
@@ -133,7 +133,7 @@ export default function WhyDxg() {
             </div>
             <div className='hidden flex-1 md:block'>
               <Image
-                src='/DXG.png'
+                src='/xgd.png'
                 alt={SITECONFIG.siteMetadata.description}
                 width={500}
                 height={500}

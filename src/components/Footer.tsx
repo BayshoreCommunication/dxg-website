@@ -18,8 +18,8 @@ export default function Footer() {
         }}
       >
         {/* <MaxWidthWrapper> */}
-        <div className='container '>
-          <div className='flex h-[500px] flex-col md:h-[300px] '>
+        <div className='container py-8'>
+          <div className='flex h-[500px] flex-col md:h-[320px] '>
             <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
               {/* First column */}
               <div className='flex flex-col '>
@@ -30,20 +30,22 @@ export default function Footer() {
                     style={{ width: '100%' }}
                   />
                 </div>
-                {/* phone */}
-                <div className='mt-2 flex'>
-                  {<Icons.phone size={20} className=' mr-2 text-brand' />}
-                  <p className='text-sm text-white'>+888.456.574</p>
-                </div>
-                {/* email */}
-                <div className='mt-2 flex items-center '>
-                  {<Icons.mail size={20} className='mr-2 text-brand' />}
-                  <p className='w-1/2 text-ellipsis text-sm text-white'>
-                    ace@dxg.agency
-                  </p>
+                <div className='my-4'>
+                  {/* phone */}
+                  <div className='my-2 flex'>
+                    {<Icons.phone size={20} className=' mr-2 text-brand' />}
+                    <p className='text-sm text-white'>+888.456.574</p>
+                  </div>
+                  {/* email */}
+                  <div className=' flex items-center '>
+                    {<Icons.mail size={20} className='mr-2 text-brand' />}
+                    <p className='w-1/2 text-ellipsis text-sm text-white'>
+                      ace@dxg.agency
+                    </p>
+                  </div>
                 </div>
                 {/* icons */}
-                <div className='mt-2 flex gap-4'>
+                <div className='mt-2 flex gap-4 '>
                   {<Icons.facebook className='h-7 w-7 rounded  text-brand' />}
                   {<Icons.linkedIn className='h-7 w-7 rounded  text-brand' />}
                   {<Icons.twitter className='h-7 w-7 rounded  text-brand' />}
@@ -53,7 +55,9 @@ export default function Footer() {
               {/* Second Column */}
               <div className='ml-5 flex flex-col md:items-center'>
                 <div className='  md:w-1/2'>
-                  <p className='mb-2 font-bold text-brand'>Service</p>
+                  <h2 className='mb-2 text-2xl font-bold text-brand'>
+                    Service
+                  </h2>
                   {SITECONFIG.footerNav.services.map((item, index) => {
                     return (
                       <Link key={index} href={item.slug}>
@@ -69,10 +73,12 @@ export default function Footer() {
                 </div>
               </div>
               {/* Third Column */}
-              <div className='flex flex-col  md:items-center'>
+              <div className='ml-5 flex flex-col  md:items-center'>
                 <div className=' md:w-1/2'>
-                  <p className='font-bold text-brand'>Legal</p>
-                  {SITECONFIG.footerNav.legal.map((item, index) => {
+                  <h2 className='mb-2 text-2xl font-bold text-brand'>
+                    Why DXG
+                  </h2>
+                  {SITECONFIG.footerNav.whyDXG.map((item, index) => {
                     return (
                       <Link key={index} href={item.slug}>
                         <Button
@@ -86,11 +92,12 @@ export default function Footer() {
                   })}
                 </div>
               </div>
+
               {/* Fourth Column */}
-              <div className='ml-5 flex flex-col  md:items-center'>
+              <div className='flex flex-col  md:items-center'>
                 <div className=' md:w-1/2'>
-                  <p className='font-bold text-brand'>Why DXG</p>
-                  {SITECONFIG.footerNav.whyDXG.map((item, index) => {
+                  <h2 className='mb-2 text-2xl font-bold text-brand'>Legal</h2>
+                  {SITECONFIG.footerNav.legal.map((item, index) => {
                     return (
                       <Link key={index} href={item.slug}>
                         <Button
