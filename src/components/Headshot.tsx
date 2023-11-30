@@ -20,7 +20,7 @@ export const HeadShot = ({ path }: HeadShotProps) => (
       variants={slideIn('right', 'tween', 0.2, 1)}
       initial='hidden'
       whileInView='show'
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
       className='absolute left-[40%] top-0 -translate-x-1/4 -translate-y-1/2 transform'
     >
       <Image src={path} alt='headshot' width={400} height={400} />
