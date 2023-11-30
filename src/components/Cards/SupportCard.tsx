@@ -1,8 +1,10 @@
+'use client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Icons } from '../Icons';
 import { Button } from '../ui/button';
 import { P } from '../Typography';
+
 // export default function SupportCard() {
 //   return (
 //     <div
@@ -46,10 +48,14 @@ import { P } from '../Typography';
 // }
 
 interface SupportCardProps {
-  cardIndex: number;
+  data: {
+    id: number;
+    title: string;
+    description: string;
+  };
 }
 
-export default function SupportCard({ cardIndex }: SupportCardProps) {
+export default function SupportCard({ data }: SupportCardProps) {
   const [activeCard, setActiveCard] = useState(0);
 
   const handleCardHover = (cardNo: number) => {
@@ -59,7 +65,7 @@ export default function SupportCard({ cardIndex }: SupportCardProps) {
   return (
     <div
       className={`option relative min-w-[60px] max-w-[800px] cursor-pointer overflow-hidden ${
-        activeCard === cardIndex ? 'card-active' : ''
+        activeCard === data.id ? 'card-active' : ''
       }`}
       style={{
         backgroundImage: `linear-gradient(rgba(45, 198, 245, 0.6), rgba(45, 198, 245, 0)), url('/support/production2.png')`,
@@ -68,14 +74,14 @@ export default function SupportCard({ cardIndex }: SupportCardProps) {
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
       }}
-      onMouseEnter={() => handleCardHover(cardIndex)}
+      onMouseEnter={() => handleCardHover(data.id)}
       onMouseLeave={() => handleCardHover(0)}
     >
       <div className='label'>
         <div className='title'>
           {' '}
           <h1 className='text-3xl font-extrabold uppercase text-white'>
-            Production
+            {data.title}
           </h1>
         </div>
         <div className='content flex flex-col items-center justify-center'>
@@ -83,16 +89,9 @@ export default function SupportCard({ cardIndex }: SupportCardProps) {
             <Icons.monitor className='h-12 w-12 text-white' />
           </div>
           <h1 className=' py-4 text-3xl font-bold uppercase text-white'>
-            Production
+            {data.title}
           </h1>
-          <P
-            className=' desc px-20 text-center'
-            text='
-            With the average experience of our team members being ten-plus years
-            in the event space, DXG is a sought-after resource by event
-            planners, event production companies, and event platforms.
-          '
-          />
+          <P className=' desc px-20 text-center' text={data.description} />
 
           <div className='mt-10'>
             <Button
