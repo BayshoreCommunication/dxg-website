@@ -2,7 +2,7 @@ import React from 'react';
 import MaxWidthWrapper from './MaxWidthWrapper';
 import TestimonialSlider from './TestimonialSlider';
 import { Icons } from './Icons';
-import { H1, P } from './Typography';
+import { H1, P, Paragraph, Title } from './Typography';
 import TestimonialSliderTwo from './TestimonialSliderTwo';
 
 const infos = {
@@ -17,8 +17,8 @@ function Testimonial() {
       <MaxWidthWrapper>
         <div className='flex flex-col items-center justify-center'>
           <div className='my-10 max-w-3xl text-center'>
-            <H1 text={infos.title} />
-            <P className='text-center' text={infos.description} />
+            <Title text={infos.title} />
+            <Paragraph key={0} text={infos.description} />
           </div>
 
           <div className='relative w-full '>

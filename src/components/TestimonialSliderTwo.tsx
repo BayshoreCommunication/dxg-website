@@ -25,7 +25,7 @@ export default function TestimonialSliderTwo() {
   };
 
   return (
-    <div className='relative mt-28 '>
+    <div className='relative mt-10 '>
       <div className='relative mb-0 md:mb-14'>
         <Swiper
           modules={[Autoplay, Navigation]}

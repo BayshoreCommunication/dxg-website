@@ -6,6 +6,8 @@ import { Button } from '../ui/button';
 import OverviewSlider from './OverviewSlider';
 import { P } from '../Typography';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import { MotionDiv } from '../Motion';
+import { fadeIn, staggerContainer } from '@/lib/motion';
 
 const data = [
   {
@@ -41,16 +43,23 @@ export default function Overview() {
         <OverviewSlider data={data} />
       </div>
       <MaxWidthWrapper>
-        <div className='hidden md:flex'>
+        <MotionDiv
+          variants={staggerContainer(0.2, 0.1)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: true, amount: 0.25 }}
+          className='hidden md:flex'
+        >
           {data.map((item, index) => {
             return (
-              <div
+              <MotionDiv
+                variants={fadeIn('right', 'tween', index * 0.2, 1)}
                 key={index}
-                className=' max-h-[600px] w-full  bg-cover bg-center bg-no-repeat'
+                className=' max-h-[600px] w-full  bg-cover bg-center bg-no-repeat overview-box'
                 style={{ backgroundImage: `url('${item.image}')` }}
               >
                 <div
-                  className={`group flex flex-col items-center justify-center bg-black bg-opacity-50 py-10  hover:bg-sky-700 hover:bg-opacity-60`}
+                  className={`group flex h-full flex-col items-center justify-center bg-black bg-opacity-50 py-12  hover:bg-sky-700 hover:bg-opacity-60`}
                 >
                   <div className='relative mt-10 text-sky-500 group-hover:text-white'>
                     {item.icon === 'man' && <Icons.man className='h-20 w-20' />}
@@ -77,10 +86,10 @@ export default function Overview() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </MotionDiv>
             );
           })}
-        </div>
+        </MotionDiv>
       </MaxWidthWrapper>
     </div>
   );
