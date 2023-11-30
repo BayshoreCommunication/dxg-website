@@ -46,7 +46,7 @@ export default function Overview() {
             return (
               <div
                 key={index}
-                className=' max-h-[600px] w-full  bg-cover bg-center bg-no-repeat'
+                className=' max-h-[600px] w-full  bg-cover bg-center bg-no-repeat overview-box'
                 style={{ backgroundImage: `url('${item.image}')` }}
               >
                 <div
