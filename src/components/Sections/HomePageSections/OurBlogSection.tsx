@@ -20,7 +20,7 @@ export const OurBlogSection = () => {
         variants={staggerContainer(0.2, 0.1)}
         initial='hidden'
         whileInView='show'
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.25 }}
       >
         <div className='flex items-center justify-center'>
           <div className='my-10 max-w-3xl text-center'>

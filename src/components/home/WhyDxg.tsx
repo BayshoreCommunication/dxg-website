@@ -111,7 +111,7 @@ export default function WhyDxg() {
               </MotionDiv>
 
               <MotionDiv
-                variants={slideIn('up', 'tween', 0.5, 0.5)}
+                variants={slideIn('left', 'tween', 0.5, 0.5)}
                 className='mb-5 flex flex-col gap-10 md:flex-row'
               >
                 <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
