@@ -1,11 +1,11 @@
-'use client';
-
 import SupportCard from '../Cards/SupportCard';
 import MaxWidthWrapper from '../MaxWidthWrapper';
-import { H1, P } from '../Typography';
+import { H1, P, Paragraph, Title } from '../Typography';
 import { Button } from '../ui/button';
 import Link from 'next/link';
-
+import { BottomToTop } from '../Animation';
+import { exploreDXG } from '@/config/data';
+import SupportCardTwo from '../Cards/SupportCardTwo';
 const infos = {
   title: 'Who We Support',
   description:
@@ -17,23 +17,33 @@ export default function WeSupport() {
     <div className='bg-black'>
       <div className='container'>
         <div className='flex flex-col  items-end py-10'>
-          <H1 text={infos.title} />
-          <P className='md:max-w-lg' text={infos.description} />
+          <Title text={infos.title} />
+          <Paragraph text={infos.description} className='md:max-w-lg' />
 
-          <Button
-            asChild
-            variant={'outline'}
-            className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
-          >
-            <Link href='/'>Read More</Link>
-          </Button>
+          <BottomToTop>
+            <Button
+              asChild
+              variant={'outline'}
+              className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+            >
+              <Link href='/'>Read More</Link>
+            </Button>
+          </BottomToTop>
         </div>
         <div className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
-          <SupportCard cardIndex={1} />
-          <SupportCard cardIndex={2} />
-          <SupportCard cardIndex={3} />
-          <SupportCard cardIndex={4} />
+          {exploreDXG.map((item, index) => (
+            <SupportCard key={index} data={item} />
+          ))}
         </div>
+        {/* <div className='mt-[31px] flex max-w-[370px] flex-col gap-[24px]'>
+          {exploreDXG.map((item, index) => (
+            <SupportCardTwo
+              key={index}
+              data={item}
+              number={`${index < 10 ? '0' : ''} ${index + 1}`}
+            />
+          ))}
+        </div> */}
       </div>
     </div>
   );
