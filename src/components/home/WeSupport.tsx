@@ -58,7 +58,7 @@ export default function WeSupport() {
             variants={staggerContainer(0.2, 0.1)}
             initial='hidden'
             whileInView='show'
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: false, amount: 0.25 }}
             className=' flex   flex-col gap-6 lg:flex-row'
           >
             {exploreWorlds.map((world, index) => (

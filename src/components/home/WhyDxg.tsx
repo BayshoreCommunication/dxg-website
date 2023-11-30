@@ -52,7 +52,7 @@ export default function WhyDxg() {
             variants={staggerContainer(0.2, 0.1)}
             initial='hidden'
             whileInView='show'
-            viewport={{ once: true, amount: 0.25 }}
+            viewport={{ once: false, amount: 0.25 }}
             className='flex items-center justify-center gap-4 pb-5'
           >
             <div className='flex flex-[2] flex-col'>

@@ -81,7 +81,7 @@ export const Title = ({ text, className }: TypographyProps) => (
     variants={textVariant2}
     initial='hidden'
     whileInView='show'
-    viewport={{ once: true, amount: 0.25 }}
+    viewport={{ once: false, amount: 0.25 }}
     className={cn('mb-6 text-4xl font-bold leading-10 text-white', className)}
   >
     <Typography
@@ -100,7 +100,7 @@ export const Paragraph = ({ text, className }: TypographyProps) => (
     variants={fadeIn('right', 'spring', 0.5, 0.75)}
     initial='hidden'
     whileInView='show'
-    viewport={{ once: true, amount: 0.25 }}
+    viewport={{ once: false, amount: 0.25 }}
     className={cn(
       'mb-3  text-base font-medium leading-[27px] tracking-[0.18px] text-white',
       className
