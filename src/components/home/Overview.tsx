@@ -47,7 +47,7 @@ export default function Overview() {
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: false, amount: 0.25 }}
           className='hidden md:flex'
         >
           {data.map((item, index) => {
