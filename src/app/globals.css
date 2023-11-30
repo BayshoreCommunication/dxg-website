@@ -126,6 +126,7 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .capsule-button::before {
@@ -142,4 +143,9 @@
 
 .capsule-button:hover::before {
   left: 0;
+}
+.capsule-button:hover {
+  background-color: white; 
+  color: rgb(45,198,245); 
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
