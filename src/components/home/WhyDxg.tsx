@@ -1,9 +1,12 @@
+'use client';
 import React from 'react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import Image from 'next/image';
 import { SITECONFIG } from '@/config/site';
 import { Icons } from '@/components/Icons';
-import { H1, P, H4 } from '../Typography';
+import { H1, P, H4, Title, Paragraph } from '../Typography';
+import { MotionDiv } from '../Motion';
+import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 
 const infos = {
   title: 'Why DXG',
@@ -41,11 +44,17 @@ export default function WhyDxg() {
         <MaxWidthWrapper>
           <div className='m-auto flex max-w-3xl flex-col items-center justify-center'>
             <div className='my-10 text-center'>
-              <H1 text={infos.title} />
-              <P className='text-center' text={infos.description} />
+              <Title text={infos.title} />
+              <Paragraph key={0} text={infos.description} />
             </div>
           </div>
-          <div className='flex items-center justify-center gap-4 pb-5'>
+          <MotionDiv
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: true, amount: 0.25 }}
+            className='flex items-center justify-center gap-4 pb-5'
+          >
             <div className='flex flex-[2] flex-col'>
               {/* <div className='mx-2 flex flex-col  flex-wrap border sm:justify-center md:mx-0 md:flex-row'>
                 {WHY_DXG_DATA.map((item, index) => (
@@ -65,7 +74,10 @@ export default function WhyDxg() {
                 ))}
               </div> */}
 
-              <div className='flex flex-col gap-10 md:flex-row '>
+              <MotionDiv
+                variants={slideIn('up', 'tween', 0.5, 0.5)}
+                className='flex flex-col gap-10 md:flex-row '
+              >
                 <div className='flex flex-col items-center py-0 md:items-start'>
                   <Icons.repeat className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-extrabold uppercase text-white'>
@@ -96,9 +108,12 @@ export default function WhyDxg() {
                     event platforms.'
                   />
                 </div>
-              </div>
+              </MotionDiv>
 
-              <div className='mb-5 flex flex-col gap-10 md:flex-row'>
+              <MotionDiv
+                variants={slideIn('up', 'tween', 0.5, 0.5)}
+                className='mb-5 flex flex-col gap-10 md:flex-row'
+              >
                 <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
                   <Icons.group className='h-12 w-12' />
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
@@ -129,17 +144,20 @@ export default function WhyDxg() {
                     event platforms.'
                   />
                 </div>
-              </div>
+              </MotionDiv>
             </div>
-            <div className='hidden flex-1 md:block'>
+            <MotionDiv
+              variants={fadeIn('left', 'tween', 0.2, 1)}
+              className='hidden flex-1 md:block'
+            >
               <Image
                 src='/DXG.png'
                 alt={SITECONFIG.siteMetadata.description}
                 width={500}
                 height={500}
               />
-            </div>
-          </div>
+            </MotionDiv>
+          </MotionDiv>
         </MaxWidthWrapper>
       </div>
     </div>

@@ -6,6 +6,8 @@ import { Button } from '../ui/button';
 import OverviewSlider from './OverviewSlider';
 import { P } from '../Typography';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import { MotionDiv } from '../Motion';
+import { fadeIn, staggerContainer } from '@/lib/motion';
 
 const data = [
   {
@@ -41,10 +43,17 @@ export default function Overview() {
         <OverviewSlider data={data} />
       </div>
       <MaxWidthWrapper>
-        <div className='hidden md:flex'>
+        <MotionDiv
+          variants={staggerContainer(0.2, 0.1)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: true, amount: 0.25 }}
+          className='hidden md:flex'
+        >
           {data.map((item, index) => {
             return (
-              <div
+              <MotionDiv
+                variants={fadeIn('right', 'tween', index * 0.2, 1)}
                 key={index}
                 className=' max-h-[600px] w-full  bg-cover bg-center bg-no-repeat overview-box'
                 style={{ backgroundImage: `url('${item.image}')` }}
@@ -77,10 +86,10 @@ export default function Overview() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </MotionDiv>
             );
           })}
-        </div>
+        </MotionDiv>
       </MaxWidthWrapper>
     </div>
   );

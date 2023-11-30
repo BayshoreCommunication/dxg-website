@@ -1,11 +1,17 @@
+'use client';
+
 import SupportCard from '../Cards/SupportCard';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import { H1, P, Paragraph, Title } from '../Typography';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { BottomToTop } from '../Animation';
-import { exploreDXG } from '@/config/data';
+import { exploreDXG, exploreWorlds } from '@/config/data';
 import SupportCardTwo from '../Cards/SupportCardTwo';
+import { useState } from 'react';
+import { MotionDiv } from '../Motion';
+import { staggerContainer } from '@/lib/motion';
+import ExploreCard from '../Cards/ExploreCard';
 const infos = {
   title: 'Who We Support',
   description:
@@ -13,6 +19,7 @@ const infos = {
 };
 
 export default function WeSupport() {
+  const [active, setActive] = useState(2);
   return (
     <div className='bg-black'>
       <div className='container'>
@@ -30,11 +37,11 @@ export default function WeSupport() {
             </Button>
           </BottomToTop>
         </div>
-        <div className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
+        {/* <MotionDiv className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
           {exploreDXG.map((item, index) => (
             <SupportCard key={index} data={item} />
           ))}
-        </div>
+        </MotionDiv> */}
         {/* <div className='mt-[31px] flex max-w-[370px] flex-col gap-[24px]'>
           {exploreDXG.map((item, index) => (
             <SupportCardTwo
@@ -44,6 +51,27 @@ export default function WeSupport() {
             />
           ))}
         </div> */}
+        <div
+          className={` mx-auto flex min-h-[500px] w-full skew-y-6 flex-col `}
+        >
+          <MotionDiv
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: true, amount: 0.25 }}
+            className=' flex   flex-col gap-6 lg:flex-row'
+          >
+            {exploreWorlds.map((world, index) => (
+              <ExploreCard
+                key={world.id}
+                {...world}
+                index={index}
+                active={active}
+                handleCardHover={setActive}
+              />
+            ))}
+          </MotionDiv>
+        </div>
       </div>
     </div>
   );

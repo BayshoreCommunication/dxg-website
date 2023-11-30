@@ -265,26 +265,50 @@ export const exploreDXG = [
   {
     id: 1,
     title: 'Production',
-    imagePath: '/support/production2.png',
+    imgUrl: '/support/production2.png',
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
   },
   {
     id: 2,
     title: 'Production',
-    imagePath: '/support/production2.png',
+    imgUrl: '/support/production2.png',
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
   },
   {
     id: 3,
     title: 'Production',
-    imagePath: '/support/production2.png',
+    imgUrl: '/support/production2.png',
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
   },
   {
     id: 4,
+    title: 'Production',
+    imgUrl: '/support/production2.png',
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+  },
+];
+export const exploreWorlds = [
+  {
+    id: 'world-1',
+    imgUrl: '/support/dxg-agency-event-planner.png',
+    title: 'PLANNER',
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+  },
+  {
+    id: 'world-2',
+    imgUrl: '/support/dxg-agency-event-production.png',
+    title: 'Production',
+    description:
+      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+  },
+  {
+    id: 'world-3',
+    imgUrl: '/support/dxg-agency-event-production-2.png',
     title: 'Production',
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',

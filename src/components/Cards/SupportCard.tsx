@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Icons } from '../Icons';
 import { Button } from '../ui/button';
 import { P } from '../Typography';
+import { MotionDiv } from '../Motion';
 
 // export default function SupportCard() {
 //   return (
@@ -51,6 +52,7 @@ interface SupportCardProps {
   data: {
     id: number;
     title: string;
+    imgUrl: string;
     description: string;
   };
 }
@@ -84,7 +86,7 @@ export default function SupportCard({ data }: SupportCardProps) {
             {data.title}
           </h1>
         </div>
-        <div className='content flex flex-col items-center justify-center'>
+        <MotionDiv className='content flex flex-col items-center justify-center'>
           <div className='card-icon'>
             <Icons.monitor className='h-12 w-12 text-white' />
           </div>
@@ -101,7 +103,7 @@ export default function SupportCard({ data }: SupportCardProps) {
               <Link href='/'>Learn More</Link>
             </Button>
           </div>
-        </div>
+        </MotionDiv>
       </div>
     </div>
   );

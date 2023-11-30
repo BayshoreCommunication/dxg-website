@@ -1,9 +1,5 @@
-import { Children } from 'react';
-
-// write motion div wrapper component so that we can use it in other components
-
 import { MotionDiv } from '../Motion';
-import { textVariant2, zoomIn } from '@/lib/motion';
+import { textVariant2 } from '@/lib/motion';
 interface MotionDivProps {
   children: React.ReactNode;
 }
