@@ -18,7 +18,7 @@ export const CapsuleButton: React.FC<CapsuleButtonProps> = ({
     return (
       <Link href={href}>
         <button
-          className='rounded-full bg-brand px-5 py-2 font-semibold text-white'
+          className='rounded-full bg-brand px-5 py-2 font-semibold text-white capsule-hover'
           {...rest}
         >
           {title}
