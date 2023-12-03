@@ -40,13 +40,13 @@ export default function Footer() {
                 </div>
                 <div className='my-4'>
                   {/* phone */}
-                  <div className='my-2 flex icon-hover'>
-                    {<Icons.phone size={20} className=' mr-2 text-brand' />}
+                  <div className='my-2 flex'>
+                    {<Icons.phone size={20} className=' mr-2 text-brand icon-hover' />}
                     <p className='text-sm text-white'>+888.456.574</p>
                   </div>
                   {/* email */}
-                  <div className=' flex items-center icon-hover'>
-                    {<Icons.mail size={20} className='mr-2 text-brand' />}
+                  <div className=' flex items-center'>
+                    {<Icons.mail size={20} className='mr-2 text-brand icon-hover' />}
                     <p className='w-1/2 text-ellipsis text-sm text-white'>
                       ace@dxg.agency
                     </p>
