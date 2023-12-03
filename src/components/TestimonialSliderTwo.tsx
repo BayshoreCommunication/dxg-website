@@ -57,12 +57,7 @@ export default function TestimonialSliderTwo() {
                   </div>
                   <div className='mb-20 mt-10 flex flex-[2] flex-col pl-2 pr-2 md:mb-0 md:mt-0 md:flex-[2] md:pl-6 lg:flex-[2] lg:pl-10'>
                     <Icons.quote className='mb-4 h-10 w-10 fill-current text-brand' />
-                    <h4 className='text-2xl text-white'>
-                      I am a person who is positive about every aspect of life.
-                      There are many things I like to do, to see, and to
-                      experience. I like to read, I like to write; I like to
-                      think, I like to dream; I like to talk, I like to listen.
-                    </h4>
+                    <h4 className='text-xl text-white'>{item.quote}</h4>
                     <h1 className='my-2 text-2xl font-semibold text-white'>
                       {item.name}
                     </h1>
