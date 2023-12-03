@@ -158,7 +158,7 @@ export const OurMethods = [
     icon: 'repeat' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
-    image: 'https://picsum.photos/797/547',
+    image: '/why-dxg/process.png',
   },
   {
     index: 2,
@@ -166,7 +166,7 @@ export const OurMethods = [
     icon: 'happyFace' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
-    image: 'https://picsum.photos/797/547',
+    image: '/why-dxg/service.png',
   },
   {
     index: 3,
@@ -174,7 +174,7 @@ export const OurMethods = [
     icon: 'group' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
-    image: 'https://picsum.photos/797/547',
+    image: '/why-dxg/mission.png',
   },
   {
     index: 4,
@@ -182,7 +182,7 @@ export const OurMethods = [
     icon: 'mechanics' as const,
     description:
       'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
-    image: 'https://picsum.photos/797/547',
+    image: '/why-dxg/experience.png',
   },
 ];
 

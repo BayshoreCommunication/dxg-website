@@ -5,6 +5,8 @@ import NewsLetter from '@/components/NewsLetter';
 import { SERVICES_PAGE_DATA } from '@/config/data';
 import { ServiceCard } from '@/components/ServiceCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { MotionDiv } from '@/components/Motion';
+import { staggerContainer, zoomIn } from '@/lib/motion';
 
 export default function Services() {
   return (
@@ -21,10 +23,17 @@ export default function Services() {
       />
       <MaxWidthWrapper>
         <div className='py-9 lg:py-16'>
-          <div className='grid grid-cols-12 gap-5'>
+          <MotionDiv
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+            className='grid grid-cols-12 gap-5'
+          >
             {SERVICES_PAGE_DATA.map((service) => {
               return (
-                <div
+                <MotionDiv
+                  variants={zoomIn(service.id * 0.2, 1)}
                   key={service.id}
                   className='col-span-12 md:col-span-6 lg:col-span-4'
                 >
@@ -33,10 +42,10 @@ export default function Services() {
                     captionPosition={service.captionPosition}
                     cardTitle={service.caption}
                   />
-                </div>
+                </MotionDiv>
               );
             })}
-          </div>
+          </MotionDiv>
         </div>
       </MaxWidthWrapper>
       <Testimonial />

@@ -2,6 +2,7 @@ import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { OutlineTextStyle } from '@/components/TextStyle';
 import BannerImage from '../../../../public/bgHeader.png';
+import { MotionDiv } from '@/components/Motion';
 export const BannerSection = () => {
   return (
     <div className=''>

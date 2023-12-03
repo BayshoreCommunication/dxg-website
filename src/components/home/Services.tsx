@@ -32,7 +32,7 @@ export default function Services() {
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: false, amount: 0.25 }}
         >
           <div className='flex flex-col  items-start py-10'>
             <Title text={infos.title} />
