@@ -1,7 +1,9 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import { ContactInputField } from '@/components/Contact';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { MotionDiv } from '@/components/Motion';
 import { Button } from '@/components/ui/button';
+import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
 
 export default function Contact() {
   return (
@@ -47,9 +49,16 @@ export default function Contact() {
       />
 
       <div className='container  py-9 lg:py-16'>
-        <div className=' lg:grid lg:grid-cols-12  lg:gap-14'>
+        <MotionDiv
+          variants={staggerContainer(0.2, 0.1)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
+          className=' lg:grid lg:grid-cols-12  lg:gap-14'
+        >
           <div className=' mb-14  lg:col-span-6 lg:mb-0'>
-            <div
+            <MotionDiv
+              variants={fadeIn('up', 'tween', 0.2, 1)}
               className=' w-full rounded-md bg-[#192639] px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
@@ -71,8 +80,9 @@ export default function Contact() {
               <p className=' text-base font-semibold leading-normal text-white'>
                 Our Location
               </p>
-            </div>
-            <div
+            </MotionDiv>
+            <MotionDiv
+              variants={fadeIn('up', 'tween', 0.3, 1)}
               className='mt-5 rounded-md bg-[#192639] px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
@@ -98,8 +108,9 @@ export default function Contact() {
               <p className=' text-base font-semibold leading-normal text-white'>
                 Let’s Talk
               </p>
-            </div>
-            <div
+            </MotionDiv>
+            <MotionDiv
+              variants={fadeIn('up', 'tween', 0.4, 1)}
               className='mt-5 rounded-md bg-[#192639] px-5 py-4'
               style={{ boxShadow: '0px 4px 15px 0px rgba(0, 0, 0, 0.15)' }}
             >
@@ -121,9 +132,12 @@ export default function Contact() {
               <p className=' text-base font-semibold leading-normal text-white'>
                 Drop a Line
               </p>
-            </div>
+            </MotionDiv>
           </div>
-          <div className='col-span-12 lg:col-span-6'>
+          <MotionDiv
+            variants={zoomIn(0.2, 1)}
+            className='col-span-12 lg:col-span-6'
+          >
             <ContactInputField
               inputLabel={'Enter Your Name'}
               inputProperties={{ id: 'full-name', name: 'full-name' }}
@@ -154,8 +168,8 @@ export default function Contact() {
               *I understand that the use of this form for communication with
               Digital Xperience Group (DXG).
             </p>
-          </div>
-        </div>
+          </MotionDiv>
+        </MotionDiv>
       </div>
     </div>
   );

@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation';
 import { CapsuleButton } from './CapsuleButton';
 import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
+import { navVariants } from '@/lib/motion';
+import { MotionDiv } from './Motion';
 
 const links = [
   { name: 'Home', href: '#' },

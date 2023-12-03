@@ -2,6 +2,8 @@ import { ReactElement } from 'react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import { HeaderTextStyle } from '../TextStyle';
 import { Button } from '../ui/button';
+import { MotionDiv } from '../Motion';
+import { fadeIn, staggerContainer } from '@/lib/motion';
 type HeaderTextProps = {
   preText?: string;
   coloredText: string;
@@ -29,8 +31,17 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
     >
       <MaxWidthWrapper>
         <div className='py-9 xl:py-28'>
-          <div className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'>
-            <div className='lg:col-span-7 xl:col-span-6'>
+          <MotionDiv
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+            className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'
+          >
+            <MotionDiv
+              variants={fadeIn('right', 'tween', 0.2, 1)}
+              className='lg:col-span-7 xl:col-span-6'
+            >
               <HeaderTextStyle {...titleProps} />
               <Button
                 variant='dashed'
@@ -38,17 +49,20 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
               >
                 {buttonTitle}
               </Button>
-            </div>
+            </MotionDiv>
 
-            <div className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-6'>
+            <MotionDiv
+              variants={fadeIn('left', 'tween', 0.2, 1)}
+              className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-6'
+            >
               {description && (
                 <p className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
                   {description}
                 </p>
               )}
               {customDescription && customDescription}
-            </div>
-          </div>
+            </MotionDiv>
+          </MotionDiv>
         </div>
       </MaxWidthWrapper>
     </div>

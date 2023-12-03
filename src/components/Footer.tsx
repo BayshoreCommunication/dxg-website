@@ -6,6 +6,8 @@ import image from '../../public/bgFooter.png';
 import logo from '../../public/dxgLogo.svg';
 import { Icons } from './Icons';
 import { Button } from './ui/button';
+import { MotionDiv } from './Motion';
+import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
 export default function Footer() {
   return (
     <div className='sticky inset-x-0 top-0 z-50 h-40'>
@@ -19,7 +21,13 @@ export default function Footer() {
       >
         {/* <MaxWidthWrapper> */}
         <div className='container py-8'>
-          <div className='flex h-[500px] flex-col md:h-[300px] '>
+          <MotionDiv
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+            className='flex h-[500px] flex-col md:h-[300px] '
+          >
             <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
               {/* First column */}
               <div className='flex flex-col '>
@@ -46,10 +54,18 @@ export default function Footer() {
                 </div>
                 {/* icons */}
                 <div className='mt-2 flex gap-4'>
-                  <Icons.facebook className='h-7 w-7 rounded text-brand icon-hover' />
-                  <Icons.linkedIn className='h-7 w-7 rounded text-brand icon-hover' />
-                  <Icons.twitter className='h-7 w-7 rounded text-brand icon-hover' />
-                  <Icons.instagram className='h-7 w-7 rounded text-brand icon-hover' />
+                  <MotionDiv variants={zoomIn(0.1, 0.5)}>
+                    <Icons.facebook className='icon-hover h-7 w-7 rounded text-brand' />
+                  </MotionDiv>
+                  <MotionDiv variants={zoomIn(0.2, 0.5)}>
+                    <Icons.linkedIn className='icon-hover h-7 w-7 rounded text-brand' />
+                  </MotionDiv>
+                  <MotionDiv variants={zoomIn(0.3, 0.5)}>
+                    <Icons.twitter className='icon-hover h-7 w-7 rounded text-brand' />
+                  </MotionDiv>
+                  <MotionDiv variants={zoomIn(0.4, 0.5)}>
+                    <Icons.instagram className='icon-hover h-7 w-7 rounded text-brand' />
+                  </MotionDiv>
                 </div>
               </div>
               {/* Second Column */}
@@ -60,14 +76,19 @@ export default function Footer() {
                   </h2>
                   {SITECONFIG.footerNav.services.map((item, index) => {
                     return (
-                      <Link key={index} href={item.slug}>
-                        <Button
-                          variant={'link'}
-                          className=' mb-4 whitespace-pre-line pl-0 text-start text-white hover:text-brand'
-                        >
-                          {item.title}
-                        </Button>
-                      </Link>
+                      <MotionDiv
+                        key={index}
+                        variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                      >
+                        <Link key={index} href={item.slug}>
+                          <Button
+                            variant={'link'}
+                            className=' mb-4 whitespace-pre-line pl-0 text-start text-white hover:text-brand'
+                          >
+                            {item.title}
+                          </Button>
+                        </Link>
+                      </MotionDiv>
                     );
                   })}
                 </div>
@@ -80,14 +101,19 @@ export default function Footer() {
                   </h2>
                   {SITECONFIG.footerNav.whyDXG.map((item, index) => {
                     return (
-                      <Link key={index} href={item.slug}>
-                        <Button
-                          variant={'link'}
-                          className='pl-0 text-white hover:text-brand'
-                        >
-                          {item.title}
-                        </Button>
-                      </Link>
+                      <MotionDiv
+                        key={index}
+                        variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                      >
+                        <Link key={index} href={item.slug}>
+                          <Button
+                            variant={'link'}
+                            className='pl-0 text-white hover:text-brand'
+                          >
+                            {item.title}
+                          </Button>
+                        </Link>
+                      </MotionDiv>
                     );
                   })}
                 </div>
@@ -99,20 +125,25 @@ export default function Footer() {
                   <h2 className='mb-2 text-2xl font-bold text-brand'>Legal</h2>
                   {SITECONFIG.footerNav.legal.map((item, index) => {
                     return (
-                      <Link key={index} href={item.slug}>
-                        <Button
-                          variant={'link'}
-                          className='pl-0 text-white hover:text-brand'
-                        >
-                          {item.title}
-                        </Button>
-                      </Link>
+                      <MotionDiv
+                        key={index}
+                        variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                      >
+                        <Link key={index} href={item.slug}>
+                          <Button
+                            variant={'link'}
+                            className='pl-0 text-white hover:text-brand'
+                          >
+                            {item.title}
+                          </Button>
+                        </Link>
+                      </MotionDiv>
                     );
                   })}
                 </div>
               </div>
             </div>
-          </div>
+          </MotionDiv>
         </div>
         {/* </MaxWidthWrapper> */}
         <hr className='border-gray-500' />

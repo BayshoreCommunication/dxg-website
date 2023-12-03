@@ -1,4 +1,6 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { MotionDiv, MotionP } from '@/components/Motion';
+import { fadeIn, staggerContainer } from '@/lib/motion';
 import Image, { StaticImageData } from 'next/image';
 
 interface SectionInformationWithImageProps
@@ -23,8 +25,15 @@ export const SectionInformationWithImage: React.FC<
     <div className='bg-black' {...rest}>
       <MaxWidthWrapper>
         <div className=' py-9 lg:py-16'>
-          <div className=' items-center lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-14 '>
-            <div
+          <MotionDiv
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+            className=' items-center lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-14 '
+          >
+            <MotionDiv
+              variants={fadeIn('right', 'tween', 0.2, 1)}
               className={`${
                 imagePosition === 'left' && 'order-last'
               } lg:col-span-5 `}
@@ -34,17 +43,21 @@ export const SectionInformationWithImage: React.FC<
               </h2>
               {sectionDescription?.map((section, index) => {
                 return (
-                  <p
+                  <MotionP
+                    variants={fadeIn('up', 'spring', index * 0.5, 1)}
                     key={index}
                     className='mb-3 text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white'
                   >
                     {section}
-                  </p>
+                  </MotionP>
                 );
               })}
-            </div>
+            </MotionDiv>
 
-            <div className='mt-6 lg:col-span-7 lg:mt-0 '>
+            <MotionDiv
+              variants={fadeIn('left', 'tween', 0.2, 1)}
+              className='mt-6 lg:col-span-7 lg:mt-0 '
+            >
               <Image
                 src={sectionImage}
                 alt={sectionTitle}
@@ -52,8 +65,8 @@ export const SectionInformationWithImage: React.FC<
                 style={{ width: '100%' }}
                 className='w-full rounded'
               />
-            </div>
-          </div>
+            </MotionDiv>
+          </MotionDiv>
         </div>
       </MaxWidthWrapper>
     </div>
