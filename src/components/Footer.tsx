@@ -30,7 +30,7 @@ export default function Footer() {
           >
             <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
               {/* First column */}
-              <div className='flex flex-col '>
+              <div className='flex flex-col'>
                 <div className='w-2/3 md:w-1/2'>
                   <Image
                     src={logo}
@@ -40,12 +40,12 @@ export default function Footer() {
                 </div>
                 <div className='my-4'>
                   {/* phone */}
-                  <div className='my-2 flex'>
+                  <div className='my-2 flex icon-hover'>
                     {<Icons.phone size={20} className=' mr-2 text-brand' />}
                     <p className='text-sm text-white'>+888.456.574</p>
                   </div>
                   {/* email */}
-                  <div className=' flex items-center '>
+                  <div className=' flex items-center icon-hover'>
                     {<Icons.mail size={20} className='mr-2 text-brand' />}
                     <p className='w-1/2 text-ellipsis text-sm text-white'>
                       ace@dxg.agency
