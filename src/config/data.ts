@@ -11,24 +11,21 @@ export const TESTIMONIAL_DATA = [
     name: 'John Doe',
     title: 'CEO',
     image: '/testimonial/client-1.png',
-    quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    quote: `Working with DXG was an absolute game-changer for our event. Their team's expertise in audiovisuals and event production is unparalleled. The immersive experiences they crafted, coupled with innovative technology, elevated our event to new heights. DXG's attention to detail and commitment to measurable results make them our go-to partner for impactful experiences.`,
   },
   {
     id: 2,
     name: 'Jane Doe',
     title: 'CTO',
     image: '/testimonial/client-2.png',
-    quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    quote: `DXG exceeded our expectations in every aspect. Their Triple E Xperience™ framework truly transformed our event. Engaging elements, seamless networking opportunities, and thought-provoking content showcased their dedication to attendee satisfaction. DXG's adaptability in handling virtual and hybrid formats ensures they remain the top choice for any event production needs.`,
   },
   {
     id: 3,
     name: 'John Smith',
     title: 'CFO',
     image: '/testimonial/client-3.png',
-    quote:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    quote: `DXG's services are a masterpiece in event production. From concept to execution, their team's passion and professionalism shine. The immersive experiences and cutting-edge technology they brought to our event left a lasting impression on attendees. DXG is not just a service provider; they are partners in creating unforgettable moments.`,
   },
 ];
 
@@ -65,43 +62,56 @@ export const BlogData = [
 export const SERVICE_DATA = [
   {
     id: 1,
-    heading: 'Production;Management',
-    title: 'Production Management',
+    heading: 'Event;Production',
+    title: 'Event Production',
     image: '/service/dxg-agency-project-management.png',
-    excerpt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    excerpt: `Comprehensive event planning and execution.
+Management of in-person, virtual, and hybrid events.
+`,
   },
   {
     id: 2,
-    heading: 'Audio;Visual Technology',
-    title: 'Audio Visual Technology',
+    heading: 'Audio;Visual Services',
+    title: 'Audio Visual Services',
     image: '/service/dxg-agency-audiovisual-technology.png',
-    excerpt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    excerpt: `Expertise in audiovisual technology.
+Skilled audiovisual technical producers, directors, engineers, and technicians.
+`,
   },
   {
     id: 3,
-    heading: 'Event;Platform Service',
-    title: 'Event Platform Service',
+    heading: 'Immersive;Experiences',
+    title: 'Immersive Experiences',
     image: '/service/dxg-agency-event-platform-service.png',
-    excerpt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    excerpt: `Design and implementation of immersive event experiences.
+Integration of captivating visuals and interactive elements.
+`,
   },
   {
     id: 4,
-    heading: 'Event;Platform Service',
-    title: 'Event Experience Design',
+    heading: 'Project;Management',
+    title: 'Project Management',
     image: '/service/dxg-agency-event-experience-design.png',
-    excerpt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    excerpt: `Dedicated project managers to oversee the planning and execution of events.
+Content Strategy and Development:
+
+Assistance in developing content that is valuable, relevant, and thought-provoking.
+Networking Solutions:
+
+Implementation of tools and strategies to facilitate networking among event attendees.
+`,
   },
   {
     id: 5,
-    heading: 'Graphics;And Animation',
-    title: 'Graphics And Animation',
+    heading: 'Social;Events',
+    title: 'Social Events',
     image: '/service/dxg-agency-graphics-and-animation.png',
-    excerpt:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.',
+    excerpt: `Planning and execution of social events to enhance attendee interaction.
+Consultation and Strategy:
+
+Consultative services to intimately understand event objectives.
+Strategic planning to connect event content with the target audience.
+`,
   },
 ];
 
@@ -295,22 +305,20 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/support/dxg-agency-event-planner.png',
-    title: 'PLANNER',
+    title: 'Expertise and Experience',
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'DXG boasts a diverse team with extensive experience in the event hospitality industry. The average experience of team members being ten-plus years indicates a wealth of knowledge in event production',
   },
   {
     id: 'world-2',
     imgUrl: '/support/dxg-agency-event-production.png',
-    title: 'Production',
-    description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    title: 'Innovation and Technology',
+    description: `Staying at the forefront of technology and harnessing innovative solutions showcases DXG's commitment to enhancing engagement and streamlining production processes. This is crucial in the rapidly evolving landscape of event technology.`,
   },
   {
     id: 'world-3',
     imgUrl: '/support/dxg-agency-event-production-2.png',
-    title: 'Production',
-    description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    title: 'Outcome-Focused Strategy',
+    description: `The emphasis on delivering measurable results and turning a client's vision into a dynamic reality aligns with the goal of leaving a lasting impression on event attendees.`,
   },
 ];

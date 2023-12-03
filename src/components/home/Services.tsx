@@ -64,7 +64,7 @@ export default function Services() {
                     className={`group relative  bg-black bg-opacity-50 transition delay-100 animate-in hover:bg-sky-700 hover:bg-opacity-80`}
                   >
                     <div className='flex flex-row items-center justify-between px-10 group-hover:hidden md:flex-col '>
-                      <div className='flex min-h-[200px] transform flex-col items-start justify-center md:min-h-[380px] md:-rotate-90 '>
+                      <div className='flex min-h-[200px] transform flex-col items-start justify-center md:min-h-[420px] md:-rotate-90 '>
                         {item.heading.split(';').map((word, index) => {
                           return (
                             <div key={index} className=''>
@@ -90,8 +90,8 @@ export default function Services() {
                       }}
                       className='hidden flex-row  px-5 group-hover:flex md:flex-col'
                     >
-                      <motion.div className='min-h-[300px] pt-16 md:min-h-[380px]'>
-                        <h1 className='py-2 text-xl font-bold uppercase text-white'>
+                      <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>
+                        <h1 className=' text-xl font-bold uppercase text-white'>
                           {item.title}
                         </h1>
                         <p className='text-base text-white'>{item.excerpt}</p>

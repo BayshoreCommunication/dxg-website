@@ -11,6 +11,11 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: SITECONFIG.siteMetadata.title,
   description: SITECONFIG.siteMetadata.description,
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-icon.png',
+  },
 };
 
 export default function RootLayout({

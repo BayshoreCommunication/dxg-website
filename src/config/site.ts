@@ -1,7 +1,8 @@
 export const SITECONFIG = {
   siteMetadata: {
-    title: 'DXG ',
-    description: 'DXG Website',
+    title: 'Digital Xperience Group',
+    description:
+      'Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences.',
   },
   mainNav: [
     {
@@ -70,15 +71,15 @@ export const SITECONFIG = {
     legal: [
       {
         title: 'Privacy Policy',
-        slug: '/',
+        slug: '/privacy-policy',
       },
       {
         title: 'Terms of Use',
-        slug: '/',
+        slug: '/terms-of-use',
       },
       {
         title: 'Refund Policy',
-        slug: '/',
+        slug: '/refund-policy',
       },
     ],
   },

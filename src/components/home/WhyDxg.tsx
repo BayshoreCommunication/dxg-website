@@ -17,23 +17,23 @@ const infos = {
 const WHY_DXG_DATA = [
   {
     title: 'Our Process',
-    description:
-      'The process of choosing a partner to work with is challenging however clients recognize that we view them as more than just another customer. Our client management tools allows for transparency in task management.',
+    description: `We transform events into unforgettable experiences through a meticulous process. We intimately understand clients' objectives, employing a diverse team of seasoned professionals to orchestrate cutting-edge audiovisuals. Leveraging innovative technology, we craft immersive experiences and deliver measurable results, ensuring each event is a dynamic reality that resonates with attendees and leaves a lasting impression.
+`,
   },
   {
     title: 'Our Services',
-    description:
-      'Our approach is service with a smile. We love what we do, the people who help us do it and the purpose of why we do it. We focus on making our clients raving fans of their investment in us.',
+    description: `We offer comprehensive event production services. Our seasoned team specializes in elevating digital and production quality for in-person, virtual, and hybrid events. From immersive experiences and audiovisual expertise to Triple E Xperience™ implementation, we ensure every aspect resonates, delivering measurable results and creating sought-after, memorable events.
+`,
   },
   {
     title: 'Our Mission',
-    description:
-      'Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology.',
+    description: `DXG's mission is to redefine event experiences through innovation and expertise. We aim to intimately understand clients' event objectives, forging meaningful connections between content and audience. With cutting-edge technology and a diverse team, our mission is to deliver dynamic, measurable results, elevating events to new levels of engagement and impact.
+`,
   },
   {
     title: 'Our Experience',
-    description:
-      'Though established in 2018. Our core team has worked together since 2006. We have done thousands of live events and hundreds of digital events in our careers which is why the "pivot" or evolution as we like to say was not a challenge for us and helped our company grow during what for most was a challenging time.',
+    description: `With a foundation deeply rooted in event hospitality, DXG brings over a decade of average experience among its team members. Renowned for orchestrating awe-inspiring audiovisuals at notable events, we push the boundaries of event production. Our seasoned experts ensure a seamless blend of creativity and technical prowess, crafting unforgettable experiences.
+`,
   },
 ];
 
@@ -53,7 +53,7 @@ export default function WhyDxg() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className='flex items-center justify-center gap-4 pb-5'
+            className='flex items-center justify-center gap-5 pb-5'
           >
             <div className='flex flex-[2] flex-col'>
               {/* <div className='mx-2 flex flex-col  flex-wrap border sm:justify-center md:mx-0 md:flex-row'>
@@ -86,12 +86,7 @@ export default function WhyDxg() {
                       Process
                     </span>
                   </h1>
-                  <P
-                    text='With the average experience of our team members being
-                    ten-plus years in the event space, DXG is a sought-after
-                    resource by event planners, event production companies, and
-                    event platforms.'
-                  />
+                  <P text={WHY_DXG_DATA[0].description} />
                 </div>
                 <div className='flex flex-col items-center py-0 md:items-start'>
                   <Icons.happyFace className='h-16 w-16' />
@@ -101,12 +96,7 @@ export default function WhyDxg() {
                       Service
                     </span>
                   </h1>
-                  <P
-                    text='With the average experience of our team members being
-                    ten-plus years in the event space, DXG is a sought-after
-                    resource by event planners, event production companies, and
-                    event platforms.'
-                  />
+                  <P text={WHY_DXG_DATA[1].description} />
                 </div>
               </MotionDiv>
 
@@ -122,12 +112,7 @@ export default function WhyDxg() {
                       Mission
                     </span>
                   </h1>
-                  <P
-                    text='With the average experience of our team members being
-                    ten-plus years in the event space, DXG is a sought-after
-                    resource by event planners, event production companies, and
-                    event platforms.'
-                  />
+                  <P text={WHY_DXG_DATA[2].description} />
                 </div>
                 <div className='flex flex-col items-center py-0 md:items-start md:py-6 '>
                   <Icons.mechanics className='h-10 w-10' />
@@ -137,12 +122,7 @@ export default function WhyDxg() {
                       Experience
                     </span>
                   </h1>
-                  <P
-                    text='With the average experience of our team members being
-                    ten-plus years in the event space, DXG is a sought-after
-                    resource by event planners, event production companies, and
-                    event platforms.'
-                  />
+                  <P text={WHY_DXG_DATA[3].description} />
                 </div>
               </MotionDiv>
             </div>
