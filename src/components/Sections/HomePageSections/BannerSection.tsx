@@ -25,7 +25,7 @@ export const BannerSection = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className='py-20'
+            className='py-10'
           >
             <div className='md:hidden'>
               <div>
@@ -55,7 +55,7 @@ export const BannerSection = () => {
               <div>
                 <MotionP
                   variants={fadeIn('up', 'tween', 0.2, 1)}
-                  className='mt-10 text-center text-xl font-bold text-brand'
+                  className='mt-5 text-center text-xl font-bold text-brand'
                 >{`Expertise in Every Detail, From Planning to Performance`}</MotionP>
                 <MotionP
                   variants={fadeIn('up', 'tween', 0.2, 1)}
@@ -66,10 +66,10 @@ export const BannerSection = () => {
                   className=' text-md mt-5 text-center font-light text-white'
                 >{`As we transition from planning to performance, our on-site execution is seamless and proficient. We anticipate challenges and adapt swiftly, guaranteeing that each moment of your event unfolds flawlessly. With us, you're not just hosting an event but crafting an experience.`}</MotionP>
               </div>
-              <div className='mt-10 flex w-full justify-around'>
+              <div className='mt-5 flex w-full justify-around'>
                 <div className='flex flex-col items-center'>
                   <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <NumberAnimation className='text-xl' value={20} />
+                    <NumberAnimation className='text-2xl' value={20} />
                     <p className='text-sm font-light text-white'>
                       Years Experience
                     </p>

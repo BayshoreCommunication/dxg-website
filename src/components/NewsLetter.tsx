@@ -5,7 +5,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 export default function NewsLetter() {
   return (
     <div className='container py-16'>
-      <div className='grid grid-cols-1 rounded-3xl bg-sky-500 px-10 py-8 md:grid-cols-5'>
+      <div className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10'>
         <div className='col-span-3'>
           <h1 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>
             Keep up with industry news and best practices

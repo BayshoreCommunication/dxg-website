@@ -15,7 +15,7 @@ const infos = {
 
 export const OurBlogSection = () => {
   return (
-    <div className='bg-black py-10'>
+    <div className='bg-black '>
       <MotionDiv
         variants={staggerContainer(0.2, 0.1)}
         initial='hidden'
@@ -23,7 +23,7 @@ export const OurBlogSection = () => {
         viewport={{ once: false, amount: 0.25 }}
       >
         <div className='flex items-center justify-center'>
-          <div className='my-10 max-w-3xl text-center'>
+          <div className=' max-w-3xl text-center md:mt-10'>
             <Title text={infos.title} />
             <Paragraph key={0} text={infos.description} />
           </div>
@@ -34,7 +34,7 @@ export const OurBlogSection = () => {
         <div className='hidden md:flex'>
           <div className='container'>
             <div className='flex flex-col items-center justify-center'>
-              <div className='my-4'>
+              <div className=''>
                 <div className=' grid grid-cols-1 gap-4 md:grid-cols-3'>
                   {BlogData.map((item, index) => {
                     return (
