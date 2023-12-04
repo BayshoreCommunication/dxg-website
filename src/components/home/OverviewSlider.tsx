@@ -1,5 +1,5 @@
 'use client';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 
@@ -30,22 +30,28 @@ export default function OverviewSlider({ data }: SliderProps) {
   return (
     <div className='relative'>
       <Swiper
-        modules={[Navigation]}
+        modules={[Autoplay, Navigation]}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        }}
+        className='h-[500px]'
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
         }}
       >
         {data.map((item, index) => {
           return (
             <SwiperSlide
               key={index}
-              className="h-full w-full bg-[url('/banner/engage.png')] bg-cover bg-center bg-no-repeat"
+              className='bg-cover bg-center bg-no-repeat'
+              style={{ backgroundImage: `url('${item.image}')` }}
             >
               <div
-                className={`group flex flex-col items-center  justify-center bg-sky-700  bg-opacity-50 `}
+                className={`group flex h-full flex-col  items-center justify-center  bg-sky-700 bg-opacity-50`}
               >
-                <div className='relative mt-10 text-white'>
+                <div className='relative text-white'>
                   {item.icon === 'man' && <Icons.man className='h-20 w-20' />}
                   {item.icon === 'media' && (
                     <Icons.media className='h-20 w-20' />
@@ -54,20 +60,20 @@ export default function OverviewSlider({ data }: SliderProps) {
                     <Icons.monitor className='h-20 w-20' />
                   )}
                 </div>
-                <div className='px-20 py-5 text-center'>
+                <div className='px-5 py-5 text-center'>
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     {item.title}
                   </h1>
                   <p className='text-base text-white'>{item.description}</p>
 
-                  <div className='mt-6 h-20'>
+                  {/* <div className='mt-6 h-20'>
                     <Button
                       className=' rounded-full bg-white text-sky-400  hover:bg-white '
                       asChild
                     >
                       <Link href={item.href}>Read More</Link>
                     </Button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </SwiperSlide>

@@ -11,7 +11,7 @@ const infos = {
     'Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     'Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
   ],
-  image: '/headshot.png',
+  image: '/ace-jhonson.png',
 };
 
 const dotArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];

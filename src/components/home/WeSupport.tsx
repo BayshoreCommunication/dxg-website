@@ -21,12 +21,12 @@ export default function WeSupport() {
   const [active, setActive] = useState(2);
   return (
     <div className='bg-black'>
-      <div className='container'>
+      <MaxWidthWrapper>
         <div className='flex flex-col  items-end py-10'>
           <Title text={infos.title} />
           <Paragraph text={infos.description} className='md:max-w-2xl' />
 
-          <BottomToTop>
+          {/* <BottomToTop>
             <Button
               asChild
               variant={'outline'}
@@ -34,7 +34,7 @@ export default function WeSupport() {
             >
               <h1>Read More</h1>
             </Button>
-          </BottomToTop>
+          </BottomToTop> */}
         </div>
         {/* <MotionDiv className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
           {exploreDXG.map((item, index) => (
@@ -71,7 +71,7 @@ export default function WeSupport() {
             ))}
           </MotionDiv>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </div>
   );
 }
