@@ -118,11 +118,16 @@ export const BannerSection = () => {
                   </MotionDiv>
                 </div>
                 <div className='flex items-center justify-between'>
-                  <div className='w-1/2'>
+                  <div className='w-3/4'>
                     <MotionP
                       variants={fadeIn('up', 'tween', 0.2, 1)}
-                      className=' w-2/3 text-justify text-xl font-normal text-white'
-                    >{`DXG has truly revolutionized my real estate business! The microsite's personalized touch elegantly displays my listings and services, effortlessly.`}</MotionP>
+                      className=' w-2/3 text-justify text-base font-normal text-white'
+                    >{`At DXG, we believe that the success of any event lies in meticulous attention to every detail. Our team of seasoned professionals brings expertise in every phase of event production, from the initial planning stages to the post-event action review. We delve into the intricacies of your vision, ensuring that every aspect aligns perfectly with your goals. Our planning process is thorough and collaborative, involving state-of-the-art technology and innovative solutions to meet and exceed your expectations.`}</MotionP>
+                    <MotionP
+                      variants={fadeIn('up', 'tween', 0.2, 1)}
+                      className=' mt-5 w-2/3 text-justify text-base font-normal text-white'
+                    >{`As we transition from planning to performance, our on-site execution is seamless and proficient. We anticipate challenges and adapt swiftly, guaranteeing that each moment of your event unfolds flawlessly. With us, you're not just hosting an event but crafting an experience.
+`}</MotionP>
                     <div className='flex-start mt-5 flex w-full gap-16'>
                       <div className='mt-3'>
                         <MotionDiv variants={zoomIn(0.2, 0.5)}>
@@ -143,14 +148,14 @@ export const BannerSection = () => {
                     </div>
                   </div>
 
-                  <div className='relative flex h-28 w-28 items-center justify-center md:mr-20'>
+                  {/* <div className='relative flex h-28 w-28 items-center justify-center md:mr-20'>
                     <div className='absoulute animate-spin-slow hover:animate-pulse'>
                       {<Icons.circularText />}
                     </div>
                     <div className='absolute flex h-10 w-10 items-center justify-center'>
                       {<Icons.playButton />}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

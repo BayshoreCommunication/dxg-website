@@ -13,9 +13,8 @@ import { MotionDiv } from '../Motion';
 import { staggerContainer } from '@/lib/motion';
 import ExploreCard from '../Cards/ExploreCard';
 const infos = {
-  title: 'Who We Support',
-  description:
-    'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+  title: 'Who We Support - 3 P’s of Partnership',
+  description: `Our core teams have an average of 15+ years of experience with backgrounds in live events, virtual and hybrid corporate events, broadcast, and entertainment & performances. With this experience, we are a sought-after resource and view ourselves as the missing piece to your puzzle. At DXG, we support `,
 };
 
 export default function WeSupport() {
@@ -25,7 +24,7 @@ export default function WeSupport() {
       <div className='container'>
         <div className='flex flex-col  items-end py-10'>
           <Title text={infos.title} />
-          <Paragraph text={infos.description} className='md:max-w-lg' />
+          <Paragraph text={infos.description} className='md:max-w-2xl' />
 
           <BottomToTop>
             <Button

@@ -7,7 +7,6 @@ export const SITECONFIG = {
   mainNav: [
     {
       title: 'Home',
-
       slug: '/',
     },
     {
@@ -19,15 +18,15 @@ export const SITECONFIG = {
       slug: '/who-we-are',
     },
     {
-      title: 'Why DXG',
-      slug: '/why-dxg',
-    },
-    {
       title: 'Services',
       slug: '/services',
     },
     {
-      title: 'Blog',
+      title: 'Why DXG',
+      slug: '/why-dxg',
+    },
+    {
+      title: 'Our Blog',
       slug: '/blogs',
     },
     {
@@ -101,14 +100,7 @@ export const SITECONFIG = {
       url: '',
     },
   ],
-  address: {
-    street: '',
-    city: '',
-    state: '',
-    zip: '',
-  },
-  contact: {
-    phone: '',
-    email: '',
-  },
+  address: '2202 N. Westshore Blvd, Suite 200, Tampa, FL 33602',
+  phone: '855.450.2823',
+  email: 'Info@dxg.agency',
 };

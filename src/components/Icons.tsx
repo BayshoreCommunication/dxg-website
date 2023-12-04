@@ -10,6 +10,7 @@ import {
   Phone,
   Quote,
   Twitter,
+  MapPin,
   X,
 } from 'lucide-react';
 
@@ -214,6 +215,7 @@ export const Icons = {
   leftArrow: ChevronLeftCircle,
   rightArrow: ChevronRightCircle,
   quote: Quote,
+  location: (props: LucideProps) => <MapPin {...props} />,
   phone: (props: LucideProps) => <Phone {...props} />,
   mail: (props: LucideProps) => <Mail {...props} />,
   facebook: (props: LucideProps) => <Facebook {...props} />,

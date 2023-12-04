@@ -47,7 +47,11 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <CapsuleButton title='Request for Proposal' as='link' href='#' />
+          <CapsuleButton
+            title='Request for Proposal'
+            as='link'
+            href='/contact-us'
+          />
         </div>
         {/* Mobile view */}
         <NavBarMobile />
