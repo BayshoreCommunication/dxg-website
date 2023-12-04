@@ -160,3 +160,8 @@ display: none;
   transform: scale(1.1); /* Scale up the box on hover */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Add glow effect */
 }
+.prev-bt-left{  
+  left: 0 !important;
+  top: 50%;
+  right: auto;
+}

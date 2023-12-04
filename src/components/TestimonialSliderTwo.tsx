@@ -73,10 +73,10 @@ export default function TestimonialSliderTwo() {
           <Icons.rightArrow className='text-2xl text-white' />
         </div>
         <div className='swiper-button-prev '>
-          <Icons.leftArrow className='text-white' />
+          <Icons.leftArrow className='text-white prev-bt-left' />
         </div>
       </div>
-      <div className='h-66  absolute top-[-20%] w-56 md:top-[-30%] lg:left-[0%] lg:top-[0%] xl:left-[0%] '>
+      {/* <div className='h-66  absolute top-[-20%] w-56 md:top-[-30%] lg:left-[0%] lg:top-[0%] xl:left-[0%] '>
         <div className='relative'>
           <Image
             src={bgImage}
@@ -87,7 +87,7 @@ export default function TestimonialSliderTwo() {
           />
           <div className='absolute inset-0 flex items-center justify-center bg-black opacity-60'></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 
