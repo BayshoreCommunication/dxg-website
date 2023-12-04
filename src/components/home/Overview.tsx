@@ -55,7 +55,7 @@ export default function Overview() {
               <MotionDiv
                 variants={fadeIn('right', 'tween', index * 0.2, 1)}
                 key={index}
-                className=' max-h-[600px]  w-full bg-cover bg-center bg-no-repeat'
+                className=' max-h-[600px]  w-full bg-cover bg-center bg-no-repeat glowing-border'
                 style={{ backgroundImage: `url('${item.image}')` }}
               >
                 <div
@@ -78,7 +78,7 @@ export default function Overview() {
 
                     <div className='mt-6 h-20'>
                       <Button
-                        className='hidden rounded-full bg-white text-sky-400 hover:bg-white group-hover:inline-flex'
+                        className='hidden rounded-full bg-white text-sky-400 hover:bg-white group-hover:inline-flex rounded-full bg-brand px-5 py-2 font-semibold text-white capsule-hover capsule-button'
                         asChild
                       >
                         <Link href={item.href}>Read More</Link>
