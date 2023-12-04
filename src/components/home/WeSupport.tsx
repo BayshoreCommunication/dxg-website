@@ -26,7 +26,7 @@ export default function WeSupport() {
           <Title text={infos.title} />
           <Paragraph text={infos.description} className='md:max-w-2xl' />
 
-          <BottomToTop>
+          {/* <BottomToTop>
             <Button
               asChild
               variant={'outline'}
@@ -34,7 +34,7 @@ export default function WeSupport() {
             >
               <h1>Read More</h1>
             </Button>
-          </BottomToTop>
+          </BottomToTop> */}
         </div>
         {/* <MotionDiv className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
           {exploreDXG.map((item, index) => (

@@ -7,9 +7,9 @@ export const handleFormSubmit = async (formData: FormData) => {
   const secretText2 =
     'a94e27c12556e10d529b3ca9940e595909702fc325a13ed8694bc9c2da8c508c8d9189f798c8093bdb33b5cd9b1c4777';
   const leadCampaign = 'TGVhZHM=';
-  const returnUrl = 'https&#x3a;&#x2f;&#x2f;dxg-agency.com&#x2f;thank-you';
+  const returnUrl = 'https://dxg-agency.com/thank-you';
 
-  const LeadSource = 'Online&#x20;Store';
+  const LeadSource = 'Online-Store';
 
   formData.append('xnQsjsdp', secretText1);
   formData.append('xmIwtLD', secretText2);
@@ -17,11 +17,6 @@ export const handleFormSubmit = async (formData: FormData) => {
   formData.append('returnURL', returnUrl);
   formData.append('Lead Source', LeadSource);
 
-  const name = formData.get('name');
-  const phone = formData.get('phone');
-  const email = formData.get('email');
-  const message = formData.get('message');
-  console.log(formData);
   try {
     const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',

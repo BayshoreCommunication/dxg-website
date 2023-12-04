@@ -25,10 +25,10 @@ export const BannerSection = () => {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className='h-[700px]'
+            className='py-20'
           >
             <div className='md:hidden'>
-              <div className='pt-12'>
+              <div>
                 <h1 className='text-center text-4xl font-bold uppercase text-white md:text-6xl'>
                   we bring{' '}
                   <span className='outline-with-shaddow text-4xl font-bold uppercase md:text-6xl '>
@@ -55,8 +55,16 @@ export const BannerSection = () => {
               <div>
                 <MotionP
                   variants={fadeIn('up', 'tween', 0.2, 1)}
-                  className=' text-md m-5 mt-10 text-center font-light text-white'
-                >{`DXG has truly revolutionized my real estate business! The microsite's personalized touch elegantly displays my listings and services, effortlessly.`}</MotionP>
+                  className='mt-10 text-center text-xl font-bold text-brand'
+                >{`Expertise in Every Detail, From Planning to Performance`}</MotionP>
+                <MotionP
+                  variants={fadeIn('up', 'tween', 0.2, 1)}
+                  className=' text-md mt-5 text-center font-light text-white'
+                >{`At DXG, we believe that the success of any event lies in meticulous attention to every detail. Our team of seasoned professionals brings expertise in every phase of event production, from the initial planning stages to the post-event action review. We delve into the intricacies of your vision, ensuring that every aspect aligns perfectly with your goals. Our planning process is thorough and collaborative, involving state-of-the-art technology and innovative solutions to meet and exceed your expectations.`}</MotionP>
+                <MotionP
+                  variants={fadeIn('up', 'tween', 0.2, 1)}
+                  className=' text-md mt-5 text-center font-light text-white'
+                >{`As we transition from planning to performance, our on-site execution is seamless and proficient. We anticipate challenges and adapt swiftly, guaranteeing that each moment of your event unfolds flawlessly. With us, you're not just hosting an event but crafting an experience.`}</MotionP>
               </div>
               <div className='mt-10 flex w-full justify-around'>
                 <div className='flex flex-col items-center'>
@@ -69,14 +77,14 @@ export const BannerSection = () => {
                 </div>
                 <div className='flex flex-col items-center'>
                   <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <NumberAnimation className='text-xl' value={20} />
+                    <NumberAnimation className='text-xl' value={70} />
                     <p className='text-sm font-light text-white'>
                       Completed Project
                     </p>
                   </MotionDiv>
                 </div>
               </div>
-              <div className=' mt-16 flex justify-center'>
+              {/* <div className=' mt-16 flex justify-center'>
                 <div className='relative flex h-28 w-28 items-center justify-center'>
                   <div className='absoulute animate-spin-slow'>
                     {<Icons.circularText />}
@@ -85,7 +93,7 @@ export const BannerSection = () => {
                     {<Icons.playButton />}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className='hidden h-full md:block'>
               <div className='flex h-full flex-col justify-around'>
@@ -119,6 +127,10 @@ export const BannerSection = () => {
                 </div>
                 <div className='flex items-center justify-between'>
                   <div className='w-3/4'>
+                    <MotionP
+                      variants={fadeIn('up', 'tween', 0.2, 1)}
+                      className=' mb-4 w-2/3 text-justify text-xl font-bold text-brand'
+                    >{`Expertise in Every Detail, From Planning to Performance`}</MotionP>
                     <MotionP
                       variants={fadeIn('up', 'tween', 0.2, 1)}
                       className=' w-2/3 text-justify text-base font-normal text-white'

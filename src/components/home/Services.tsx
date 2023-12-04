@@ -45,9 +45,9 @@ export default function Services() {
               <Button
                 asChild
                 variant={'outline'}
-                className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white capsule-hover capsule-button'
+                className='capsule-hover capsule-button rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
               >
-                <Link href='/'>Read More</Link>
+                <Link href='/services'>Read More</Link>
               </Button>
             </BottomToTop>
           </div>
@@ -57,7 +57,7 @@ export default function Services() {
                 <MotionDiv
                   variants={fadeIn('right', 'tween', index * 0.2, 0.75)}
                   key={index}
-                  className={`min-h-[200px] flex-1 justify-center overflow-hidden border border-gray-400 bg-cover bg-center bg-no-repeat md:min-h-[420px] glow-card`}
+                  className={`glow-card min-h-[200px] flex-1 justify-center overflow-hidden border border-gray-400 bg-cover bg-center bg-no-repeat md:min-h-[420px]`}
                   style={{ backgroundImage: `url('${item.image}')` }}
                 >
                   <div
@@ -83,7 +83,11 @@ export default function Services() {
                     <motion.div
                       initial={{ x: -100 }} // Start from the left
                       whileHover={{ x: 0 }} // Move to the original position on hover
-                      transition={{ type: 'spring', stiffness: 300, damping: 30 }} // Use a spring transition for a smoother effect
+                      transition={{
+                        type: 'spring',
+                        stiffness: 300,
+                        damping: 30,
+                      }} // Use a spring transition for a smoother effect
                       className='hidden flex-row  px-5 group-hover:flex md:flex-col'
                     >
                       <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>

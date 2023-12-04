@@ -16,7 +16,7 @@ const data = [
       ' Attendees look for interactive elements that make them feel involved and part of the event. This could be through Q&A, Polls, Hands-On Workshops or Icebreakers. The goal is to ensure attendees are not passive observers but active participants.',
     image: '/banner/dxg-agency-banner-engage.png',
     icon: 'man',
-    href: '/',
+    href: '/triple-e-xperience',
   },
   {
     title: 'Exchange',
@@ -24,7 +24,7 @@ const data = [
       'One of the primary reasons people attend events is to meet others in their industry with similar interests. Facilitating these connections through social events, networking sessions, and networking tools in an event app can significantly enhance the attendee experience.',
     image: '/banner/dxg-agency-banner-exchange.png',
     icon: 'media',
-    href: '/',
+    href: '/triple-e-xperience',
   },
   {
     title: 'Enlight',
@@ -32,7 +32,7 @@ const data = [
       'The content provided during the event should be valuable, relevant, and thought-provoking. Attendees want to learn new things, gain insights and have takeaways that they can apply in their personal or professional lives. The quality of speakers, the relevance of topics, and the content delivery all contribute to the perceived value of the event.',
     image: '/banner/dxg-agency-banner-enlight.png',
     icon: 'monitor',
-    href: '/',
+    href: '/triple-e-xperience',
   },
 ];
 
@@ -55,7 +55,7 @@ export default function Overview() {
               <MotionDiv
                 variants={fadeIn('right', 'tween', index * 0.2, 1)}
                 key={index}
-                className=' max-h-[600px]  w-full bg-cover bg-center bg-no-repeat glowing-border'
+                className=' glowing-border  max-h-[600px] w-full bg-cover bg-center bg-no-repeat'
                 style={{ backgroundImage: `url('${item.image}')` }}
               >
                 <div
@@ -78,7 +78,7 @@ export default function Overview() {
 
                     <div className='mt-6 h-20'>
                       <Button
-                        className='hidden rounded-full bg-white text-sky-400 hover:bg-white group-hover:inline-flex rounded-full bg-brand px-5 py-2 font-semibold text-white capsule-hover capsule-button'
+                        className='capsule-hover capsule-button hidden rounded-full bg-brand  px-5 py-2 font-semibold text-white hover:bg-white group-hover:inline-flex'
                         asChild
                       >
                         <Link href={item.href}>Read More</Link>

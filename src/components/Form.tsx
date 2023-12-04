@@ -12,7 +12,8 @@ export default function Form() {
       action={async (FormData) => {
         ref.current?.reset();
         // input validation
-        await handleFormSubmit(FormData);
+        const result = await handleFormSubmit(FormData);
+        console.log(result);
       }}
     >
       <ContactInputField

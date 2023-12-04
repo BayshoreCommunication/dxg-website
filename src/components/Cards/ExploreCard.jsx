@@ -52,14 +52,14 @@ const ExploreCard = ({
             <p className='mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
               {description}
             </p>
-            <div className='mt-5'>
+            {/* <div className='mt-5'>
               <Button
                 variant='outline'
                 className='rounded-full border-brand bg-transparent text-brand  bg-brand px-5 py-2 font-semibold text-white capsule-hover capsule-button'
               >
                 <Link href='/'>Learn More</Link>
               </Button>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>
