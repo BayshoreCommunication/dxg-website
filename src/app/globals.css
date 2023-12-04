@@ -160,3 +160,14 @@ display: none;
   transform: scale(1.1); /* Scale up the box on hover */
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* Add glow effect */
 }
+.glow-card {
+  background: radial-gradient(circle, transparent 1%, black 1%);
+  background-size: 150% 150%;
+  background-position: center;
+  transition: background-size 0.5s, background-position 0.5s;
+}
+
+.glow-card:hover {
+  background-size: 150% 150%;
+  background-position: top left;
+}
