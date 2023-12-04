@@ -4,8 +4,27 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { Button } from '@/components/ui/button';
 import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
+import { FormEvent } from 'react';
+import { SITECONFIG } from '@/config/site';
+import Form from '@/components/Form';
+import { Helmet } from 'react-helmet';
+import Script from 'next/script';
+export default async function Contact() {
+  // async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  //   event.preventDefault();
 
-export default function Contact() {
+  //   const formData = new FormData(event.currentTarget);
+  //   console.log(formData);
+  //   // const response = await fetch('/api/submit', {
+  //   //   method: 'POST',
+  //   //   body: formData,
+  //   // });
+
+  //   // // Handle response if necessary
+  //   // const data = await response.json();
+  //   // ...
+  // }
+
   return (
     <div className='min-h-screen bg-black'>
       <BreadCrumb
@@ -47,7 +66,6 @@ export default function Contact() {
           texAlign: 'text-left',
         }}
       />
-
       <div className='container  py-9 lg:py-16'>
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
@@ -75,7 +93,7 @@ export default function Contact() {
                 />
               </svg>
               <h2 className='mb-1 mt-3 text-2xl font-medium leading-relaxed text-brand'>
-                Your Company location here
+                {SITECONFIG.address}
               </h2>
               <p className=' text-base font-semibold leading-normal text-white'>
                 Our Location
@@ -103,7 +121,7 @@ export default function Contact() {
                 />
               </svg>
               <h2 className=' mb-1   mt-3 text-2xl font-medium leading-relaxed text-brand'>
-                (813) 560-3005
+                {SITECONFIG.phone}
               </h2>
               <p className=' text-base font-semibold leading-normal text-white'>
                 Let’s Talk
@@ -127,7 +145,7 @@ export default function Contact() {
                 />
               </svg>
               <h2 className=' mb-1 mt-3 text-2xl font-medium leading-relaxed text-brand'>
-                ace@dxg.agency
+                {SITECONFIG.email}
               </h2>
               <p className=' text-base font-semibold leading-normal text-white'>
                 Drop a Line
@@ -138,32 +156,41 @@ export default function Contact() {
             variants={zoomIn(0.2, 1)}
             className='col-span-12 lg:col-span-6'
           >
-            <ContactInputField
-              inputLabel={'Enter Your Name'}
-              inputProperties={{ id: 'full-name', name: 'full-name' }}
-            />
-            <ContactInputField
-              className='mt-5'
-              inputLabel={'ENTER PHONE NUMBER'}
-              inputProperties={{ id: 'phone-number', name: 'phone-number' }}
-            />
-            <ContactInputField
-              className='mt-5'
-              inputLabel={'ENTER EMAIL ADDRESS'}
-              inputProperties={{ id: 'email-address', name: 'email-address' }}
-            />
-            <ContactInputField
-              className='mt-5'
-              inputType='textarea'
-              inputLabel={'MESSAGE'}
-              texAreaProperties={{ id: 'message', name: 'message' }}
-            />
-            <Button
-              variant='default'
-              className='mt-5 w-full border-brand bg-brand font-bold text-white hover:border hover:text-brand'
+            <Form />
+            {/* <form
+              action='https://crm.zoho.com/crm/WebToLeadForm'
+              name='WebToLeads6029960000000443680'
+              method='POST'
+              acceptCharset='UTF-8'
             >
-              SUBMIT
-            </Button>
+              <ContactInputField
+                inputLabel={'Enter Your Name'}
+                inputProperties={{ id: 'full-name', name: 'Last Name' }}
+              />
+              <ContactInputField
+                className='mt-5'
+                inputLabel={'ENTER PHONE NUMBER'}
+                inputProperties={{ id: 'phone-number', name: 'Phone' }}
+              />
+              <ContactInputField
+                className='mt-5'
+                inputLabel={'ENTER EMAIL ADDRESS'}
+                inputProperties={{ id: 'email-address', name: 'Email' }}
+              />
+              <ContactInputField
+                className='mt-5'
+                inputType='textarea'
+                inputLabel={'MESSAGE'}
+                inputProperties={{ id: 'message', name: 'Description' }}
+              />
+              <Button
+                variant='default'
+                type='submit'
+                className='mt-5 w-full border-brand bg-brand font-bold text-white hover:border hover:text-brand'
+              >
+                SUBMIT
+              </Button>
+            </form> */}
             <p className='mt-10 text-justify text-base  font-normal text-white'>
               *I understand that the use of this form for communication with
               Digital Xperience Group (DXG).
@@ -171,6 +198,10 @@ export default function Contact() {
           </MotionDiv>
         </MotionDiv>
       </div>
+      <Script
+        id='wf_anal'
+        src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=4bb1f7d6bbdb238f22af619ba8bb76d473aa65fd264a17e9926bb2ec24806edbfbd5b5225c2abb0baf3f0b1148d9b52agidf940796e23ecae2bd7b1d08721aa37fa81a3fca521fcf479f888ec87c7d3c7c9gid6784f0ee4838bcbf434dcbd3b0e2d828e1ae0b3771d19e5c3d7f6df57b7ea16cgid52f79b3fe1ab0cdcf8a77fcc0f771ab656cbee80caa433e23950d99d90400a04&tw=d2d80af8f494cd58588118640261421b81805693a07c4efd6eaa120fa685382a'
+      ></Script>
     </div>
   );
 }

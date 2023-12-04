@@ -49,21 +49,21 @@ export default function WhoWeAre() {
               variants={fadeIn('up', 'spring', 0.3, 1)}
               className='font-font-normal mb-4 text-justify  text-base leading-[30px] tracking-[0.18px] text-white lg:mb-10'
             >
-              Our diverse team of audiovisual technical producers, directors,
-              project managers, engineers, technicians, and creatives brings a
-              collective wealth of experience to your event. We{"'"}ve
-              orchestrated the marvel of audiovisuals for many notable events,
-              pushing the boundaries of what{"'"}s possible in event production.
+              At DXG, our approach is to intimately understand your event&apos;s
+              objectives and forge a connection between your content and your
+              audience. Whether through immersive experiences, captivating
+              visuals, or interactive elements, we ensure that every aspect of
+              your event resonates with attendees.
             </MotionP>
             <MotionP
               variants={fadeIn('up', 'spring', 0.4, 1)}
               className=' lg:mb-10font-font-normal mb-4 text-justify text-base leading-[30px] tracking-[0.18px] text-white'
             >
-              Our diverse team of audiovisual technical producers, directors,
-              project managers, engineers, technicians, and creatives brings a
-              collective wealth of experience to your event. We{"'"}ve
-              orchestrated the marvel of audiovisuals for many notable events,
-              pushing the boundaries of what{"'"}s possible in event production.
+              We stay at the forefront of technology, harnessing innovative
+              solutions to enhance engagement and streamline production. Our
+              outcome-focused strategy is designed to deliver measurable
+              results, turning your vision into a dynamic reality that leaves a
+              lasting impression.
             </MotionP>
           </div>
           <MotionDiv

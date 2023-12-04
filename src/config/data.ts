@@ -62,56 +62,41 @@ export const BlogData = [
 export const SERVICE_DATA = [
   {
     id: 1,
-    heading: 'Event;Production',
-    title: 'Event Production',
-    image: '/service/dxg-agency-project-management.png',
-    excerpt: `Comprehensive event planning and execution.
-Management of in-person, virtual, and hybrid events.
+    heading: 'Production;Management',
+    title: 'Production Management',
+    image: '/service/dxg-agency-production-management.png',
+    excerpt: `DXG excels in comprehensive production management, overseeing every aspect of your event's execution. From meticulous planning to seamless coordination on-site or virtually, our experienced team ensures that your event runs flawlessly, leaving you free to focus on the content and experience.
 `,
   },
   {
     id: 2,
-    heading: 'Audio;Visual Services',
-    title: 'Audio Visual Services',
+    heading: 'Audio;Visual Technology',
+    title: 'Audio Visual Technology',
     image: '/service/dxg-agency-audiovisual-technology.png',
-    excerpt: `Expertise in audiovisual technology.
-Skilled audiovisual technical producers, directors, engineers, and technicians.
+    excerpt: `Harnessing the latest in audiovisual technology, DXG elevates your event's sensory experience. Our expert technicians and producers bring cutting-edge solutions to the forefront, ensuring immersive visuals, crystal-clear sound, and seamless technical execution for both in-person and virtual events.
 `,
   },
   {
     id: 3,
-    heading: 'Immersive;Experiences',
-    title: 'Immersive Experiences',
+    heading: 'Event;Platform Services',
+    title: 'Event Platform Services',
     image: '/service/dxg-agency-event-platform-service.png',
-    excerpt: `Design and implementation of immersive event experiences.
-Integration of captivating visuals and interactive elements.
+    excerpt: `DXG specializes in crafting dynamic event platforms tailored to your needs. Whether it's a virtual space, a hybrid platform, or a customized digital environment, we design and optimize platforms to enhance engagement, foster networking, and create a seamless digital extension of your event.
 `,
   },
   {
     id: 4,
-    heading: 'Project;Management',
-    title: 'Project Management',
+    heading: 'Event;Experience Design',
+    title: 'Event Experience Design',
     image: '/service/dxg-agency-event-experience-design.png',
-    excerpt: `Dedicated project managers to oversee the planning and execution of events.
-Content Strategy and Development:
-
-Assistance in developing content that is valuable, relevant, and thought-provoking.
-Networking Solutions:
-
-Implementation of tools and strategies to facilitate networking among event attendees.
-`,
+    excerpt: `At the core of DXG's offerings is event experience design. We work closely with you to understand your objectives and craft immersive experiences that resonate with your audience. From interactive elements to spatial design, our focus is on creating events that leave a lasting impact on attendees.`,
   },
   {
     id: 5,
-    heading: 'Social;Events',
-    title: 'Social Events',
+    heading: 'Graphics &;Animation',
+    title: 'Graphics & Animation',
     image: '/service/dxg-agency-graphics-and-animation.png',
-    excerpt: `Planning and execution of social events to enhance attendee interaction.
-Consultation and Strategy:
-
-Consultative services to intimately understand event objectives.
-Strategic planning to connect event content with the target audience.
-`,
+    excerpt: `DXG brings visuals to life with captivating graphics and animations. Our creative team combines artistic flair with technical expertise to deliver stunning visual elements that enhance presentations, engage audiences, and contribute to the overall aesthetic appeal of your event.`,
   },
 ];
 
@@ -305,20 +290,22 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/support/dxg-agency-event-planner.png',
-    title: 'Expertise and Experience',
-    description:
-      'DXG boasts a diverse team with extensive experience in the event hospitality industry. The average experience of team members being ten-plus years indicates a wealth of knowledge in event production',
+    title: 'Planners',
+    description: `Event planners are the architects of memorable experiences, and at DXG, we understand the intricate details that go into bringing a vision to life. Our support for planners goes beyond execution – we collaborate intimately, providing insights, creative solutions, and leveraging our extensive experience to ensure your event exceeds expectations. From conceptualization to execution, DXG is your dedicated partner in turning ideas into impactful realities.
+`,
   },
   {
     id: 'world-2',
     imgUrl: '/support/dxg-agency-event-production.png',
-    title: 'Innovation and Technology',
-    description: `Staying at the forefront of technology and harnessing innovative solutions showcases DXG's commitment to enhancing engagement and streamlining production processes. This is crucial in the rapidly evolving landscape of event technology.`,
+    title: 'Production',
+    description: `The heart of any successful event lies in its production, and DXG stands as the beating pulse that brings events to life. With our core teams having a rich background in live events, broadcast, and entertainment, we understand the nuances of flawless production. From audiovisual wizardry to seamless execution, DXG is here to elevate the production quality of your event, making it an unforgettable spectacle for attendees.
+`,
   },
   {
     id: 'world-3',
     imgUrl: '/support/dxg-agency-event-production-2.png',
-    title: 'Outcome-Focused Strategy',
-    description: `The emphasis on delivering measurable results and turning a client's vision into a dynamic reality aligns with the goal of leaving a lasting impression on event attendees.`,
+    title: 'Platforms',
+    description: `In the digital age, events span beyond physical spaces, extending into virtual and hybrid platforms. DXG recognizes the significance of a robust and engaging platform. Whether it's a virtual event space or a hybrid platform connecting in-person and remote attendees, we have the expertise to navigate and optimize these environments. DXG ensures that the platform serves as an immersive stage for your event, fostering connection and interaction irrespective of the format.
+`,
   },
 ];

@@ -4,6 +4,7 @@ import { HeaderTextStyle } from '../TextStyle';
 import { Button } from '../ui/button';
 import { MotionDiv } from '../Motion';
 import { fadeIn, staggerContainer } from '@/lib/motion';
+import Link from 'next/link';
 type HeaderTextProps = {
   preText?: string;
   coloredText: string;
@@ -44,10 +45,11 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
             >
               <HeaderTextStyle {...titleProps} />
               <Button
+                asChild
                 variant='dashed'
                 className='mt-5 rounded-full px-10 py-3 capitalize md:px-14 lg:px-24'
               >
-                {buttonTitle}
+                <Link href='/contact-us'>{buttonTitle}</Link>
               </Button>
             </MotionDiv>
 

@@ -19,7 +19,7 @@ export const ServiceCard: React.FC<ServiceProps> = ({
           captionPosition === 'top' ? 'top-[10%]' : 'bottom-[10%]'
         } -translate-x-1/2 transform text-center text-4xl font-bold leading-tight text-white`}
       >
-        PRODUCTION MANAGEMENT
+        {cardTitle}
       </h2>
     </div>
   );

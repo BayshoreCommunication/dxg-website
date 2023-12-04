@@ -45,7 +45,7 @@ export default function Services() {
               <Button
                 asChild
                 variant={'outline'}
-                className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+                className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white capsule-hover capsule-button'
               >
                 <Link href='/'>Read More</Link>
               </Button>
@@ -57,7 +57,7 @@ export default function Services() {
                 <MotionDiv
                   variants={fadeIn('right', 'tween', index * 0.2, 0.75)}
                   key={index}
-                  className={`min-h-[200px] flex-1 justify-center overflow-hidden border border-gray-400 bg-cover bg-center bg-no-repeat md:min-h-[420px]`}
+                  className={`min-h-[200px] flex-1 justify-center overflow-hidden border border-gray-400 bg-cover bg-center bg-no-repeat md:min-h-[420px] glow-card`}
                   style={{ backgroundImage: `url('${item.image}')` }}
                 >
                   <div
@@ -81,13 +81,9 @@ export default function Services() {
                     </div>
 
                     <motion.div
-                      transition={{
-                        duration: 0.4,
-                        delay,
-                        type: 'easeInOut',
-                        staggerChildren: 0.5,
-                        staggerDirection: -1,
-                      }}
+                      initial={{ x: -100 }} // Start from the left
+                      whileHover={{ x: 0 }} // Move to the original position on hover
+                      transition={{ type: 'spring', stiffness: 300, damping: 30 }} // Use a spring transition for a smoother effect
                       className='hidden flex-row  px-5 group-hover:flex md:flex-col'
                     >
                       <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>

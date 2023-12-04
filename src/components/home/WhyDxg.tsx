@@ -10,8 +10,8 @@ import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 
 const infos = {
   title: 'Why DXG',
-  description:
-    'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+  description: `At the core of our ethos, we believe that the essence of our work transcends the boundaries of what we do and how we do it. It's about who we do it with, for, and why we do it. This belief is profoundly woven into every aspect of our business, from our attentive process and unparalleled service to our purpose-driven mission and the vast experience we offer.
+`,
 };
 
 const WHY_DXG_DATA = [
@@ -105,8 +105,8 @@ export default function WhyDxg() {
                 className='mb-5 flex flex-col gap-10 md:flex-row'
               >
                 <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
-                {/* <Icons.group className='h-12 w-12' /> */}
-                <img src='/mission.png' className='h-16 w-16' />
+                  {/* <Icons.group className='h-12 w-12' /> */}
+                  <img src='/mission.png' className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
@@ -116,8 +116,8 @@ export default function WhyDxg() {
                   <P text={WHY_DXG_DATA[2].description} />
                 </div>
                 <div className='flex flex-col items-center py-0 md:items-start md:py-6 '>
-                {/* <Icons.mechanics className='h-10 w-10' /> */}
-                <img src='/experience.png' className='h-16 w-16' />
+                  {/* <Icons.mechanics className='h-10 w-10' /> */}
+                  <img src='/experience.png' className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>

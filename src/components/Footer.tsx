@@ -8,6 +8,7 @@ import { Icons } from './Icons';
 import { Button } from './ui/button';
 import { MotionDiv } from './Motion';
 import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
+
 export default function Footer() {
   return (
     <div className='sticky inset-x-0 top-0 z-50 h-40'>
@@ -39,16 +40,37 @@ export default function Footer() {
                   />
                 </div>
                 <div className='my-4'>
+                  {/* address */}
+
+                  <div className='flex items-center'>
+                    {
+                      <Icons.location
+                        size={30}
+                        className='icon-hover mr-2 text-brand'
+                      />
+                    }
+                    <p className='text-sm text-white'>{SITECONFIG.address}</p>
+                  </div>
                   {/* phone */}
                   <div className='my-2 flex'>
-                    {<Icons.phone size={20} className=' mr-2 text-brand icon-hover' />}
-                    <p className='text-sm text-white'>+888.456.574</p>
+                    {
+                      <Icons.phone
+                        size={20}
+                        className=' icon-hover mr-2 text-brand'
+                      />
+                    }
+                    <p className='text-sm text-white'>{SITECONFIG.phone}</p>
                   </div>
                   {/* email */}
                   <div className=' flex items-center'>
-                    {<Icons.mail size={20} className='mr-2 text-brand icon-hover' />}
+                    {
+                      <Icons.mail
+                        size={20}
+                        className='icon-hover mr-2 text-brand'
+                      />
+                    }
                     <p className='w-1/2 text-ellipsis text-sm text-white'>
-                      ace@dxg.agency
+                      {SITECONFIG.email}
                     </p>
                   </div>
                 </div>
