@@ -62,7 +62,7 @@ export default function OverviewSlider({ data }: SliderProps) {
 
                   <div className='mt-6 h-20'>
                     <Button
-                      className=' rounded-full bg-white text-sky-400  hover:bg-white'
+                      className=' rounded-full bg-white text-sky-400  hover:bg-white '
                       asChild
                     >
                       <Link href={item.href}>Read More</Link>

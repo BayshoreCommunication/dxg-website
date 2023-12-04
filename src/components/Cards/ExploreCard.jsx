@@ -55,7 +55,7 @@ const ExploreCard = ({
             <div className='mt-5'>
               <Button
                 variant='outline'
-                className='rounded-full border-brand bg-transparent text-brand'
+                className='rounded-full border-brand bg-transparent text-brand  bg-brand px-5 py-2 font-semibold text-white capsule-hover capsule-button'
               >
                 <Link href='/'>Learn More</Link>
               </Button>

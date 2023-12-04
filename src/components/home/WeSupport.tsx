@@ -31,9 +31,9 @@ export default function WeSupport() {
             <Button
               asChild
               variant={'outline'}
-              className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+              className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white capsule-hover capsule-button'
             >
-              <Link href='/'>Read More</Link>
+              <h1>Read More</h1>
             </Button>
           </BottomToTop>
         </div>

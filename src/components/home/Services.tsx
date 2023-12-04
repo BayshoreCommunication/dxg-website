@@ -45,7 +45,7 @@ export default function Services() {
               <Button
                 asChild
                 variant={'outline'}
-                className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+                className='rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white capsule-hover capsule-button'
               >
                 <Link href='/'>Read More</Link>
               </Button>

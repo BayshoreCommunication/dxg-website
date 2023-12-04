@@ -123,7 +123,7 @@ display: none;
 
 .capsule-hover:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-  color: rgb(45,198,245); /* Keep this line if you want to change the text color on hover */
+  color: rgb(45,198,245) !important;/* Keep this line if you want to change the text color on hover */
 }
 .capsule-button {
   position: relative;
