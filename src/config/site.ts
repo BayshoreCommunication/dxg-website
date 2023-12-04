@@ -33,6 +33,10 @@ export const SITECONFIG = {
       title: 'Contact Us',
       slug: '/contact-us',
     },
+    {
+      title: 'Production Management',
+      slug: '/production-management',
+    },
   ],
   footerNav: {
     services: [
