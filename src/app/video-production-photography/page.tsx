@@ -1,21 +1,43 @@
 import NewsLetter from '@/components/NewsLetter';
 import Testimonial from '@/components/Testimonial';
 import WhyDxg from '@/components/home/WhyDxg';
-import {VideoProductionPhotographySection} from '@/components/Sections/VideoProductionPhotographySection';
-
+import { VideoProductionPhotographySection } from '@/components/Sections/VideoProductionPhotographySection';
 
 export default function GraphicsAnimation() {
   return (
     <div className='bg-black'>
       <VideoProductionPhotographySection />
-      <div className="flex flex-wrap md:px-28">
-        <div className="w-1/2 p-4">
-          <p style={{color:'white', paddingTop:'4rem', paddingBottom:'4rem', textAlign: 'justify'}}>Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves onDemo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on . .</p>
+      <div className='flex flex-wrap md:px-28'>
+        <div className='w-1/2 p-4'>
+          <p
+            style={{
+              color: 'white',
+              paddingTop: '4rem',
+              paddingBottom: '4rem',
+              textAlign: 'justify',
+            }}
+          >
+            Capturing the essence and energy of your event is an art, and at
+            DXG, our Photography and Videography services excel in this art. We
+            understand that each event is a unique story waiting to be told, and
+            our professional photographers and videographers are masters at
+            narrating these stories through stunning visuals. With a keen eye
+            for detail and a passion for perfection, we document your event as
+            it happens and the emotions and moments that define it. From candid
+            shots that capture the spirit of the occasion to high-definition
+            videos that bring the event&apos;s narrative to life, our visual
+            storytelling ensures that the memories of your event endure long
+            after the final curtain. Our approach is unobtrusive yet
+            comprehensive, ensuring that we capture the essence of your event
+            from every angle without disrupting the experience. With our
+            photography and videography, your event is not just an occasion but
+            a timeless story beautifully preserved.
+          </p>
         </div>
-        <div className="w-1/2 p-4">
-        <NewsLetter />
+        <div className='w-1/2 p-4'>
+          <NewsLetter />
         </div>
-      </div>      
+      </div>
       <Testimonial />
       <WhyDxg />
     </div>
