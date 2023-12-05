@@ -7,6 +7,7 @@ import { ServiceCard } from '@/components/ServiceCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { staggerContainer, zoomIn } from '@/lib/motion';
+import Link from 'next/link'; // Make sure to import Link from Next.js
 
 export default function Services() {
   return (
@@ -37,11 +38,13 @@ export default function Services() {
                   key={service.id}
                   className='col-span-12 md:col-span-6 lg:col-span-4'
                 >
-                  <ServiceCard
-                    cardImage={service.image}
-                    captionPosition={service.captionPosition}
-                    cardTitle={service.caption}
-                  />
+                  <Link href={service.url}> {/* Add this line */}
+                      <ServiceCard
+                        cardImage={service.image}
+                        captionPosition={service.captionPosition}
+                        cardTitle={service.caption}
+                      />
+                  </Link>
                 </MotionDiv>
               );
             })}
