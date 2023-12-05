@@ -125,7 +125,7 @@ export const BannerSection = () => {
                     />
                   </MotionDiv>
                 </div>
-                <div className='flex items-center justify-between'>
+                <div className='mt-10 flex items-center justify-between'>
                   <div className='w-3/4'>
                     <MotionP
                       variants={fadeIn('up', 'tween', 0.2, 1)}
