@@ -23,7 +23,8 @@ export default function Footer() {
         {/* <MaxWidthWrapper> */}
         <div className='container py-8'>
           <MotionDiv
-            variants={staggerContainer(0.2, 0.1)}
+            // variants={staggerContainer(0.2, 0.1)}
+            variants={fadeIn('up', 'tween',0.3,1)}
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
