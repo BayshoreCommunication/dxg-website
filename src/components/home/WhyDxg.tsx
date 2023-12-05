@@ -106,7 +106,10 @@ export default function WhyDxg() {
               >
                 <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
                   {/* <Icons.group className='h-12 w-12' /> */}
-                  <img src='/mission.png' className='h-16 w-16' />
+                  <div className='h-16 w-16'>
+                    <Image alt='mission' src='/mission.png' fill />
+                  </div>
+
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
@@ -117,7 +120,10 @@ export default function WhyDxg() {
                 </div>
                 <div className='flex flex-col items-center py-0 md:items-start md:py-6 '>
                   {/* <Icons.mechanics className='h-10 w-10' /> */}
-                  <img src='/experience.png' className='h-16 w-16' />
+
+                  <div className='h-16 w-16'>
+                    <Image alt='experience' src='/experience.png' fill />
+                  </div>
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
