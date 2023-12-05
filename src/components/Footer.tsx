@@ -29,161 +29,186 @@ export default function Footer() {
             viewport={{ once: false, amount: 0.25 }}
             className='flex h-[500px] flex-col md:h-[300px] '
           >
-            <div className='mt-10 grid h-[500px] grid-cols-2 gap-4  md:mt-5 md:h-[400px] md:grid-cols-4'>
-              {/* First column */}
-              <div className='flex flex-col'>
-                <div className='w-2/3 md:w-1/2'>
-                  <Image
-                    src={logo}
-                    alt='Texture Logo'
-                    style={{ width: '100%' }}
-                  />
-                </div>
-                <div className='my-4'>
-                  {/* address */}
+            <div className='flex flex-col md:flex-row md:justify-between'>
+              <div className=' mb-5 flex flex-1 justify-between  md:flex-[.85]'>
+                {/* First column */}
+                <div className='flex flex-col'>
+                  <div className='w-2/3 md:w-1/2'>
+                    <Image
+                      src={logo}
+                      alt='Texture Logo'
+                      style={{ width: '100%' }}
+                    />
+                  </div>
+                  <div className='my-4'>
+                    {/* address */}
 
-                  <div className='flex '>
-                    <div className='w-20 flex-[.2] md:flex-[.1]'>
-                      {
-                        <Icons.location
-                          fill='current'
-                          className='icon-hover  text-brand'
-                        />
-                      }
-                    </div>
-                    <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
-                      {SITECONFIG.address}
-                    </p>
-                  </div>
-                  {/* phone */}
-                  <div className='my-2 flex'>
-                    <div className='w-20 flex-[.2] md:flex-[.1]'>
-                      {
-                        <Icons.phone
-                          fill='current'
-                          className='icon-hover  text-brand'
-                        />
-                      }
-                    </div>
-                    <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
-                      {SITECONFIG.phone}
-                    </p>
-                  </div>
-                  {/* email */}
-                  <div className=' flex items-center'>
-                    <div className='w-16 flex-[.2] md:flex-[.1]'>
-                      {
-                        <Icons.mail
-                          fill=''
-                          className='icon-hover  text-brand'
-                        />
-                      }
-                    </div>
-                    <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
-                      {SITECONFIG.email}
-                    </p>
-                  </div>
-                </div>
-                {/* icons */}
-                <div className='mt-2 flex gap-4'>
-                  <MotionDiv variants={zoomIn(0.1, 0.5)}>
-                    <Icons.facebook
-                      fill='current'
-                      className='icon-hover h-6 w-6 rounded text-brand'
-                    />
-                  </MotionDiv>
-                  <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <Icons.linkedIn
-                      fill='current'
-                      className='icon-hover h-6 w-6 rounded text-brand'
-                    />
-                  </MotionDiv>
-                  <MotionDiv variants={zoomIn(0.3, 0.5)}>
-                    <Icons.x
-                      fill='current'
-                      className='icon-hover h-6 w-6 rounded text-brand'
-                    />
-                  </MotionDiv>
-                  <MotionDiv variants={zoomIn(0.4, 0.5)}>
-                    <Icons.instagram
-                      fill='current'
-                      className='icon-hover h-6 w-6 rounded text-brand'
-                    />
-                  </MotionDiv>
-                </div>
-              </div>
-              {/* Second Column */}
-              <div className='ml-5 flex flex-col md:items-center'>
-                <div className='  md:w-1/2'>
-                  <h2 className='mb-2 text-2xl font-bold text-brand'>
-                    Service
-                  </h2>
-                  {SITECONFIG.footerNav.services.map((item, index) => {
-                    return (
-                      <MotionDiv
-                        key={index}
-                        variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                    <MotionDiv
+                      variants={fadeIn('up', 'tween', 0.1, 0.5)}
+                      className='flex '
+                    >
+                      <div className='w-20 flex-[.2] md:flex-[.1]'>
+                        {
+                          <Icons.location
+                            fill='current'
+                            className='icon-hover  text-brand'
+                          />
+                        }
+                      </div>
+                      <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                        {SITECONFIG.address}
+                      </p>
+                    </MotionDiv>
+                    {/* phone */}
+                    <MotionDiv variants={fadeIn('up', 'tween', 0.1, 0.5)}>
+                      <Link
+                        href={`tel:+${SITECONFIG.phone}`}
+                        className='my-2 flex'
                       >
-                        <Link key={index} href={item.slug}>
-                          <Button
-                            variant={'link'}
-                            className=' mb-4 whitespace-pre-line pl-0 text-start text-white hover:text-brand'
-                          >
-                            {item.title}
-                          </Button>
-                        </Link>
-                      </MotionDiv>
-                    );
-                  })}
-                </div>
-              </div>
-              {/* Third Column */}
-              <div className='ml-5 flex flex-col  md:items-center'>
-                <div className=' md:w-1/2'>
-                  <h2 className='mb-2 text-2xl font-bold text-brand'>
-                    Why DXG
-                  </h2>
-                  {SITECONFIG.footerNav.whyDXG.map((item, index) => {
-                    return (
-                      <MotionDiv
-                        key={index}
-                        variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                        <div className='w-20 flex-[.2] md:flex-[.1]'>
+                          {
+                            <Icons.phone
+                              fill='current'
+                              className='icon-hover  text-brand'
+                            />
+                          }
+                        </div>
+                        <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                          {SITECONFIG.phone}
+                        </p>
+                      </Link>
+                    </MotionDiv>
+                    {/* email */}
+                    <MotionDiv variants={fadeIn('up', 'tween', 0.1, 0.5)}>
+                      <Link
+                        href={`mailto:${SITECONFIG.email}`}
+                        className=' flex items-center'
                       >
-                        <Link key={index} href={item.slug}>
-                          <Button
-                            variant={'link'}
-                            className='pl-0 text-white hover:text-brand'
-                          >
-                            {item.title}
-                          </Button>
-                        </Link>
-                      </MotionDiv>
-                    );
-                  })}
+                        <div className='w-16 flex-[.2] md:flex-[.1]'>
+                          {
+                            <Icons.mail
+                              fill=''
+                              className='icon-hover  text-brand'
+                            />
+                          }
+                        </div>
+                        <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                          {SITECONFIG.email}
+                        </p>
+                      </Link>
+                    </MotionDiv>
+                  </div>
+                  {/* icons */}
+                  <MotionDiv
+                    variants={fadeIn('up', 'tween', 0.1, 0.5)}
+                    className=' flex gap-4'
+                  >
+                    <MotionDiv variants={zoomIn(0.1, 0.5)}>
+                      <Icons.facebook
+                        fill='current'
+                        className='icon-hover h-6 w-6 rounded text-brand'
+                      />
+                    </MotionDiv>
+                    <MotionDiv variants={zoomIn(0.2, 0.5)}>
+                      <Icons.linkedIn
+                        fill='current'
+                        className='icon-hover h-6 w-6 rounded text-brand'
+                      />
+                    </MotionDiv>
+                    <MotionDiv variants={zoomIn(0.3, 0.5)}>
+                      <Icons.x
+                        fill='current'
+                        className='icon-hover h-6 w-6 rounded text-brand'
+                      />
+                    </MotionDiv>
+                    <MotionDiv variants={zoomIn(0.4, 0.5)}>
+                      <Icons.instagram
+                        fill='current'
+                        className='icon-hover h-6 w-6 rounded text-brand'
+                      />
+                    </MotionDiv>
+                  </MotionDiv>
                 </div>
+                {/* Second Column */}
+                <div className='ml flex flex-col'>
+                  <div className='text-right md:w-1/2 md:text-left'>
+                    <h2 className='mb-2 text-2xl font-bold text-brand'>
+                      Service
+                    </h2>
+                    {SITECONFIG.footerNav.services.map((item, index) => {
+                      return (
+                        <MotionDiv
+                          key={index}
+                          variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                          className=''
+                        >
+                          <Link key={index} href={item.slug}>
+                            <Button
+                              variant={'link'}
+                              className='mb-4 whitespace-pre-line pr-0   text-right text-white hover:text-brand md:pl-0 md:text-left'
+                            >
+                              {item.title}
+                            </Button>
+                          </Link>
+                        </MotionDiv>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div></div>
               </div>
 
-              {/* Fourth Column */}
-              <div className='flex flex-col  md:items-center'>
-                <div className=' md:w-1/2'>
-                  <h2 className='mb-2 text-2xl font-bold text-brand'>Legal</h2>
-                  {SITECONFIG.footerNav.legal.map((item, index) => {
-                    return (
-                      <MotionDiv
-                        key={index}
-                        variants={fadeIn('up', 'tween', index * 0.1, 1)}
-                      >
-                        <Link key={index} href={item.slug}>
-                          <Button
-                            variant={'link'}
-                            className='pl-0 text-white hover:text-brand'
-                          >
-                            {item.title}
-                          </Button>
-                        </Link>
-                      </MotionDiv>
-                    );
-                  })}
+              <div className='flex flex-1 justify-between  md:flex-[.35]'>
+                {/* Third Column */}
+                <div className='flex flex-col'>
+                  <div className=''>
+                    <h2 className='mb-2 text-2xl font-bold text-brand'>
+                      Why DXG
+                    </h2>
+                    {SITECONFIG.footerNav.whyDXG.map((item, index) => {
+                      return (
+                        <MotionDiv
+                          key={index}
+                          variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                        >
+                          <Link key={index} href={item.slug}>
+                            <Button
+                              variant={'link'}
+                              className='pl-0 text-white hover:text-brand'
+                            >
+                              {item.title}
+                            </Button>
+                          </Link>
+                        </MotionDiv>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Fourth Column */}
+                <div className='flex flex-col  md:items-center'>
+                  <div className='text-right md:text-left'>
+                    <h2 className='mb-2 text-2xl font-bold text-brand'>
+                      Legal
+                    </h2>
+                    {SITECONFIG.footerNav.legal.map((item, index) => {
+                      return (
+                        <MotionDiv
+                          key={index}
+                          variants={fadeIn('up', 'tween', index * 0.1, 1)}
+                        >
+                          <Link key={index} href={item.slug}>
+                            <Button
+                              variant={'link'}
+                              className='pr-0 text-white hover:text-brand md:pl-0'
+                            >
+                              {item.title}
+                            </Button>
+                          </Link>
+                        </MotionDiv>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
@@ -194,9 +219,16 @@ export default function Footer() {
 
         {/* Second Row */}
         <div className='flex h-[80px] flex-col justify-center'>
-          <p className='text-center text-xs text-white'>
-            ©2022 Digital Xperience Group (DXG) ®All Rights Reserved.
-          </p>
+          <div className='text-center text-xs text-white'>
+            ©2023 Digital Xperience Group (DXG) ®All Rights Reserved. <br />
+            Design & Developed by{' '}
+            <Link
+              className='underline'
+              href='https://www.bayshorecommunication.com/'
+            >
+              BayShore Communication
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
