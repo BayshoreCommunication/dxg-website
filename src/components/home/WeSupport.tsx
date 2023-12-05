@@ -12,17 +12,18 @@ import { useState } from 'react';
 import { MotionDiv } from '../Motion';
 import { staggerContainer } from '@/lib/motion';
 import ExploreCard from '../Cards/ExploreCard';
+import SupportCardMobile from '../Cards/SupportCardMobile';
 const infos = {
   title: 'Who We Support - 3 P’s of Partnership',
   description: `Our core teams have an average of 15+ years of experience with backgrounds in live events, virtual and hybrid corporate events, broadcast, and entertainment & performances. With this experience, we are a sought-after resource and view ourselves as the missing piece to your puzzle. At DXG, we support `,
 };
 
 export default function WeSupport() {
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(0);
   return (
     <div className='bg-black'>
       <MaxWidthWrapper>
-        <div className='flex flex-col  items-end py-10'>
+        <div className='flex flex-col  items-end py-5 md:py-10'>
           <Title text={infos.title} />
           <Paragraph text={infos.description} className='md:max-w-2xl' />
 
@@ -36,22 +37,21 @@ export default function WeSupport() {
             </Button>
           </BottomToTop> */}
         </div>
-        {/* <MotionDiv className='options flex min-h-[500px] skew-y-6 transform flex-col items-stretch overflow-hidden md:flex-row'>
-          {exploreDXG.map((item, index) => (
-            <SupportCard key={index} data={item} />
-          ))}
-        </MotionDiv> */}
-        {/* <div className='mt-[31px] flex max-w-[370px] flex-col gap-[24px]'>
-          {exploreDXG.map((item, index) => (
-            <SupportCardTwo
-              key={index}
-              data={item}
-              number={`${index < 10 ? '0' : ''} ${index + 1}`}
-            />
-          ))}
-        </div> */}
+        <div className='md:hidden'>
+          <div className='skew-y-6'>
+            {exploreWorlds.map((world, index) => (
+              <SupportCardMobile
+                key={world.id}
+                {...world}
+                index={index}
+                active={active}
+                handleCardHover={setActive}
+              />
+            ))}
+          </div>
+        </div>
         <div
-          className={` mx-auto flex min-h-[500px] w-full skew-y-6 flex-col `}
+          className={` mx-auto hidden min-h-[500px] w-full skew-y-6 flex-col md:flex `}
         >
           <MotionDiv
             variants={staggerContainer(0.2, 0.1)}

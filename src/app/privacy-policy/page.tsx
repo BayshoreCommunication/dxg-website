@@ -1,6 +1,6 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import React from 'react';
-
+import { SITECONFIG } from '@/config/site';
 export default function PrivacyPolicy() {
   return (
     <MaxWidthWrapper>
@@ -1033,7 +1033,15 @@ export default function PrivacyPolicy() {
           us:
         </p>
         <ul>
-          <li>By email: ace@dxg.agency</li>
+          <li>
+            Address: <span className='font-bold'>{SITECONFIG.address}</span>
+          </li>
+          <li>
+            Phone: <span className='font-bold'>{SITECONFIG.phone}</span>
+          </li>
+          <li>
+            Email: <span className='font-bold'>{SITECONFIG.email}</span>
+          </li>
         </ul>
       </div>
     </MaxWidthWrapper>

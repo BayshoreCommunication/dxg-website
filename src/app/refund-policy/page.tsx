@@ -1,4 +1,5 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import { SITECONFIG } from '@/config/site';
 import React from 'react';
 
 export default function RefundPolicy() {
@@ -176,7 +177,15 @@ export default function RefundPolicy() {
           contact us:
         </p>
         <ul>
-          <li>By email: ace@dxg.agency</li>
+          <li>
+            Address: <span className='font-bold'>{SITECONFIG.address}</span>
+          </li>
+          <li>
+            Phone: <span className='font-bold'>{SITECONFIG.phone}</span>
+          </li>
+          <li>
+            Email: <span className='font-bold'>{SITECONFIG.email}</span>
+          </li>
         </ul>
       </div>
     </MaxWidthWrapper>

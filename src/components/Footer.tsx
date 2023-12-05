@@ -42,34 +42,44 @@ export default function Footer() {
                 <div className='my-4'>
                   {/* address */}
 
-                  <div className='flex items-center'>
-                    {
-                      <Icons.location
-                        size={30}
-                        className='icon-hover mr-2 text-brand'
-                      />
-                    }
-                    <p className='text-sm text-white'>{SITECONFIG.address}</p>
+                  <div className='flex '>
+                    <div className='w-20 flex-[.2] md:flex-[.1]'>
+                      {
+                        <Icons.location
+                          fill='current'
+                          className='icon-hover  text-brand'
+                        />
+                      }
+                    </div>
+                    <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                      {SITECONFIG.address}
+                    </p>
                   </div>
                   {/* phone */}
                   <div className='my-2 flex'>
-                    {
-                      <Icons.phone
-                        size={20}
-                        className=' icon-hover mr-2 text-brand'
-                      />
-                    }
-                    <p className='text-sm text-white'>{SITECONFIG.phone}</p>
+                    <div className='w-20 flex-[.2] md:flex-[.1]'>
+                      {
+                        <Icons.phone
+                          fill='current'
+                          className='icon-hover  text-brand'
+                        />
+                      }
+                    </div>
+                    <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                      {SITECONFIG.phone}
+                    </p>
                   </div>
                   {/* email */}
                   <div className=' flex items-center'>
-                    {
-                      <Icons.mail
-                        size={20}
-                        className='icon-hover mr-2 text-brand'
-                      />
-                    }
-                    <p className='w-1/2 text-ellipsis text-sm text-white'>
+                    <div className='w-16 flex-[.2] md:flex-[.1]'>
+                      {
+                        <Icons.mail
+                          fill=''
+                          className='icon-hover  text-brand'
+                        />
+                      }
+                    </div>
+                    <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
                       {SITECONFIG.email}
                     </p>
                   </div>
@@ -77,16 +87,28 @@ export default function Footer() {
                 {/* icons */}
                 <div className='mt-2 flex gap-4'>
                   <MotionDiv variants={zoomIn(0.1, 0.5)}>
-                    <Icons.facebook className='icon-hover h-7 w-7 rounded text-brand' />
+                    <Icons.facebook
+                      fill='current'
+                      className='icon-hover h-6 w-6 rounded text-brand'
+                    />
                   </MotionDiv>
                   <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <Icons.linkedIn className='icon-hover h-7 w-7 rounded text-brand' />
+                    <Icons.linkedIn
+                      fill='current'
+                      className='icon-hover h-6 w-6 rounded text-brand'
+                    />
                   </MotionDiv>
                   <MotionDiv variants={zoomIn(0.3, 0.5)}>
-                    <Icons.twitter className='icon-hover h-7 w-7 rounded text-brand' />
+                    <Icons.x
+                      fill='current'
+                      className='icon-hover h-6 w-6 rounded text-brand'
+                    />
                   </MotionDiv>
                   <MotionDiv variants={zoomIn(0.4, 0.5)}>
-                    <Icons.instagram className='icon-hover h-7 w-7 rounded text-brand' />
+                    <Icons.instagram
+                      fill='current'
+                      className='icon-hover h-6 w-6 rounded text-brand'
+                    />
                   </MotionDiv>
                 </div>
               </div>

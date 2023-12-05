@@ -17,17 +17,20 @@ interface BreadCrumbProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
   buttonTitle: string;
   description?: string;
   customDescription?: ReactElement;
+  bgImage: string; // Add this line
 }
 export const BreadCrumbWithoutButton: React.FC<BreadCrumbProps> = ({
   buttonTitle,
   description,
   titleProps,
   customDescription,
+  bgImage, // Add this line
   ...rest
 }) => {
   return (
     <div
-      className=' min-h-[300px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat'
+      style={{ backgroundImage: `url(${bgImage})` }} // Add this line
+      className='min-h-[300px] bg-differentBackground bg-cover bg-no-repeat'
       {...rest}
     >
       <MaxWidthWrapper>
