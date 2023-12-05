@@ -4,7 +4,7 @@ export const ProductManagementPageSection = () => {
   return (
     <BreadCrumbWithoutButton
       titleProps={{
-        coloredText: 'Product',
+        coloredText: 'Production',
         postText: 'Management',
         texAlign: 'text-center',
         variant: 'caps',
