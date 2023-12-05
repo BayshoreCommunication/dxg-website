@@ -104,5 +104,5 @@ export const SITECONFIG = {
   phone: '855.450.2823',
   email: 'Info@dxg.agency',
   appointmentLink:
-    'https://crm.zoho.com/bookings/30minutesmeeting?rid=3679cd494ea99db067393f9a5741fc6ddece758af235c9d024444952f247528ec8554683a131995c82e609157b576b21gidc72692a298e7df63c9a8abefe22840beca0a57a26fa3042faab3a8522151ec31',
+    'https://crm.zoho.com/bookings/30minutesmeeting?rid=a435255ff10c375feb629d7500516317a3c27c17edf7cab0c3d6f6d5c0f5be59cf755d57ea56940469c582304e72026cgid3bf60dfb7b739cf321c736e8218e0373571ba2feaaebabce47e451cc3b4b1056',
 };
