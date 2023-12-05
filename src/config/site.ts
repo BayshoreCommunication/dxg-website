@@ -38,33 +38,33 @@ export const SITECONFIG = {
     services: [
       {
         title: 'Production Management',
-        slug: '/',
+        slug: '/production-management',
       },
       {
         title: 'Audio Visual Technology',
-        slug: '/',
+        slug: '/audiovisual-technology',
       },
       {
-        title: 'Event Platform Service',
-        slug: '/',
+        title: 'Event Experience Design',
+        slug: '/event-experience-design',
       },
     ],
     whyDXG: [
       {
         title: 'Our Process',
-        slug: '/',
+        slug: '/why-dxg',
       },
       {
         title: 'Our Services',
-        slug: '/',
+        slug: '/services',
       },
       {
         title: 'Our Mission',
-        slug: '/',
+        slug: '/why-dxg',
       },
       {
         title: 'Our Experience',
-        slug: '/',
+        slug: '/why-dxg',
       },
     ],
     legal: [
@@ -103,4 +103,6 @@ export const SITECONFIG = {
   address: '2202 N. Westshore Blvd, Suite 200, Tampa, FL 33602',
   phone: '855.450.2823',
   email: 'Info@dxg.agency',
+  appointmentLink:
+    'https://crm.zoho.com/bookings/30minutesmeeting?rid=a435255ff10c375feb629d7500516317a3c27c17edf7cab0c3d6f6d5c0f5be59cf755d57ea56940469c582304e72026cgid3bf60dfb7b739cf321c736e8218e0373571ba2feaaebabce47e451cc3b4b1056',
 };

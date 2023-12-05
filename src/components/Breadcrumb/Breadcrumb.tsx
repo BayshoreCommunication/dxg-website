@@ -5,6 +5,7 @@ import { Button } from '../ui/button';
 import { MotionDiv } from '../Motion';
 import { fadeIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
+import { SITECONFIG } from '@/config/site';
 type HeaderTextProps = {
   preText?: string;
   coloredText: string;
@@ -49,7 +50,9 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
                 variant='dashed'
                 className='mt-5 rounded-full px-10 py-3 capitalize md:px-14 lg:px-24'
               >
-                <Link href='/contact-us'>{buttonTitle}</Link>
+                <Link href={SITECONFIG.appointmentLink} target='_blank'>
+                  {buttonTitle}
+                </Link>
               </Button>
             </MotionDiv>
 
