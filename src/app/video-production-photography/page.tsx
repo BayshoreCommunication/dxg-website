@@ -25,7 +25,7 @@ export default function GraphicsAnimation() {
             for detail and a passion for perfection, we document your event as
             it happens and the emotions and moments that define it. From candid
             shots that capture the spirit of the occasion to high-definition
-            videos that bring the event's narrative to life, our visual
+            videos that bring the event&apos;s narrative to life, our visual
             storytelling ensures that the memories of your event endure long
             after the final curtain. Our approach is unobtrusive yet
             comprehensive, ensuring that we capture the essence of your event

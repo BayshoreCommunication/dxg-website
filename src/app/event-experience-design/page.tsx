@@ -22,14 +22,14 @@ export default function AudioVisualTechnology() {
             dedicated to creating immersive and impactful environments that
             resonate with your audience. We blend creativity with strategic
             planning to craft experiences that are not only visually stunning
-            but also emotionally engaging and in line with your brand's message.
-            Our team of experienced designers and planners work closely with you
-            to understand your vision and audience, ensuring every aspect of the
-            event, from the decor to the lighting and sound, is meticulously
-            tailored to create the desired atmosphere and mood. Whether it's a
-            corporate gala, a product launch, or a thematic exhibition, we bring
-            your story to life in a way that captivates, inspires, and leaves a
-            lasting impression on every attendee.
+            but also emotionally engaging and in line with your brand&apos;s
+            message. Our team of experienced designers and planners work closely
+            with you to understand your vision and audience, ensuring every
+            aspect of the event, from the decor to the lighting and sound, is
+            meticulously tailored to create the desired atmosphere and mood.
+            Whether it&apos;s a corporate gala, a product launch, or a thematic
+            exhibition, we bring your story to life in a way that captivates,
+            inspires, and leaves a lasting impression on every attendee.
           </p>
         </div>
         <div className='w-1/2 p-4'>

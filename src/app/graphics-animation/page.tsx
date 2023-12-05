@@ -19,16 +19,16 @@ export default function GraphicsAnimation() {
           >
             In the dynamic world of events, captivating visuals can make a
             profound impact. At DXG, our Graphics and Animation services are
-            designed to bring your event's narrative to life. Our skilled
+            designed to bring your event&apos;s narrative to life. Our skilled
             graphic designers and animators specialize in creating custom,
             high-quality visual content that resonates with your audience and
             leaves a lasting impression. Whether sophisticated 3D animations,
             engaging motion graphics, impactful stage backdrops, or stunning
             visual effects, our creations are tailored to complement your
-            event's theme and amplify its message. We understand that each
+            event&apos;s theme and amplify its message. We understand that each
             element of graphic design plays a crucial role in storytelling, and
-            we're committed to ensuring that your visuals look spectacular and
-            communicate your message effectively.
+            we&apos;re committed to ensuring that your visuals look spectacular
+            and communicate your message effectively.
           </p>
         </div>
         <div className='w-1/2 p-4'>

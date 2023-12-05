@@ -19,7 +19,7 @@ export default function ProductionManagement() {
           >
             At DXG, we specialize in turning your vision into a seamless
             audiovisual spectacle. Our production management service is the
-            cornerstone of your event's success. We handle every aspect of
+            cornerstone of your event&apos;s success. We handle every aspect of
             production, from initial concept to final execution, with meticulous
             attention to detail. Our team of experienced professionals is
             equipped with the latest technology and industry insights to manage
