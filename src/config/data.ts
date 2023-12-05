@@ -198,39 +198,67 @@ export const RECENT_BLOG_POST = [
   {
     id: 0,
     date: 1700973637000,
-    title: 'Microsoft Event Planning',
+    title: 'Microsoft Event Planning (post 1)',
     image: 'https://picsum.photos/523/430',
     description:
-      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+      '1Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     tag: ['design', 'research'],
   },
   {
     id: 1,
     date: 1700973637000,
-    title: 'Microsoft Event Planning',
+    title: 'Microsoft Event Planning (post 2)',
     image: 'https://picsum.photos/523/430',
     description:
-      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+      '2Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     tag: ['design', 'research'],
   },
   {
     id: 2,
     date: 1700973637000,
-    title: 'Microsoft Event Planning',
+    title: 'Microsoft Event Planning (post 3)',
     image: 'https://picsum.photos/523/430',
     description:
-      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+      '3Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     tag: ['design', 'research'],
   },
   {
     id: 3,
     date: 1700973637000,
-    title: 'Microsoft Event Planning',
+    title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
     description:
-      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+      '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     tag: ['design', 'research'],
   },
+  {
+    id: 3,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning (post 4)',
+    image: 'https://picsum.photos/523/430',
+    description:
+      '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+  {
+    id: 3,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning (post 4)',
+    image: 'https://picsum.photos/523/430',
+    description:
+      '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+  {
+    id: 3,
+    date: 1700973637000,
+    title: 'Microsoft Event Planning (post 4)',
+    image: 'https://picsum.photos/523/430',
+    description:
+      '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+    tag: ['design', 'research'],
+  },
+
 ];
 
 export const SPECIAL_OFFER = [
