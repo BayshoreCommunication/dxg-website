@@ -1,6 +1,7 @@
 import { StaticImageData } from 'next/image';
 import Service1 from '../../public/service/service-1.png';
 import Service2 from '../../public/service/service-2.png';
+import Service3 from '../../public/service/service-3.png';
 import Service4 from '../../public/service/service-4.png';
 import Service5 from '../../public/service/service-5.png';
 import Service6 from '../../public/service/service-6.png';
@@ -105,6 +106,7 @@ interface ServicesData {
   image: StaticImageData;
   caption: string;
   captionPosition: 'top' | 'bottom';
+  url: string;
 }
 export const SERVICES_PAGE_DATA: ServicesData[] = [
   {
@@ -112,37 +114,43 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     image: Service1,
     caption: 'PRODUCTION MANAGEMENT',
     captionPosition: 'top',
+    url: '/production-management'
   },
   {
     id: 1,
     image: Service2,
     caption: 'AUDIOVISUAL TECHNOLOGY',
     captionPosition: 'top',
+    url: '/audiovisual-technology'
   },
 
   {
     id: 2,
-    image: Service2,
+    image: Service3,
     captionPosition: 'top',
-    caption: 'EVENT PLATFORM SERVICES',
+    caption: 'Virtual & Hybrid Events',
+    url: '/virtual-hybrid-events'
   },
   {
     id: 3,
     image: Service4,
     captionPosition: 'bottom',
     caption: 'EVENT EXPERIENCE DESIGN',
+    url: '/event-experience-design'
   },
   {
     id: 5,
     image: Service5,
     captionPosition: 'bottom',
     caption: 'GRAPHICS & ANIMATION',
+    url: '/graphics-animation'
   },
   {
     id: 5,
     captionPosition: 'bottom',
     image: Service6,
-    caption: 'VIDEO EDITING & PRODUCTION',
+    caption: 'VIDEO EDITING & PRODUCTION',  
+    url: '/video-production-photography'
   },
 ];
 

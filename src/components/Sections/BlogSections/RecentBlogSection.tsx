@@ -25,7 +25,7 @@ export const RecentBlogSection = () => {
           <div className='w-full p-2 lg:w-7/12'>
             <div className='flex flex-col gap-5'>
               {RECENT_BLOG_POST.map((item, index) => {
-                if (index > 0 && index < 4)
+                if (index > 0 && index < 5)
                   return (
                     <MotionDiv
                       variants={fadeIn('up', 'tween', index * 0.2, 1)}
