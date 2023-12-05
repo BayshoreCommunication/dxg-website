@@ -16,7 +16,7 @@ function Testimonial() {
     <div className='bg-differentBackground'>
       <MaxWidthWrapper>
         <div className='flex flex-col items-center justify-center'>
-          <div className='my-10 max-w-3xl text-center'>
+          <div className='my-10 min-h-[250px] max-w-3xl text-center md:min-h-[120px]'>
             <Title text={infos.title} />
             <Paragraph key={0} text={infos.description} />
           </div>

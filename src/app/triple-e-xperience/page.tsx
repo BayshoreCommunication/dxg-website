@@ -1,8 +1,8 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import React from 'react';
-import EngageImage from '../../../public/triple-e-xperience/engage.png';
-import EnlightImage from '../../../public/triple-e-xperience/enlight.png';
-import ExchangeImage from '../../../public/triple-e-xperience/exchange.png';
+import EngageImage from '../../../public/triple-e-xperience/dxg-agency-banner-engage.png';
+import EnlightImage from '../../../public/triple-e-xperience/dxg-agency-banner-enlight.png';
+import ExchangeImage from '../../../public/triple-e-xperience/dxg-agency-banner-exchange.png';
 import NewsLetter from '@/components/NewsLetter';
 import { SectionInformationWithImage } from '@/components/Sections';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
@@ -11,7 +11,7 @@ export default function TripleExperience() {
     <div className='bg-black'>
       <BreadCrumb
         buttonTitle='Book an appointment'
-        description='When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver what we call The Triple E Xperience™:'
+        description='When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver what we call The Triple E Xperience™'
         titleProps={{
           preText: 'Triple',
           coloredText: 'E',

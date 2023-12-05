@@ -288,21 +288,21 @@ export const exploreDXG = [
 ];
 export const exploreWorlds = [
   {
-    id: 'world-1',
+    id: 1,
     imgUrl: '/support/dxg-agency-event-planner.png',
     title: 'Planners',
     description: `Event planners are the architects of memorable experiences, and at DXG, we understand the intricate details that go into bringing a vision to life. Our support for planners goes beyond execution – we collaborate intimately, providing insights, creative solutions, and leveraging our extensive experience to ensure your event exceeds expectations. From conceptualization to execution, DXG is your dedicated partner in turning ideas into impactful realities.
 `,
   },
   {
-    id: 'world-2',
+    id: 2,
     imgUrl: '/support/dxg-agency-event-production.png',
     title: 'Production',
     description: `The heart of any successful event lies in its production, and DXG stands as the beating pulse that brings events to life. With our core teams having a rich background in live events, broadcast, and entertainment, we understand the nuances of flawless production. From audiovisual wizardry to seamless execution, DXG is here to elevate the production quality of your event, making it an unforgettable spectacle for attendees.
 `,
   },
   {
-    id: 'world-3',
+    id: 3,
     imgUrl: '/support/dxg-agency-event-production-2.png',
     title: 'Platforms',
     description: `In the digital age, events span beyond physical spaces, extending into virtual and hybrid platforms. DXG recognizes the significance of a robust and engaging platform. Whether it's a virtual event space or a hybrid platform connecting in-person and remote attendees, we have the expertise to navigate and optimize these environments. DXG ensures that the platform serves as an immersive stage for your event, fostering connection and interaction irrespective of the format.

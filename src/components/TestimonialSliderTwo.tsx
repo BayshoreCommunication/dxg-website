@@ -46,18 +46,19 @@ export default function TestimonialSliderTwo() {
             return (
               <SwiperSlide key={index}>
                 <div className='flex flex-col items-center md:flex-row'>
-                  <div className=' w-60 md:flex-[1.5] lg:flex-1'>
+                  <div className=' relative h-64 w-56 md:h-64 md:w-56 md:flex-[1.5] lg:flex-1'>
                     <Image
                       src={item.image}
                       alt={item.name}
-                      width={292}
-                      height={357}
+                      fill
                       className=' object-cover'
                     />
                   </div>
                   <div className='mb-20 mt-10 flex flex-[2] flex-col pl-2 pr-2 md:mb-0 md:mt-0 md:flex-[2] md:pl-6 lg:flex-[2] lg:pl-10'>
-                    <Icons.quote className='mb-4 h-10 w-10 fill-current text-brand' />
-                    <h4 className='text-xl text-white'>{item.quote}</h4>
+                    <Icons.quote className='mb-4 h-8 w-8 fill-current text-brand md:h-10 md:w-10' />
+                    <h4 className='text-base text-white md:text-xl'>
+                      {item.quote}
+                    </h4>
                     <h1 className='my-2 text-2xl font-semibold text-white'>
                       {item.name}
                     </h1>
@@ -76,13 +77,12 @@ export default function TestimonialSliderTwo() {
           <Icons.leftArrow className='text-white ' />
         </div>
       </div>
-      <div className='h-66  absolute top-[-20%] w-56 md:top-[-30%] lg:left-[20%] lg:top-[0%] xl:left-[15%] xl:top-[-15%] '>
-        <div className='relative'>
+      <div className='absolute top-[-12%] md:top-[-30%] lg:left-[20%] lg:top-[0%] xl:left-[15%] xl:top-[-15%] '>
+        <div className='relative h-56 w-52 md:h-60 md:w-56'>
           <Image
             src={bgImage}
             alt='testimonial'
-            width={292}
-            height={357}
+            fill
             className='object-cover'
           />
           <div className='absolute inset-0 flex items-center justify-center bg-black opacity-60'></div>

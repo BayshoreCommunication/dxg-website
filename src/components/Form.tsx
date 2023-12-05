@@ -22,18 +22,18 @@ export default function Form() {
       />
       <ContactInputField
         className='mt-5'
-        inputLabel={'ENTER PHONE NUMBER'}
+        inputLabel={'Enter Phone Number'}
         inputProperties={{ id: 'phone-number', name: 'Phone' }}
       />
       <ContactInputField
         className='mt-5'
-        inputLabel={'ENTER EMAIL ADDRESS'}
+        inputLabel={'Enter Email'}
         inputProperties={{ id: 'email-address', name: 'Email' }}
       />
       <ContactInputField
         className='mt-5'
         inputType='textarea'
-        inputLabel={'MESSAGE'}
+        inputLabel={'Message'}
         inputProperties={{ id: 'message', name: 'Description' }}
       />
       <Button
