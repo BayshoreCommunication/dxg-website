@@ -1,12 +1,11 @@
 'use client';
-import React from 'react';
-import MaxWidthWrapper from '../MaxWidthWrapper';
-import Image from 'next/image';
-import { SITECONFIG } from '@/config/site';
 import { Icons } from '@/components/Icons';
-import { H1, P, H4, Title, Paragraph } from '../Typography';
-import { MotionDiv } from '../Motion';
+import { SITECONFIG } from '@/config/site';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
+import Image from 'next/image';
+import MaxWidthWrapper from '../MaxWidthWrapper';
+import { MotionDiv } from '../Motion';
+import { P, Paragraph, Title } from '../Typography';
 
 const infos = {
   title: 'Why DXG',
@@ -106,8 +105,13 @@ export default function WhyDxg() {
               >
                 <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
                   {/* <Icons.group className='h-12 w-12' /> */}
-                  <div className='h-16 w-16'>
-                    <Image alt='mission' src='/mission.png' fill />
+                  <div>
+                    <Image
+                      alt='mission'
+                      src='/mission.png'
+                      width={60}
+                      height={60}
+                    />
                   </div>
 
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
@@ -121,8 +125,13 @@ export default function WhyDxg() {
                 <div className='flex flex-col items-center py-0 md:items-start md:py-6 '>
                   {/* <Icons.mechanics className='h-10 w-10' /> */}
 
-                  <div className='h-16 w-16'>
-                    <Image alt='experience' src='/experience.png' fill />
+                  <div>
+                    <Image
+                      alt='experience'
+                      src='/experience.png'
+                      width={60}
+                      height={60}
+                    />
                   </div>
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
