@@ -29,10 +29,9 @@ export const RecentBlogSection = () => {
               <BlogBigImageCard {...selectedPost} />
             </Suspense>
           </MotionDiv>
-          <div className='w-full p-2 lg:w-3/12' style={{ overflowY: 'auto', maxHeight: '100vh', position: 'sticky', top: '0' }}>
+          <div className='w-full p-2 lg:w-3/12' style={{ overflowY: 'auto', maxHeight: '90vh', position: 'sticky', top: '0' }}>
             <div className='flex flex-col gap-5'>
               {RECENT_BLOG_POST.map((item, index) => {
-                if (index > 0 && index < 6)
                   return (
                     <MotionDiv
                       variants={fadeIn('up', 'tween', index * 0.2, 1)}
