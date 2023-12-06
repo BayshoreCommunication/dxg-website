@@ -9,21 +9,21 @@ import Service6 from '../../public/service/service-6.png';
 export const TESTIMONIAL_DATA = [
   {
     id: 1,
-    name: 'John Doe',
+    name: 'Albert',
     title: 'CEO',
     image: '/testimonial/client-1.png',
     quote: `Working with DXG was an absolute game-changer for our event. Their team's expertise in audiovisuals and event production is unparalleled. The immersive experiences they crafted, coupled with innovative technology, elevated our event to new heights. DXG's attention to detail and commitment to measurable results make them our go-to partner for impactful experiences.`,
   },
   {
     id: 2,
-    name: 'Jane Doe',
+    name: 'Smith',
     title: 'CTO',
     image: '/testimonial/client-2.png',
     quote: `DXG exceeded our expectations in every aspect. Their Triple E Xperience™ framework truly transformed our event. Engaging elements, seamless networking opportunities, and thought-provoking content showcased their dedication to attendee satisfaction. DXG's adaptability in handling virtual and hybrid formats ensures they remain the top choice for any event production needs.`,
   },
   {
     id: 3,
-    name: 'John Smith',
+    name: 'Randy',
     title: 'CFO',
     image: '/testimonial/client-3.png',
     quote: `DXG's services are a masterpiece in event production. From concept to execution, their team's passion and professionalism shine. The immersive experiences and cutting-edge technology they brought to our event left a lasting impression on attendees. DXG is not just a service provider; they are partners in creating unforgettable moments.`,
@@ -114,14 +114,14 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     image: Service1,
     caption: 'PRODUCTION MANAGEMENT',
     captionPosition: 'top',
-    url: '/production-management'
+    url: '/production-management',
   },
   {
     id: 1,
     image: Service2,
     caption: 'AUDIOVISUAL TECHNOLOGY',
     captionPosition: 'top',
-    url: '/audiovisual-technology'
+    url: '/audiovisual-technology',
   },
 
   {
@@ -129,28 +129,28 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     image: Service3,
     captionPosition: 'top',
     caption: 'Virtual & Hybrid Events',
-    url: '/virtual-hybrid-events'
+    url: '/virtual-hybrid-events',
   },
   {
     id: 3,
     image: Service4,
     captionPosition: 'bottom',
     caption: 'EVENT EXPERIENCE DESIGN',
-    url: '/event-experience-design'
+    url: '/event-experience-design',
   },
   {
     id: 5,
     image: Service5,
     captionPosition: 'bottom',
     caption: 'GRAPHICS & ANIMATION',
-    url: '/graphics-animation'
+    url: '/graphics-animation',
   },
   {
     id: 5,
     captionPosition: 'bottom',
     image: Service6,
-    caption: 'VIDEO EDITING & PRODUCTION',  
-    url: '/video-production-photography'
+    caption: 'VIDEO EDITING & PRODUCTION',
+    url: '/video-production-photography',
   },
 ];
 
@@ -193,11 +193,11 @@ export const RECENT_BLOG_POST = [
   {
     id: 0,
     date: 1700973637000,
-    title: 'Microsoft Event Planning',
+    title:
+      'Challenges Event Planners Have Working With In-House AV Companies: 10 Biggest Problems You Might Face',
     image: 'https://picsum.photos/523/430',
-    description:
-      'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
-    tag: ['design', 'research'],
+    description: '<p></p>',
+    tag: ['Read More'],
   },
   {
     id: 1,
