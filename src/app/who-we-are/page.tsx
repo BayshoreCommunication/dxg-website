@@ -6,7 +6,7 @@ import Image from 'next/image';
 import WhoWeAreBanner from '../../../public/who-we-are/whow-we-are-banner.png';
 import WhoWeAreBannerInfo from '../../../public/who-we-are/who-we-are-info.png';
 import { MotionDiv, MotionP } from '@/components/Motion';
-import { fadeIn, staggerContainer } from '@/lib/motion';
+import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
 export default function WhoWeAre() {
   return (
     <div className=' bg-black'>
@@ -20,19 +20,21 @@ export default function WhoWeAre() {
           texAlign: 'text-left',
         }}
       />
-      <Image
-        quality={100}
-        src={WhoWeAreBanner}
-        alt='Who We Are - DXG'
-        className='w-full'
-      />
+      <div className=''>
+        <Image
+          quality={100}
+          src={WhoWeAreBanner}
+          alt='Who We Are - DXG'
+          className='w-full'
+        />
+      </div>
       <div className='container py-9 lg:py-16'>
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
           viewport={{ once: false, amount: 0.25 }}
-          className='grid grid-cols-12 items-center  gap-8  lg:gap-12 xl:gap-16'
+          className='grid grid-cols-12 items-center  gap-2 lg:gap-12 xl:gap-16'
         >
           <div className=' col-span-12  lg:col-span-7'>
             <MotionP
@@ -67,7 +69,7 @@ export default function WhoWeAre() {
             </MotionP>
           </div>
           <MotionDiv
-            variants={fadeIn('left', 'tween', 0.2, 1)}
+            variants={zoomIn(0.5, 1)}
             className=' col-span-12 lg:col-span-5'
           >
             <Image

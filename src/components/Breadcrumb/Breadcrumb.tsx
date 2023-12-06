@@ -28,7 +28,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
 }) => {
   return (
     <div
-      className=' min-h-[300px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat'
+      className='min-h-[400px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat md:min-h-[300px]'
       {...rest}
     >
       <MaxWidthWrapper>
@@ -41,7 +41,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
             className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'
           >
             <MotionDiv
-              variants={fadeIn('right', 'tween', 0.2, 1)}
+              variants={fadeIn('up', 'tween', 0.2, 1)}
               className='lg:col-span-7 xl:col-span-6'
             >
               <HeaderTextStyle {...titleProps} />
@@ -55,7 +55,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
             </MotionDiv>
 
             <MotionDiv
-              variants={fadeIn('left', 'tween', 0.2, 1)}
+              variants={fadeIn('up', 'tween', 0.2, 1)}
               className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-6'
             >
               {description && (

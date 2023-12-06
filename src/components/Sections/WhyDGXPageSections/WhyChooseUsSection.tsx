@@ -1,9 +1,11 @@
 import { MotionDiv, MotionH1, MotionP } from '@/components/Motion';
-import meeting from '../../../../public/meeting.png';
-import presentation from '../../../../public/presentation.png';
+import meeting from '../../../../public/why-dxg/service.png';
+import presentation from '../../../../public/why-dxg/process.png';
+import experience from '../../../../public/why-dxg/experience.png';
 
 import Image from 'next/image';
 import { fadeIn, slideIn, staggerContainer, zoomIn } from '@/lib/motion';
+import NumberAnimation from '@/components/NumberAnimation';
 
 export const WhyChooseUsSection = () => {
   return (
@@ -25,6 +27,7 @@ export const WhyChooseUsSection = () => {
                 width={316}
                 height={432}
                 alt='Presentation'
+                className='rounded-3xl'
               />
             </MotionDiv>
             <div className='relative flex w-1/2 flex-col gap-4'>
@@ -35,6 +38,7 @@ export const WhyChooseUsSection = () => {
                 <h1 className='md:text-md text-center font-bold leading-none text-white'>
                   20+
                 </h1>
+
                 <h1 className='md:text-md text-center font-light leading-none text-white'>
                   Years
                 </h1>
@@ -44,15 +48,17 @@ export const WhyChooseUsSection = () => {
                   src={meeting}
                   width={315}
                   height={182}
-                  alt='Presentation'
+                  alt='Meeting'
+                  className='rounded-3xl'
                 />
               </MotionDiv>
               <MotionDiv variants={zoomIn(0.4, 1)}>
                 <Image
-                  src={meeting}
+                  src={experience}
                   width={315}
                   height={182}
-                  alt='Presentation'
+                  alt='Experience'
+                  className='rounded-3xl'
                 />
               </MotionDiv>
             </div>
@@ -88,7 +94,7 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('left', 'tween', 0.4, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <h1 className='text-3xl font-bold text-brand'>40+</h1>
+                <NumberAnimation className='text-3xl' value={40} />
                 <p className='text-xs font-light text-white md:text-base'>
                   Project Complete
                 </p>
@@ -97,7 +103,7 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('left', 'tween', 0.5, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <h1 className='text-3xl font-bold text-brand'>35+</h1>
+                <NumberAnimation className='text-3xl' value={35} />
                 <p className=' text-xs font-light text-white md:text-base'>
                   Client Happy
                 </p>
@@ -106,7 +112,7 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('left', 'tween', 0.6, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <h1 className='text-3xl font-bold text-brand'>5+</h1>
+                <NumberAnimation className='text-3xl' value={5} />
                 <p className=' text-xs font-light text-white md:text-base'>
                   Project Running
                 </p>
