@@ -14,7 +14,7 @@ export default function Services() {
     <div className='bg-black'>
       <BreadCrumb
         buttonTitle='Book an appointment'
-        description='Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.'
+        description='With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.'
         titleProps={{
           coloredText: 'Our',
           postText: 'Services',
@@ -38,12 +38,14 @@ export default function Services() {
                   key={service.id}
                   className='col-span-12 md:col-span-6 lg:col-span-4'
                 >
-                  <Link href={service.url}> {/* Add this line */}
-                      <ServiceCard
-                        cardImage={service.image}
-                        captionPosition={service.captionPosition}
-                        cardTitle={service.caption}
-                      />
+                  <Link href={service.url}>
+                    {' '}
+                    {/* Add this line */}
+                    <ServiceCard
+                      cardImage={service.image}
+                      captionPosition={service.captionPosition}
+                      cardTitle={service.caption}
+                    />
                   </Link>
                 </MotionDiv>
               );
