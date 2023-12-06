@@ -62,7 +62,7 @@ const AppointmentBooking: React.FC<AppointmentBookingProps> = ({
         }}
       >
         <Button
-          className='absolute left-[80%] top-[120px] z-[32] rounded-full bg-brand'
+          className='absolute left-[75%] top-[120px] z-[32] rounded-full bg-brand'
           size='icon'
           onClick={closeIframe}
         >

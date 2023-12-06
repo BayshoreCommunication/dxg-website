@@ -24,7 +24,7 @@ export default function Footer() {
         <div className='container py-8'>
           <MotionDiv
             // variants={staggerContainer(0.2, 0.1)}
-            variants={fadeIn('up', 'tween',0.3,1)}
+            variants={fadeIn('up', 'tween', 0.3, 1)}
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
@@ -226,6 +226,7 @@ export default function Footer() {
             <Link
               className='underline'
               href='https://www.bayshorecommunication.com/'
+              target='_blank'
             >
               BayShore Communication
             </Link>

@@ -25,9 +25,9 @@ export default function Navbar() {
   const currentRoute = usePathname();
   console.log('Current Route is => ', currentRoute);
   return (
-    <header className='sticky inset-x-0 top-0 z-50 h-20 bg-header'>
+    <header className='sticky inset-x-0 top-0 z-50 h-16 bg-header md:h-20'>
       <div className='flex h-full items-center justify-between px-2.5 md:px-28 '>
-        <Link href='/'>
+        <Link href='/' className='w-14 md:w-16'>
           <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
         </Link>
         <div className='hidden lg:block'>

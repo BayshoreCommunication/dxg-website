@@ -21,21 +21,23 @@ export const NavBarMobile = () => {
   return (
     <div className='block lg:hidden' onClick={dropDownShownHandler}>
       {/* <p className='text-white'>Burger</p> */}
-      {<Icons.burger size={40} className='text-brand' />}
+      {<Icons.burger size={35} className='text-brand' />}
       <div
-        className={`fixed inset-0 h-screen w-screen bg-header ${
-          showDropdown ? 'block' : 'hidden'
+        className={`fixed inset-0 h-[350px] w-screen rounded-bl-md rounded-br-md bg-header transition   ${
+          showDropdown ? 'block transition delay-100 animate-in' : 'hidden'
         }`}
       >
         <div
-          className={`absolute right-5 top-5 cursor-pointer`}
+          className={`absolute right-2 top-2 cursor-pointer`}
           onClick={(e) => dropDownDisableHandler(e)}
         >
-          {<Icons.cancel size={40} className='text-brand' />}
+          {<Icons.cancel size={35} className='text-brand' />}
         </div>
-        <div className='mt-10 flex flex-col items-center justify-center '>
-          <Image width={120} height={100} src={'/dxgLogo.svg'} alt='DXG Logo' />
-          <div className='mt-5 flex flex-col items-center justify-center'>
+        <div className='items-left mt-3 flex flex-col justify-center '>
+          <div className='ml-3'>
+            <Image width={56} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
+          </div>
+          <div className='items-left mt-2 flex flex-col justify-center'>
             {SITECONFIG.mainNav.map((item, index) => {
               return (
                 <Link
