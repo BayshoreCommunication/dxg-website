@@ -165,7 +165,7 @@ export const OurMethods = [
     title: 'OUR PROCESS',
     icon: 'repeat' as const,
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'The process of choosing a partner to work with is challenging however clients recognize that we view them as more than just another customer. Our client management tools allows for transparency in task management.',
     image: '/why-dxg/process.png',
   },
   {
@@ -173,7 +173,7 @@ export const OurMethods = [
     title: 'OUR SERVICE',
     icon: 'happyFace' as const,
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'Our approach is service with a smile. We love what we do, the people who help us do it and the purpose of why we do it. We focus on making our clients raving fans of their investment in us.',
     image: '/why-dxg/service.png',
   },
   {
@@ -181,15 +181,15 @@ export const OurMethods = [
     title: 'OUR MISSION',
     icon: 'group' as const,
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
-    image: '/why-dxg/mission.png',
+      'Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology.',
+    image: '/why-dxg/mission.jpg',
   },
   {
     index: 4,
     title: 'OUR EXPERIENCE',
     icon: 'mechanics' as const,
     description:
-      'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+      'Though established in 2018. Our core team has worked together since 2006. We have done thousands of live events and hundreds of digital events in our careers which is why the "pivot" or evolution as we like to say was not a challenge for us and helped our company grow during what for most was a challenging time.',
     image: '/why-dxg/experience.png',
   },
 ];
@@ -258,7 +258,6 @@ export const RECENT_BLOG_POST = [
       '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     tag: ['design', 'research'],
   },
-
 ];
 
 export const SPECIAL_OFFER = [
