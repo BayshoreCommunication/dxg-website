@@ -27,7 +27,7 @@ const WHY_DXG_DATA = [
   },
   {
     title: 'Our Mission',
-    description: `Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology. 
+    description: `Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology.
 `,
   },
   {
@@ -56,29 +56,11 @@ export default function WhyDxg() {
             className='flex items-center justify-center gap-5 pb-5'
           >
             <div className='flex flex-[2] flex-col'>
-              {/* <div className='mx-2 flex flex-col  flex-wrap border sm:justify-center md:mx-0 md:flex-row'>
-                {WHY_DXG_DATA.map((item, index) => (
-                  <div
-                    key={index}
-                    className='flex flex-col items-center gap-1 border md:items-start'
-                  >
-                    <Icons.repeat className='h-16 w-16' />
-                    <h2 className='py-2 text-2xl font-bold uppercase text-white'>
-                      {item.title.split(' ').at(0)}{' '}
-                      <span className='  outline-text tracking-wider text-brand'>
-                        {item.title.split(' ').at(1)}
-                      </span>
-                    </h2>
-                    <P text={item.description} className='max-w-[22rem]' />
-                  </div>
-                ))}
-              </div> */}
-
               <MotionDiv
                 variants={slideIn('up', 'tween', 0.5, 0.5)}
                 className='flex flex-col gap-10 md:flex-row '
               >
-                <div className='flex flex-col items-center py-0 md:items-start'>
+                <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
                   <Icons.repeat className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-extrabold uppercase text-white'>
                     Our{' '}
@@ -88,7 +70,7 @@ export default function WhyDxg() {
                   </h1>
                   <P text={WHY_DXG_DATA[0].description} />
                 </div>
-                <div className='flex flex-col items-center py-0 md:items-start'>
+                <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
                   <Icons.happyFace className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
@@ -104,9 +86,16 @@ export default function WhyDxg() {
                 variants={slideIn('left', 'tween', 0.5, 0.5)}
                 className='mb-5 flex flex-col gap-10 md:flex-row'
               >
-                <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
+                <div className='flex flex-1 flex-col items-center py-0 pt-10 md:items-start'>
                   {/* <Icons.group className='h-12 w-12' /> */}
-                  <img src='/mission.png' className='h-16 w-16' />
+                  <div>
+                    <Image
+                      alt='mission'
+                      src='/mission.png'
+                      width={60}
+                      height={60}
+                    />
+                  </div>
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
@@ -115,9 +104,16 @@ export default function WhyDxg() {
                   </h1>
                   <P text={WHY_DXG_DATA[2].description} />
                 </div>
-                <div className='flex flex-col items-center py-0 md:items-start md:py-6 '>
+                <div className='flex flex-1 flex-col items-center py-0 md:items-start md:py-6 '>
                   {/* <Icons.mechanics className='h-10 w-10' /> */}
-                  <img src='/experience.png' className='h-16 w-16' />
+                  <div>
+                    <Image
+                      alt='experience'
+                      src='/experience.png'
+                      width={60}
+                      height={60}
+                    />
+                  </div>
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
