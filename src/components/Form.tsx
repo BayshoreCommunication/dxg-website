@@ -14,7 +14,7 @@ const schema = object({
 export default function Form() {
   const ref = useRef<HTMLFormElement>(null);
   const [formState, setFormState] = useState({});
-  console.log(formState);
+
   return (
     <form
       ref={ref}

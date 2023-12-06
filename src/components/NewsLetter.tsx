@@ -1,8 +1,11 @@
-import React from 'react';
+'use client';
+
+import React, { useRef } from 'react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 export default function NewsLetter() {
+  const ref = useRef<HTMLFormElement>(null);
   return (
     <div className='container py-16'>
       <div className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10'>
@@ -23,9 +26,16 @@ export default function NewsLetter() {
           </p>
         </div>
         <div className='col-span-2 mt-5 md:ml-2 md:mt-0'>
-          <Input className='mb-4' placeholder='Name' />
-          <Input className='mb-4' placeholder='Email' />
-          <Button className=' w-full bg-slate-800'>Subscribe</Button>
+          <form
+            ref={ref}
+            action={async (FormData) => {
+              ref.current?.reset();
+            }}
+          >
+            <Input className='mb-4' placeholder='Name' />
+            <Input className='mb-4' placeholder='Email' />
+            <Button className=' w-full bg-slate-800'>Subscribe</Button>
+          </form>
         </div>
       </div>
     </div>
