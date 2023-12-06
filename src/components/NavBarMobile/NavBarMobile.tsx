@@ -23,12 +23,12 @@ export const NavBarMobile = () => {
       {/* <p className='text-white'>Burger</p> */}
       {<Icons.burger size={35} className='text-brand' />}
       <div
-        className={`fixed inset-0 h-screen w-screen bg-header ${
-          showDropdown ? 'block' : 'hidden'
+        className={`fixed inset-0 h-[350px] w-screen rounded-bl-md rounded-br-md bg-header transition   ${
+          showDropdown ? 'block transition delay-100 animate-in' : 'hidden'
         }`}
       >
         <div
-          className={`absolute right-5 top-5 cursor-pointer`}
+          className={`absolute right-2 top-2 cursor-pointer`}
           onClick={(e) => dropDownDisableHandler(e)}
         >
           {<Icons.cancel size={35} className='text-brand' />}

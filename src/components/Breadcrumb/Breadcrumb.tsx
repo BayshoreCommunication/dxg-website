@@ -4,6 +4,7 @@ import { HeaderTextStyle } from '../TextStyle';
 import { MotionDiv } from '../Motion';
 import { fadeIn, staggerContainer } from '@/lib/motion';
 import AppointmentBooking from '../AppointmentBooking';
+
 type HeaderTextProps = {
   preText?: string;
   coloredText: string;
