@@ -75,19 +75,26 @@ export const WhyChooseUsSection = () => {
               variants={fadeIn('left', 'tween', 0.3, 1)}
               className='text-2xl font-bold text-white'
             >
-              Take your Business to the next level
+              Take Your Business to the Next Level
             </MotionH1>
             <MotionP
               variants={fadeIn('left', 'tween', 0.4, 1)}
               className='text-white'
             >
-              I am a person who is positive about every aspect of life. There
-              are many things I like to do, to see, and to experience. I like to
-              read, I like to write; I like to think, I like to dream; I like to
-              talk, I like to listen. I am a person who is positive about every
-              aspect of life. There are many things I like to do, to see, and to
-              experience. I like to read, I like to write; I like to think, I
-              like to dream; I like to talk, I like to listen.
+              <div className='mt-4 flex w-full gap-4'>
+                We ensure an unparalleled fusion of experience, innovation, and
+                dedication. With core teams boasting an average of 15+ years in
+                live events, virtual and hybrid corporate events, broadcast, and
+                entertainment, DXG brings a depth of knowledge that is
+                unmatched. We aren&apos;t just event specialists; we consider
+                ourselves the missing piece to your event puzzle. DXG excels in
+                Production Management, Audiovisual Technology, Event Platform
+                Services, Event Experience Design, Graphics & Animation, and
+                Video Production & Photography. DXG&apos;s expertise lies not
+                only in the technical aspects but also in crafting immersive
+                experiences that resonate with your audience, ensuring your
+                event leaves a lasting impression.
+              </div>
             </MotionP>
             <div className='mt-4 flex w-full gap-4'>
               <MotionDiv
