@@ -1,6 +1,7 @@
 import { MotionDiv, MotionH1, MotionP } from '@/components/Motion';
-import meeting from '../../../../public/meeting.png';
-import presentation from '../../../../public/presentation.png';
+import meeting from '../../../../public/why-dxg/service.png';
+import presentation from '../../../../public/why-dxg/process.png';
+import experience from '../../../../public/why-dxg/experience.png';
 
 import Image from 'next/image';
 import { fadeIn, slideIn, staggerContainer, zoomIn } from '@/lib/motion';
@@ -40,19 +41,14 @@ export const WhyChooseUsSection = () => {
                 </h1>
               </MotionDiv>
               <MotionDiv variants={zoomIn(0.3, 1)}>
-                <Image
-                  src={meeting}
-                  width={315}
-                  height={182}
-                  alt='Presentation'
-                />
+                <Image src={meeting} width={315} height={182} alt='Meeting' />
               </MotionDiv>
               <MotionDiv variants={zoomIn(0.4, 1)}>
                 <Image
-                  src={meeting}
+                  src={experience}
                   width={315}
                   height={182}
-                  alt='Presentation'
+                  alt='Experience'
                 />
               </MotionDiv>
             </div>
