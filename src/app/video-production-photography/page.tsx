@@ -1,4 +1,4 @@
-import NewsLetter from '@/components/NewsLetter';
+import GetAQoute from '@/components/GetAQuote';
 import Testimonial from '@/components/Testimonial';
 import WhyDxg from '@/components/home/WhyDxg';
 import { VideoProductionPhotographySection } from '@/components/Sections/VideoProductionPhotographySection';
@@ -7,8 +7,8 @@ export default function GraphicsAnimation() {
   return (
     <div className='bg-black'>
       <VideoProductionPhotographySection />
-      <div className='flex flex-wrap md:px-28'>
-        <div className='w-1/2 p-4'>
+      <div className='flex flex-col md:flex-row md:px-28'>
+        <div className='w-full md:w-1/2 p-4'>
           <p
             style={{
               color: 'white',
@@ -17,25 +17,23 @@ export default function GraphicsAnimation() {
               textAlign: 'justify',
             }}
           >
-            Capturing the essence and energy of your event is an art, and at
-            DXG, our Photography and Videography services excel in this art. We
-            understand that each event is a unique story waiting to be told, and
-            our professional photographers and videographers are masters at
-            narrating these stories through stunning visuals. With a keen eye
-            for detail and a passion for perfection, we document your event as
-            it happens and the emotions and moments that define it. From candid
-            shots that capture the spirit of the occasion to high-definition
-            videos that bring the event&apos;s narrative to life, our visual
-            storytelling ensures that the memories of your event endure long
-            after the final curtain. Our approach is unobtrusive yet
-            comprehensive, ensuring that we capture the essence of your event
-            from every angle without disrupting the experience. With our
-            photography and videography, your event is not just an occasion but
-            a timeless story beautifully preserved.
+            At DXG, we specialize in turning your vision into a seamless
+            audiovisual spectacle. Our production management service is the
+            cornerstone of your event&apos;s success. We handle every aspect of
+            production, from initial concept to final execution, with meticulous
+            attention to detail. Our team of experienced professionals is
+            equipped with the latest technology and industry insights to manage
+            logistics, coordinate with vendors, and oversee technical
+            requirements. We understand the complexities of audiovisual
+            production and are dedicated to ensuring that everything runs
+            smoothly. We aim to bring your event to life while providing you
+            complete peace of mind. Trust us to handle the intricacies of
+            production management so you can focus on what truly matters - your
+            message and your audience.
           </p>
         </div>
-        <div className='w-1/2 p-4'>
-          <NewsLetter />
+        <div className='w-full md:w-1/2 p-4'>
+          <GetAQoute />
         </div>
       </div>
       <Testimonial />
