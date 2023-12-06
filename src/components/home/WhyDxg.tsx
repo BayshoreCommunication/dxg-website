@@ -1,11 +1,12 @@
 'use client';
-import { Icons } from '@/components/Icons';
-import { SITECONFIG } from '@/config/site';
-import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
-import Image from 'next/image';
+import React from 'react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
+import Image from 'next/image';
+import { SITECONFIG } from '@/config/site';
+import { Icons } from '@/components/Icons';
+import { H1, P, H4, Title, Paragraph } from '../Typography';
 import { MotionDiv } from '../Motion';
-import { P, Paragraph, Title } from '../Typography';
+import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 
 const infos = {
   title: 'Why DXG',
@@ -16,22 +17,22 @@ const infos = {
 const WHY_DXG_DATA = [
   {
     title: 'Our Process',
-    description: `We transform events into unforgettable experiences through a meticulous process. We intimately understand clients' objectives, employing a diverse team of seasoned professionals to orchestrate cutting-edge audiovisuals. Leveraging innovative technology, we craft immersive experiences and deliver measurable results, ensuring each event is a dynamic reality that resonates with attendees and leaves a lasting impression.
+    description: `The process of choosing a partner to work with is challenging however clients recognize that we view them as more than just another customer. Our client management tools allows for transparency in task management.
 `,
   },
   {
     title: 'Our Services',
-    description: `We offer comprehensive event production services. Our seasoned team specializes in elevating digital and production quality for in-person, virtual, and hybrid events. From immersive experiences and audiovisual expertise to Triple E Xperience™ implementation, we ensure every aspect resonates, delivering measurable results and creating sought-after, memorable events.
+    description: `Our approach is service with a smile. We love what we do, the people who help us do it and the purpose of why we do it. We focus on making our clients raving fans of their investment in us.
 `,
   },
   {
     title: 'Our Mission',
-    description: `DXG's mission is to redefine event experiences through innovation and expertise. We aim to intimately understand clients' event objectives, forging meaningful connections between content and audience. With cutting-edge technology and a diverse team, our mission is to deliver dynamic, measurable results, elevating events to new levels of engagement and impact.
+    description: `Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology. 
 `,
   },
   {
     title: 'Our Experience',
-    description: `With a foundation deeply rooted in event hospitality, DXG brings over a decade of average experience among its team members. Renowned for orchestrating awe-inspiring audiovisuals at notable events, we push the boundaries of event production. Our seasoned experts ensure a seamless blend of creativity and technical prowess, crafting unforgettable experiences.
+    description: `Though established in 2018. Our core team has worked together since 2006. We have done thousands of live events and hundreds of digital events in our careers which is why the "pivot" or evolution as we like to say was not a challenge for us and helped our company grow during what for most was a challenging time.
 `,
   },
 ];
@@ -105,15 +106,7 @@ export default function WhyDxg() {
               >
                 <div className='flex flex-col items-center py-0 pt-10 md:items-start'>
                   {/* <Icons.group className='h-12 w-12' /> */}
-                  <div>
-                    <Image
-                      alt='mission'
-                      src='/mission.png'
-                      width={60}
-                      height={60}
-                    />
-                  </div>
-
+                  <img src='/mission.png' className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
@@ -124,15 +117,7 @@ export default function WhyDxg() {
                 </div>
                 <div className='flex flex-col items-center py-0 md:items-start md:py-6 '>
                   {/* <Icons.mechanics className='h-10 w-10' /> */}
-
-                  <div>
-                    <Image
-                      alt='experience'
-                      src='/experience.png'
-                      width={60}
-                      height={60}
-                    />
-                  </div>
+                  <img src='/experience.png' className='h-16 w-16' />
                   <h1 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
