@@ -103,6 +103,6 @@ export const SITECONFIG = {
   address: '2202 N. Westshore Blvd, Suite 200, Tampa, FL 33602',
   phone: '855.450.2823',
   email: 'Info@dxg.agency',
-  appointmentLink:
-    'https://crm.zoho.com/bookings/30minutesmeeting?rid=a435255ff10c375feb629d7500516317a3c27c17edf7cab0c3d6f6d5c0f5be59cf755d57ea56940469c582304e72026cgid3bf60dfb7b739cf321c736e8218e0373571ba2feaaebabce47e451cc3b4b1056',
+  appointmentBookingUrl:
+    'https://crm.zoho.com/bookings/30minutesmeeting?rid=8643cc0e2956ac1361d18f57f9d5acd461f4f659b2a1d6287c6e29a1bca6194fb57115d3bdcdb29918580495718dfd71gide0efe3c30f1473acb5a95383bb48ba17f72febd5da23f7bcceba25c9099aaa38&option=embed',
 };

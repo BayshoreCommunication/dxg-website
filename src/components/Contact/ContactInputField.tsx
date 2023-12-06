@@ -52,6 +52,7 @@ const ContactInputField = React.forwardRef<
               name={inputProperties?.name ?? 'name'}
               placeholder=' '
               className=' focus:shadow-outline block w-full  appearance-none rounded-md border border-gray-500 bg-transparent px-5  py-3 text-xl  leading-normal text-white autofill:!bg-transparent focus:border-brand focus:outline-none'
+              onChange={inputProperties?.onChange}
             />
             <label
               htmlFor={inputProperties?.name ?? 'name'}

@@ -1,11 +1,13 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import React from 'react';
 import EngageImage from '../../../public/triple-e-xperience/dxg-agency-banner-engage.png';
-import EnlightImage from '../../../public/triple-e-xperience/dxg-agency-banner-enlight.png';
-import ExchangeImage from '../../../public/triple-e-xperience/dxg-agency-banner-exchange.png';
+import EnlightImage from '../../../public/triple-e-xperience/dxg-agency-banner-exchange.png';
+import ExchangeImage from '../../../public/triple-e-xperience/dxg-agency-banner-enlight.png';
 import NewsLetter from '@/components/NewsLetter';
 import { SectionInformationWithImage } from '@/components/Sections';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import Script from 'next/script';
+import AppointmentBooking from '@/components/AppointmentBooking';
 export default function TripleExperience() {
   return (
     <div className='bg-black'>
