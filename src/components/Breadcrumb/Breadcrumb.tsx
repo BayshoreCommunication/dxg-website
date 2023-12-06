@@ -1,11 +1,9 @@
 import { ReactElement } from 'react';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import { HeaderTextStyle } from '../TextStyle';
-import { Button } from '../ui/button';
 import { MotionDiv } from '../Motion';
 import { fadeIn, staggerContainer } from '@/lib/motion';
-import Link from 'next/link';
-import { SITECONFIG } from '@/config/site';
+import AppointmentBooking from '../AppointmentBooking';
 type HeaderTextProps = {
   preText?: string;
   coloredText: string;
@@ -18,11 +16,13 @@ interface BreadCrumbProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
   buttonTitle: string;
   description?: string;
   customDescription?: ReactElement;
+  isContactUs?: boolean;
 }
 export const BreadCrumb: React.FC<BreadCrumbProps> = ({
   buttonTitle,
   description,
   titleProps,
+  isContactUs,
   customDescription,
   ...rest
 }) => {
@@ -45,15 +45,13 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
               className='lg:col-span-7 xl:col-span-6'
             >
               <HeaderTextStyle {...titleProps} />
-              <Button
-                asChild
-                variant='dashed'
-                className='mt-5 rounded-full px-10 py-3 capitalize md:px-14 lg:px-24'
-              >
-                <Link href={SITECONFIG.appointmentLink} target='_blank'>
+              {isContactUs ? (
+                <div className='mt-5 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full border-2 border-dashed border-brand px-10 py-3 text-xl font-medium capitalize text-brand md:px-14 lg:px-24'>
                   {buttonTitle}
-                </Link>
-              </Button>
+                </div>
+              ) : (
+                <AppointmentBooking buttonTitle={buttonTitle} />
+              )}
             </MotionDiv>
 
             <MotionDiv

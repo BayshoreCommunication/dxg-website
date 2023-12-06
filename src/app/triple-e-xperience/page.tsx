@@ -6,6 +6,8 @@ import ExchangeImage from '../../../public/triple-e-xperience/dxg-agency-banner-
 import NewsLetter from '@/components/NewsLetter';
 import { SectionInformationWithImage } from '@/components/Sections';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import Script from 'next/script';
+import AppointmentBooking from '@/components/AppointmentBooking';
 export default function TripleExperience() {
   return (
     <div className='bg-black'>
