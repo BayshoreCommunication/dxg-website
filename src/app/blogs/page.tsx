@@ -1,5 +1,5 @@
 import {
-  // BlogHeaderSection,
+  BlogHeaderSection,
   // CreateAService,
   // MultipleServiceSection,
   RecentBlogSection,
@@ -8,10 +8,10 @@ import {
 export default function page() {
   return (
     <div className='bg-black' style={{ height: '100vh' }}>
-      {/* <BlogHeaderSection /> */}
+      <BlogHeaderSection />
       <RecentBlogSection />
-      {/* <CreateAService />
-      <MultipleServiceSection /> */}
+      {/* <CreateAService /> */}
+      {/* <MultipleServiceSection /> */}
     </div>
     
   );
