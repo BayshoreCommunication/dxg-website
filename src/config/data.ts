@@ -182,7 +182,7 @@ export const OurMethods = [
     icon: 'group' as const,
     description:
       'Our missions is simple. To help your event be a success. With this we focus on your goals and manage them through "The Success Process" methodology.',
-    image: '/why-dxg/mission.jpg',
+    image: '/why-dxg/mission.png',
   },
   {
     index: 4,
