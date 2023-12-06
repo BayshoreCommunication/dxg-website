@@ -5,6 +5,9 @@ import { H1, Paragraph, Title } from '../Typography';
 import { MotionP } from '../Motion';
 import { textContainer } from '@/lib/motion';
 import { HeadShot } from '../Headshot';
+import { BottomToTop } from '../Animation';
+import { Button } from '../ui/button';
+import Link from 'next/link';
 const infos = {
   title: 'Who We Are',
   description: [
@@ -26,6 +29,15 @@ export default function WeAre() {
           {infos.description.map((text, index) => (
             <Paragraph key={index} text={text} />
           ))}
+          <BottomToTop>
+            <Button
+              asChild
+              variant={'outline'}
+              className='capsule-hover capsule-button rounded-full border-brand bg-transparent px-7 text-brand hover:bg-brand hover:text-white'
+            >
+              <Link href='/who-we-are'>Read More</Link>
+            </Button>
+          </BottomToTop>
         </div>
       </div>
     </MaxWidthWrapper>
