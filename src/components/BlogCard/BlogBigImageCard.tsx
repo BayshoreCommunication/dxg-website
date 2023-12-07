@@ -1,6 +1,8 @@
 import { formatTimestamp } from '@/lib/utils';
 import Image from 'next/image';
 import { Button } from '../ui/button';
+import parse from 'html-react-parser';
+
 interface BlogBigImageCardProps {
   id: number;
   date: number;
@@ -37,7 +39,7 @@ export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
       </div>
       <p className='text-light mt-3'>{time}</p>
       <h4 className='text mb-3 text-xl font-bold text-brand'>{title}</h4>
-      <p className='text-justify text-sm'>{description}</p>
+      <p className='text-justify text-sm'>{parse(description)}</p>
       <div className='mt-3 flex gap-3'>
         {tag.map((item, index) => {
           return (

@@ -1,4 +1,4 @@
-import NewsLetter from '@/components/NewsLetter';
+import GetAQoute from '@/components/GetAQuote';
 import Testimonial from '@/components/Testimonial';
 import WhyDxg from '@/components/home/WhyDxg';
 import { AudiovisualTechnologyBannerSection } from '@/components/Sections/AudiovisualTechnologyBannerSection';
@@ -7,8 +7,8 @@ export default function AudioVisualTechnology() {
   return (
     <div className='bg-black'>
       <AudiovisualTechnologyBannerSection />
-      <div className='flex flex-wrap md:px-28'>
-        <div className='w-1/2 p-4'>
+      <div className='flex flex-col md:flex-row md:px-28'>
+        <div className='w-full md:w-1/2 p-4'>
           <p
             style={{
               color: 'white',
@@ -17,26 +17,25 @@ export default function AudioVisualTechnology() {
               textAlign: 'justify',
             }}
           >
-            In event production, the power of cutting-edge audiovisual
-            technology cannot be overstated. At DXG, we pride ourselves on
-            providing state-of-the-art AV solutions tailored to each
-            event&apos;s unique needs. Our inventory includes the latest in
-            sound, lighting, video, and LED equipment, ensuring your event is
-            not just seen and heard but remembered. Our skilled technicians work
-            closely with you to design and implement custom AV setups that
-            enhance your message and captivate your audience. From crystal-clear
-            audio systems to visually stunning displays, we ensure every
-            technical detail aligns perfectly with your vision. With our
-            advanced audiovisual technology and expert support, your event will
-            leave a lasting impression, engaging attendees and elevating your
-            message beyond mere words.
+            At DXG, we specialize in turning your vision into a seamless
+            audiovisual spectacle. Our production management service is the
+            cornerstone of your event&apos;s success. We handle every aspect of
+            production, from initial concept to final execution, with meticulous
+            attention to detail. Our team of experienced professionals is
+            equipped with the latest technology and industry insights to manage
+            logistics, coordinate with vendors, and oversee technical
+            requirements. We understand the complexities of audiovisual
+            production and are dedicated to ensuring that everything runs
+            smoothly. We aim to bring your event to life while providing you
+            complete peace of mind. Trust us to handle the intricacies of
+            production management so you can focus on what truly matters - your
+            message and your audience.
           </p>
         </div>
-        <div className='w-1/2 p-4'>
-          <NewsLetter />
+        <div className='w-full md:w-1/2 p-4'>
+          <GetAQoute />
         </div>
-      </div>
-      <Testimonial />
+      </div>      <Testimonial />
       <WhyDxg />
     </div>
   );

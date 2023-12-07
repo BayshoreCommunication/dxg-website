@@ -5,6 +5,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
+import Link from 'next/link';
 
 export const RecentBlogSection = () => {
   const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
@@ -24,24 +25,31 @@ export const RecentBlogSection = () => {
           <MotionDiv
             variants={slideIn('left', 'tween', 0.2, 1)}
             className='w-full py-2 lg:w-9/12'
-          >
+          style={{display:'none'}}>
             <Suspense fallback={<div>Loading...</div>}>
-              <BlogBigImageCard {...selectedPost} />
+              {/* <BlogBigImageCard {...selectedPost} /> */}
             </Suspense>
           </MotionDiv>
-          <div className='w-full p-2 lg:w-3/12' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
-            <div className='flex flex-col gap-5'>
-              {RECENT_BLOG_POST.map((item, index) => {
-                  return (
-                    <MotionDiv
-                      variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                      key={item.id}
-                      onClick={() => setSelectedPost(item)}
-                    >
-                      <BlogWideCard key={item.id} {...item} />
-                    </MotionDiv>
-                  );
-              })}
+          <div className='w-full' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
+            <div className='flex flex-wrap justify-between gap-5'>
+            {RECENT_BLOG_POST.map((item, index) => {
+              return (
+                <Link href={`/post/`} key={item.id} style={{maxWidth: '45%'}}>
+                  <MotionDiv
+                    variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                    onClick={() => {
+                      setSelectedPost(item);
+                      if (typeof window !== 'undefined') {
+                        localStorage.setItem('selectedPost', JSON.stringify(item));
+                      }
+                    }}
+                    className='w-full'
+                  >
+                    <BlogWideCard {...item} />
+                  </MotionDiv>
+                </Link>
+              );
+            })}
             </div>
           </div>
         </MotionDiv>
@@ -49,4 +57,3 @@ export const RecentBlogSection = () => {
     </div>
   );
 };
-

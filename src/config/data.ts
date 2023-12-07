@@ -209,7 +209,669 @@ export const RECENT_BLOG_POST = [
     title: 'Microsoft Event Planning (post 1)',
     image: 'https://picsum.photos/523/430',
     description:
-      '1Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+      `<h1>Steps For A Great Event Run Of Show: No More Boring Events!</h1>
+      <p>
+        Ever been to an event where the speaker went on forever, the coffee ran out
+        halfway through, and the &quot;surprise entertainment&quot; turned out to be
+        interpretive dance? Yeah, not exactly the stuff of event planning dreams.
+      </p>
+      
+      <p>
+        But it doesn&#39;t have to be that way. Your event can be a smooth, seamless
+        symphony of awesome &ndash; and it all starts with the run of show (ROS). It
+        keeps your speakers on track, your volunteers in the loop, and your guests
+        saying, &quot;Wow, this is actually fun!&quot;
+      </p>
+      
+      <p>
+        So ditch the stress because we&#39;re about to turn your event from a hot mess
+        to a masterpiece. We&#39;ll talk setting goals, assigning roles, scheduling
+        like a pro (even with those flaky speakers), and building in enough buffer
+        time for those inevitable hiccups.
+      </p>
+      <h2>1)Setting the Stage: Defining Event Objectives</h2>
+      <p>
+        Before we start, let&rsquo;s assume you&#39;re building a house. You
+        wouldn&#39;t just start hammering nails without a blueprint, right? The same
+        goes for your event. Before you start scheduling speakers and booking
+        catering, you need to define your event&#39;s objectives.
+      </p>
+      
+      <p>
+        Think of your objectives as the foundation of your event. They&#39;re the
+        &quot;why&quot; behind everything you do. What do you want to achieve with
+        this event? Do you want to:
+      </p>
+      
+      <ol>
+        <li>
+          <strong>Educate your audience:</strong>
+          >Are you launching a new product? Sharing industry insights? Then your
+          objective might be to increase attendees&#39; knowledge by X% or have them
+          leave with 3 key takeaways.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Generate leads:Is your event a networking goldmine? Then your goal might be
+          to collect 100 qualified leads or have attendees schedule 20 follow-up
+          meetings.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Build brand awareness:Are you introducing your company to a new market? Then
+          your objective could be to have Y% of attendees recall your brand name or
+          associate it with specific keywords.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Boost morale:Is this a team-building retreat? Then your goal might be to
+          improve employee satisfaction by Z% or have X% of attendees report feeling
+          more connected to their colleagues.
+        </li>
+      </ol>
+      
+      <p>
+        The key is to be specific and measurable. Don&#39;t just say you want to
+        &quot;have a successful event.&quot; What does &quot;successful&quot; look
+        like for you? Define your objectives clearly, and you&#39;ll have a much
+        easier time creating ROS that actually helps you achieve them.
+      </p>
+      
+      <p>Here are some tips for setting clear and measurable event objectives:</p>
+      
+      <ul>
+        <li>
+          Use the SMART framework:Make your objectives Specific, Measurable,
+          Achievable, Relevant, and Time-bound. For example, instead of saying
+          &quot;increase brand awareness,&quot; say &quot;have 80% of attendees recall
+          our brand name within 3 months of the event.&quot;
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Focus on outcomes, not outputs:Don&#39;t just focus on the number of
+          attendees or the amount of food served. What do you want those attendees to
+          do or feel as a result of your event?
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Get input from stakeholders:Talk to your team, sponsors, and target audience
+          to understand their expectations and what they hope to achieve from the
+          event.
+        </li>
+      </ul>
+      
+      <p>
+        Once you have your objectives nailed down, you&#39;ll be in a much better
+        position to start building your ROS. Remember, every decision you make, from
+        the speakers you choose to the breaks you schedule, should be aligned with
+        your overall event goals.
+      </p>
+      <h2>2) Building Your Event Dream Team: Assign Roles &amp; Rule the Show</h2>
+      <p>
+        Imagine a football team without a quarterback, or a bakery without a baker.
+        Pretty chaotic, right? Your event needs the same strong, well-coordinated team
+        to bring your run of show to life. Here are some key roles:
+      </p>
+      
+      <ol>
+        <li>
+          Event Planner: Your conductor, overseeing everything from budget to crisis
+          communication. Choose someone organized, detail-oriented, and able to think
+          on their feet.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Speakers &amp; Performers:The stars! Captivate your audience with their
+          knowledge, skills, or talent. Choose experts, engaging presenters, and those
+          aligned with your event&#39;s goals.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Technical Crew:Invisible heroes making lights shine and slides click. Find
+          reliable techies who can troubleshoot any audio-visual hiccups.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Volunteers:The smiling faces welcoming, guiding, and answering questions.
+          They&#39;re the backbone that keeps the experience smooth.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Sponsors &amp; Vendors:Sponsors provide financial support, while vendors
+          help with everything from catering to entertainment. Choose partners who
+          share your vision, values, and target audience.
+        </li>
+      </ol>
+      
+      <p>
+        Once your team is assembled, assign roles and responsibilities clearly. Give
+        them the authority they need to shine, and provide training and support.
+      </p>
+      
+      <h2>3) Sketching the Timeline: Developing a Preliminary Schedule</h2>
+      <p>
+        With your team assembled and goals in sight, let&#39;s paint a broad picture
+        of your event&#39;s flow. This is where we build the preliminary schedule, the
+        rough sketch of your masterpiece.
+      </p>
+      
+      <p>Step 1: Mark Your Milestones:</p>
+      
+      <p>
+        First, block out the big rocks &ndash; your event&#39;s start and end times,
+        speaker slots, key presentations, performances, breaks, and networking
+        opportunities. Treat these as the pillars of your schedule, ensuring they fit
+        within the overall timeframe.
+      </p>
+      
+      <p>Step 2: Be Flexible Friend:</p>
+      
+      <p>
+        Remember, this isn&#39;t etched in stone! Leave wiggle room around your
+        milestones. Unexpected delays? Technical glitches? No problem. Your buffer
+        time has got your back.
+      </p>
+      
+      <p>Step 3: Think Like a Time Traveler:</p>
+      
+      <p>
+        Now, imagine yourself at the event. Walk through each element in your mind.
+        How long will registration take? How long should lunch be? Factor in setup,
+        transition time, and that extra five minutes for the speaker who loves a good
+        story.
+      </p>
+      
+      <p>Step 4: Don&#39;t Be Afraid to Get Granular:</p>
+      
+      <p>
+        Even in this preliminary stage, break down key sections into smaller chunks. A
+        panel discussion? Estimate each speaker&#39;s time, Q&amp;A, and moderator
+        transitions. This helps you visualize the flow and identify potential
+        bottlenecks.
+      </p>
+      
+      <p>Step 5: Embrace the Spreadsheet (or App) of Your Dreams:</p>
+      
+      <p>
+        Use visual tools to map out your schedule. Timelines, Gantt charts, project
+        management apps &ndash; choose your weapon! Seeing everything laid out helps
+        you identify overlaps, gaps, and opportunities for improvement.
+      </p>
+      
+      <p>Step 6: Keep It Real:</p>
+      
+      <p>
+        Be honest about your resources. Do you have enough volunteers to handle
+        registration and crowd control? Can your venue accommodate all the activities
+        you have in mind? Reality checks are key to avoiding a logistical nightmare.
+      </p>
+      
+      <p>Step 7: Remember, It&#39;s a Draft:</p>
+      
+      <p>
+        This is just the first brushstroke. As you gather more information and
+        collaborate with your team, your schedule will evolve. Embrace the iterative
+        process!
+      </p>
+      
+      <p>
+        Just remember, flexibility is your friend. Things will change, hiccups will
+        happen, but with a solid foundation, you can adapt and keep your event on
+        track.
+      </p>
+      <h2>4) Identifying Event Components: Mapping Out the Event Structure</h2>
+      <p>
+        We&#39;ve got a basic plan for the event. Now, let&#39;s dig in deeper.
+        We&#39;ll list and sort out all the different parts of the event.
+      </p>
+      
+      <ol>
+        <li>Pre-Event:</li>
+      </ol>
+      
+      <ol>
+        <li>
+          Registration:How will attendees sign up? Online, on-site? Make it seamless!
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Welcome &amp; Logistics:Greet guests with warmth, provide clear directions,
+          ease their anxieties.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Icebreakers &amp; Networking:Help attendees connect and break the ice.
+          Awkward silences are no fun!
+        </li>
+      </ol>
+      
+      <ol>
+        <li>During Event:</li>
+      </ol>
+      
+      <ol>
+        <li>
+          Presentations &amp; Performances:Speakers, panels, workshops &ndash; the
+          content that draws them in.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Breaks &amp; Refreshments:Recharge those batteries! Fuel their brains and
+          bodies.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Activities &amp; Entertainment:Interactive fun, engaging experiences, keep
+          them on their toes.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Q&amp;A Sessions:Foster dialogue, answer burning questions, make it a
+          two-way street.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Networking Opportunities:Let connections happen organically, facilitate
+          meaningful interactions.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>Post-Event:</li>
+      </ol>
+      
+      <ol>
+        <li>Thank Yous:Show your appreciation, keep the conversation going.</li>
+      </ol>
+      
+      <ol>
+        <li>
+          Feedback &amp; Evaluation:Learn from your experience, what worked, what
+          didn&#39;t?
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Content Sharing &amp; Promotion:Extend the event&#39;s reach, share
+          recordings, articles, keep the buzz going.
+        </li>
+      </ol>
+      
+      <p>
+        It&#39;s more than just completing tasks. Think about how each thing
+        you&#39;re doing helps reach your main goals. Ask yourself: Does talking and
+        meeting people in the networking session help get new customers? Is the talk
+        going on for too long, making people lose interest? It&#39;s about making sure
+        each part of the event helps achieve what you want in the end
+      </p>
+      <h2>5) Scheduling Speakers &amp; Performers: Finding the Perfect Fit</h2>
+      <p>
+        With your event&#39;s structure built, it&#39;s time to call in the stars! But
+        before you get starstruck, remember: availability and fit are key.
+      </p>
+      
+      <ol>
+        <li>
+          Prioritize relevance:Don&#39;t just book names. Align expertise with your
+          theme and audience. Relevance is magic for engagement.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Do your research:Check schedules, travel time, and previous gigs. A
+          jet-lagged speaker won&#39;t do you justice.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Be clear and upfront: Communicate expectations. How long will they speak?
+          What format? What tech support? Transparency builds trust.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Offer incentives:Money isn&#39;t everything, but it helps. Consider fees,
+          travel reimbursement, or a platform to promote their work. Show you value
+          them.
+        </li>
+      </ol>
+      
+      <p>Now, let&#39;s talk slots:</p>
+      
+      <ul>
+        <li>
+          Primetime vs. off-peak:Consider audience energy levels and competing events.
+          Keynote in the morning or afternoon?
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Speaker compatibility:Group them with complementary styles or topics for a
+          cohesive flow.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Buffer time:Don&#39;t forget breaks and transitions! Give speakers time to
+          set up, attendees time to breathe, and yourself time to avoid scheduling
+          meltdowns.
+        </li>
+      </ul>
+      
+      <p>
+        Scheduling&#39;s an art, not a science. Be flexible, be creative, and most
+        importantly, be respectful of their time and expertise.
+      </p>
+      <h2>6) Buffer Time: Your Secret Weapon for Smooth Sailing</h2>
+      <p>
+        Remember that beautiful schedule? Yeah, it&#39;s about to get a reality check.
+        Events, like life, rarely go according to plan. That&#39;s where your secret
+        weapon comes in: buffer time. Why is buffer time your best friend? Because it
+        provides smooth transitions, reduces stress, and absorbs domino effects before
+        they snowball
+      </p>
+      
+      <p>Buffer time depends on your event&#39;s risk factor:</p>
+      
+      <ul>
+        <li>High risk (live performances): 20-30%</li>
+        <li>Medium risk (panels): 15-20%</li>
+        <li>Low risk (keynotes): 10-15%</li>
+      </ul>
+      
+      <p>
+        It&#39;s not wasted time, it&#39;s an investment in sanity. Plan for the
+        worst, build micro-buffers, and empower your team to adjust on the fly.
+      </p>
+      <h2>7) Crafting a Comprehensive Agenda: The Core of the ROS</h2>
+      <p>
+        This isn&#39;t just a list of activities. It&#39;s a roadmap for everyone
+        involved, from speakers to volunteers to attendees. It tells them what
+        happens, when it happens, and who&#39;s responsible for making it happen.
+      </p>
+      
+      <p>Here&#39;s how to create the masterpiece:</p>
+      
+      <ul>
+        <li>
+          Gather your tools:Whatever helps you visualize and organize (sticky notes,
+          spreadsheets, online planners).
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Pull it all together:Schedule, components, timings, responsible parties,
+          resources &ndash; slot it all in.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Get specific:No &quot;speaker 1&quot; here. Include names, topics, timings
+          &ndash; leave no detail to guesswork.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Mind the flow:Transitions are crucial. Factor in setup/teardown, breaks,
+          even bathroom lines.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Be visually clear:Headings, colors, symbols &ndash; make it an infographic,
+          not a grocery list.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Share and iterate:Get feedback from your team, speakers, even volunteers. A
+          good agenda is collaborative.
+        </li>
+      </ul>
+      
+      <p>
+        Remember, a good agenda is dynamic, not static. Things change, so be flexible.
+        Embrace updates and revisions as needed.
+      </p>
+      
+      <h2>8) Communication Symphony: Keeping Everyone in Harmony</h2>
+      <p>
+        Your masterpiece is taking shape! But what&#39;s the point of a beautiful
+        score if the musicians don&#39;t know their parts? That&#39;s where
+        communication takes center stage.
+      </p>
+      
+      <p>Here&#39;s your communication checklist:</p>
+      
+      <ol>
+        <li>
+          Share the agenda widely:Make it the gospel. Distribute it to everyone
+          involved, online or printed.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Conduct pre-event briefings:Go beyond the agenda. Explain the
+          &quot;why&quot; behind each element and address any questions or concerns.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Facilitate communication channels:Create a platform for real-time updates
+          and discussions. A dedicated Slack channel, anyone?
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Foster open communication:Encourage questions, feedback, and even
+          suggestions. A collaborative approach breeds success.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Be responsive and proactive:Address issues promptly and don&#39;t shy away
+          from updates, even if they&#39;re last-minute. Transparency builds trust.
+        </li>
+      </ol>
+      
+      <p>
+        Remember, clear communication isn&#39;t a one-way street. Actively listen,
+        address concerns, and empower your team to be proactive.
+      </p>
+      <h2>9) Rehearsals and Refinements: Polishing for Perfection</h2>
+      <p>
+        Your event is almost ready to take the stage, but wait! Before you unleash it
+        on the world, it&#39;s time for some final dress rehearsals. Think of it as a
+        chance to iron out any wrinkles and ensure your masterpiece shines under the
+        spotlight.
+      </p>
+      
+      <ol>
+        <li>
+          Walk-through the venue:Get a feel for the space, check transitions, and
+          identify potential bottlenecks. Is there enough room for that live
+          performance? Can everyone see the projector screen?
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Rehearse speakers and performers: Help them refine timings, troubleshoot
+          technical hiccups, and practice transitions. A confident speaker translates
+          to a captivated audience.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Run a tech rehearsal:Test lights, sound, and presentations. Practice
+          transitions between elements to ensure seamless flow. Don&#39;t let a
+          technical glitch steal the show.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Time it all out:Do a full run-through, incorporating breaks and transitions.
+          Does the schedule hold up? Are there any unexpected delays? Remember, a
+          tight ship is a happy ship (and audience).
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Debrief and adapt:Gather feedback from everyone involved. Did anything feel
+          clunky? Were there any confusing moments? Be open to tweaks and adjustments.
+        </li>
+      </ol>
+      
+      <p>
+        Remember, rehearsals aren&#39;t about finding fault; they&#39;re about finding
+        polish. It&#39;s a chance to anticipate problems, build confidence, and ensure
+        your event is an unforgettable experience for everyone involved.
+      </p>
+      <h2>10) Monitoring and Adapting: Staying on Track</h2>
+      <p>
+        Your event is live! The stage lights are on, the speakers are buzzing, and
+        excitement fills the air. But wait, the conductor doesn&#39;t just put down
+        their baton and relax, do they? No, they stay vigilant, adjusting the tempo,
+        guiding the musicians, ensuring the harmony stays intact. That&#39;s your role
+        now and It&#39;s time to monitor and adapt.
+      </p>
+      
+      <ol>
+        <li>
+          Monitor like a hawk:Delegate a team member to track the run of show and flag
+          any detours. They&#39;re your on-the-ground eyes and ears.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Embrace the bend:Remember that buffer time? Use it! Adapt timings, adjust
+          breaks, even switch elements if needed. Flow is your friend.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Communicate like a pro:Keep everyone in the loop about changes. Speakers,
+          volunteers, even the audience &ndash; transparency builds trust and avoids
+          chaos.
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Solve like a champ:Unexpected hiccups? Don&#39;t sweat it. Think on your
+          feet, find creative solutions, always have a Plan B (or C!).
+        </li>
+      </ol>
+      
+      <ol>
+        <li>
+          Learn from every note:Every blip is a lesson. Take notes, observe reactions,
+          and incorporate learnings into future events. Growth is key.
+        </li>
+      </ol>
+      
+      <h2>
+        11) Curtain Call and Encore: Post-Event Evaluation for Continuous Brilliance
+      </h2>
+      
+      <p>
+        The applause has faded, the lights have dimmed, but your work isn&#39;t done
+        yet, It&#39;s time to step off the stage, take a deep breath, and reflect on
+        your masterpiece.
+      </p>
+      <ul>
+        <li>
+          Gather feedback:survey your audience, speakers, and volunteers. Honest
+          opinions are your golden ticket.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Dive into data:registration numbers, engagement metrics, social media buzz.
+          Did you hit your goals? Data speaks volumes, listen closely.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Analyze your ROS:was the schedule realistic? Did transitions flow smoothly?
+          Revisit it with a critical eye.
+        </li>
+      </ul>
+      
+      <ul>
+        <li>
+          Celebrate successes: acknowledge what went well! Team wins, speaker
+          brilliance, pure event magic. Appreciation fuels motivation.
+        </li>
+      </ul>
+      
+      <p>
+        Finally, be honest. Could you have done better? Learning from mistakes is key
+        to continuous improvement. &nbsp;And a great event also needs some great
+        support while adapting to quick changes, like hiring
+        <a href="#">experienced travel AV </a>vendors quickly, Don&rsquo;t stress, you
+        can <a href="#">change your vendor without a big headache</a>.
+      </p>
+      
+      <p>
+        So, spill the tea! What&#39;s the biggest event fail you&#39;ve ever seen?
+        (Bonus points for cringe-worthy details!) Don&rsquo;t forget to share it with
+        a friend who needs this knowledge like they need oxygen! Sharing is caring,
+        after all.
+      </p>
+      `,
     tag: ['design', 'research'],
   },
   {
@@ -240,7 +902,7 @@ export const RECENT_BLOG_POST = [
     tag: ['design', 'research'],
   },
   {
-    id: 3,
+    id: 4,
     date: 1700973637000,
     title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
@@ -249,7 +911,7 @@ export const RECENT_BLOG_POST = [
     tag: ['design', 'research'],
   },
   {
-    id: 3,
+    id: 5,
     date: 1700973637000,
     title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
@@ -258,7 +920,7 @@ export const RECENT_BLOG_POST = [
     tag: ['design', 'research'],
   },
   {
-    id: 3,
+    id: 6,
     date: 1700973637000,
     title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
