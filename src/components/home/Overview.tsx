@@ -8,6 +8,7 @@ import { P } from '../Typography';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 import { MotionDiv } from '../Motion';
 import { fadeIn, staggerContainer } from '@/lib/motion';
+import ProposalForm from '../ProposalForm';
 
 const data = [
   {
@@ -90,6 +91,7 @@ export default function Overview() {
             );
           })}
         </MotionDiv>
+        <ProposalForm />
       </MaxWidthWrapper>
     </div>
   );

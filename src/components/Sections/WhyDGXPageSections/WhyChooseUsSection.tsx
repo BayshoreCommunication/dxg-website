@@ -81,7 +81,7 @@ export const WhyChooseUsSection = () => {
               variants={fadeIn('left', 'tween', 0.4, 1)}
               className='text-white'
             >
-              <div className='mt-4 flex w-full gap-4'>
+              <span className='mt-4 flex w-full gap-4'>
                 We ensure an unparalleled fusion of experience, innovation, and
                 dedication. With core teams boasting an average of 15+ years in
                 live events, virtual and hybrid corporate events, broadcast, and
@@ -94,11 +94,11 @@ export const WhyChooseUsSection = () => {
                 only in the technical aspects but also in crafting immersive
                 experiences that resonate with your audience, ensuring your
                 event leaves a lasting impression.
-              </div>
+              </span>
             </MotionP>
             <div className='mt-4 flex w-full gap-4'>
               <MotionDiv
-                variants={fadeIn('left', 'tween', 0.4, 1)}
+                variants={fadeIn('up', 'tween', 0.4, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
                 <NumberAnimation className='text-3xl' value={70} />
@@ -107,7 +107,7 @@ export const WhyChooseUsSection = () => {
                 </p>
               </MotionDiv>
               <MotionDiv
-                variants={fadeIn('left', 'tween', 0.5, 1)}
+                variants={fadeIn('up', 'tween', 0.5, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
                 <NumberAnimation className='text-3xl' value={65} />
@@ -116,7 +116,7 @@ export const WhyChooseUsSection = () => {
                 </p>
               </MotionDiv>
               <MotionDiv
-                variants={fadeIn('left', 'tween', 0.6, 1)}
+                variants={fadeIn('up', 'tween', 0.6, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
                 <NumberAnimation className='text-3xl' value={5} />

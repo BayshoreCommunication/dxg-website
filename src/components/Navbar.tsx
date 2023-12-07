@@ -8,6 +8,7 @@ import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
 import { navVariants } from '@/lib/motion';
 import { MotionDiv } from './Motion';
+import ProposalForm from './ProposalForm';
 
 const links = [
   { name: 'Home', href: '#' },
@@ -23,14 +24,14 @@ const links = [
 
 export default function Navbar() {
   const currentRoute = usePathname();
-  console.log('Current Route is => ', currentRoute);
+
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-16 bg-header md:h-20'>
       <div className='flex h-full items-center justify-between px-2.5 md:px-28 '>
         <Link href='/' className='w-14 md:w-16'>
           <Image width={70} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
         </Link>
-        <div className='hidden lg:block'>
+        <div className='hidden lg:flex'>
           {SITECONFIG.mainNav.map((item, index) => {
             return (
               <Link key={index} href={item.slug}>
@@ -47,11 +48,7 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <CapsuleButton
-            title='Request for Proposal'
-            as='link'
-            href='/contact-us'
-          />
+          <ProposalForm />
         </div>
         {/* Mobile view */}
         <NavBarMobile />

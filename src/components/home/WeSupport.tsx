@@ -23,9 +23,11 @@ export default function WeSupport() {
   return (
     <div className='bg-black'>
       <MaxWidthWrapper>
-        <div className='flex flex-col  items-end py-5 md:py-10'>
-          <Title text={infos.title} />
-          <Paragraph text={infos.description} className='md:max-w-2xl' />
+        <div className='flex flex-col  items-end py-5 md:py-10 '>
+          <div className=' md:max-w-2xl'>
+            <Title text={infos.title} />
+            <Paragraph text={infos.description} className='text-left' />
+          </div>
 
           {/* <BottomToTop>
             <Button

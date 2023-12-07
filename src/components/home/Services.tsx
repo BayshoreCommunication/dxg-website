@@ -82,7 +82,7 @@ export default function Services() {
                       </div>
 
                       <motion.div
-                        initial={{ x: -100 }} // Start from the left
+                        initial={{ x: 0 }} // Start from the left
                         whileHover={{ x: 0 }} // Move to the original position on hover
                         transition={{
                           type: 'spring',
@@ -91,11 +91,15 @@ export default function Services() {
                         }} // Use a spring transition for a smoother effect
                         className='hidden flex-row  px-5 group-hover:flex md:flex-col'
                       >
-                        <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>
+                        <motion.div className='min-h-[300px] pt-10 md:max-h-[420px]'>
                           <h1 className=' text-xl font-bold uppercase text-white'>
                             {item.title}
                           </h1>
-                          <p className='text-base text-white'>{item.excerpt}</p>
+                          <div className=''>
+                            <p className='overflow-hidden text-base text-white'>
+                              {item.excerpt}
+                            </p>
+                          </div>
                         </motion.div>
                         <motion.div
                           className='flex justify-center pt-12 md:pt-0'
