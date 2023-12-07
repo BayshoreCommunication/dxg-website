@@ -91,7 +91,7 @@ export default function Services() {
                         }} // Use a spring transition for a smoother effect
                         className='hidden flex-row  px-5 group-hover:flex md:flex-col'
                       >
-                        <motion.div className='min-h-[300px] pt-10 md:max-h-[420px]'>
+                        <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>
                           <h1 className=' text-xl font-bold uppercase text-white'>
                             {item.title}
                           </h1>

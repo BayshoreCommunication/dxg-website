@@ -21,7 +21,7 @@ export const WhyChooseUsSection = () => {
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
           {/* Images */}
           <div className='flex w-full items-end gap-4'>
-            <MotionDiv variants={zoomIn(0.2, 1)} className='relative w-1/2'>
+            <MotionDiv variants={zoomIn(0.2, 0.5)} className='relative w-1/2'>
               <Image
                 src={presentation}
                 width={316}
@@ -43,7 +43,7 @@ export const WhyChooseUsSection = () => {
                   Years
                 </h1>
               </MotionDiv>
-              <MotionDiv variants={zoomIn(0.3, 1)}>
+              <MotionDiv variants={zoomIn(0.3, 0.5)}>
                 <Image
                   src={meeting}
                   width={315}
@@ -52,7 +52,7 @@ export const WhyChooseUsSection = () => {
                   className='rounded-3xl'
                 />
               </MotionDiv>
-              <MotionDiv variants={zoomIn(0.4, 1)}>
+              <MotionDiv variants={zoomIn(0.4, 0.5)}>
                 <Image
                   src={experience}
                   width={315}
@@ -66,19 +66,19 @@ export const WhyChooseUsSection = () => {
           {/* Texts */}
           <div className='w-full'>
             <MotionP
-              variants={fadeIn('left', 'tween', 0.2, 1)}
+              variants={fadeIn('up', 'tween', 0.2, 0.5)}
               className='text-brand'
             >
               Why Choose Us
             </MotionP>
             <MotionH1
-              variants={fadeIn('left', 'tween', 0.3, 1)}
+              variants={fadeIn('up', 'tween', 0.3, 0.5)}
               className='text-2xl font-bold text-white'
             >
               Take Your Business to the Next Level
             </MotionH1>
             <MotionP
-              variants={fadeIn('left', 'tween', 0.4, 1)}
+              variants={fadeIn('up', 'tween', 0.4, 0.5)}
               className='text-white'
             >
               <span className='mt-4 flex w-full gap-4'>

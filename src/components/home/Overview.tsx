@@ -91,7 +91,6 @@ export default function Overview() {
             );
           })}
         </MotionDiv>
-        <ProposalForm />
       </MaxWidthWrapper>
     </div>
   );
