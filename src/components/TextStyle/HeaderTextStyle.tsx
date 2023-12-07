@@ -24,7 +24,7 @@ export const HeaderTextStyle: React.FC<HeaderTextProps> = ({
     );
   return (
     <h1
-      className={`${texAlign} text-4xl font-bold uppercase text-white md:text-5xl`}
+      className={`${texAlign} text-3xl font-bold uppercase text-white md:text-5xl`}
     >
       {preText} <span className='uppercase text-brand'>{coloredText}</span>{' '}
       {postText}
