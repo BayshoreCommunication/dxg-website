@@ -7,7 +7,7 @@ import {
 
 export default function page() {
   return (
-    <div className='bg-black'>
+    <div className='bg-black' style={{backgroundColor:'black',}}>
       <BlogHeaderSection />
       <RecentBlogSection />
       <CreateAService />
