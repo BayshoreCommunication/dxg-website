@@ -15,7 +15,7 @@ export default function Home() {
       <WeSupport />
       <Services />
       <WhyDxg />
-      <OurBlogSection />
+      {/* <OurBlogSection /> */}
       <Testimonial />
       <div className='bg-black'>
         <NewsLetter />

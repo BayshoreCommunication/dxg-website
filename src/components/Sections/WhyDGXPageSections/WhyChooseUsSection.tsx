@@ -101,7 +101,7 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('up', 'tween', 0.4, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <NumberAnimation className='text-3xl' value={70} />
+                <NumberAnimation className='text-3xl' value={5000} />
                 <p className='text-xs font-light text-white md:text-base'>
                   Project Complete
                 </p>
@@ -110,7 +110,7 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('up', 'tween', 0.5, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <NumberAnimation className='text-3xl' value={65} />
+                <NumberAnimation className='text-3xl' value={500} />
                 <p className=' text-xs font-light text-white md:text-base'>
                   Client Happy
                 </p>

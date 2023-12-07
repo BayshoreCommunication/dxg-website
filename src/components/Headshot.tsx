@@ -1,7 +1,7 @@
 'use client';
-import { slideIn, fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
-import { MotionDiv } from './Motion';
+import { zoomIn } from '@/lib/motion';
 import Image from 'next/image';
+import { MotionDiv } from './Motion';
 
 interface HeadShotProps {
   path: string;
@@ -17,9 +17,9 @@ export const HeadShot = ({ path }: HeadShotProps) => (
       </div>
     </div>
     <MotionDiv
-            variants={fadeIn('left', 'tween',0.3,1)}
-            initial='hidden'
-            whileInView='show'
+      variants={zoomIn(0.4, 0.5)}
+      initial='hidden'
+      whileInView='show'
       viewport={{ once: false, amount: 0.2 }}
       className='absolute left-[20%] top-0 -translate-x-1/4 -translate-y-1/2 transform md:left-[40%]'
     >
