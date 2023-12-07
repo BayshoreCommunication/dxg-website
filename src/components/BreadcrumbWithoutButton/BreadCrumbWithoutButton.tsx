@@ -30,22 +30,22 @@ export const BreadCrumbWithoutButton: React.FC<BreadCrumbProps> = ({
   return (
     <div
       style={{ backgroundImage: `url(${bgImage})` }} // Add this line
-      className='min-h-[300px]  bg-cover bg-no-repeat'
+      className='relative min-h-[300px]  bg-cover bg-no-repeat'
       {...rest}
     >
-      <div className='bg-differentBackground'>
+      <div className=' bg-differentBackground'>
         <MaxWidthWrapper>
-          <div className='py-9 xl:py-28 '>
+          <div className=''>
             <MotionDiv
               variants={staggerContainer(0.2, 0.1)}
               initial='hidden'
               whileInView='show'
               viewport={{ once: false, amount: 0.25 }}
-              className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'
+              className='flex min-h-[300px] items-center justify-center'
             >
               <MotionDiv
                 variants={fadeIn('right', 'tween', 0.2, 1)}
-                className='pm-breadcrum lg:col-span-7 xl:col-span-6'
+                className=''
               >
                 <HeaderTextStyle {...titleProps} />
                 {/* <Button
