@@ -34,7 +34,8 @@ export const RecentBlogSection = () => {
             <div className='flex flex-wrap justify-between gap-5'>
             {RECENT_BLOG_POST.map((item, index) => {
               return (
-                <Link href={`/post/`} key={item.id} style={{maxWidth: '45%'}}>
+                // <Link href={`/post/`} key={item.id} style={{maxWidth: '45%'}}>
+                <Link href='#' key={item.id} style={{maxWidth: '45%'}}>
                   <MotionDiv
                     variants={fadeIn('up', 'tween', index * 0.2, 1)}
                     onClick={() => {
