@@ -6,6 +6,7 @@ import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 
+
 type Post = {
   id: number;
   date: number;
@@ -40,7 +41,7 @@ export default function Post() {
   }
 
   return (
-    <div className='' style={{backgroundColor:'black'}}>
+    <div className='mb-4' style={{backgroundColor:"black"}}>
       <MaxWidthWrapper>
         <h1 className='pt-4 text-white' style={{ fontSize: '2em', fontWeight: 'bold' }}>{post.title}</h1>
         <hr className='mb-4 h-2 border-gray-500' />

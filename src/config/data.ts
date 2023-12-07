@@ -209,7 +209,7 @@ export const RECENT_BLOG_POST = [
     title: 'Microsoft Event Planning (post 1)',
     image: 'https://picsum.photos/523/430',
     description:
-      '1Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
+      '1Demo Digital <h1 style="color: green;">hello</h1> Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
     tag: ['design', 'research'],
   },
   {
