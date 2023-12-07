@@ -34,7 +34,7 @@ export default function Services() {
             {SERVICES_PAGE_DATA.map((service) => {
               return (
                 <MotionDiv
-                  variants={zoomIn(service.id * 0.2, 1)}
+                  variants={zoomIn(service.id * 0.2, 0.5)}
                   key={service.id}
                   className='col-span-12 md:col-span-6 lg:col-span-4'
                 >
