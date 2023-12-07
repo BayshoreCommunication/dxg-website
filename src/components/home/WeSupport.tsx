@@ -15,7 +15,7 @@ import ExploreCard from '../Cards/ExploreCard';
 import SupportCardMobile from '../Cards/SupportCardMobile';
 const infos = {
   title: 'Who We Support - 3 P’s of Partnership',
-  description: `Our core teams have an average of 15+ years of experience with backgrounds in live events, virtual and hybrid corporate events, broadcast, and entertainment & performances. With this experience, we are a sought-after resource and view ourselves as the missing piece to your puzzle. At DXG, we support `,
+  description: `Our core teams have an average of 15+ years of experience with backgrounds in live events, virtual and hybrid corporate events, broadcast, and entertainment & performances. With this experience, we are a sought-after resource and view ourselves as the missing piece to your puzzle. At DXG, we support... `,
 };
 
 export default function WeSupport() {
@@ -23,9 +23,11 @@ export default function WeSupport() {
   return (
     <div className='bg-black'>
       <MaxWidthWrapper>
-        <div className='flex flex-col  items-end py-5 md:py-10'>
-          <Title text={infos.title} />
-          <Paragraph text={infos.description} className='md:max-w-2xl' />
+        <div className='flex flex-col  items-end py-5 md:py-10 '>
+          <div className=' md:max-w-2xl'>
+            <Title text={infos.title} />
+            <Paragraph text={infos.description} className='text-left' />
+          </div>
 
           {/* <BottomToTop>
             <Button

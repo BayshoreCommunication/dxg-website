@@ -55,7 +55,7 @@ export const SectionInformationWithImage: React.FC<
             </MotionDiv>
 
             <MotionDiv
-              variants={fadeIn('left', 'tween', 0.2, 1)}
+              variants={fadeIn('up', 'tween', 0.2, 1)}
               className='mt-6 lg:col-span-7 lg:mt-0 '
             >
               <Image

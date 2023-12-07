@@ -104,6 +104,14 @@ export const SERVICE_DATA = [
     excerpt: `DXG brings visuals to life with captivating graphics and animations. Our creative team combines artistic flair with technical expertise to deliver stunning visual elements that enhance presentations, engage audiences, and contribute to the overall aesthetic appeal of your event.`,
     url: '/graphics-animation',
   },
+  {
+    id: 6,
+    heading: 'Video Production &;Photography',
+    title: 'Video Production Photography',
+    image: '/service/dxg-agency-video-production-and-photography.png',
+    excerpt: `DXG's Photography and Videography services excel in capturing the unique story of your event. Our professionals, with a keen eye for detail, document the emotions and defining moments, creating stunning visuals and high-definition videos that endure as timeless memories.`,
+    url: '/video-production-photography',
+  },
 ];
 
 interface ServicesData {

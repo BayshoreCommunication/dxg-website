@@ -82,7 +82,7 @@ export default function Services() {
                       </div>
 
                       <motion.div
-                        initial={{ x: -100 }} // Start from the left
+                        initial={{ x: 0 }} // Start from the left
                         whileHover={{ x: 0 }} // Move to the original position on hover
                         transition={{
                           type: 'spring',
@@ -95,7 +95,11 @@ export default function Services() {
                           <h1 className=' text-xl font-bold uppercase text-white'>
                             {item.title}
                           </h1>
-                          <p className='text-base text-white'>{item.excerpt}</p>
+                          <div className=''>
+                            <p className='overflow-hidden text-base text-white'>
+                              {item.excerpt}
+                            </p>
+                          </div>
                         </motion.div>
                         <motion.div
                           className='flex justify-center pt-12 md:pt-0'

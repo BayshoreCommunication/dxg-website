@@ -30,33 +30,34 @@ export const BreadCrumbWithoutButton: React.FC<BreadCrumbProps> = ({
   return (
     <div
       style={{ backgroundImage: `url(${bgImage})` }} // Add this line
-      className='min-h-[300px] bg-differentBackground bg-cover bg-no-repeat'
+      className='min-h-[300px]  bg-cover bg-no-repeat'
       {...rest}
     >
-      <MaxWidthWrapper>
-        <div className='py-9 xl:py-28'>
-          <MotionDiv
-            variants={staggerContainer(0.2, 0.1)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.25 }}
-            className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'
-          >
+      <div className='bg-differentBackground'>
+        <MaxWidthWrapper>
+          <div className='py-9 xl:py-28 '>
             <MotionDiv
-              variants={fadeIn('right', 'tween', 0.2, 1)}
-              className='lg:col-span-7 xl:col-span-6 pm-breadcrum'
+              variants={staggerContainer(0.2, 0.1)}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: false, amount: 0.25 }}
+              className='lg:gap-18  h-[200px] items-center  lg:grid lg:grid-cols-12 xl:gap-28'
             >
-              <HeaderTextStyle {...titleProps} />
-              {/* <Button
+              <MotionDiv
+                variants={fadeIn('right', 'tween', 0.2, 1)}
+                className='pm-breadcrum lg:col-span-7 xl:col-span-6'
+              >
+                <HeaderTextStyle {...titleProps} />
+                {/* <Button
                 asChild
                 variant='dashed'
                 className='mt-5 rounded-full px-10 py-3 capitalize md:px-14 lg:px-24'
               >
                 <Link href='/contact-us'>{buttonTitle}</Link>
               </Button> */}
-            </MotionDiv>
+              </MotionDiv>
 
-            {/* <MotionDiv
+              {/* <MotionDiv
               variants={fadeIn('left', 'tween', 0.2, 1)}
               className='mt-6 lg:col-span-5 lg:mt-0 xl:col-span-6'
             >
@@ -67,9 +68,10 @@ export const BreadCrumbWithoutButton: React.FC<BreadCrumbProps> = ({
               )}
               {customDescription && customDescription}
             </MotionDiv> */}
-          </MotionDiv>
-        </div>
-      </MaxWidthWrapper>
+            </MotionDiv>
+          </div>
+        </MaxWidthWrapper>
+      </div>
     </div>
   );
 };

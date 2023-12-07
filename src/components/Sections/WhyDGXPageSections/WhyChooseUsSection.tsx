@@ -21,7 +21,7 @@ export const WhyChooseUsSection = () => {
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2'>
           {/* Images */}
           <div className='flex w-full items-end gap-4'>
-            <MotionDiv variants={zoomIn(0.2, 1)} className='relative w-1/2'>
+            <MotionDiv variants={zoomIn(0.2, 0.5)} className='relative w-1/2'>
               <Image
                 src={presentation}
                 width={316}
@@ -43,7 +43,7 @@ export const WhyChooseUsSection = () => {
                   Years
                 </h1>
               </MotionDiv>
-              <MotionDiv variants={zoomIn(0.3, 1)}>
+              <MotionDiv variants={zoomIn(0.3, 0.5)}>
                 <Image
                   src={meeting}
                   width={315}
@@ -52,7 +52,7 @@ export const WhyChooseUsSection = () => {
                   className='rounded-3xl'
                 />
               </MotionDiv>
-              <MotionDiv variants={zoomIn(0.4, 1)}>
+              <MotionDiv variants={zoomIn(0.4, 0.5)}>
                 <Image
                   src={experience}
                   width={315}
@@ -66,32 +66,39 @@ export const WhyChooseUsSection = () => {
           {/* Texts */}
           <div className='w-full'>
             <MotionP
-              variants={fadeIn('left', 'tween', 0.2, 1)}
+              variants={fadeIn('up', 'tween', 0.2, 0.5)}
               className='text-brand'
             >
               Why Choose Us
             </MotionP>
             <MotionH1
-              variants={fadeIn('left', 'tween', 0.3, 1)}
+              variants={fadeIn('up', 'tween', 0.3, 0.5)}
               className='text-2xl font-bold text-white'
             >
-              Take your Business to the next level
+              Take Your Business to the Next Level
             </MotionH1>
             <MotionP
-              variants={fadeIn('left', 'tween', 0.4, 1)}
+              variants={fadeIn('up', 'tween', 0.4, 0.5)}
               className='text-white'
             >
-              I am a person who is positive about every aspect of life. There
-              are many things I like to do, to see, and to experience. I like to
-              read, I like to write; I like to think, I like to dream; I like to
-              talk, I like to listen. I am a person who is positive about every
-              aspect of life. There are many things I like to do, to see, and to
-              experience. I like to read, I like to write; I like to think, I
-              like to dream; I like to talk, I like to listen.
+              <span className='mt-4 flex w-full gap-4'>
+                We ensure an unparalleled fusion of experience, innovation, and
+                dedication. With core teams boasting an average of 15+ years in
+                live events, virtual and hybrid corporate events, broadcast, and
+                entertainment, DXG brings a depth of knowledge that is
+                unmatched. We aren&apos;t just event specialists; we consider
+                ourselves the missing piece to your event puzzle. DXG excels in
+                Production Management, Audiovisual Technology, Event Platform
+                Services, Event Experience Design, Graphics & Animation, and
+                Video Production & Photography. DXG&apos;s expertise lies not
+                only in the technical aspects but also in crafting immersive
+                experiences that resonate with your audience, ensuring your
+                event leaves a lasting impression.
+              </span>
             </MotionP>
             <div className='mt-4 flex w-full gap-4'>
               <MotionDiv
-                variants={fadeIn('left', 'tween', 0.4, 1)}
+                variants={fadeIn('up', 'tween', 0.4, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
                 <NumberAnimation className='text-3xl' value={70} />
@@ -100,7 +107,7 @@ export const WhyChooseUsSection = () => {
                 </p>
               </MotionDiv>
               <MotionDiv
-                variants={fadeIn('left', 'tween', 0.5, 1)}
+                variants={fadeIn('up', 'tween', 0.5, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
                 <NumberAnimation className='text-3xl' value={65} />
@@ -109,7 +116,7 @@ export const WhyChooseUsSection = () => {
                 </p>
               </MotionDiv>
               <MotionDiv
-                variants={fadeIn('left', 'tween', 0.6, 1)}
+                variants={fadeIn('up', 'tween', 0.6, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
                 <NumberAnimation className='text-3xl' value={5} />

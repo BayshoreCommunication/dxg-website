@@ -105,28 +105,48 @@ export default function Footer() {
                     className=' flex gap-4'
                   >
                     <MotionDiv variants={zoomIn(0.1, 0.5)}>
-                      <Icons.facebook
-                        fill='current'
-                        className='icon-hover h-6 w-6 rounded text-brand'
-                      />
+                      <Link
+                        href='https://www.facebook.com/dxgagcy/'
+                        target='_blank'
+                      >
+                        <Icons.facebook
+                          fill='current'
+                          className='icon-hover h-6 w-6 rounded text-brand'
+                        />
+                      </Link>
                     </MotionDiv>
                     <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                      <Icons.linkedIn
-                        fill='current'
-                        className='icon-hover h-6 w-6 rounded text-brand'
-                      />
+                      <Link
+                        href='https://linkedin.com/company/dxg-agency'
+                        target='_blank'
+                      >
+                        <Icons.linkedIn
+                          fill='current'
+                          className='icon-hover h-6 w-6 rounded text-brand'
+                        />
+                      </Link>
                     </MotionDiv>
                     <MotionDiv variants={zoomIn(0.3, 0.5)}>
-                      <Icons.x
-                        fill='current'
-                        className='icon-hover h-6 w-6 rounded text-brand'
-                      />
+                      <Link
+                        href='https://twitter.com/dxgagency'
+                        target='_blank'
+                      >
+                        <Icons.x
+                          fill='current'
+                          className='icon-hover h-6 w-6 rounded text-brand'
+                        />
+                      </Link>
                     </MotionDiv>
                     <MotionDiv variants={zoomIn(0.4, 0.5)}>
-                      <Icons.instagram
-                        fill='current'
-                        className='icon-hover h-6 w-6 rounded text-brand'
-                      />
+                      <Link
+                        href='https://www.instagram.com/dxg.agency'
+                        target='_blank'
+                      >
+                        <Icons.instagram
+                          fill='current'
+                          className='icon-hover h-6 w-6 rounded text-brand'
+                        />
+                      </Link>
                     </MotionDiv>
                   </MotionDiv>
                 </div>
