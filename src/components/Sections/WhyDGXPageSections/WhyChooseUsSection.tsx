@@ -83,7 +83,7 @@ export const WhyChooseUsSection = () => {
             >
               <span className='mt-4 flex w-full gap-4'>
                 We ensure an unparalleled fusion of experience, innovation, and
-                dedication. With core teams boasting an average of 15+ years in
+                dedication. With core teams boasting an average of 20+ years in
                 live events, virtual and hybrid corporate events, broadcast, and
                 entertainment, DXG brings a depth of knowledge that is
                 unmatched. We aren&apos;t just event specialists; we consider
