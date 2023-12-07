@@ -1,14 +1,15 @@
-import NewsLetter from '@/components/NewsLetter';
+import GetAQoute from '@/components/GetAQuote';
 import Testimonial from '@/components/Testimonial';
 import WhyDxg from '@/components/home/WhyDxg';
 import { ProductManagementPageSection } from '@/components/Sections/ProductManagementPageSection';
+
 
 export default function ProductionManagement() {
   return (
     <div className='bg-black'>
       <ProductManagementPageSection />
-      <div className='flex flex-wrap md:px-28'>
-        <div className='w-1/2 p-4'>
+      <div className='flex flex-col md:flex-row md:px-28'>
+        <div className='w-full md:w-1/2 p-4'>
           <p
             style={{
               color: 'white',
@@ -32,8 +33,8 @@ export default function ProductionManagement() {
             message and your audience.
           </p>
         </div>
-        <div className='w-1/2 p-4'>
-          <NewsLetter />
+        <div className='w-full md:w-1/2 p-4'>
+          <GetAQoute />
         </div>
       </div>
       <Testimonial />

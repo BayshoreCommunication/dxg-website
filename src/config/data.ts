@@ -240,7 +240,7 @@ export const RECENT_BLOG_POST = [
     tag: ['design', 'research'],
   },
   {
-    id: 3,
+    id: 4,
     date: 1700973637000,
     title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
@@ -249,7 +249,7 @@ export const RECENT_BLOG_POST = [
     tag: ['design', 'research'],
   },
   {
-    id: 3,
+    id: 5,
     date: 1700973637000,
     title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
@@ -258,7 +258,7 @@ export const RECENT_BLOG_POST = [
     tag: ['design', 'research'],
   },
   {
-    id: 3,
+    id: 6,
     date: 1700973637000,
     title: 'Microsoft Event Planning (post 4)',
     image: 'https://picsum.photos/523/430',
