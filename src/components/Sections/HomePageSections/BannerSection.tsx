@@ -74,7 +74,7 @@ export const BannerSection = () => {
                 </div>
                 <div className='flex flex-col items-center'>
                   <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <NumberAnimation className='text-xl' value={70} />
+                    <NumberAnimation className='text-xl' value={5000} />
                     <p className='text-sm font-light text-white'>
                       Completed Project
                     </p>
@@ -145,7 +145,7 @@ export const BannerSection = () => {
                       </div>
                       <div className='mt-3'>
                         <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                          <NumberAnimation className='text-3xl' value={70} />
+                          <NumberAnimation className='text-3xl' value={5000} />
                           <p className='text-lg font-normal text-white'>
                             Completed Project
                           </p>
