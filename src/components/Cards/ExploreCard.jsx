@@ -9,7 +9,7 @@ import { Button } from '../ui/button';
 import { P } from '../Typography';
 import Link from 'next/link';
 import { zoomIn } from '@/lib/motion';
-
+import '@/style/custom.css';
 const ExploreCard = ({
   id,
   imgUrl,
@@ -22,7 +22,7 @@ const ExploreCard = ({
   <MotionDiv
     variants={fadeIn('right', 'tween', index * 0.4, 0.75)}
     className={`relative ${
-      active === id ? 'flex-[10] lg:flex-[3.5]' : 'flex-[2] lg:flex-[0.5]'
+      active === id ? 'flex-[10] lg:flex-[3.6]' : 'flex-[2] lg:flex-[0.4]'
     } duration-[0.7s] ease-out-flex flex h-[500px] min-w-[100px] cursor-pointer items-center justify-center transition-[flex]`}
     style={{
       backgroundImage: `linear-gradient(rgba(45, 198, 245, 0.6), rgba(45, 198, 245, 0)), url(${imgUrl})`,
@@ -40,18 +40,22 @@ const ExploreCard = ({
         {title}
       </h1>
     ) : (
-      <div className=' flex h-full flex-col items-center justify-center bg-[rgba(0,0,0,0.5)] p-8'>
-        <motion.div>
-          <div className='flex flex-col items-center justify-center'>
+      <div className=' flex h-full w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.5)] p-8'>
+        <MotionDiv
+          variants={fadeIn('up', 'tween', 0.4, 0.5)}
+          initial='hidden'
+          whileInView='show'
+        >
+          <div className='flex flex-[0.5] flex-col items-center justify-center'>
             <div className=' '>
               <Icons.monitor className='h-12 w-12 text-white' />
             </div>
-            <h1 className=' py-4 text-3xl font-bold uppercase text-white'>
+            <h1 className=' py-4 text-xl font-bold uppercase text-white'>
               {title}
             </h1>
-            <p className='mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
+            <div className='  mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
               {description}
-            </p>
+            </div>
             {/* <div className='mt-5'>
               <Button
                 variant='outline'
@@ -61,7 +65,7 @@ const ExploreCard = ({
               </Button>
             </div> */}
           </div>
-        </motion.div>
+        </MotionDiv>
       </div>
     )}
   </MotionDiv>
