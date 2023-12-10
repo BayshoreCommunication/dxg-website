@@ -66,7 +66,12 @@ export const BannerSection = () => {
               <div className='mt-5 flex w-full justify-around'>
                 <div className='flex flex-col items-center'>
                   <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <NumberAnimation className='text-2xl' value={20} />
+                    <NumberAnimation
+                      className='text-2xl'
+                      value={20}
+                      incrementPlus={1}
+                      duration={200}
+                    />
                     <p className='text-sm font-light text-white'>
                       Years Experience
                     </p>
@@ -74,7 +79,12 @@ export const BannerSection = () => {
                 </div>
                 <div className='flex flex-col items-center'>
                   <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                    <NumberAnimation className='text-xl' value={5000} />
+                    <NumberAnimation
+                      className='text-xl'
+                      value={5000}
+                      incrementPlus={100}
+                      duration={100}
+                    />
                     <p className='text-sm font-light text-white'>
                       Completed Project
                     </p>
@@ -137,7 +147,12 @@ export const BannerSection = () => {
                     <div className='flex-start mt-5 flex w-full gap-16'>
                       <div className='mt-3'>
                         <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                          <NumberAnimation className='text-3xl' value={20} />
+                          <NumberAnimation
+                            className='text-3xl'
+                            value={20}
+                            incrementPlus={1}
+                            duration={200}
+                          />
                           <p className='text-lg font-normal text-white'>
                             Years Experience
                           </p>
@@ -145,7 +160,12 @@ export const BannerSection = () => {
                       </div>
                       <div className='mt-3'>
                         <MotionDiv variants={zoomIn(0.2, 0.5)}>
-                          <NumberAnimation className='text-3xl' value={5000} />
+                          <NumberAnimation
+                            className='text-3xl'
+                            value={5000}
+                            incrementPlus={100}
+                            duration={100}
+                          />
                           <p className='text-lg font-normal text-white'>
                             Completed Project
                           </p>
