@@ -19,7 +19,7 @@ const infos = {
 };
 
 export default function WeSupport() {
-  const [active, setActive] = useState(1);
+  const [active, setActive] = useState(0);
   return (
     <div className='bg-black'>
       <MaxWidthWrapper>
