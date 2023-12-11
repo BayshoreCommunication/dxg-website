@@ -17,6 +17,8 @@ export const handleFormSubmit = async (formData: FormData) => {
   formData.append('returnURL', returnUrl);
   formData.append('Lead Source', LeadSource);
 
+  console.log(formData);
+
   try {
     const response = await fetch('https://crm.zoho.com/crm/WebToLeadForm', {
       method: 'POST',
@@ -25,10 +27,9 @@ export const handleFormSubmit = async (formData: FormData) => {
 
     // Handle response if necessary
     const data = await response.json();
-
-    console.log(data);
     return 'success';
   } catch (error) {
+    console.log(error);
     return 'error';
   }
 };

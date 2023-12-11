@@ -5,6 +5,7 @@ import { SITECONFIG } from '@/config/site';
 import Form from '@/components/Form';
 import Script from 'next/script';
 import Link from 'next/link';
+import { SliderDemo } from '@/components/SliderDemo';
 export default async function Contact() {
   return (
     <div className='min-h-screen bg-black'>

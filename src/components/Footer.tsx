@@ -11,7 +11,7 @@ import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
 
 export default function Footer() {
   return (
-    <div className='sticky inset-x-0 top-0 z-50 h-40'>
+    <div className='  '>
       <footer
         className='relative'
         style={{
@@ -24,7 +24,7 @@ export default function Footer() {
         <div className='container py-8'>
           <MotionDiv
             // variants={staggerContainer(0.2, 0.1)}
-            variants={fadeIn('up', 'tween', 0.3, 1)}
+            variants={fadeIn('up', 'tween', 0.3, 0.5)}
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
@@ -244,7 +244,7 @@ export default function Footer() {
             ©2023 Digital Xperience Group (DXG) ®All Rights Reserved. <br />
             Design & Developed by{' '}
             <Link
-              className='underline'
+              className='text-brand'
               href='https://www.bayshorecommunication.com/'
               target='_blank'
             >

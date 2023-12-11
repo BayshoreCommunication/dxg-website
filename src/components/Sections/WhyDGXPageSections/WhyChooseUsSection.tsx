@@ -83,7 +83,7 @@ export const WhyChooseUsSection = () => {
             >
               <span className='mt-4 flex w-full gap-4'>
                 We ensure an unparalleled fusion of experience, innovation, and
-                dedication. With core teams boasting an average of 15+ years in
+                dedication. With core teams boasting an average of 20+ years in
                 live events, virtual and hybrid corporate events, broadcast, and
                 entertainment, DXG brings a depth of knowledge that is
                 unmatched. We aren&apos;t just event specialists; we consider
@@ -101,7 +101,12 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('up', 'tween', 0.4, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <NumberAnimation className='text-3xl' value={70} />
+                <NumberAnimation
+                  className='text-3xl'
+                  value={5000}
+                  incrementPlus={100}
+                  duration={100}
+                />
                 <p className='text-xs font-light text-white md:text-base'>
                   Project Complete
                 </p>
@@ -110,7 +115,12 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('up', 'tween', 0.5, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <NumberAnimation className='text-3xl' value={65} />
+                <NumberAnimation
+                  className='text-3xl'
+                  value={500}
+                  incrementPlus={10}
+                  duration={100}
+                />
                 <p className=' text-xs font-light text-white md:text-base'>
                   Client Happy
                 </p>
@@ -119,7 +129,12 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('up', 'tween', 0.6, 1)}
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
               >
-                <NumberAnimation className='text-3xl' value={5} />
+                <NumberAnimation
+                  className='text-3xl'
+                  value={5}
+                  incrementPlus={1}
+                  duration={500}
+                />
                 <p className=' text-xs font-light text-white md:text-base'>
                   Project Running
                 </p>

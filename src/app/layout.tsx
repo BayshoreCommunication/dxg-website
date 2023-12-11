@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className='h-full'>
+    <html lang='en' className='h-full scroll-smooth bg-black'>
       <body
         className={cn('relative h-full font-sans antialiased', inter.className)}
       >

@@ -8,7 +8,7 @@ import TestimonialSliderTwo from './TestimonialSliderTwo';
 const infos = {
   title: 'Client Testimonials',
   description:
-    'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    'Dive into the transformative experiences of our satisfied clients! Their words paint a vivid picture of the high-quality work we deliver and our dedication to propelling you towards your goals.',
 };
 
 function Testimonial() {
