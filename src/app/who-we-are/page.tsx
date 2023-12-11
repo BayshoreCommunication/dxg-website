@@ -27,7 +27,7 @@ export default function WhoWeAre() {
         <MotionDiv
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1.3 }}
         >
           <Image
             quality={100}
