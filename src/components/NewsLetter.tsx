@@ -34,7 +34,7 @@ export default function NewsLetter() {
           >
             <Input className='mb-4' placeholder='Name' />
             <Input className='mb-4' placeholder='Email' />
-            <Button className='capsule-hover capsule-button w-full bg-slate-800'>Subscribe</Button>
+            <Button className='subscribe-button w-full bg-slate-800'>Subscribe</Button>
           </form>
         </div>
       </div>
