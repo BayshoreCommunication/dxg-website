@@ -186,7 +186,7 @@ display: none;
 }
 .banner-container {
   position: relative;
-  height: 400px; /* Adjust based on your banner size */
+  /* Adjust height as necessary */
 }
 
 .banner-background {
@@ -198,9 +198,16 @@ display: none;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  z-index: 1;
 }
 
-.banner-content {
+.banner-content, .counters {
   position: relative;
-  /* Add additional styling for your content */
+  z-index: 2;
+  /* Add additional styling as needed */
+}
+
+/* Additional CSS for counters if needed */
+.counters {
+  /* Styling for the counters */
 }

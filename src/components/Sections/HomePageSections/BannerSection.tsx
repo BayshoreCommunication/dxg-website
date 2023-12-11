@@ -160,7 +160,7 @@ export const BannerSection = () => {
                 </div>
               </div>
             </div>
-            </MotionDiv>
+        </MotionDiv>
       </MaxWidthWrapper>
     </div>
   );
