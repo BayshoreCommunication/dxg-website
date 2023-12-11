@@ -1,3 +1,4 @@
+import React from 'react';
 import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { OutlineTextStyle } from '@/components/TextStyle';
@@ -10,23 +11,17 @@ import { TypingText } from '@/components/CustomTexts';
 
 export const BannerSection = () => {
   return (
-    <div className=''>
-      <div
-        className='relative'
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${BannerImage.src})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        <MaxWidthWrapper>
-          <MotionDiv
-            variants={staggerContainer(0.2, 0.1)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.25 }}
-            className='py-10'
-          >
+    <div className='banner-container'>
+      <div className='banner-background'
+           style={{ backgroundImage: `url(${BannerImage.src})` }} />
+      <MaxWidthWrapper>
+        <MotionDiv
+          variants={staggerContainer(0.2, 0.1)}
+          initial='hidden'
+          whileInView='show'
+          viewport={{ once: false, amount: 0.25 }}
+          className='banner-content'
+        >
             <div className='md:hidden'>
               <div>
                 <h1 className='text-center text-4xl font-bold uppercase text-white md:text-6xl'>
@@ -165,10 +160,10 @@ export const BannerSection = () => {
                 </div>
               </div>
             </div>
-          </MotionDiv>
-        </MaxWidthWrapper>
-      </div>
-      {/* <Image src={BannerImage} alt='Texture Logo' style={{ width: '100%' }} /> */}
+            </MotionDiv>
+      </MaxWidthWrapper>
     </div>
   );
 };
+
+export default BannerSection;
