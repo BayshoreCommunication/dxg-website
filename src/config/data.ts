@@ -16,7 +16,7 @@ export const TESTIMONIAL_DATA = [
   },
   {
     id: 2,
-    name: 'Smith',
+    name: 'Jeff',
     title: 'CTO',
     image: '/testimonial/client-2.png',
     quote: `DXG exceeded our expectations in every aspect. Their Triple E Xperience™ framework truly transformed our event. Engaging elements, seamless networking opportunities, and thought-provoking content showcased their dedication to attendee satisfaction. DXG's adaptability in handling virtual and hybrid formats ensures they remain the top choice for any event production needs.`,

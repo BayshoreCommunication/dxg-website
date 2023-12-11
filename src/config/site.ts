@@ -72,10 +72,6 @@ export const SITECONFIG = {
         title: 'Terms of Use',
         slug: '/terms-of-use',
       },
-      {
-        title: 'Refund Policy',
-        slug: '/refund-policy',
-      },
     ],
   },
   socialLinks: [
