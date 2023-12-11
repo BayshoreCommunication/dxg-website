@@ -127,14 +127,14 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     image: Service1,
     caption: 'PRODUCTION MANAGEMENT',
     captionPosition: 'top',
-    url: '/production-management',
+    url: '/services/production-management',
   },
   {
     id: 1,
     image: Service2,
     caption: 'AUDIOVISUAL TECHNOLOGY',
     captionPosition: 'top',
-    url: '/audiovisual-technology',
+    url: '/services/audiovisual-technology',
   },
 
   {
@@ -142,28 +142,28 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     image: Service3,
     captionPosition: 'top',
     caption: 'Virtual & Hybrid Events',
-    url: '/virtual-hybrid-events',
+    url: '/services/virtual-hybrid-events',
   },
   {
     id: 3,
     image: Service4,
     captionPosition: 'bottom',
     caption: 'EVENT EXPERIENCE DESIGN',
-    url: '/event-experience-design',
+    url: '/services/event-experience-design',
   },
   {
-    id: 5,
+    id: 4,
     image: Service5,
     captionPosition: 'bottom',
     caption: 'GRAPHICS & ANIMATION',
-    url: '/graphics-animation',
+    url: '/services/graphics-animation',
   },
   {
     id: 5,
     captionPosition: 'bottom',
     image: Service6,
     caption: 'VIDEO EDITING & PRODUCTION',
-    url: '/video-production-photography',
+    url: '/services/video-production-photography',
   },
 ];
 
