@@ -186,7 +186,12 @@ display: none;
 }
 .banner-container {
   position: relative;
-  /* Adjust height as necessary */
+}
+
+@media (min-width: 768px) {
+  .banner-container {
+    height: 550px; /* Increased height for larger screens */
+  }
 }
 
 .banner-background {
