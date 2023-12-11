@@ -7,9 +7,10 @@ import WhoWeAreBanner from '../../../public/who-we-are/who-we-are-banner.jpg';
 import WhoWeAreBannerInfo from '../../../public/who-we-are/who-we-are-info.png';
 import { MotionDiv, MotionP } from '@/components/Motion';
 import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
+
 export default function WhoWeAre() {
   return (
-    <div className=' bg-black'>
+    <div className='bg-black'>
       <BreadCrumb
         buttonTitle='Book an appointment'
         description='Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.'
@@ -20,21 +21,30 @@ export default function WhoWeAre() {
           texAlign: 'text-left',
         }}
       />
+
       <div className=''>
-        <Image
-          quality={100}
-          src={WhoWeAreBanner}
-          alt='Who We Are - DXG'
-          className='w-full'
-        />
+        {/* Zoom-in effect on the large image */}
+        <MotionDiv
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Image
+            quality={100}
+            src={WhoWeAreBanner}
+            alt='Who We Are - DXG'
+            className='w-full'
+          />
+        </MotionDiv>
       </div>
+
       <div className='container py-9 lg:py-16'>
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
           viewport={{ once: false, amount: 0.25 }}
-          className='grid grid-cols-12 items-center  gap-2 lg:gap-12 xl:gap-16'
+          className='grid grid-cols-12 items-center gap-2 lg:gap-12 xl:gap-16'
         >
           <div className=' col-span-12  lg:col-span-7'>
             <MotionP
@@ -78,7 +88,7 @@ export default function WhoWeAre() {
               className='w-full'
             />
           </MotionDiv>
-        </MotionDiv>
+          </MotionDiv>
       </div>
 
       <Testimonial />
