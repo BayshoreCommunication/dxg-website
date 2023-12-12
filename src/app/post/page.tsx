@@ -49,7 +49,7 @@ export default function Post() {
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
+          viewport={{ once: true, amount: 0 }}
           className='flex flex-col gap-4 lg:flex-row'
         >
           <MotionDiv

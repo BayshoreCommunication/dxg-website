@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -6,9 +5,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'picsum.photos',
         port: '',
-        // pathname: ''
       },
-      // 'images.unsplash.com',
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        port: '',
+      },
+      // ... any other remote patterns
     ],
   },
   skipTrailingSlashRedirect: true,

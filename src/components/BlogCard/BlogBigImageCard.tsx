@@ -40,7 +40,7 @@ export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
       <p className='text-light mt-3'>{time}</p>
       <h4 className='text mb-3 text-xl font-bold text-brand'>{title}</h4>
       <p className='text-justify text-sm'>{parse(description)}</p>
-      <div className='mt-3 flex gap-3'>
+      {/* <div className='mt-3 flex gap-3'>
         {tag.map((item, index) => {
           return (
             <Button
@@ -52,7 +52,7 @@ export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
             </Button>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

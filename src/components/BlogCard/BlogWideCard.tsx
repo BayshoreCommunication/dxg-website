@@ -1,6 +1,7 @@
 import { formatTimestamp } from '@/lib/utils';
 import Image from 'next/image';
 import { Button } from '../ui/button';
+import parse from 'html-react-parser';
 
 interface BlogBigImageCardProps {
   id: number;
@@ -41,7 +42,7 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
           {title}
         </h4>
         <p className='line-clamp-2 text-justify text-sm md:line-clamp-3'>
-          {description}
+        {parse(description)}
         </p>
         <div className='mt-2 flex gap-2'>
           {tag.map((item, index) => {
