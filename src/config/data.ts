@@ -68,7 +68,7 @@ export const SERVICE_DATA = [
     image: '/service/dxg-agency-production-management.png',
     excerpt: `DXG excels in comprehensive production management, overseeing every aspect of your event's execution. From meticulous planning to seamless coordination on-site or virtually, our experienced team ensures that your event runs flawlessly, leaving you free to focus on the content and experience.
 `,
-    url: '/production-management',
+    url: '/services/production-management',
   },
   {
     id: 2,
@@ -77,7 +77,7 @@ export const SERVICE_DATA = [
     image: '/service/dxg-agency-audiovisual-technology.png',
     excerpt: `Harnessing the latest in audiovisual technology, DXG elevates your event's sensory experience. Our expert technicians and producers bring cutting-edge solutions to the forefront, ensuring immersive visuals, crystal-clear sound, and seamless technical execution for both in-person and virtual events.
 `,
-    url: '/audiovisual-technology',
+    url: '/services/audiovisual-technology',
   },
   {
     id: 3,
@@ -86,7 +86,7 @@ export const SERVICE_DATA = [
     image: '/service/dxg-agency-event-platform-service.png',
     excerpt: `DXG specializes in crafting dynamic event platforms tailored to your needs. Whether it's a virtual space, a hybrid platform, or a customized digital environment, we design and optimize platforms to enhance engagement, foster networking, and create a seamless digital extension of your event.
 `,
-    url: '/virtual-hybrid-events',
+    url: '/services/virtual-hybrid-events',
   },
   {
     id: 4,
@@ -94,7 +94,7 @@ export const SERVICE_DATA = [
     title: 'Event Experience Design',
     image: '/service/dxg-agency-event-experience-design.png',
     excerpt: `At the core of DXG's offerings is event experience design. We work closely with you to understand your objectives and craft immersive experiences that resonate with your audience. From interactive elements to spatial design, our focus is on creating events that leave a lasting impact on attendees.`,
-    url: '/event-experience-design',
+    url: '/services/event-experience-design',
   },
   {
     id: 5,
@@ -102,7 +102,7 @@ export const SERVICE_DATA = [
     title: 'Graphics & Animation',
     image: '/service/dxg-agency-graphics-and-animation.png',
     excerpt: `DXG brings visuals to life with captivating graphics and animations. Our creative team combines artistic flair with technical expertise to deliver stunning visual elements that enhance presentations, engage audiences, and contribute to the overall aesthetic appeal of your event.`,
-    url: '/graphics-animation',
+    url: '/services/graphics-animation',
   },
   {
     id: 6,
@@ -110,7 +110,7 @@ export const SERVICE_DATA = [
     title: 'Video Production Photography',
     image: '/service/dxg-agency-video-production-and-photography.png',
     excerpt: `DXG's Photography and Videography services excel in capturing the unique story of your event. Our professionals, with a keen eye for detail, document the emotions and defining moments, creating stunning visuals and high-definition videos that endure as timeless memories.`,
-    url: '/video-production-photography',
+    url: '/services/video-production-photography',
   },
 ];
 

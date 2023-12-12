@@ -89,7 +89,7 @@ export default function Services() {
                           staggerChildren: 0.5,
                           staggerDirection: -1,
                         }}
-                        className='hidden flex-row  px-5 group-hover:flex md:flex-col'
+                        className='hidden flex-row  px-5 group-hover:flex md:flex-col fadeInAnimation'
                       >
                         <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>
                           <h1 className='text-xl font-bold uppercase text-white'>
