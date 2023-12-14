@@ -11,7 +11,7 @@ export const RecentBlogSection = () => {
   const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
 
   return (
-    <div className='mb-4'>
+    <div className='mb-4' style={{height: '36vw'}}>
       <MaxWidthWrapper>
         <h1 className='pt-4 text-white' style={{ fontSize: '2em', fontWeight: 'bold' }}>Recent Blog Post</h1>
         <hr className='mb-4 h-2 border-gray-500' />

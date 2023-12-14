@@ -22,27 +22,22 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
 }) => {
   const time = formatTimestamp(date);
   return (
-    <div className='flex w-full gap-4 text-white'>
-      <div className='relative w-1/2 lg:h-[200px] lg:w-1/3'>
+    <div className='flex w-full gap-4 items-start text-white'>
+      <div className='flex-shrink-0 w-24 h-24 relative'> {/* Adjusted for square image */}
         <Image
           src={image}
-          alt='Meeting Blog'
-          //   width={200}
-          //   height={200}
-          fill
-          style={{
-            objectFit: 'fill',
-            width: '100%',
-          }}
+          alt={title}
+          layout='fill' // Filling the square container
+          objectFit='cover' // Maintain aspect ratio
         />
       </div>
-      <div className='w-1/2 lg:w-2/3'>
+      <div className='flex-grow'>
         <p className='text-xs md:text-base'>{time}</p>
-        <h4 className='line-clamp-1 text-base font-bold text-brand md:text-xl'>
+        <h4 className='text-base font-bold text-brand md:text-xl'>
           {title}
         </h4>
-        <p className='line-clamp-2 text-justify text-sm md:line-clamp-3'>
-        {parse(description)}
+        <p className='text-sm md:line-clamp-3'>
+          {parse(description)}
         </p>
         <div className='mt-2 flex gap-2'>
           {tag.map((item, index) => {

@@ -10,8 +10,8 @@ export default function page() {
     <div className='bg-black' style={{backgroundColor:'black',}}>
       <BlogHeaderSection />
       <RecentBlogSection />
-      <CreateAService />
-      <MultipleServiceSection />
+      {/* <CreateAService />
+      <MultipleServiceSection /> */}
     </div>
     
   );

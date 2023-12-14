@@ -38,15 +38,15 @@ export const SITECONFIG = {
     services: [
       {
         title: 'Production Management',
-        slug: '/production-management',
+        slug: '/services/production-management',
       },
       {
         title: 'Audio Visual Technology',
-        slug: '/audiovisual-technology',
+        slug: '/services/audiovisual-technology',
       },
       {
         title: 'Event Experience Design',
-        slug: '/event-experience-design',
+        slug: '/services/event-experience-design',
       },
     ],
     whyDXG: [
