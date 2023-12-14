@@ -6,7 +6,6 @@ import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 
-
 type Post = {
   id: number;
   date: number;
@@ -16,19 +15,23 @@ type Post = {
   tag: string[];
 };
 
-export default function Post() {
+export default function PostPage() {
   const [post, setPost] = useState<Post | null>(null);
 
+  // Define handleStorageChange outside of useEffect
   const handleStorageChange = () => {
     const storedPost = localStorage.getItem('selectedPost');
-    setPost(storedPost ? JSON.parse(storedPost) : null);
+    const newPost = storedPost ? JSON.parse(storedPost) : null;
+    setPost(newPost);
+
+    if (newPost && newPost.title && typeof window !== 'undefined') {
+      const formattedTitle = newPost.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      window.history.pushState({}, '', `/post/${newPost.id}/${formattedTitle}`);
+    }
   };
 
   useEffect(() => {
     handleStorageChange();
-  }, []);
-
-  useEffect(() => {
     window.addEventListener('storage', handleStorageChange);
 
     return () => {
@@ -62,23 +65,20 @@ export default function Post() {
           </MotionDiv>
           <div className='w-full p-2 lg:w-3/12' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
             <div className='flex flex-col gap-5'>
-            <h2 className='text mb-3 text-xl font-bold text-brand'>Recent Posts</h2>
-
+              <h2 className='text mb-3 text-xl font-bold text-brand'>Recent Posts</h2>
               {RECENT_BLOG_POST.map((item, index) => {
-                  return (
-                    <MotionDiv
-                      variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                      key={item.id}
-                      onClick={() => {
-                        if (typeof window !== 'undefined') {
-                          localStorage.setItem('selectedPost', JSON.stringify(item));
-                          handleStorageChange();
-                        }
-                      }}
-                    >
-                      <BlogWideCard key={item.id} {...item} />
-                    </MotionDiv>
-                  );
+                return (
+                  <MotionDiv
+                    variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                    key={item.id}
+                    onClick={() => {
+                      localStorage.setItem('selectedPost', JSON.stringify(item));
+                      handleStorageChange();
+                    }}
+                  >
+                    <BlogWideCard key={item.id} {...item} />
+                  </MotionDiv>
+                );
               })}
             </div>
           </div>

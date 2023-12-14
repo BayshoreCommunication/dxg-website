@@ -26,6 +26,10 @@ export const SITECONFIG = {
       slug: '/why-dxg',
     },
     {
+      title: 'Our Blog',
+      slug: '/blogs',
+    },
+    {
       title: 'Contact Us',
       slug: '/contact-us',
     },
