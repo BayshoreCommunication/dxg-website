@@ -100,5 +100,12 @@ export const SITECONFIG = {
   phone: '855.450.2823',
   email: 'Info@dxg.agency',
   appointmentBookingUrl:
-    'https://crm.zoho.com/bookings/30minutesmeeting?rid=8643cc0e2956ac1361d18f57f9d5acd461f4f659b2a1d6287c6e29a1bca6194fb57115d3bdcdb29918580495718dfd71gide0efe3c30f1473acb5a95383bb48ba17f72febd5da23f7bcceba25c9099aaa38&option=embed',
+    process.env.NEXT_PUBLIC_ZOHO_APPOINTMENT_BOOKING_URL || '',
+  contact: {
+    xnQsjsdp: process.env.NEXT_PUBLIC_ZOHO_CONTACT_SECRET_1 || '',
+    xmIwtLD: process.env.NEXT_PUBLIC_ZOHO_CONTACT_SECRET_2 || '',
+    leadCampaign: 'TGVhZHM=',
+    returnUrl: process.env.NEXT_PUBLIC_ZOHO_CONTACT_RETURN_URL || '',
+    leadSource: 'Online-Store',
+  },
 };
