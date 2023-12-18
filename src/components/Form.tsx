@@ -49,7 +49,7 @@ export default function Form() {
             setTimeout(() => {
               ref.current?.reset();
               router.push('/thank-you');
-            }, 2000);
+            }, 1000);
           }
         } else {
           setIsloading(false);
