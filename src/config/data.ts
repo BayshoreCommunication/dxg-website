@@ -1048,249 +1048,427 @@ export const RECENT_BLOG_POST = [
     </p>`,
       tag: ['Read More'],
     },
-  {
-    id: 2,
-    date: 1700973637000,
-    title: 'What Is The Benefit To Having A Speaker Management System For An Event',
-    image: 'https://lh3.googleusercontent.com/fife/AGXqzDmFVSALlv6O6C0Uj1Ty23Hrypoj5JtHBEZnt6OfOL251j-JMgCztYmN2UCJgIXfG1PFv3ihLU3JLcqfD7E-CXjtBERpRzIMpo6kk-DbypwbZFGJBwAydJ6ewDMm2E258CfdKFmDB46tSQGv7BkaagiCePBvYPXsafI7vGCh2h3SrsItmCx5M4_3exO_-s06PBmTnUdQdq3P4SHF7xPDHJnYHmggfkQEOr3ULAAgl_dRMM_fRv8wPOsZg7KtFfgX0u_Mh0I3ZcFWvdUKTg6BOlHbt8e1HoB3iZsT40s9pVfM3o4C2ZpFgA2ll0e5dlQQ_Tkm0nrRCbiUrz2Pn0Mrfjls03_0TA4aZlvg7fYaJLoV0JWdzSrow8hM-MTH46dMp7PEp4Rd0Kcg7iq-jLTzBr7yRWVG5gJdSYac2JXguo_9InEOd0vDQf-3sGbtOyAc5V5DI3RotJl5sisL4mMjmcmX1FCSnQwyzU5QjmHypJVsTj-8JnchRkVEd_ZhHGhU_zW9p3Hc5UNcCyLIaIV1Nq2RaClFodO9nakUNJ9GYTDnS8fLArXUkAZbrdrvHgp7GAdBQeoQgUBp0v1CnMnH3uswFt-e8pbIiLAAPAkKGYUfqeGQCu2ztFF9iE66Q8s36hD2kCxO-1Gs_zt_m3cVvEUfzd0Bu8qroyqITdwtCgbR5--oWrQgpk0H7DNiS2X0LMm6MQFNmsGmk2TDBv-rCxQUgNUbk6TBjolzVjB2Q8OFXzymfQp68bMa7G-0V1k0nWn-izzKFIrd0ZSxnuUdwd_M00dI-n2MzS5qNciQbQXUJiWlmByRPWWp5rid35O17Epzh-dY37L9V1Efp9FWgIsd_AF4PVcFwEfmd8InGoyMQX578gKkAjOUYOVoCCGNTFEz3diSMBnZr1XE-bc5JGMi-gWT9UHEAWj4EgscEri5t0Kb63myILOCa-_7UJVmMvA3ntI6JQ0SysUSpBbyYWYf9g8glQBssLfkTteTUOcGz7uwsT6_90SGe-9wvsZn2A5xICeLY0dzUnVLigHDvJ6vMZ7KU9_R4m6lR-A94BYTFLd7YE51OcjFt9vvIenAIDbgxt6ONeX8Px3ZIPFUf4i2VwbotHQaQGbNQOYxi25QWtCnyCXnXipYYepJiCjI16oWkOHmGOAfbnrmgck1YVTSJEnE20zHx1rzOUKxXx8jDWtnnDanJlMFTQyAvZFb3acEqYqX53bwFMXuRiBZWiwPAioyzHR8-hmCsSx-mkCVkRqHUykCk0_SrwzCp3bQbUkenRENjXnvHz-AGfToUBGDC8FtWX2ZazdsDzG6PJ9KRp39T2cDSt_t0DTJHpyfdfAItgoRk1gfB5n-KsIagObdt-gzTS0o_3Ca8shzPizIMXBpUz1hUHqsTdb6mpWWeNZxNCJAfz2n7GiPVhKrv4oY1RGz8Yc-sMCysrTFaJqsZpUnZypRj_BN55fM3yYRyDIKmetWtF2jVYqqMjIXCMbV8tTy0j5FTROg0qXL7SRqC77u0cuTH5FXCHhQ7Rzw=w1872-h966',
-    description:
-      `<p>
-      Are you tired of juggling multiple spreadsheets, emails, and documents to
-      manage your speakers? And now you&#39;re wishing there was a simpler and
-      smarter way to handle the speaker management process.
-    </p>
-    <p>
-      Wait, what if there was a better way? Yes! A speaker management system - your
-      ultimate magic wand! &nbsp;This significantly improves the organization and
-      success of an event. By streamlining various aspects of speaker coordination,
-       <a href="#">event planners</a> 
-      &nbsp;can ensure a smoother experience for everyone involved.
-    </p>
-    
-    <p>
-      Some of the key benefits of having a speaker management system for an event
-        include the following:
-    </p>
-    
-    <h2>
-      1. Centralized Information Management: 
-    </h2>
-    <p>
-      When you centralize information, any organizers like you can easily access
-        and update speaker details, ensuring that all relevant data is readily
-        available. And the twist part is - it eliminates the need to search through
-        multiple sources or rely on outdated information, saving time and improving
-        efficiency.
-    </p>
-    
-    <p>
-      A speaker management system provides a centralized repository for all
-        speaker-related information, including:
-    </p>
-    
-    <ul>
-      <li >
-        Speaker profiles:
-        &nbsp;Store speaker biographies, contact details, expertise, and
-          experience.
-      </li>
-      <li >
-        Presentation materials:&nbsp;Manage speaker slides, videos, handouts, and other presentation
-          materials.
-      </li>
-      <li >
-        Travel arrangements: Track speaker travel arrangements, including flights, accommodations, and
-          transportation.
-      </li>
-      <li >
-        Schedule and logistics:&nbsp;Manage speaker schedules, assignments, and logistical
-          arrangements.
-      </li>
-    </ul>
-    
-    <h2>
-    2. Efficient Communication:
-    </h2>
-    <p>
-      A speaker management system facilitates effective communication and
-        collaboration between event organizers, speakers, and other stakeholders. It
-        provides a platform for:
-    </p>
-    
-    <ul >
-      <li >
-        Announcements and updates: Broadcast important messages to speakers, keeping them informed about
-          event schedules, changes, and requirements.
-      </li>
-      <li >
-        Feedback and discussion:&nbsp;Encourage feedback from speakers to gather insights and address
-          concerns.
-      </li>
-      <li >
-        Task management:&nbsp;Assign tasks to speakers and track their completion to ensure
-          timely delivery of materials and adherence to schedules. This helps to
-          avoid miscommunication and ensures that everyone stays informed.
-      </li>
-    </ul>
-    <h2>
-     3. Simplified Scheduling: 
-    </h2>
-    <p>
-      Not only communication, a speaker management system simplifies scheduling
-        and eliminates scheduling conflicts. Aslo, ensures a seamless event flow,
-        maximizes speaker participation, and enhances the overall attendee
-        experience. Here&rsquo;s how:
-    </p>
-    
-    <ul >
-      <li >
-        Speaker availability management: Track speaker availability to avoid scheduling conflicts and ensure that
-          speakers are assigned to sessions that align with their expertise and
-          interests.
-      </li>
-      <li >
-        Session allocation and time management: Allocate time slots for sessions and presentations, considering speaker
-          availability, session length, and venue capacity.
-      </li>
-      <li >
-        Schedule visualization and conflict resolution:&nbsp;Present a clear and organized view of the event schedule, allowing
-          organizers to identify and resolve scheduling conflicts promptly.
-      </li>
-    </ul>
-    
-    <h2>
-      4. Speaker Selection and Evaluation:<span class="c8">&nbsp;
-    </h2>
-    <p>
-      But will information management, communication handling and simplifying
-        scheduling be enough? Of course not. That&#39;s why speaker management also
-        assists in strategic speaker selection and evaluation.
-    </p>
-    
-    <ul>
-      <li >
-        Speaker database and search:&nbsp;Maintain a database of potential speakers with searchable filters
-          based on expertise, experience, and presentation style.
-      </li>
-      <li >
-        Speaker evaluation and feedback: Collect feedback from previous events to evaluate speaker performance and
-          identify highly qualified speakers.
-      </li>
-      <li >
-        Speaker engagement and recruitment:&nbsp;Facilitate communication with potential speakers to gauge their
-          interest, negotiate terms, and finalize speaker participation.
-      </li>
-    </ul>
-    <h2 >
-      5. Content Management:
-    </h2>
-    <p>
-      A speaker management system streamlines content management and ensures that
-        presentation materials are accessible to all stakeholders:
-    </p>
-    
-    <ul>
-      <li >
-        Speaker content upload and review:&nbsp;Provide a platform for speakers to upload their presentation
-          materials, allowing organizers to review, approve, and provide
-          feedback.
-      </li>
-      <li >
-        Content storage and organization:&nbsp;Store presentation materials securely and organize them by speaker,
-          session, or event.
-      </li>
-      <li >
-        Content sharing and distribution:&nbsp;Distribute approved presentation materials to attendees, event
-          staff, and other stakeholders.
-      </li>
-    </ul>
-    <h2>
-      6. Enhanced Attendee Experience: 
-    </h2>
-    <p>
-      With a well-managed speaker system, attendees can enjoy a more engaging and
-        seamless event experience. They can easily access speaker information,
-        presentation materials, and schedules, allowing them to make the most of
-        their time at the event.
-    </p>
-    
-    <ul class="c3 lst-kix_yo8l6rdjbrc8-0 start">
-      <li >
-        Easy access to speaker information:&nbsp;Provide attendees with easy access to speaker profiles,
-          biographies, and contact details.
-      </li>
-      <li >
-        Accessible presentation materials:&nbsp;Allow attendees to download or access presentation materials
-          before, during, or after the event.
-      </li>
-      <li >
-        Clearly defined session schedules:&nbsp;Present clear and accessible session schedules, allowing attendees
-          to plan their attendance and maximize their event experience.
-      </li>
-    </ul>
-    <h2 class="c4" id="h.ach0pq6dajb6">
-      7. Time and Resource Savings: 
-    </h2>
-    <p>
-      Do you know this system can save event organizers time and resources that
-        can be better 
-        <a href="#">spent on other aspects of the event</a>? Yes, and it can be done simply by automating many of the tasks associated
-        with the management.
-    </p>
-    
-    <ul>
-      <li >
-        Automated speaker invitations and reminders:&nbsp;Automate speaker invitations, follow-ups, and reminders to reduce
-          manual effort and ensure timely speaker responses.
-      </li>
-      <li >
-        Streamlined communication and feedback collection:&nbsp;Automate communication workflows, feedback requests, and data
-          collection to minimize manual tasks and improve efficiency.
-      </li>
-      <li >
-        Centralized data management and reporting:&nbsp;Generate reports on speaker participation, feedback, and content
-          management to inform future event planning and resource allocation.
-      </li>
-    </ul>
-    
-    <h2>8. Post-Event Analysis:</h2>
-    <p>
-      Finally, post-event analysis. A comprehensive speaker management system
-      empowers organizers to gather valuable feedback and evaluate speaker
-      performance, providing actionable insights for future events.
-    </p>
-    
-    <p>
-      This post-event analysis offers a wealth of opportunities to:
-    </p>
-    
-    <ul >
-      <li >
-        Enhance Speaker Selection:&nbsp;Assess speaker effectiveness based on attendee, staff, and
-          stakeholder feedback. Identify speakers who resonated with the audience
-          and aligned with the event&#39;s goals.
-      </li>
-      <li >
-        Optimize Scheduling and Content:&nbsp;Analyze session formats, topics, and speaker styles that captivated
-          the audience. Utilize this data to tailor future schedules and ensure
-          content aligns with attendee expectations.
-      </li>
-      <li >
-        Elevate Event Reputation:&nbsp;Consistently evaluate speaker performance and incorporate feedback
-          to maintain a high standard of speaker quality. Cultivate a positive event
-          reputation that attracts top-tier speakers and repeat attendees.
-      </li>
-    </ul>
-    
-    
-    <p>
-      You see, having a speaker management system is not bad at all! Rather, it
-        can help event organizers manage speakers and their contributions
-        effectively, resulting in a more successful, <a href="#">engaging, and enjoyable event</a>&nbsp;for all involved.
-    </p>
-    `,
-      tag: ['Read More'],
-    },
+    {
+      id: 2,
+      date: 1700973637000,
+      title: 'What Is The Benefit To Having A Speaker Management System For An Event',
+      image: 'https://lh3.googleusercontent.com/fife/AGXqzDmFVSALlv6O6C0Uj1Ty23Hrypoj5JtHBEZnt6OfOL251j-JMgCztYmN2UCJgIXfG1PFv3ihLU3JLcqfD7E-CXjtBERpRzIMpo6kk-DbypwbZFGJBwAydJ6ewDMm2E258CfdKFmDB46tSQGv7BkaagiCePBvYPXsafI7vGCh2h3SrsItmCx5M4_3exO_-s06PBmTnUdQdq3P4SHF7xPDHJnYHmggfkQEOr3ULAAgl_dRMM_fRv8wPOsZg7KtFfgX0u_Mh0I3ZcFWvdUKTg6BOlHbt8e1HoB3iZsT40s9pVfM3o4C2ZpFgA2ll0e5dlQQ_Tkm0nrRCbiUrz2Pn0Mrfjls03_0TA4aZlvg7fYaJLoV0JWdzSrow8hM-MTH46dMp7PEp4Rd0Kcg7iq-jLTzBr7yRWVG5gJdSYac2JXguo_9InEOd0vDQf-3sGbtOyAc5V5DI3RotJl5sisL4mMjmcmX1FCSnQwyzU5QjmHypJVsTj-8JnchRkVEd_ZhHGhU_zW9p3Hc5UNcCyLIaIV1Nq2RaClFodO9nakUNJ9GYTDnS8fLArXUkAZbrdrvHgp7GAdBQeoQgUBp0v1CnMnH3uswFt-e8pbIiLAAPAkKGYUfqeGQCu2ztFF9iE66Q8s36hD2kCxO-1Gs_zt_m3cVvEUfzd0Bu8qroyqITdwtCgbR5--oWrQgpk0H7DNiS2X0LMm6MQFNmsGmk2TDBv-rCxQUgNUbk6TBjolzVjB2Q8OFXzymfQp68bMa7G-0V1k0nWn-izzKFIrd0ZSxnuUdwd_M00dI-n2MzS5qNciQbQXUJiWlmByRPWWp5rid35O17Epzh-dY37L9V1Efp9FWgIsd_AF4PVcFwEfmd8InGoyMQX578gKkAjOUYOVoCCGNTFEz3diSMBnZr1XE-bc5JGMi-gWT9UHEAWj4EgscEri5t0Kb63myILOCa-_7UJVmMvA3ntI6JQ0SysUSpBbyYWYf9g8glQBssLfkTteTUOcGz7uwsT6_90SGe-9wvsZn2A5xICeLY0dzUnVLigHDvJ6vMZ7KU9_R4m6lR-A94BYTFLd7YE51OcjFt9vvIenAIDbgxt6ONeX8Px3ZIPFUf4i2VwbotHQaQGbNQOYxi25QWtCnyCXnXipYYepJiCjI16oWkOHmGOAfbnrmgck1YVTSJEnE20zHx1rzOUKxXx8jDWtnnDanJlMFTQyAvZFb3acEqYqX53bwFMXuRiBZWiwPAioyzHR8-hmCsSx-mkCVkRqHUykCk0_SrwzCp3bQbUkenRENjXnvHz-AGfToUBGDC8FtWX2ZazdsDzG6PJ9KRp39T2cDSt_t0DTJHpyfdfAItgoRk1gfB5n-KsIagObdt-gzTS0o_3Ca8shzPizIMXBpUz1hUHqsTdb6mpWWeNZxNCJAfz2n7GiPVhKrv4oY1RGz8Yc-sMCysrTFaJqsZpUnZypRj_BN55fM3yYRyDIKmetWtF2jVYqqMjIXCMbV8tTy0j5FTROg0qXL7SRqC77u0cuTH5FXCHhQ7Rzw=w1872-h966',
+      description:
+        `<p>
+        Are you tired of juggling multiple spreadsheets, emails, and documents to
+        manage your speakers? And now you&#39;re wishing there was a simpler and
+        smarter way to handle the speaker management process.
+      </p>
+      <p>
+        Wait, what if there was a better way? Yes! A speaker management system - your
+        ultimate magic wand! &nbsp;This significantly improves the organization and
+        success of an event. By streamlining various aspects of speaker coordination,
+         <a href="#">event planners</a> 
+        &nbsp;can ensure a smoother experience for everyone involved.
+      </p>
+      
+      <p>
+        Some of the key benefits of having a speaker management system for an event
+          include the following:
+      </p>
+      
+      <h2>
+        1. Centralized Information Management: 
+      </h2>
+      <p>
+        When you centralize information, any organizers like you can easily access
+          and update speaker details, ensuring that all relevant data is readily
+          available. And the twist part is - it eliminates the need to search through
+          multiple sources or rely on outdated information, saving time and improving
+          efficiency.
+      </p>
+      
+      <p>
+        A speaker management system provides a centralized repository for all
+          speaker-related information, including:
+      </p>
+      
+      <ul>
+        <li >
+          Speaker profiles:
+          &nbsp;Store speaker biographies, contact details, expertise, and
+            experience.
+        </li>
+        <li >
+          Presentation materials:&nbsp;Manage speaker slides, videos, handouts, and other presentation
+            materials.
+        </li>
+        <li >
+          Travel arrangements: Track speaker travel arrangements, including flights, accommodations, and
+            transportation.
+        </li>
+        <li >
+          Schedule and logistics:&nbsp;Manage speaker schedules, assignments, and logistical
+            arrangements.
+        </li>
+      </ul>
+      
+      <h2>
+      2. Efficient Communication:
+      </h2>
+      <p>
+        A speaker management system facilitates effective communication and
+          collaboration between event organizers, speakers, and other stakeholders. It
+          provides a platform for:
+      </p>
+      
+      <ul >
+        <li >
+          Announcements and updates: Broadcast important messages to speakers, keeping them informed about
+            event schedules, changes, and requirements.
+        </li>
+        <li >
+          Feedback and discussion:&nbsp;Encourage feedback from speakers to gather insights and address
+            concerns.
+        </li>
+        <li >
+          Task management:&nbsp;Assign tasks to speakers and track their completion to ensure
+            timely delivery of materials and adherence to schedules. This helps to
+            avoid miscommunication and ensures that everyone stays informed.
+        </li>
+      </ul>
+      <h2>
+       3. Simplified Scheduling: 
+      </h2>
+      <p>
+        Not only communication, a speaker management system simplifies scheduling
+          and eliminates scheduling conflicts. Aslo, ensures a seamless event flow,
+          maximizes speaker participation, and enhances the overall attendee
+          experience. Here&rsquo;s how:
+      </p>
+      
+      <ul >
+        <li >
+          Speaker availability management: Track speaker availability to avoid scheduling conflicts and ensure that
+            speakers are assigned to sessions that align with their expertise and
+            interests.
+        </li>
+        <li >
+          Session allocation and time management: Allocate time slots for sessions and presentations, considering speaker
+            availability, session length, and venue capacity.
+        </li>
+        <li >
+          Schedule visualization and conflict resolution:&nbsp;Present a clear and organized view of the event schedule, allowing
+            organizers to identify and resolve scheduling conflicts promptly.
+        </li>
+      </ul>
+      
+      <h2>
+        4. Speaker Selection and Evaluation:<span class="c8">&nbsp;
+      </h2>
+      <p>
+        But will information management, communication handling and simplifying
+          scheduling be enough? Of course not. That&#39;s why speaker management also
+          assists in strategic speaker selection and evaluation.
+      </p>
+      
+      <ul>
+        <li >
+          Speaker database and search:&nbsp;Maintain a database of potential speakers with searchable filters
+            based on expertise, experience, and presentation style.
+        </li>
+        <li >
+          Speaker evaluation and feedback: Collect feedback from previous events to evaluate speaker performance and
+            identify highly qualified speakers.
+        </li>
+        <li >
+          Speaker engagement and recruitment:&nbsp;Facilitate communication with potential speakers to gauge their
+            interest, negotiate terms, and finalize speaker participation.
+        </li>
+      </ul>
+      <h2 >
+        5. Content Management:
+      </h2>
+      <p>
+        A speaker management system streamlines content management and ensures that
+          presentation materials are accessible to all stakeholders:
+      </p>
+      
+      <ul>
+        <li >
+          Speaker content upload and review:&nbsp;Provide a platform for speakers to upload their presentation
+            materials, allowing organizers to review, approve, and provide
+            feedback.
+        </li>
+        <li >
+          Content storage and organization:&nbsp;Store presentation materials securely and organize them by speaker,
+            session, or event.
+        </li>
+        <li >
+          Content sharing and distribution:&nbsp;Distribute approved presentation materials to attendees, event
+            staff, and other stakeholders.
+        </li>
+      </ul>
+      <h2>
+        6. Enhanced Attendee Experience: 
+      </h2>
+      <p>
+        With a well-managed speaker system, attendees can enjoy a more engaging and
+          seamless event experience. They can easily access speaker information,
+          presentation materials, and schedules, allowing them to make the most of
+          their time at the event.
+      </p>
+      
+      <ul class="c3 lst-kix_yo8l6rdjbrc8-0 start">
+        <li >
+          Easy access to speaker information:&nbsp;Provide attendees with easy access to speaker profiles,
+            biographies, and contact details.
+        </li>
+        <li >
+          Accessible presentation materials:&nbsp;Allow attendees to download or access presentation materials
+            before, during, or after the event.
+        </li>
+        <li >
+          Clearly defined session schedules:&nbsp;Present clear and accessible session schedules, allowing attendees
+            to plan their attendance and maximize their event experience.
+        </li>
+      </ul>
+      <h2 class="c4" id="h.ach0pq6dajb6">
+        7. Time and Resource Savings: 
+      </h2>
+      <p>
+        Do you know this system can save event organizers time and resources that
+          can be better 
+          <a href="#">spent on other aspects of the event</a>? Yes, and it can be done simply by automating many of the tasks associated
+          with the management.
+      </p>
+      
+      <ul>
+        <li >
+          Automated speaker invitations and reminders:&nbsp;Automate speaker invitations, follow-ups, and reminders to reduce
+            manual effort and ensure timely speaker responses.
+        </li>
+        <li >
+          Streamlined communication and feedback collection:&nbsp;Automate communication workflows, feedback requests, and data
+            collection to minimize manual tasks and improve efficiency.
+        </li>
+        <li >
+          Centralized data management and reporting:&nbsp;Generate reports on speaker participation, feedback, and content
+            management to inform future event planning and resource allocation.
+        </li>
+      </ul>
+      
+      <h2>8. Post-Event Analysis:</h2>
+      <p>
+        Finally, post-event analysis. A comprehensive speaker management system
+        empowers organizers to gather valuable feedback and evaluate speaker
+        performance, providing actionable insights for future events.
+      </p>
+      
+      <p>
+        This post-event analysis offers a wealth of opportunities to:
+      </p>
+      
+      <ul >
+        <li >
+          Enhance Speaker Selection:&nbsp;Assess speaker effectiveness based on attendee, staff, and
+            stakeholder feedback. Identify speakers who resonated with the audience
+            and aligned with the event&#39;s goals.
+        </li>
+        <li >
+          Optimize Scheduling and Content:&nbsp;Analyze session formats, topics, and speaker styles that captivated
+            the audience. Utilize this data to tailor future schedules and ensure
+            content aligns with attendee expectations.
+        </li>
+        <li >
+          Elevate Event Reputation:&nbsp;Consistently evaluate speaker performance and incorporate feedback
+            to maintain a high standard of speaker quality. Cultivate a positive event
+            reputation that attracts top-tier speakers and repeat attendees.
+        </li>
+      </ul>
+      
+      
+      <p>
+        You see, having a speaker management system is not bad at all! Rather, it
+          can help event organizers manage speakers and their contributions
+          effectively, resulting in a more successful, <a href="#">engaging, and enjoyable event</a>&nbsp;for all involved.
+      </p>
+      `,
+        tag: ['Read More'],
+      },
+      
+      {
+        id: 3,
+        date: 1700973637000,
+        title: 'Challenges Event Planners Face with In-House AV Companies',
+        image: 'https://lh3.googleusercontent.com/fife/AGXqzDmFVSALlv6O6C0Uj1Ty23Hrypoj5JtHBEZnt6OfOL251j-JMgCztYmN2UCJgIXfG1PFv3ihLU3JLcqfD7E-CXjtBERpRzIMpo6kk-DbypwbZFGJBwAydJ6ewDMm2E258CfdKFmDB46tSQGv7BkaagiCePBvYPXsafI7vGCh2h3SrsItmCx5M4_3exO_-s06PBmTnUdQdq3P4SHF7xPDHJnYHmggfkQEOr3ULAAgl_dRMM_fRv8wPOsZg7KtFfgX0u_Mh0I3ZcFWvdUKTg6BOlHbt8e1HoB3iZsT40s9pVfM3o4C2ZpFgA2ll0e5dlQQ_Tkm0nrRCbiUrz2Pn0Mrfjls03_0TA4aZlvg7fYaJLoV0JWdzSrow8hM-MTH46dMp7PEp4Rd0Kcg7iq-jLTzBr7yRWVG5gJdSYac2JXguo_9InEOd0vDQf-3sGbtOyAc5V5DI3RotJl5sisL4mMjmcmX1FCSnQwyzU5QjmHypJVsTj-8JnchRkVEd_ZhHGhU_zW9p3Hc5UNcCyLIaIV1Nq2RaClFodO9nakUNJ9GYTDnS8fLArXUkAZbrdrvHgp7GAdBQeoQgUBp0v1CnMnH3uswFt-e8pbIiLAAPAkKGYUfqeGQCu2ztFF9iE66Q8s36hD2kCxO-1Gs_zt_m3cVvEUfzd0Bu8qroyqITdwtCgbR5--oWrQgpk0H7DNiS2X0LMm6MQFNmsGmk2TDBv-rCxQUgNUbk6TBjolzVjB2Q8OFXzymfQp68bMa7G-0V1k0nWn-izzKFIrd0ZSxnuUdwd_M00dI-n2MzS5qNciQbQXUJiWlmByRPWWp5rid35O17Epzh-dY37L9V1Efp9FWgIsd_AF4PVcFwEfmd8InGoyMQX578gKkAjOUYOVoCCGNTFEz3diSMBnZr1XE-bc5JGMi-gWT9UHEAWj4EgscEri5t0Kb63myILOCa-_7UJVmMvA3ntI6JQ0SysUSpBbyYWYf9g8glQBssLfkTteTUOcGz7uwsT6_90SGe-9wvsZn2A5xICeLY0dzUnVLigHDvJ6vMZ7KU9_R4m6lR-A94BYTFLd7YE51OcjFt9vvIenAIDbgxt6ONeX8Px3ZIPFUf4i2VwbotHQaQGbNQOYxi25QWtCnyCXnXipYYepJiCjI16oWkOHmGOAfbnrmgck1YVTSJEnE20zHx1rzOUKxXx8jDWtnnDanJlMFTQyAvZFb3acEqYqX53bwFMXuRiBZWiwPAioyzHR8-hmCsSx-mkCVkRqHUykCk0_SrwzCp3bQbUkenRENjXnvHz-AGfToUBGDC8FtWX2ZazdsDzG6PJ9KRp39T2cDSt_t0DTJHpyfdfAItgoRk1gfB5n-KsIagObdt-gzTS0o_3Ca8shzPizIMXBpUz1hUHqsTdb6mpWWeNZxNCJAfz2n7GiPVhKrv4oY1RGz8Yc-sMCysrTFaJqsZpUnZypRj_BN55fM3yYRyDIKmetWtF2jVYqqMjIXCMbV8tTy0j5FTROg0qXL7SRqC77u0cuTH5FXCHhQ7Rzw=w1872-h966',
+        description:
+          `
+          
+
+          <p style="font-size: 16px;">If you're an event planner chances are you've faced the wrath of an in-house AV company at some point in your career. They lure you in with promises of convenience and familiarity with the venue but often leave you feeling trapped in a tech-challenged purgatory.</p>
+          
+          <p style="font-size: 16px;">Don't get me wrong in-house AV can be a lifesaver. They know the venue's quirks can set up basic last-minute additions and usually have decent equipment. But sometimes those benefits come at a premium cost: limited creativity and flexibility. So before you sign that dotted line and hand your event's fate to the in-house AV gods take a deep breath and listen up. Because I'm about to spill the beans on the 10 biggest challenges event planners face when working with these venue-bound behemoths.</p>              <br/>
+          <br/>
+
+          
+          <!-- Section 1 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 1: Cost Concerns - When "Convenient" Means "Pricey"</h2>
+              <br/>
+              <p style="font-size: 16px;">Here's the harsh reality: in-house AV companies typically charge a premium. Why? Because they have an expensive contract with the venue. They pay a hefty fee for customer opportunities and with that the cost has to go somewhere. In some cases exclusives are imposed to help them secure these opportunities.</p>
+              <br/>
+              <p style="font-size: 16px;">This lack of competition translates into limited negotiation power for you the event planner. You're stuck with their pricing which can leave you feeling like you're funding their next vacation to the Maldives instead of amplifying your event.</p>              <br/>
+
+              <p style="font-size: 16px;">And it doesn't stop there. In-house AV companies often have premium charges lurking around every corner. Want a projector that doesn't look like it belongs in a museum? Need a sound system beyond the basic house sound? Simple changes like this will cost planners a pretty penny. This causes a lot of planners to make the decision to use an outside AV vendor. The result? You're forced to compromise. You ditch the dreamy lighting design because it's "too expensive." You scrap the interactive screen because the rental cost is enough to buy a small car. And suddenly your once-magical event starts to feel... well, a little bit basic.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 2 -->
+          <section>
+
+              <h2 style="font-size: 20px; font-weight: bold;">Section 2: Limited Choices</h2>              <br/>
+
+              <p style="font-size: 16px;">In-house AV companies often tout their "one-stop shop" approach promising a seamless and hassle-free experience. But this convenience often comes at a price: limited choices.</p>              <br/>
+
+              <p style="font-size: 16px;">You're stuck with their standardized packages which may not fit your unique vision and specific event needs.</p>              <br/>
+
+              <p style="font-size: 16px;">Let’s say you're planning a high energy sales kick-off meeting but the in-house AV company's suggestion of a video setup is more suited for basic annual association meeting. Imagine trying to share a creative presentation on their outdated projectors do you think your audience will be inspired by your message?</p>              <br/>
+
+              <p style="font-size: 16px;">This lack of flexibility can be a significant roadblock in creating a memorable event experience. You're forced to conform to their rigid standards even if it means compromising your artistic vision.</p>              <br/>
+
+              <p style="font-size: 16px;">And it's not just about the equipment. In-house AV companies may also have limited options for staffing and technical support. This can mean dealing with inexperienced crew members or long wait times for assistance when things go wrong.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 3 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 3: Restricted Creativity</h2>              <br/>
+
+              <p style="font-size: 16px;">Imagine you're an artist bursting with creative ideas for your masterpiece. But then you're handed a paint-by-numbers set and told "This is how we do things here." That's the feeling many event planners get when working with in-house AV companies.</p>              <br/>
+
+              <p style="font-size: 16px;">These companies often operate on a one-size-fits-all model offering standardized packages and setups. This may seem efficient but it can stifle your creativity and make your event feel bland and uninspired.</p>              <br/>
+
+              <p style="font-size: 16px;">Think back to the last award ceremony you attended. Did the lighting feel generic? Did the music sound like elevator ambience? Did the slideshow look like it was made in PowerPoint 2000?</p>              <br/>
+
+              <p style="font-size: 16px;">That's what happens when creativity is restricted. You end up with the same tired AV tropes event after event. And while they may be "functional" they do little to engage your audience or leave a lasting impression.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 4 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 4: Availability and Responsiveness</h2>              <br/>
+
+              <p style="font-size: 16px;">In the fast & furious world of event planning, time is precious and communication is key. You need a responsive AV team that's available to answer your questions, address concerns, and adapt to last-minute changes. But with in-house AV companies, you might play a frustrating game of phone tag and email limbo.</p>              <br/>
+
+              <p style="font-size: 16px;">Here's the reality: in-house AV teams often juggle multiple events simultaneously. They're setting up in one ballroom and troubleshooting in another. This can lead to delayed responses and a general feeling of being ignored.</p>              <br/>
+
+              <p style="font-size: 16px;">And forget about last-minute changes. If you need to adjust the schedule or add an extra microphone, prepare for a bureaucratic nightmare. You'll be bouncing between different departments, getting conflicting information, and feeling like your request is just another annoyance on their overflowing plate.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 5 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 5: Equipment Quality and Maintenance</h2>              <br/>
+
+              <p style="font-size: 16px;">Not all in-house AV companies prioritize equipment quality and maintenance. Some rely on hand-me-down equipment that is transferred from other locations that get newer items.</p>              <br/>
+
+              <p style="font-size: 16px;">This isn't just an aesthetic issue. Faulty equipment can lead to major technical glitches during your event. Imagine the projectors dying mid-presentation, wireless microphones cutting out during a crucial speech, or laptops that are lagging in the playback of a video.</p>              <br/>
+
+              <p style="font-size: 16px;">And it's not just about equipment failures. Poorly maintained equipment can also impact the overall quality of your event.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 6 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 6: Staff Expertise and Experience</h2>              <br/>
+
+              <p style="font-size: 16px;">Imagine entrusting your event's audiovisual needs to a team that's more comfortable troubleshooting a breakout room than operating a cutting-edge video system. That's the potential reality when working with in-house AV companies where staff expertise and experience vary wildly.</p>              <br/>
+
+              <p style="font-size: 16px;">While some teams boast seasoned professionals who can handle any situation, others might rely on a revolving door of entry-level technicians still figuring out the difference between an XLR cable and a DMX cable.</p>              <br/>
+
+              <p style="font-size: 16px;">This lack of experience can lead to a whole host of problems:</p>              <br/>
+
+              <ul style="font-size: 16px;">
+                  <li ><span style="margin-bottom: 10px; font-weight: bold;">&gt; Misinterpretations of your vision: </span>You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</li>
+                  <li ><span style="margin-bottom: 10px; font-weight: bold;">&gt; Technical hiccups: </span>The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</li>
+                  <li ><span style="margin-bottom: 10px; font-weight: bold;">&gt; Limited troubleshooting skills: </span>When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</li>
+              </ul>              <br/>
+
+              <p style="font-size: 16px;">This lack of expertise can be a significant stress factor for any event planner. You've poured your heart and soul into creating a seamless experience and suddenly you're left playing tech support for a team that might need more support themselves.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 7 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 7: Flexibility Famine</h2>              <br/>
+
+              <p style="font-size: 16px;">With an in-house AV company, your spontaneous spirit might get squashed by their inflexible policies. They thrive on routine, pre-set packages, and schedules that wouldn't budge even for a visit from the Queen (RIP).</p>              <br/>
+
+              <p style="font-size: 16px;">This lack of flexibility can manifest in several ways:</p>              <br/>
+
+              <ul style="font-size: 16px;">
+                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Unwillingness to accommodate last-minute changes: </span>Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Expensive customization options: </span>With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Inability to adapt to unforeseen circumstances: </span>Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</li>
+              </ul>              <br/>
+
+              <p style="font-size: 16px;">This rigidity can turn your event into a frustrating game of "fit or forfeit." Now at this very hour, you start thinking "Should I have hired an AV producer to negotiate and be a liaison with the in-house AV team?" or " Should I have hired an outside AV vendor who would have handled this better?"</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 8 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 8: Integration with External Providers</h2>              <br/>
+
+              <p style="font-size: 16px;">Imagine your event as a symphony. You've meticulously chosen each instrument: the caterers, the photographers, the entertainers. But then there's the AV company who you have been told you had to use that you now have to integrate into this symphony and help them all play together in perfect harmony.</p>              <br/>
+
+              <p style="font-size: 16px;">But instead of a melodious masterpiece, you get a cacophony of confusion. The caterers don’t have enough power, the photographer needs more lighting on the stage, the AV team is struggling through rehearsals because they don’t have the right team in place. Your carefully planned event has now turned into chaos.</p>              <br/>
+
+              <p style="font-size: 16px;">This, my friends, is the reality of integrating external providers with an in-house AV company. While it might seem convenient to have everything under one roof, it can often lead to communication breakdowns, scheduling conflicts, and finger-pointing when things inevitably go wrong.</p>              <br/>
+
+              <ul style="font-size: 16px;">
+                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Conflicting priorities and agendas: </span>The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Limited communication channels: </span>Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Technical incompatibility: </span>Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</li>
+              </ul>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 9 -->
+          <section>
+              <h2 style="font-size: 20px; font-weight: bold;">Section 9: Familiarity with the Event</h2>              <br/>
+
+              <p style="font-size: 16px;">At first glance, it seems like a match made in event planning heaven: an in-house AV company that knows the venue like the back of its hand. They can navigate the backstage labyrinth, anticipate potential technical snags, and make everything run smoothly with their eyes closed.</p>              <br/>
+
+              <p style="font-size: 16px;">But hold on before you hand over the reins and start dreaming of a stress-free setup let's consider the other side of the coin. Just because they know the venue doesn't mean they know your event.</p>              <br/>
+
+              <p style="font-size: 16px;">Here's the reality: in-house AV teams often operate in a bubble. They see countless events pass through the same doors each probably similar in scope and scale. They might be familiar with the physical space but they might be clueless about the heart and soul of your unique gathering.</p>              <br/>              <br/>
+
+
+          </section>
+          
+          <!-- Section 10 -->
+          <section>
+          <h2 style="font-size: 20px; font-weight: bold;">Section 10: Contractual Restrictions</h2>              <br/>
+
+          <p style="font-size: 16px;">Imagine signing on the dotted line, relief washing over you as you think, "Finally, the AV is sorted." But then, a nagging feeling creeps in: "Did I really understand what all the exclusives in the contract mean for my event? The harsh reality of in-house AV contracts is that they are often one-sided affairs. They favor the company, with strict cancellation policies, exorbitant change fees, and limitations on your ability to bring in external providers.</p>              <br/>
+
+          <h2 style="font-size: 20px; font-weight: bold;">The AV Choice is Yours</h2>              <br/>
+
+          <p style="font-size: 16px;">So there you have it, Ten  not-so-convenient truths about working with in-house AV companies. Are they complete demons hell-bent on ruining your event? Maybe not. But they are entities with their agendas, limitations, and sometimes questionable practices.</p>              <br/>
+
+          <p style="font-size: 16px;">Remember, the choice is yours. You can choose the "convenient" route and hope for the best or arm yourself with knowledge to find the right partner.</p>              <br/>
+
+          <p style="font-size: 16px;">Don't be afraid to ask questions and push boundaries, share this article with your fellow planners. Let's empower each other to conquer the "convenient" and create events that are anything but ordinary.</p>              <br/>
+
+          <h2 style="font-size: 20px; font-weight: bold;">Meta- In-house AV companies: convenient or a creative killer? 10 shocking truths you need to know before you sign!</h2>
+`,
+          tag: ['Read More'],
+        },
   // {
   //   id: 3,
   //   date: 1700973637000,
