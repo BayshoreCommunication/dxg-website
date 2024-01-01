@@ -1309,7 +1309,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 1 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 1: Cost Concerns - When "Convenient" Means "Pricey"</h2>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 1: How Do Cost Concerns Affect Your Event Planning?</h2>
               <br/>
               <p style="font-size: 16px;">Here's the harsh reality: in-house AV companies typically charge a premium. Why? Because they have an expensive contract with the venue. They pay a hefty fee for customer opportunities and with that the cost has to go somewhere. In some cases exclusives are imposed to help them secure these opportunities.</p>
               <br/>
@@ -1323,7 +1323,7 @@ export const RECENT_BLOG_POST = [
           <!-- Section 2 -->
           <section>
 
-              <h2 style="font-size: 20px; font-weight: bold;">Section 2: Limited Choices</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 2: Are Limited Choices Limiting Your Event's Potential?</h2>              <br/>
 
               <p style="font-size: 16px;">In-house AV companies often tout their "one-stop shop" approach promising a seamless and hassle-free experience. But this convenience often comes at a price: limited choices.</p>              <br/>
 
@@ -1340,7 +1340,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 3 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 3: Restricted Creativity</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 3: Is Your Creativity Being Stifled by In-House AV Restrictions?</h2>              <br/>
 
               <p style="font-size: 16px;">Imagine you're an artist bursting with creative ideas for your masterpiece. But then you're handed a paint-by-numbers set and told "This is how we do things here." That's the feeling many event planners get when working with in-house AV companies.</p>              <br/>
 
@@ -1355,7 +1355,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 4 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 4: Availability and Responsiveness</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 4: How Does Availability and Responsiveness Impact Your Event?</h2>              <br/>
 
               <p style="font-size: 16px;">In the fast & furious world of event planning, time is precious and communication is key. You need a responsive AV team that's available to answer your questions, address concerns, and adapt to last-minute changes. But with in-house AV companies, you might play a frustrating game of phone tag and email limbo.</p>              <br/>
 
@@ -1368,7 +1368,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 5 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 5: Equipment Quality and Maintenance</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 5: What's the Real Deal with Equipment Quality and Maintenance?</h2>              <br/>
 
               <p style="font-size: 16px;">Not all in-house AV companies prioritize equipment quality and maintenance. Some rely on hand-me-down equipment that is transferred from other locations that get newer items.</p>              <br/>
 
@@ -1381,7 +1381,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 6 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 6: Staff Expertise and Experience</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 6: How Critical Is Staff Expertise and Experience?</h2>              <br/>
 
               <p style="font-size: 16px;">Imagine entrusting your event's audiovisual needs to a team that's more comfortable troubleshooting a breakout room than operating a cutting-edge video system. That's the potential reality when working with in-house AV companies where staff expertise and experience vary wildly.</p>              <br/>
 
@@ -1390,9 +1390,9 @@ export const RECENT_BLOG_POST = [
               <p style="font-size: 16px;">This lack of experience can lead to a whole host of problems:</p>              <br/>
 
               <ul style="font-size: 16px;">
-                  <li ><span style="margin-bottom: 10px; font-weight: bold;">&gt; Misinterpretations of your vision: </span>You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</li>
-                  <li ><span style="margin-bottom: 10px; font-weight: bold;">&gt; Technical hiccups: </span>The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</li>
-                  <li ><span style="margin-bottom: 10px; font-weight: bold;">&gt; Limited troubleshooting skills: </span>When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</li>
+                  <li ><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Misinterpretations of your vision: </span>You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</li>
+                  <li ><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Technical hiccups: </span>The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</li>
+                  <li ><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Limited troubleshooting skills: </span>When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</li>
               </ul>              <br/>
 
               <p style="font-size: 16px;">This lack of expertise can be a significant stress factor for any event planner. You've poured your heart and soul into creating a seamless experience and suddenly you're left playing tech support for a team that might need more support themselves.</p>              <br/>              <br/>
@@ -1402,16 +1402,16 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 7 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 7: Flexibility Famine</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 7: Can You Navigate the Flexibility Famine with In-House AV?</h2>              <br/>
 
               <p style="font-size: 16px;">With an in-house AV company, your spontaneous spirit might get squashed by their inflexible policies. They thrive on routine, pre-set packages, and schedules that wouldn't budge even for a visit from the Queen (RIP).</p>              <br/>
 
               <p style="font-size: 16px;">This lack of flexibility can manifest in several ways:</p>              <br/>
 
               <ul style="font-size: 16px;">
-                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Unwillingness to accommodate last-minute changes: </span>Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Expensive customization options: </span>With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Inability to adapt to unforeseen circumstances: </span>Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Unwillingness to accommodate last-minute changes: </span>Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Expensive customization options: </span>With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Inability to adapt to unforeseen circumstances: </span>Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</li>
               </ul>              <br/>
 
               <p style="font-size: 16px;">This rigidity can turn your event into a frustrating game of "fit or forfeit." Now at this very hour, you start thinking "Should I have hired an AV producer to negotiate and be a liaison with the in-house AV team?" or " Should I have hired an outside AV vendor who would have handled this better?"</p>              <br/>              <br/>
@@ -1421,7 +1421,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 8 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 8: Integration with External Providers</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 8: What Are the Challenges of Integration with External Providers?</h2>              <br/>
 
               <p style="font-size: 16px;">Imagine your event as a symphony. You've meticulously chosen each instrument: the caterers, the photographers, the entertainers. But then there's the AV company who you have been told you had to use that you now have to integrate into this symphony and help them all play together in perfect harmony.</p>              <br/>
 
@@ -1430,9 +1430,9 @@ export const RECENT_BLOG_POST = [
               <p style="font-size: 16px;">This, my friends, is the reality of integrating external providers with an in-house AV company. While it might seem convenient to have everything under one roof, it can often lead to communication breakdowns, scheduling conflicts, and finger-pointing when things inevitably go wrong.</p>              <br/>
 
               <ul style="font-size: 16px;">
-                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Conflicting priorities and agendas: </span>The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Limited communication channels: </span>Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;">&gt; Technical incompatibility: </span>Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Conflicting priorities and agendas: </span>The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Limited communication channels: </span>Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</li>
+                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Technical incompatibility: </span>Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</li>
               </ul>              <br/>              <br/>
 
 
@@ -1440,7 +1440,7 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 9 -->
           <section>
-              <h2 style="font-size: 20px; font-weight: bold;">Section 9: Familiarity with the Event</h2>              <br/>
+              <h2 style="font-size: 30px; font-weight: bold;">Section 9: Does Familiarity with the Venue Mean Better Event Experience?</h2>              <br/>
 
               <p style="font-size: 16px;">At first glance, it seems like a match made in event planning heaven: an in-house AV company that knows the venue like the back of its hand. They can navigate the backstage labyrinth, anticipate potential technical snags, and make everything run smoothly with their eyes closed.</p>              <br/>
 
@@ -1453,11 +1453,11 @@ export const RECENT_BLOG_POST = [
           
           <!-- Section 10 -->
           <section>
-          <h2 style="font-size: 20px; font-weight: bold;">Section 10: Contractual Restrictions</h2>              <br/>
+          <h2 style="font-size: 30px; font-weight: bold;">Section 10: What Are the Pitfalls of Contractual Restrictions?</h2>              <br/>
 
           <p style="font-size: 16px;">Imagine signing on the dotted line, relief washing over you as you think, "Finally, the AV is sorted." But then, a nagging feeling creeps in: "Did I really understand what all the exclusives in the contract mean for my event? The harsh reality of in-house AV contracts is that they are often one-sided affairs. They favor the company, with strict cancellation policies, exorbitant change fees, and limitations on your ability to bring in external providers.</p>              <br/>
 
-          <h2 style="font-size: 20px; font-weight: bold;">The AV Choice is Yours</h2>              <br/>
+          <h2 style="font-size: 30px; font-weight: bold;">Is the AV Choice Really Yours? Navigating the Decision Maze</h2>      <br/>
 
           <p style="font-size: 16px;">So there you have it, Ten  not-so-convenient truths about working with in-house AV companies. Are they complete demons hell-bent on ruining your event? Maybe not. But they are entities with their agendas, limitations, and sometimes questionable practices.</p>              <br/>
 
@@ -1465,7 +1465,7 @@ export const RECENT_BLOG_POST = [
 
           <p style="font-size: 16px;">Don't be afraid to ask questions and push boundaries, share this article with your fellow planners. Let's empower each other to conquer the "convenient" and create events that are anything but ordinary.</p>              <br/>
 
-          <h2 style="font-size: 18px; font-weight: bold;">Meta- In-house AV companies: convenient or a creative killer? 10 shocking truths you need to know before you sign!</h2>
+          <h2 style="font-size: 18px; font-weight: bold;">Meta- In Conclusion: In-House AV Companies - A Creative Killer or Convenient Choice? 10 shocking truths you need to know before you sign!</h2>
 `,
           tag: ['Read More'],
         },
