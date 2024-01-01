@@ -56,7 +56,7 @@ export default function PostPage() {
           className='flex flex-col gap-4 lg:flex-row'
         >
           <MotionDiv
-            variants={slideIn('left', 'tween', 0.2, 1)}
+            variants={slideIn('up', 'tween', 0.2, 1)}
             className='w-full py-2 lg:w-9/12'
           >
             <Suspense fallback={<div>Loading...</div>}>
