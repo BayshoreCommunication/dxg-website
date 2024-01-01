@@ -1,9 +1,8 @@
-// BlogBigImageCard.tsx
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import { formatTimestamp } from '@/lib/utils';
-import LazyDescription from './LazyDescription.client'; // import the client component
+import LazyDescription from './LazyDescription.client'; // Ensure the path is correct
 
 interface BlogBigImageCardProps {
   id: number;
@@ -26,7 +25,7 @@ export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
 
   return (
     <div className='w-full text-white'>
-      <div className='relative h-[445px] w-full bg-red-200'>
+      <div className='relative h-[445px] w-full bg-red-200 imageEntryAnimation'> {/* Added animation class here */}
         <Image
           src={image}
           alt={title}
@@ -39,14 +38,7 @@ export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
       </div>
       <p className='text-light mt-3'>{time}</p>
       <h4 className='text mb-3 text-xl font-bold text-brand'>{title}</h4>
-      <LazyDescription description={description} /> {/* Use LazyDescription here */}
-      {/* <div className='mt-3 flex gap-3'>
-        {tag.map((item, index) => (
-          <Button key={index} className='rounded-full bg-transparent leading-none' variant={'outline'}>
-            {item}
-          </Button>
-        ))}
-      </div> */}
+      <LazyDescription description={description} />
     </div>
   );
 };

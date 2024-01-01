@@ -280,3 +280,17 @@ display: none;
   opacity: 0; /* Ensure elements are transparent initially */
   animation: textEntry 0.5s ease-out forwards; /* Apply the animation */
 }
+@keyframes slideAndFadeIn {
+  from {
+    transform: translateY(20px); /* Image starts 20px down */
+    opacity: 0; /* Image starts completely transparent */
+  }
+  to {
+    transform: translateY(0); /* Image ends at the right position */
+    opacity: 1; /* Image ends fully visible */
+  }
+}
+
+.imageEntryAnimation {
+  animation: slideAndFadeIn 1s ease forwards; /* Adjust time as needed */
+}
