@@ -36,7 +36,7 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
           threshold: 0.1,
         }
       );
-    }, 2000); // Delay for 1 second
+    }, 1000); // Delay for 1 second
 
     return () => {
       clearTimeout(timer);
