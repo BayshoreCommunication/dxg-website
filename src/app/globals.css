@@ -265,3 +265,18 @@ display: none;
 .fadeInAnimation {
   animation: fadeIn 0.5s ease-in-out forwards;
 }
+@keyframes textEntry {
+  from {
+    transform: translateY(20px); /* Adjust for desired starting position */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.textEntryAnimation {
+  opacity: 0; /* Ensure elements are transparent initially */
+  animation: textEntry 0.5s ease-out forwards; /* Apply the animation */
+}

@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import parse from 'html-react-parser';
 
 interface LazyDescriptionProps {
@@ -11,30 +11,58 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
   const doc = parser.parseFromString(description, 'text/html');
   const allElements = Array.from(doc.body.childNodes);
 
-  const increment = 1;
   const [loadedElements, setLoadedElements] = useState<Node[]>([]);
-  const [loadIndex, setLoadIndex] = useState(0);
+  const loadIndex = useRef(0);
+  const observer = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    setLoadedElements(allElements.slice(0, increment));
-    setLoadIndex(increment);
+    // Delay the loading of elements
+    const timer = setTimeout(() => {
+      setLoadedElements(allElements.slice(0, 1));
+      loadIndex.current = 1;
+
+      // Initialize Intersection Observer
+      observer.current = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              loadNextElements();
+              entry.target.classList.add("textEntryAnimation");
+            }
+          });
+        },
+        {
+          rootMargin: '0px',
+          threshold: 0.1,
+        }
+      );
+    }, 2000); // Delay for 1 second
+
+    return () => {
+      clearTimeout(timer);
+      observer.current?.disconnect();
+    };
   }, [description]);
 
+  const loadNextElements = () => {
+    if (loadIndex.current < allElements.length) {
+      const nextElement = allElements.slice(loadIndex.current, loadIndex.current + 1);
+      setLoadedElements(loaded => [...loaded, ...nextElement]);
+      loadIndex.current += 1;
+    }
+  };
+
   useEffect(() => {
-    const loadNextElements = () => {
-      if (loadIndex < allElements.length) {
-        const nextElements = allElements.slice(loadIndex, loadIndex + increment);
-        setLoadedElements(loaded => [...loaded, ...nextElements]);
-        setLoadIndex(loadIndex + increment);
-      }
+    // Observe each loaded element after delay
+    const currentObserver = observer.current;
+    const currentElements = document.querySelectorAll('.lazyTextElement');
+
+    currentElements.forEach(element => currentObserver?.observe(element));
+
+    return () => {
+      currentElements.forEach(element => currentObserver?.unobserve(element));
     };
-
-    const timeoutId = setTimeout(() => {
-      loadNextElements();
-    }, 100);
-
-    return () => clearTimeout(timeoutId);
-  }, [loadIndex, loadedElements, allElements]);
+  }, [loadedElements]);
 
   return (
     <div className='text-justify text-sm'>
@@ -42,7 +70,7 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
         if (element.nodeType === Node.ELEMENT_NODE) {
           const htmlElement = element as Element;
           return (
-            <div key={index} className="fadeInAnimation">
+            <div key={index} className="lazyTextElement">
               {parse(htmlElement.outerHTML)}
             </div>
           );
