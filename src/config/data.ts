@@ -1389,11 +1389,20 @@ export const RECENT_BLOG_POST = [
 
               <p style="font-size: 16px;">This lack of experience can lead to a whole host of problems:</p>              <br/>
 
-              <ul style="font-size: 16px;">
-                  <li ><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Misinterpretations of your vision: </span>You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</li>
-                  <li ><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Technical hiccups: </span>The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</li>
-                  <li ><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Limited troubleshooting skills: </span>When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</li>
-              </ul>              <br/>
+              <ul class="grid gap-2">
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Misinterpretations of your vision:</strong> You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</span>
+                </li>
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Technical hiccups:</strong> The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</span>
+                </li>
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Limited troubleshooting skills:</strong> When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</span>
+                </li>
+            </ul>              <br/>
 
               <p style="font-size: 16px;">This lack of expertise can be a significant stress factor for any event planner. You've poured your heart and soul into creating a seamless experience and suddenly you're left playing tech support for a team that might need more support themselves.</p>              <br/>              <br/>
 
@@ -1408,11 +1417,20 @@ export const RECENT_BLOG_POST = [
 
               <p style="font-size: 16px;">This lack of flexibility can manifest in several ways:</p>              <br/>
 
-              <ul style="font-size: 16px;">
-                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Unwillingness to accommodate last-minute changes: </span>Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Expensive customization options: </span>With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Inability to adapt to unforeseen circumstances: </span>Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</li>
-              </ul>              <br/>
+              <ul class="grid gap-2">
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Unwillingness to accommodate last-minute changes:</strong> Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</span>
+                </li>
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Expensive customization options:</strong> With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</span>
+                </li>
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Inability to adapt to unforeseen circumstances:</strong> Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</span>
+                </li>
+            </ul>              <br/>
 
               <p style="font-size: 16px;">This rigidity can turn your event into a frustrating game of "fit or forfeit." Now at this very hour, you start thinking "Should I have hired an AV producer to negotiate and be a liaison with the in-house AV team?" or " Should I have hired an outside AV vendor who would have handled this better?"</p>              <br/>              <br/>
 
@@ -1429,11 +1447,20 @@ export const RECENT_BLOG_POST = [
 
               <p style="font-size: 16px;">This, my friends, is the reality of integrating external providers with an in-house AV company. While it might seem convenient to have everything under one roof, it can often lead to communication breakdowns, scheduling conflicts, and finger-pointing when things inevitably go wrong.</p>              <br/>
 
-              <ul style="font-size: 16px;">
-                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Conflicting priorities and agendas: </span>The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Limited communication channels: </span>Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</li>
-                  <li><span style="margin-bottom: 10px; font-weight: bold;"><span style="display: inline-block; font-size: 37px; color: #ffffff;">•</span> Technical incompatibility: </span>Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</li>
-              </ul>              <br/>              <br/>
+              <ul class="grid gap-2">
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Conflicting priorities and agendas:</strong> The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</span>
+                </li>
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Limited communication channels:</strong> Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</span>
+                </li>
+                <li class="grid grid-cols-[auto,1fr] items-start gap-2">
+                    <span class="block text-xl">•</span>
+                    <span><strong>Technical incompatibility:</strong> Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</span>
+                </li>
+            </ul>              <br/>              <br/>
 
 
           </section>
