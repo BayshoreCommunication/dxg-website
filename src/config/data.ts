@@ -1391,16 +1391,16 @@ export const RECENT_BLOG_POST = [
 
               <ul class="grid gap-2">
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Misinterpretations of your vision:</strong> You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Misinterpretations of your vision:</strong> You painstakingly explain your desired setup only to have it materialize to a basic looking event from the early 2000’s.</span>
                 </li>
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Technical hiccups:</strong> The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Technical hiccups:</strong> The AV team struggles to operate the equipment leading to awkward pauses, embarrassing feedback loops, and frustrated presenters whose message is lost due to technical errors.</span>
                 </li>
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Limited troubleshooting skills:</strong> When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Limited troubleshooting skills:</strong> When things inevitably go wrong (because of technology, right?) the AV team is left scratching their heads, resorting to long troubleshooting processes because they have not experienced this challenge before.</span>
                 </li>
             </ul>              <br/>
 
@@ -1419,16 +1419,16 @@ export const RECENT_BLOG_POST = [
 
               <ul class="grid gap-2">
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Unwillingness to accommodate last-minute changes:</strong> Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Unwillingness to accommodate last-minute changes:</strong> Need a projector screen moved? Buckle up for a bureaucratic battle involving lack of staff on-site to move this and a hefty "change fee."</span>
                 </li>
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Expensive customization options:</strong> With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Expensive customization options:</strong> With their pricing packages built based on their inventory, tweaking the lighting design or upgrading your sound system or projectors can lead to expensive upgrades to your budget because they don’t fit the typical model. If your budget can’t afford these upgrade fees then you're stuck with the "standard setup" whether it fits your event or not.</span>
                 </li>
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Inability to adapt to unforeseen circumstances:</strong> Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</span>
+                    <span style="font-size: 16px;" class="block text-xl">•</span>
+                    <span style="font-size: 16px;"><strong>Inability to adapt to unforeseen circumstances:</strong> Inability to adapt to unforeseen circumstances: Does the Speaker not make the event and need to join from a remote location? The in-house AV team might shrug and say "We can't help you; it's not in the contract."</span>
                 </li>
             </ul>              <br/>
 
@@ -1449,16 +1449,16 @@ export const RECENT_BLOG_POST = [
 
               <ul class="grid gap-2">
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Conflicting priorities and agendas:</strong> The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</span>
+                    <span class="block text-xl" style="font-size: 16px;" >•</span>
+                    <span style="font-size: 16px;"><strong>Conflicting priorities and agendas:</strong> The in-house AV team might prioritize venue policies over your external providers' needs leading to power struggles and delays.</span>
                 </li>
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Limited communication channels:</strong> Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Limited communication channels:</strong> Information might get lost in the shuffle between multiple teams leaving everyone confused and unprepared.</span>
                 </li>
                 <li class="grid grid-cols-[auto,1fr] items-start gap-2">
-                    <span class="block text-xl">•</span>
-                    <span><strong>Technical incompatibility:</strong> Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</span>
+                    <span class="block text-xl" style="font-size: 16px;">•</span>
+                    <span style="font-size: 16px;"><strong>Technical incompatibility:</strong> Technical incompatibility: Different equipment, software, and even power requirements can cause unexpected hiccups requiring last-minute adjustments and frustrating workarounds.</span>
                 </li>
             </ul>              <br/>              <br/>
 
