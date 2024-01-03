@@ -1492,7 +1492,7 @@ export const RECENT_BLOG_POST = [
 
           <p style="font-size: 16px;">Don't be afraid to ask questions and push boundaries, share this article with your fellow planners. Let's empower each other to conquer the "convenient" and create events that are anything but ordinary.</p>              <br/>
 
-          
+          <h2 style="font-size: 18px; font-weight: bold;">Meta- In Conclusion: In-House AV Companies - A Creative Killer or Convenient Choice? 10 shocking truths you need to know before you sign!</h2>
 `,
           tag: ['Read More'],
         },
