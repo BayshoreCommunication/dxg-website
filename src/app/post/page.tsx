@@ -5,9 +5,6 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
-import { GetStaticPaths, GetStaticProps } from 'next';
-import Link from 'next/link';
-import { ParsedUrlQuery } from 'querystring';
 
 type Post = {
   id: number;
@@ -18,15 +15,30 @@ type Post = {
   tag: string[];
 };
 
-type Props = {
-  post: Post;
-};
+export default function PostPage() {
+  const [post, setPost] = useState<Post | null>(null);
 
-interface IParams extends ParsedUrlQuery {
-  id: string;
-}
+  // Define handleStorageChange outside of useEffect
+  const handleStorageChange = () => {
+    const storedPost = localStorage.getItem('selectedPost');
+    const newPost = storedPost ? JSON.parse(storedPost) : null;
+    setPost(newPost);
 
-const PostPage = ({ post }: Props) => {
+    if (newPost && newPost.title && typeof window !== 'undefined') {
+      const formattedTitle = newPost.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      window.history.pushState({}, '', `/post/${newPost.id}/${formattedTitle}`);
+    }
+  };
+
+  useEffect(() => {
+    handleStorageChange();
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
+
   if (!post) {
     return <div>Loading...</div>;
   }
@@ -54,17 +66,20 @@ const PostPage = ({ post }: Props) => {
           <div className='w-full p-2 lg:w-3/12' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
             <div className='flex flex-col gap-5'>
               <h2 className='text mb-3 text-xl font-bold text-brand'>Recent Posts</h2>
-              {RECENT_BLOG_POST.map((item, index) => (
-                <MotionDiv
-                  variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                  key={item.id} // Ensure unique key for each item
-                >
-                  {/* Wrap BlogWideCard with Link for navigation */}
-                  <Link href={`/posts/${item.id}`} passHref>
-                      <BlogWideCard {...item} />
-                  </Link>
-                </MotionDiv>
-              ))}
+              {RECENT_BLOG_POST.map((item, index) => {
+                return (
+                  <MotionDiv
+                    variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                    key={item.id}
+                    onClick={() => {
+                      localStorage.setItem('selectedPost', JSON.stringify(item));
+                      handleStorageChange();
+                    }}
+                  >
+                    <BlogWideCard key={item.id} {...item} />
+                  </MotionDiv>
+                );
+              })}
             </div>
           </div>
         </MotionDiv>
@@ -72,35 +87,3 @@ const PostPage = ({ post }: Props) => {
     </div>
   );
 };
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  // Use RECENT_BLOG_POST to generate paths
-  const paths = RECENT_BLOG_POST.map((post) => ({
-    params: { id: post.id.toString() },
-  }));
-
-  return { paths, fallback: 'blocking' };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  // Ensure that params exist and has the 'id' field
-  if (!params?.id) {
-    return {
-      notFound: true,
-    };
-  }
-
-  // Find the post by id from RECENT_BLOG_POST
-  const post = RECENT_BLOG_POST.find((p) => p.id.toString() === params.id);
-
-  // Log the post data to the console for debugging
-  console.log("Fetched post data:", post);
-
-  if (!post) {
-    return { notFound: true };
-  }
-
-  return { props: { post } };
-};
-
-export default PostPage;
