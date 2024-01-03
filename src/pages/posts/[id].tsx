@@ -61,7 +61,9 @@ const PostPage = ({ post }: Props) => {
                 >
                   {/* Wrap BlogWideCard with Link for navigation */}
                   <Link href={`/posts/${item.id}`} passHref legacyBehavior>
+                    <a> {/* Use a div or the BlogWideCard itself as the clickable element */}
                       <BlogWideCard {...item} />
+                    </a>
                   </Link>
                 </MotionDiv>
               ))}
