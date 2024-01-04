@@ -1,7 +1,6 @@
-// pages/post/[id].tsx
+// pages/post/[slug].tsx
 import { useRouter } from 'next/router';
 import { useEffect, useState, Suspense } from 'react';
-import Link from 'next/link'; // Make sure to import Link from Next.js
 import Header from '@/components/Navbar'; // Adjust the import path as necessary
 import Footer from '@/components/Footer'; // Adjust the import path as necessary
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
@@ -9,13 +8,26 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
+import Link from 'next/link';
 
-// Replace this with your actual data fetching logic
-async function getPostById(id:string) {
-  const post = RECENT_BLOG_POST.find((post) => post.id === Number(id));
-  return post;
+
+// Slugify function to convert title to URL-friendly slug
+function slugify(text:string) {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+    .replace(/^-+/, '')             // Trim - from start of text
+    .replace(/-+$/, '');            // Trim - from end of text
 }
 
+// Replace this with your actual data fetching logic
+async function getPostBySlug(slug: string): Promise<Post> {
+  const post = RECENT_BLOG_POST.find(post => slugify(post.title) === slug);
+  return post || null;
+}
+
+// Define the type for your post
 type Post = {
   id: number;
   date: number;
@@ -25,20 +37,20 @@ type Post = {
   tag: string[];
 } | null;
 
-export default function Post() {
+export default function PostPage() {
   const router = useRouter();
-  const { id } = router.query;
-  const [post, setPost] = useState<Post>(null);
+  const { slug } = router.query;
+  const [post, setPost] = useState<Post | null>(null);
 
   useEffect(() => {
-    if (typeof id === 'string') {
-      getPostById(id).then((post) => {
-        if (post) {
-          setPost(post);
-        }
+    if (typeof slug === 'string') {
+      getPostBySlug(slug).then(post => {
+        setPost(post); // post is either a Post object or null
       });
+    } else {
+      setPost(null); // Reset or handle the state appropriately when slug is not available
     }
-  }, [id]);
+  }, [slug]);
 
   if (!post) {
     return <div>Loading...</div>;
@@ -49,7 +61,7 @@ export default function Post() {
       <Header /> {/* Include the Header at the top */}
       <div className="bg-black">
         <MaxWidthWrapper>
-          <h1 className="pt-4 text-white text-2xl font-bold">{post.title}</h1> {/* Tailwind classes */}
+          <h1 className="pt-4 text-white text-2xl font-bold">{post.title}</h1>
           <hr className="mb-4 h-2 border-gray-500" />
           <MotionDiv
             variants={staggerContainer(0.2, 0.1)}
@@ -78,7 +90,8 @@ export default function Post() {
                   >
                     <BlogWideCard {...item} />
                   </MotionDiv>
-                </Link>                  );
+                </Link>                  
+                );
                 })}
               </div>
             </div>
@@ -88,4 +101,4 @@ export default function Post() {
       <Footer /> {/* Include the Footer at the bottom */}
     </>
   );
-};
+}
