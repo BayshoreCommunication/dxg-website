@@ -82,16 +82,17 @@ export default function PostPage() {
               <div className="flex flex-col gap-5">
                 <h2 className="text mb-3 text-xl font-bold text-brand">Recent Posts</h2>
                 {RECENT_BLOG_POST.map((item, index) => {
+                  const postSlug = slugify(item.title);
                   return (
-                <Link href={`/post/${item.id}`} key={item.id} style={{maxWidth: '45%'}}>
-                  <MotionDiv
-                    variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                    className='w-full cursor-pointer' // Added cursor-pointer for better UX
-                  >
-                    <BlogWideCard {...item} />
-                  </MotionDiv>
-                </Link>                  
-                );
+                    <Link href={`/post/${postSlug}`} key={item.id} style={{maxWidth: '45%'}}>
+                      <MotionDiv
+                        variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                        className='w-full cursor-pointer'
+                      >
+                        <BlogWideCard {...item} />
+                      </MotionDiv>
+                    </Link>
+                  );
                 })}
               </div>
             </div>
