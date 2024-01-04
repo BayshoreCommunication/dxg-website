@@ -5,7 +5,6 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
-import styles from './[id].module.css';
 
 // Replace this with your actual data fetching logic
 async function getPostById(id:string) {
