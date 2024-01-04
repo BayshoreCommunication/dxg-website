@@ -10,8 +10,6 @@ import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 async function getPostById(id:string) {
   // This is just a placeholder. In your app, you'd fetch the post from your API or database.
   const post = RECENT_BLOG_POST.find((post) => post.id === Number(id));
-  console.log("this is the post: " + (post ? post.description : "no post found!"));
-
   return post;
 }
 
@@ -44,9 +42,9 @@ export default function Post() {
   }
 
   return (
-    <div className="mb-4" style={{backgroundColor:"black"}}>
+    <div className="mb-4 bg-black"> {/* Tailwind classes */}
       <MaxWidthWrapper>
-        <h1 className="pt-4 text-white" style={{ fontSize: '2em', fontWeight: 'bold' }}>{post.title}</h1>
+        <h1 className="pt-4 text-white text-2xl font-bold">{post.title}</h1> {/* Tailwind classes */}
         <hr className="mb-4 h-2 border-gray-500" />
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
@@ -57,7 +55,7 @@ export default function Post() {
         >
           <MotionDiv
             variants={slideIn('up', 'tween', 0.2, 1)}
-            className="w-full py-2 lg:w-9/12"
+            className="w-full py-2 lg:w-9/12" 
           >
             <Suspense fallback={<div>Loading...</div>}>
               <BlogBigImageCard {...post} />
