@@ -7,6 +7,16 @@ import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
 
+function slugify(text: string) {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')           // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+    .replace(/^-+/, '')             // Trim - from start of text
+    .replace(/-+$/, '');            // Trim - from end of text
+}
+
+
 export const RecentBlogSection = () => {
   const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
 
@@ -33,18 +43,12 @@ export const RecentBlogSection = () => {
           <div className='w-full' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
             <div className='flex flex-wrap justify-between gap-5'>
             {RECENT_BLOG_POST.map((item, index) => {
+              const postSlug = slugify(item.title);
               return (
-                <Link href={`/post/`+item.id} key={item.id} style={{maxWidth: '45%'}}>
-                {/* <Link href='#' key={item.id} style={{maxWidth: '45%'}}> */}
+                <Link href={`/post/${postSlug}`} key={item.id} style={{maxWidth: '45%'}}>
                   <MotionDiv
                     variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                    onClick={() => {
-                      setSelectedPost(item);
-                      if (typeof window !== 'undefined') {
-                        localStorage.setItem('selectedPost', JSON.stringify(item));
-                      }
-                    }}
-                    className='w-full'
+                    className='w-full cursor-pointer'
                   >
                     <BlogWideCard {...item} />
                   </MotionDiv>
