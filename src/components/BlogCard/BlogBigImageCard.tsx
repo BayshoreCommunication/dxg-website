@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 import { formatTimestamp } from '@/lib/utils';
-import LazyDescription from './LazyDescription.client'; // Ensure the path is correct
+import LazyDescription from './LazyDescription.client'; 
 
 interface BlogBigImageCardProps {
   id: number;
