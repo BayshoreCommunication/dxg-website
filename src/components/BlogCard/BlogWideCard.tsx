@@ -36,9 +36,9 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
         <h4 className='text-base font-bold text-brand md:text-xl'>
           {title}
         </h4>
-        <p className='text-sm md:line-clamp-3'>
+        <div className='text-sm md:line-clamp-3'>
           {parse(description)}
-        </p>
+        </div>
         <div className='mt-2 flex gap-2'>
           {tag.map((item, index) => {
             return (
