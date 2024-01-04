@@ -13,8 +13,9 @@ export default function Navbar() {
 
   // Revised helper function to check if the current route is part of the services section
   const isServiceActive = (): boolean => {
-    return currentRoute === '/services' || currentRoute.startsWith('/services/');
+    return currentRoute !== null && (currentRoute === '/services' || currentRoute.startsWith('/services/'));
   };
+  
 
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-16 bg-header md:h-20'>

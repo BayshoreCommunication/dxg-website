@@ -45,7 +45,7 @@ export default function Post() {
   return (
     <>
       <Header /> {/* Include the Header at the top */}
-      <div className="mb-4 bg-black">
+      <div className="bg-black">
         <MaxWidthWrapper>
           <h1 className="pt-4 text-white text-2xl font-bold">{post.title}</h1> {/* Tailwind classes */}
           <hr className="mb-4 h-2 border-gray-500" />
