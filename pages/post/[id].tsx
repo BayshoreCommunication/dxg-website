@@ -43,28 +43,28 @@ export default function Post() {
   }
 
   return (
-    <div className='mb-4' style={{backgroundColor:"black"}}>
+    <div className={styles.mb4} style={{backgroundColor:"black"}}>
       <MaxWidthWrapper>
-        <h1 className='pt-4 text-white' style={{ fontSize: '2em', fontWeight: 'bold' }}>{post.title}</h1>
-        <hr className='mb-4 h-2 border-gray-500' />
+        <h1 className={styles.pt4} style={{ fontSize: '2em', fontWeight: 'bold' }}>{post.title}</h1>
+        <hr className={styles.mb4} style={{ height: '2px', borderColor: 'gray' }} />
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
           viewport={{ once: true, amount: 0 }}
-          className='flex flex-col gap-4 lg:flex-row'
+          className={styles.flexColGap4LgFlexRow}
         >
           <MotionDiv
             variants={slideIn('up', 'tween', 0.2, 1)}
-            className='w-full py-2 lg:w-9/12'
+            className={styles.wFullPy2LgW9_12}
           >
             <Suspense fallback={<div>Loading...</div>}>
               <BlogBigImageCard {...post} />
             </Suspense>
           </MotionDiv>
-          <div className='w-full p-2 lg:w-3/12' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
-            <div className='flex flex-col gap-5'>
-              <h2 className='text mb-3 text-xl font-bold text-brand'>Recent Posts</h2>
+          <div className={styles.wFullP2LgW3_12} style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
+            <div className={styles.flexColGap5}>
+              <h2 className={styles.textMb3TextXlFontBoldTextBrand}>Recent Posts</h2>
               {RECENT_BLOG_POST.map((item, index) => {
                 return (
                   <MotionDiv
