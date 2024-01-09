@@ -78,7 +78,7 @@ export default function PostPage() {
                 <BlogBigImageCard {...post} />
               </Suspense>
             </MotionDiv>
-            <div className="w-full p-2 lg:w-3/12" style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
+            <div className="w-full p-2 lg:w-3/12" style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0', overflowX: "hidden" }}>
               <div className="flex flex-col gap-5">
                 <h2 className="text mb-3 text-xl font-bold text-brand">Recent Posts</h2>
                 {RECENT_BLOG_POST.map((item, index) => {
