@@ -194,6 +194,12 @@ display: none;
   }
 }
 
+@media (min-width: 768px) {
+  .events-banner-container {
+    height: 600px; /* Increased height for larger screens */
+  }
+}
+
 .banner-background {
   position: absolute;
   top: 0;
