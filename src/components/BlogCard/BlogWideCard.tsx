@@ -22,30 +22,32 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
 }) => {
   const time = formatTimestamp(date);
   return (
-    <div className='flex w-full gap-4 items-start text-white'>
-      <div className='flex-shrink-0 w-24 h-24 relative'> {/* Adjusted for square image */}
+    <div className='flex w-full gap-4 items-stretch text-white'> {/* Adjusted for equal height */}
+      <div className='flex-shrink-0 relative' style={{ flexBasis: 'calc(38% - 1rem)' }}>
+        <div style={{ paddingTop: '100%' }}></div>
         <Image
           src={image}
           alt={title}
-          layout='fill' // Filling the square container
-          objectFit='cover' // Maintain aspect ratio
+          layout='fill'
+          objectFit='cover'
+          className='absolute top-0 left-0'
         />
       </div>
-      <div className='flex-grow'>
-        <p className='text-xs md:text-base'>{time}</p>
-        <h4 className='text-base font-bold text-brand md:text-xl'>
+      <div className='flex-grow flex flex-col justify-center'> {/* Adjusted for vertical center alignment */}
+        <p className='text-xs'>{time}</p>
+        <h4 className='text-lg line-clamp-1 font-bold text-brand'>
           {title}
         </h4>
-        <div className='text-sm md:line-clamp-3'>
+        <div className='text-sm line-clamp-2'>
           {parse(description)}
         </div>
-        <div className='mt-2 flex gap-2'>
+        <div className='mt-2 flex gap-2 flex-wrap'>
           {tag.map((item, index) => {
             return (
               <Button
                 key={index}
-                variant={'outline'}
-                className='m-0 rounded-full bg-transparent'
+                variant={item === 'Read More' ? 'destructive' : 'outline'}
+                className={`m-0 rounded-full bg-transparent ${item === 'Read More' ? 'border-white border-2 rounded-l-full rounded-r-full box-border' : ''}`}
               >
                 {item}
               </Button>

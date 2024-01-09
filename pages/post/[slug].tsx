@@ -78,13 +78,13 @@ export default function PostPage() {
                 <BlogBigImageCard {...post} />
               </Suspense>
             </MotionDiv>
-            <div className="w-full p-2 lg:w-3/12" style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0', overflowX: "hidden" }}>
+            <div className="w-full p-2 lg:w-3/12" style={{ overflowY: 'auto', maxHeight: '84vh', position: 'sticky', top: '0', overflowX: "hidden" }}>
               <div className="flex flex-col gap-5">
                 <h2 className="text mb-3 text-xl font-bold text-brand">Recent Posts</h2>
                 {RECENT_BLOG_POST.map((item, index) => {
                   const postSlug = slugify(item.title);
                   return (
-                    <Link href={`/post/${postSlug}`} key={item.id} style={{maxWidth: '45%'}}>
+                    <Link href={`/post/${postSlug}`} key={item.id}>
                       <MotionDiv
                         variants={fadeIn('up', 'tween', index * 0.2, 1)}
                         className='w-full cursor-pointer'
