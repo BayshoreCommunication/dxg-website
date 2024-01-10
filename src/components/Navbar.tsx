@@ -6,16 +6,18 @@ import { usePathname } from 'next/navigation';
 import { CapsuleButton } from './CapsuleButton';
 import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
-import ProposalForm from './ProposalForm';
+import ProposalForm from './ProposalFormNew';
 
 export default function Navbar() {
   const currentRoute = usePathname();
 
   // Revised helper function to check if the current route is part of the services section
   const isServiceActive = (): boolean => {
-    return currentRoute !== null && (currentRoute === '/services' || currentRoute.startsWith('/services/'));
+    return (
+      currentRoute !== null &&
+      (currentRoute === '/services' || currentRoute.startsWith('/services/'))
+    );
   };
-  
 
   return (
     <header className='sticky inset-x-0 top-0 z-50 h-16 bg-header md:h-20'>
@@ -27,7 +29,9 @@ export default function Navbar() {
           {SITECONFIG.mainNav.map((item, index) => {
             // Determine if the current item is 'Services'
             const isServiceItem = item.title === 'Services';
-            const isActive = isServiceItem ? isServiceActive() : currentRoute === item.slug;
+            const isActive = isServiceItem
+              ? isServiceActive()
+              : currentRoute === item.slug;
             return (
               <Link key={index} href={item.slug}>
                 <Button
@@ -49,7 +53,6 @@ export default function Navbar() {
     </header>
   );
 }
-
 
 // 'use client';
 // import Image from 'next/image';

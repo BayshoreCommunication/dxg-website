@@ -108,4 +108,11 @@ export const SITECONFIG = {
     returnUrl: process.env.NEXT_PUBLIC_ZOHO_CONTACT_RETURN_URL || '',
     leadSource: 'Online-Store',
   },
+  proposal: {
+    xnQsjsdp: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_SECRET_1 || '',
+    xmIwtLD: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_SECRET_2 || '',
+    leadCampaign: 'TGVhZHM=',
+    returnUrl: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_RETURN_URL || '',
+    leadSource: 'Online-Store',
+  },
 };
