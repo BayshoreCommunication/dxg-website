@@ -34,7 +34,7 @@ export const BannerSection = () => {
               </p>
             </div> */}
             <h1 className='flex-none text-[45px] font-bold uppercase text-white sm:text-[120px]'>
-              SOUTHERN EXPOSURE
+            SOUTHERN EXPOSURE
             </h1>
             <p className='text-[16px] font-normal text-white sm:text-lg'>
               Vendor Booth - Audio Visual Order Page

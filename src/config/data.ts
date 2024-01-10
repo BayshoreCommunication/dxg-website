@@ -420,7 +420,7 @@ export const RECENT_BLOG_POST = [
     
     <ol>
       <li>
-        <strong>Educate your audience:</strong>
+        <span style="font-size: 16px;"><strong>Educate your audience:</strong>
         >Are you launching a new product? Sharing industry insights? Then your
         objective might be to increase attendees&#39; knowledge by X% or have them
         leave with 3 key takeaways.
@@ -1054,240 +1054,243 @@ export const RECENT_BLOG_POST = [
       title: 'What Is The Benefit To Having A Speaker Management System For An Event',
       image: 'https://lh3.googleusercontent.com/fife/AGXqzDmFVSALlv6O6C0Uj1Ty23Hrypoj5JtHBEZnt6OfOL251j-JMgCztYmN2UCJgIXfG1PFv3ihLU3JLcqfD7E-CXjtBERpRzIMpo6kk-DbypwbZFGJBwAydJ6ewDMm2E258CfdKFmDB46tSQGv7BkaagiCePBvYPXsafI7vGCh2h3SrsItmCx5M4_3exO_-s06PBmTnUdQdq3P4SHF7xPDHJnYHmggfkQEOr3ULAAgl_dRMM_fRv8wPOsZg7KtFfgX0u_Mh0I3ZcFWvdUKTg6BOlHbt8e1HoB3iZsT40s9pVfM3o4C2ZpFgA2ll0e5dlQQ_Tkm0nrRCbiUrz2Pn0Mrfjls03_0TA4aZlvg7fYaJLoV0JWdzSrow8hM-MTH46dMp7PEp4Rd0Kcg7iq-jLTzBr7yRWVG5gJdSYac2JXguo_9InEOd0vDQf-3sGbtOyAc5V5DI3RotJl5sisL4mMjmcmX1FCSnQwyzU5QjmHypJVsTj-8JnchRkVEd_ZhHGhU_zW9p3Hc5UNcCyLIaIV1Nq2RaClFodO9nakUNJ9GYTDnS8fLArXUkAZbrdrvHgp7GAdBQeoQgUBp0v1CnMnH3uswFt-e8pbIiLAAPAkKGYUfqeGQCu2ztFF9iE66Q8s36hD2kCxO-1Gs_zt_m3cVvEUfzd0Bu8qroyqITdwtCgbR5--oWrQgpk0H7DNiS2X0LMm6MQFNmsGmk2TDBv-rCxQUgNUbk6TBjolzVjB2Q8OFXzymfQp68bMa7G-0V1k0nWn-izzKFIrd0ZSxnuUdwd_M00dI-n2MzS5qNciQbQXUJiWlmByRPWWp5rid35O17Epzh-dY37L9V1Efp9FWgIsd_AF4PVcFwEfmd8InGoyMQX578gKkAjOUYOVoCCGNTFEz3diSMBnZr1XE-bc5JGMi-gWT9UHEAWj4EgscEri5t0Kb63myILOCa-_7UJVmMvA3ntI6JQ0SysUSpBbyYWYf9g8glQBssLfkTteTUOcGz7uwsT6_90SGe-9wvsZn2A5xICeLY0dzUnVLigHDvJ6vMZ7KU9_R4m6lR-A94BYTFLd7YE51OcjFt9vvIenAIDbgxt6ONeX8Px3ZIPFUf4i2VwbotHQaQGbNQOYxi25QWtCnyCXnXipYYepJiCjI16oWkOHmGOAfbnrmgck1YVTSJEnE20zHx1rzOUKxXx8jDWtnnDanJlMFTQyAvZFb3acEqYqX53bwFMXuRiBZWiwPAioyzHR8-hmCsSx-mkCVkRqHUykCk0_SrwzCp3bQbUkenRENjXnvHz-AGfToUBGDC8FtWX2ZazdsDzG6PJ9KRp39T2cDSt_t0DTJHpyfdfAItgoRk1gfB5n-KsIagObdt-gzTS0o_3Ca8shzPizIMXBpUz1hUHqsTdb6mpWWeNZxNCJAfz2n7GiPVhKrv4oY1RGz8Yc-sMCysrTFaJqsZpUnZypRj_BN55fM3yYRyDIKmetWtF2jVYqqMjIXCMbV8tTy0j5FTROg0qXL7SRqC77u0cuTH5FXCHhQ7Rzw=w1872-h966',
       description:
-        `<p>
+        `<p style="font-size: 16px;">
         Are you tired of juggling multiple spreadsheets, emails, and documents to
-        manage your speakers? And now you&#39;re wishing there was a simpler and
+        manage your speakers? And now you're wishing there was a simpler and
         smarter way to handle the speaker management process.
-      </p>
-      <p>
+      </p><br>
+      
+      <p style="font-size: 16px;">
         Wait, what if there was a better way? Yes! A speaker management system - your
-        ultimate magic wand! &nbsp;This significantly improves the organization and
+        ultimate magic wand! This significantly improves the organization and
         success of an event. By streamlining various aspects of speaker coordination,
-         <a href="#">event planners</a> 
-        &nbsp;can ensure a smoother experience for everyone involved.
-      </p>
-      
-      <p>
+        <a href="#">event planners</a> 
+        can ensure a smoother experience for everyone involved.
+      </p><br>
+            
+      <p style="font-size: 16px;">
         Some of the key benefits of having a speaker management system for an event
-          include the following:
-      </p>
-      
-      <h2>
-        1. Centralized Information Management: 
-      </h2>
-      <p>
+        include the following:
+      </p><br>
+            
+      <h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+        Centralized Information Management: 
+      </h2><br>
+      <p style="font-size: 16px;">
         When you centralize information, any organizers like you can easily access
-          and update speaker details, ensuring that all relevant data is readily
-          available. And the twist part is - it eliminates the need to search through
-          multiple sources or rely on outdated information, saving time and improving
-          efficiency.
-      </p>
+        and update speaker details, ensuring that all relevant data is readily
+        available. And the twist part is - it eliminates the need to search through
+        multiple sources or rely on outdated information, saving time and improving
+        efficiency.
+      </p><br>
       
-      <p>
+      <p style="font-size: 16px;">
         A speaker management system provides a centralized repository for all
-          speaker-related information, including:
-      </p>
-      
+        speaker-related information, including:
+      </p><br>
+            
       <ul>
-        <li >
-          Speaker profiles:
-          &nbsp;Store speaker biographies, contact details, expertise, and
-            experience.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Speaker profiles:</strong> Store speaker biographies, contact details, expertise, and
+          experience.
         </li>
-        <li >
-          Presentation materials:&nbsp;Manage speaker slides, videos, handouts, and other presentation
-            materials.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Presentation materials:</strong> Manage speaker slides, videos, handouts, and other presentation
+          materials.
         </li>
-        <li >
-          Travel arrangements: Track speaker travel arrangements, including flights, accommodations, and
-            transportation.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Travel arrangements:</strong> Track speaker travel arrangements, including flights, accommodations, and
+          transportation.
         </li>
-        <li >
-          Schedule and logistics:&nbsp;Manage speaker schedules, assignments, and logistical
-            arrangements.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Schedule and logistics:</strong> Manage speaker schedules, assignments, and logistical
+          arrangements.
         </li>
-      </ul>
+      </ul><br>
       
-      <h2>
-      2. Efficient Communication:
-      </h2>
-      <p>
+      <h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+        Efficient Communication:
+      </h2><br>
+      <p style="font-size: 16px;">
         A speaker management system facilitates effective communication and
-          collaboration between event organizers, speakers, and other stakeholders. It
-          provides a platform for:
-      </p>
-      
-      <ul >
-        <li >
-          Announcements and updates: Broadcast important messages to speakers, keeping them informed about
-            event schedules, changes, and requirements.
-        </li>
-        <li >
-          Feedback and discussion:&nbsp;Encourage feedback from speakers to gather insights and address
-            concerns.
-        </li>
-        <li >
-          Task management:&nbsp;Assign tasks to speakers and track their completion to ensure
-            timely delivery of materials and adherence to schedules. This helps to
-            avoid miscommunication and ensures that everyone stays informed.
-        </li>
-      </ul>
-      <h2>
-       3. Simplified Scheduling: 
-      </h2>
-      <p>
-        Not only communication, a speaker management system simplifies scheduling
-          and eliminates scheduling conflicts. Aslo, ensures a seamless event flow,
-          maximizes speaker participation, and enhances the overall attendee
-          experience. Here&rsquo;s how:
-      </p>
-      
-      <ul >
-        <li >
-          Speaker availability management: Track speaker availability to avoid scheduling conflicts and ensure that
-            speakers are assigned to sessions that align with their expertise and
-            interests.
-        </li>
-        <li >
-          Session allocation and time management: Allocate time slots for sessions and presentations, considering speaker
-            availability, session length, and venue capacity.
-        </li>
-        <li >
-          Schedule visualization and conflict resolution:&nbsp;Present a clear and organized view of the event schedule, allowing
-            organizers to identify and resolve scheduling conflicts promptly.
-        </li>
-      </ul>
-      
-      <h2>
-        4. Speaker Selection and Evaluation:<span class="c8">&nbsp;
-      </h2>
-      <p>
-        But will information management, communication handling and simplifying
-          scheduling be enough? Of course not. That&#39;s why speaker management also
-          assists in strategic speaker selection and evaluation.
-      </p>
-      
+        collaboration between event organizers, speakers, and other stakeholders. It
+        provides a platform for:
+      </p><br>
+            
       <ul>
-        <li >
-          Speaker database and search:&nbsp;Maintain a database of potential speakers with searchable filters
-            based on expertise, experience, and presentation style.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Announcements and updates:</strong> Broadcast important messages to speakers, keeping them informed about
+          event schedules, changes, and requirements.
         </li>
-        <li >
-          Speaker evaluation and feedback: Collect feedback from previous events to evaluate speaker performance and
-            identify highly qualified speakers.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Feedback and discussion:</strong> Encourage feedback from speakers to gather insights and address
+          concerns.
         </li>
-        <li >
-          Speaker engagement and recruitment:&nbsp;Facilitate communication with potential speakers to gauge their
-            interest, negotiate terms, and finalize speaker participation.
+        <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+          <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Task management:</strong> Assign tasks to speakers and track their completion to ensure
+          timely delivery of materials and adherence to schedules. This helps to
+          avoid miscommunication and ensures that everyone stays informed.</span>
         </li>
-      </ul>
-      <h2 >
-        5. Content Management:
-      </h2>
-      <p>
-        A speaker management system streamlines content management and ensures that
-          presentation materials are accessible to all stakeholders:
-      </p>
+      </ul><br>
+      <h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+  Simplified Scheduling: 
+</h2><br>
+<p style="font-size: 16px;">
+  Not only communication, a speaker management system simplifies scheduling
+  and eliminates scheduling conflicts. It ensures a seamless event flow,
+  maximizes speaker participation, and enhances the overall attendee
+  experience. Here’s how:
+</p><br>
       
-      <ul>
-        <li >
-          Speaker content upload and review:&nbsp;Provide a platform for speakers to upload their presentation
-            materials, allowing organizers to review, approve, and provide
-            feedback.
-        </li>
-        <li >
-          Content storage and organization:&nbsp;Store presentation materials securely and organize them by speaker,
-            session, or event.
-        </li>
-        <li >
-          Content sharing and distribution:&nbsp;Distribute approved presentation materials to attendees, event
-            staff, and other stakeholders.
-        </li>
-      </ul>
-      <h2>
-        6. Enhanced Attendee Experience: 
-      </h2>
-      <p>
-        With a well-managed speaker system, attendees can enjoy a more engaging and
-          seamless event experience. They can easily access speaker information,
-          presentation materials, and schedules, allowing them to make the most of
-          their time at the event.
-      </p>
+<ul>
+  <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+    <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Speaker availability management: </strong>Track speaker availability to avoid scheduling conflicts and ensure that
+    speakers are assigned to sessions that align with their expertise and
+    interests.</span> 
+  </li>
+  <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+    <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Session allocation and time management: </strong>Allocate time slots for sessions and presentations, considering speaker
+    availability, session length, and venue capacity.</span>  
+  </li>
+  <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+    <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Schedule visualization and conflict resolution: </strong>Present a clear and organized view of the event schedule, allowing
+    organizers to identify and resolve scheduling conflicts promptly.</span>
+  </li>
+</ul><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+  Speaker Selection and Evaluation:
+</h2><br>
+<p style="font-size: 16px;">
+  But will information management, communication handling, and simplifying
+  scheduling be enough? Of course not. That's why speaker management also
+  assists in strategic speaker selection and evaluation.
+</p><br>
       
-      <ul class="c3 lst-kix_yo8l6rdjbrc8-0 start">
-        <li >
-          Easy access to speaker information:&nbsp;Provide attendees with easy access to speaker profiles,
-            biographies, and contact details.
-        </li>
-        <li >
-          Accessible presentation materials:&nbsp;Allow attendees to download or access presentation materials
-            before, during, or after the event.
-        </li>
-        <li >
-          Clearly defined session schedules:&nbsp;Present clear and accessible session schedules, allowing attendees
-            to plan their attendance and maximize their event experience.
-        </li>
-      </ul>
-      <h2 class="c4" id="h.ach0pq6dajb6">
-        7. Time and Resource Savings: 
-      </h2>
-      <p>
-        Do you know this system can save event organizers time and resources that
-          can be better 
-          <a href="#">spent on other aspects of the event</a>? Yes, and it can be done simply by automating many of the tasks associated
-          with the management.
-      </p>
-      
-      <ul>
-        <li >
-          Automated speaker invitations and reminders:&nbsp;Automate speaker invitations, follow-ups, and reminders to reduce
-            manual effort and ensure timely speaker responses.
-        </li>
-        <li >
-          Streamlined communication and feedback collection:&nbsp;Automate communication workflows, feedback requests, and data
-            collection to minimize manual tasks and improve efficiency.
-        </li>
-        <li >
-          Centralized data management and reporting:&nbsp;Generate reports on speaker participation, feedback, and content
-            management to inform future event planning and resource allocation.
-        </li>
-      </ul>
-      
-      <h2>8. Post-Event Analysis:</h2>
-      <p>
-        Finally, post-event analysis. A comprehensive speaker management system
-        empowers organizers to gather valuable feedback and evaluate speaker
-        performance, providing actionable insights for future events.
-      </p>
-      
-      <p>
-        This post-event analysis offers a wealth of opportunities to:
-      </p>
-      
-      <ul >
-        <li >
-          Enhance Speaker Selection:&nbsp;Assess speaker effectiveness based on attendee, staff, and
-            stakeholder feedback. Identify speakers who resonated with the audience
-            and aligned with the event&#39;s goals.
-        </li>
-        <li >
-          Optimize Scheduling and Content:&nbsp;Analyze session formats, topics, and speaker styles that captivated
-            the audience. Utilize this data to tailor future schedules and ensure
-            content aligns with attendee expectations.
-        </li>
-        <li >
-          Elevate Event Reputation:&nbsp;Consistently evaluate speaker performance and incorporate feedback
-            to maintain a high standard of speaker quality. Cultivate a positive event
-            reputation that attracts top-tier speakers and repeat attendees.
-        </li>
-      </ul>
-      
-      
-      <p>
-        You see, having a speaker management system is not bad at all! Rather, it
-          can help event organizers manage speakers and their contributions
-          effectively, resulting in a more successful, <a href="#">engaging, and enjoyable event</a>&nbsp;for all involved.
-      </p>
+<ul>
+  <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+    <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Speaker database and search: </strong>Maintain a database of potential speakers with searchable filters
+    based on expertise, experience, and presentation style.</span> 
+  </li>
+  <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+    <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Speaker evaluation and feedback: </strong> Collect feedback from previous events to evaluate speaker performance and
+    identify highly qualified speakers.</span>
+  </li>
+  <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+    <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Speaker engagement and recruitment: </strong> Facilitate communication with potential speakers to gauge their
+    interest, negotiate terms, and finalize speaker participation.</span> 
+  </li>
+</ul><br>
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+Content Management:
+</h2><br>
+<p style="font-size: 16px;">
+A speaker management system streamlines content management and ensures that
+presentation materials are accessible to all stakeholders:
+</p><br>
+    
+<ul>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Speaker content upload and review:</strong> Provide a platform for speakers to upload their presentation
+  materials, allowing organizers to review, approve, and provide
+  feedback.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Content storage and organization:</strong> Store presentation materials securely and organize them by speaker,
+  session, or event.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Content sharing and distribution:</strong> Distribute approved presentation materials to attendees, event
+  staff, and other stakeholders.
+</li>
+</ul><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+Enhanced Attendee Experience: 
+</h2><br>
+<p style="font-size: 16px;">
+With a well-managed speaker system, attendees can enjoy a more engaging and
+seamless event experience. They can easily access speaker information,
+presentation materials, and schedules, allowing them to make the most of
+their time at the event.
+</p><br>
+    
+<ul>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Easy access to speaker information:</strong> Provide attendees with easy access to speaker profiles,
+  biographies, and contact details.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Accessible presentation materials:</strong> Allow attendees to download or access presentation materials
+  before, during, or after the event.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Clearly defined session schedules:</strong> Present clear and accessible session schedules, allowing attendees
+  to plan their attendance and maximize their event experience.
+</li>
+</ul><br>
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+Time and Resource Savings: 
+</h2><br>
+<p style="font-size: 16px;">
+Do you know this system can save event organizers time and resources that
+can be better 
+<a href="#">spent on other aspects of the event</a>? Yes, and it can be done simply by automating many of the tasks associated
+with the management.
+</p><br>
+    
+<ul>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Automated speaker invitations and reminders:</strong> Automate speaker invitations, follow-ups, and reminders to reduce
+  manual effort and ensure timely speaker responses.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Streamlined communication and feedback collection:</strong> Automate communication workflows, feedback requests, and data
+  collection to minimize manual tasks and improve efficiency.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Centralized data management and reporting:</strong> Generate reports on speaker participation, feedback, and content
+  management to inform future event planning and resource allocation.
+</li>
+</ul><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+Post-Event Analysis:
+</h2><br>
+<p style="font-size: 16px;">
+Finally, post-event analysis. A comprehensive speaker management system
+empowers organizers to gather valuable feedback and evaluate speaker
+performance, providing actionable insights for future events.
+</p><br>
+    
+<p style="font-size: 16px;">
+This post-event analysis offers a wealth of opportunities to:
+</p><br>
+    
+<ul>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Enhance Speaker Selection:</strong> Assess speaker effectiveness based on attendee, staff, and
+  stakeholder feedback. Identify speakers who resonated with the audience
+  and aligned with the event's goals.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Optimize Scheduling and Content:</strong> Analyze session formats, topics, and speaker styles that captivated
+  the audience. Utilize this data to tailor future schedules and ensure
+  content aligns with attendee expectations.
+</li>
+<li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+  <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Elevate Event Reputation:</strong> Consistently evaluate speaker performance and incorporate feedback
+  to maintain a high standard of speaker quality. Cultivate a positive event
+  reputation that attracts top-tier speakers and repeat attendees.
+</li>
+</ul><br>
+
+<p style="font-size: 16px;">
+You see, having a speaker management system is not bad at all! Rather, it
+can help event organizers manage speakers and their contributions
+effectively, resulting in a more successful, <a href="#">engaging, and enjoyable event</a> for all involved.
+</p><br>
+
       `,
         tag: ['Read More'],
       },
