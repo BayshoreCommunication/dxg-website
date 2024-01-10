@@ -21,10 +21,10 @@ export const BannerSection = () => {
         <MaxWidthWrapper>
           <div className='justify-center leading-[45px] sm:justify-start sm:leading-[120px]'>
             <p className='text-[16px] font-normal text-white sm:text-lg'>
-              02 - JAN. 2024 to 05 - JAN. 2024
+              March 7th - March 9th
             </p>
             <h1 className='flex-none text-[45px] font-bold uppercase text-white sm:text-[120px]'>
-              DESIGN
+              SEPC
             </h1>
             {/* <div className='w-10 bg-[#D8D8D8] p-5'>
               <p className='text-lg text-white'>
@@ -34,7 +34,7 @@ export const BannerSection = () => {
               </p>
             </div> */}
             <h1 className='flex-none text-[45px] font-bold uppercase text-white sm:text-[120px]'>
-              CONFERENCE
+              SOUTHERN EXPOSURE
             </h1>
             <p className='text-[16px] font-normal text-white sm:text-lg'>
               Vendor Booth - Audio Visual Order Page
