@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { CapsuleButton } from './CapsuleButton';
 import { NavBarMobile } from './NavBarMobile';
 import { Button } from './ui/button';
-import ProposalForm from './ProposalForm';
+import ProposalForm from './ProposalFormNew';
 
 export default function Navbar() {
   const currentRoute = usePathname();

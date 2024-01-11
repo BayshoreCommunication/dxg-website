@@ -1,4 +1,7 @@
 'use client';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm, Controller } from 'react-hook-form';
 import * as z from 'zod';
@@ -6,7 +9,6 @@ import { Button } from '@/components/ui/button';
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -24,10 +26,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { handleProposalFormSubmit } from '@/actions/actions';
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-
 const formSchema = z.object({
   lastname: z.string().min(2, {
     message: 'Name must be fill',
@@ -42,29 +40,38 @@ const formSchema = z.object({
   title: z.string().min(1, {
     message: 'Title must be fill',
   }),
-  event_format: z.enum(['In-Person', 'Virtual', 'Hybrid']),
-  event_type: z.enum([
-    'Sales',
-    'Financial',
-    'Healthcare',
-    'Association',
-    'Tech',
-    'Others',
-  ]),
-  role_in_event: z.enum([
-    'Budget Holder',
-    'Decision Maker',
-    'End User',
-    'Event Organizer/Planner',
-    'Procurement',
-  ]),
+  // event_format: z.enum(['In-Person', 'Virtual', 'Hybrid']),
+  // event_type: z.enum([
+  //   'Sales',
+  //   'Financial',
+  //   'Healthcare',
+  //   'Association',
+  //   'Tech',
+  //   'Others',
+  // ]),
+  // role_in_event: z.enum([
+  //   'Budget Holder',
+  //   'Decision Maker',
+  //   'End User',
+  //   'Event Organizer/Planner',
+  //   'Procurement',
+  // ]),
+
+  event_format: z.string({
+    required_error: 'Event Format must be selected',
+  }),
+  event_type: z.string({
+    required_error: 'Event Type must be selected',
+  }),
+  role_in_event: z.string({
+    required_error: 'Role in Event must be selected',
+  }),
   description: z.string().optional(),
   file: z.any().optional(),
 });
 
 const Modal = ({ onRequestClose }: any) => {
   const [isLoading, setIsLoading] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
   const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -74,11 +81,7 @@ const Modal = ({ onRequestClose }: any) => {
       phone: '',
       company: '',
       title: '',
-      event_format: 'In-Person',
-      event_type: 'Sales',
-      role_in_event: 'Budget Holder',
       description: '',
-
       file: null, // initialize file field with null
     },
   });
@@ -88,6 +91,36 @@ const Modal = ({ onRequestClose }: any) => {
     if (!files || files.length > 3) {
       alert('You can upload a maximum of three files at a time.');
       return false;
+    }
+
+    // check file format
+    const validFileFormats = [
+      'pdf',
+      'png',
+      'jpg',
+      'jpeg',
+      'doc',
+      'docx',
+      'txt',
+      'rtf',
+      'xls',
+      'xlsx',
+      'ppt',
+      'pptx',
+    ];
+
+    if (files && files.length > 0) {
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const fileName = file.name;
+        const fileExtension = fileName.split('.').pop();
+        if (fileExtension && !validFileFormats.includes(fileExtension)) {
+          alert(
+            'File format not supported. Please upload pdf, docs, png, jpg, jpeg, txt, rtf, xls, xlsx, ppt, pptx'
+          );
+          return false;
+        }
+      }
     }
 
     let totalFileSize = 0;
@@ -124,20 +157,16 @@ const Modal = ({ onRequestClose }: any) => {
       e.target.value = ''; // Reset the file input value
     }
   };
-  console.log(form.formState.errors);
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     const validationErrors = form.formState.errors;
     if (Object.keys(validationErrors).length === 0) {
       form.clearErrors();
       setIsLoading(true);
-
       const formData = new FormData();
-
       Object.entries(values).forEach(([key, value]) => {
         // Customize field names as needed
         let fieldName;
-
         switch (key) {
           case 'lastname':
             fieldName = 'Last Name';
@@ -171,14 +200,13 @@ const Modal = ({ onRequestClose }: any) => {
         }
         if (key === 'file' && value instanceof FileList) {
           // for (let i = 0; i < value.length; i++) {
-          //   formData.append(`${key}_${i}`, value[i]);
+          //   formData.append(`theFile${i}`, value[i]);
           // }
-          formData.append('theFile', value[0]);
+          formData.append(`theFile`, value[0]);
         } else {
           formData.append(fieldName, value);
         }
       });
-
       const result = await handleProposalFormSubmit(formData);
       if (result) {
         setTimeout(() => {
@@ -274,18 +302,21 @@ const Modal = ({ onRequestClose }: any) => {
                   </FormItem>
                 )}
               />
-              <Controller
+              <FormField
                 control={form.control}
                 name='event_format'
                 render={({ field }) => (
                   <FormItem className='mt-2'>
                     <FormLabel className='text-white'>Event Format</FormLabel>
                     <FormControl>
-                      <Select>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
                         <SelectTrigger className=''>
                           <SelectValue placeholder='-None-' />
                         </SelectTrigger>
-                        <SelectContent {...field}>
+                        <SelectContent>
                           <SelectItem value='In-Person'>In-Person</SelectItem>
                           <SelectItem value='Virtual'>Virtual</SelectItem>
                           <SelectItem value='Hybrid'>Hybrid</SelectItem>
@@ -296,18 +327,21 @@ const Modal = ({ onRequestClose }: any) => {
                   </FormItem>
                 )}
               />
-              <Controller
+              <FormField
                 control={form.control}
                 name='event_type'
                 render={({ field }) => (
                   <FormItem className='mt-2'>
                     <FormLabel className='text-white'>Event Type</FormLabel>
                     <FormControl>
-                      <Select>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
                         <SelectTrigger className=''>
                           <SelectValue placeholder='-None-' />
                         </SelectTrigger>
-                        <SelectContent {...field}>
+                        <SelectContent>
                           <SelectItem value='Sales'>Sales</SelectItem>
                           <SelectItem value='Financial'>Financial</SelectItem>
                           <SelectItem value='Healthcare'>Healthcare</SelectItem>
@@ -323,7 +357,7 @@ const Modal = ({ onRequestClose }: any) => {
                   </FormItem>
                 )}
               />
-              <Controller
+              <FormField
                 control={form.control}
                 name='role_in_event'
                 render={({ field }) => (
@@ -332,11 +366,14 @@ const Modal = ({ onRequestClose }: any) => {
                       Role in the Event
                     </FormLabel>
                     <FormControl>
-                      <Select>
+                      <Select
+                        onValueChange={field.onChange}
+                        defaultValue={field.value}
+                      >
                         <SelectTrigger className=''>
                           <SelectValue placeholder='-None-' />
                         </SelectTrigger>
-                        <SelectContent {...field}>
+                        <SelectContent>
                           <SelectItem value='Budget Holder'>
                             Budget Holder
                           </SelectItem>
@@ -387,7 +424,6 @@ const Modal = ({ onRequestClose }: any) => {
                 )}
               />
 
-              {/* Checkbox */}
               <Controller
                 name='checkbox'
                 render={({ field }) => (
