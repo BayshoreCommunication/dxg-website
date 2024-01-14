@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { OutlineTextStyle } from '@/components/TextStyle';
@@ -25,6 +25,15 @@ interface orderCustomrDlts {
   computerIpad: string | number | readonly string[];
 }
 
+interface FormValues {
+  firstName: string;
+  lastName: string;
+  email: string;
+  compnayName: string;
+  phone: string;
+  booth: string;
+}
+
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
   setOrderCustomerItems: React.Dispatch<React.SetStateAction<any>>;
@@ -35,6 +44,11 @@ interface MyComponentProps {
 export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
   const { setFormStep, setOrderCustomerItems, totalPriced, orderCustomrDlts } =
     props;
+
+  const [formErrors, setFormErrors] = useState<any>({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const componentRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setOrderCustomerItems({
@@ -62,11 +76,60 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
     });
   };
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormErrors(validate(orderCustomrDlts));
+    setIsSubmit(true);
+
+    if (Object.keys(formErrors)) {
+      componentRef.current?.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(orderCustomrDlts);
+      setFormStep(false);
+    }
+  }, [formErrors, isSubmit, orderCustomrDlts, setFormStep]);
+
+  const validate = (values: FormValues) => {
+    const errors: any = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.firstName) {
+      errors.firstName = 'Firstname is required!';
+    }
+    if (!values.lastName) {
+      errors.lastName = 'Lastname is required!';
+    }
+    if (!values.email) {
+      errors.email = 'Email is required!';
+    } else if (!regex.test(values.email)) {
+      errors.email = 'This is not a valid email format!';
+    }
+    if (!values.compnayName) {
+      errors.compnayName = 'Compnay Name is required!';
+    }
+    if (!values.phone) {
+      errors.phone = 'Phone number is required!';
+    }
+    if (!values.booth) {
+      errors.booth = 'Booth number is required!';
+    }
+    return errors;
+  };
+
   return (
-    <div>
+    <div ref={componentRef}>
       <div className=' bg-black'>
         <div className='container flex justify-center'>
-          <form className='mb-10 mt-[450px] sm:mt-[250px]'>
+          <form
+            className='mb-10 mt-[450px] sm:mt-[250px]'
+            onSubmit={handleSubmit}
+          >
             <div className='space-y-6'>
               <div className='border-b border-gray-900/10 pb-5'>
                 <h2 className='text-base font-semibold leading-7 text-white'>
@@ -96,6 +159,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                         onChange={handleChange}
                       />
                     </div>
+                    <span className='text-orange-600'>
+                      {formErrors.firstName}
+                    </span>
                   </div>
 
                   <div className='sm:col-span-3'>
@@ -116,6 +182,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                         onChange={handleChange}
                       />
                     </div>
+                    <span className='text-orange-600'>
+                      {formErrors.lastName}
+                    </span>
                   </div>
 
                   <div className='col-span-full'>
@@ -136,6 +205,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                         onChange={handleChange}
                       />
                     </div>
+                    <span className='text-orange-600'>
+                      {formErrors.compnayName}
+                    </span>
                   </div>
                   <div className='col-span-full'>
                     <label
@@ -155,6 +227,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                         onChange={handleChange}
                       />
                     </div>
+                    <span className='text-orange-600'>{formErrors.email}</span>
                   </div>
 
                   <div className='col-span-full'>
@@ -175,6 +248,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                         onChange={handleChange}
                       />
                     </div>
+                    <span className='text-orange-600'>{formErrors.phone}</span>
                   </div>
                   <div className='col-span-full'>
                     <label
@@ -198,6 +272,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       {`If Unknown - Please fill in with "Unknown" and we will
                     update information for you.`}
                     </p>
+                    <span className='text-orange-600'>{formErrors.booth}</span>
                   </div>
                 </div>
               </div>
@@ -467,7 +542,6 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
               <button
                 type='submit'
                 className='rounded-sm bg-[#066AAB] px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4490c2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#066AAB]'
-                onClick={() => setFormStep(false)}
               >
                 Next
               </button>
