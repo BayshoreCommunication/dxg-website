@@ -110,6 +110,20 @@ export const SITECONFIG = {
     xmIwtLD: process.env.NEXT_PUBLIC_ZOHO_CONTACT_SECRET_2 || '',
     leadCampaign: 'TGVhZHM=',
     returnUrl: process.env.NEXT_PUBLIC_ZOHO_CONTACT_RETURN_URL || '',
-    leadSource: 'Online-Store',
+    leadSource: 'Contact Page',
+  },
+  proposal: {
+    xnQsjsdp: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_SECRET_1 || '',
+    xmIwtLD: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_SECRET_2 || '',
+    leadCampaign: 'TGVhZHM=',
+    returnUrl: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_RETURN_URL || '',
+    leadSource: 'Request for Proposal',
+  },
+  events: {
+    xnQsjsdp: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_SECRET_1 || '',
+    xmIwtLD: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_SECRET_2 || '',
+    leadCampaign: 'TGVhZHM=',
+    returnUrl: process.env.NEXT_PUBLIC_ZOHO_PROPOSAL_RETURN_URL || '',
+    leadSource: 'Event Page',
   },
 };

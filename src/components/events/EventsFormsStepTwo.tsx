@@ -30,7 +30,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   return (
     <div className=' bg-black'>
       <div className='container flex justify-center'>
-        <form className='mb-16 mt-[500px] sm:mt-[250px]' >
+        <form className='mb-16 mt-[500px] sm:mt-[250px]'>
           <div className='space-y-4'>
             <div className='mb-6 border-b border-gray-900/10 pb-5'>
               <h2 className='text-base font-semibold leading-7 text-white'>
