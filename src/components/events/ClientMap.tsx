@@ -1,33 +1,3 @@
-// import React from 'react';
-// import { GoogleMap, LoadScript } from '@react-google-maps/api';
-
-// const ClientMap: React.FC = () => {
-//   const mapStyles = {
-//     height: '400px',
-//     width: '100%',
-//   };
-
-//   const defaultCenter = {
-//     lat: 37.7749, // Replace with your desired latitude
-//     lng: -122.4194, // Replace with your desired longitude
-//   };
-
-//   return (
-//     <LoadScript
-//       googleMapsApiKey='AIzaSyBxqVfD44LGh_iW4BrS9AE7h3A0hI3Dv3Y
-//     '
-//     >
-//       <GoogleMap
-//         mapContainerStyle={mapStyles}
-//         center={defaultCenter}
-//         zoom={10}
-//       />
-//     </LoadScript>
-//   );
-// };
-
-// export default ClientMap;
-
 import React from 'react';
 
 const ClientMap = () => {

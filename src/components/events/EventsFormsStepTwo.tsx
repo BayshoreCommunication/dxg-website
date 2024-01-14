@@ -1,9 +1,34 @@
+
+import React from 'react';
+
+interface orderCustomrDlts {
+  firstName: string;
+  lastName: string;
+  compnayName: string;
+  email: string;
+  phone: string;
+  booth: string;
+  info: string;
+  soundSystem: string | number | readonly string[];
+  pcAudio: string | number | readonly string[];
+  display24: string | number | readonly string[];
+  display42: string | number | readonly string[];
+  display55: string | number | readonly string[];
+  display70: string | number | readonly string[];
+  computerWindows: string | number | readonly string[];
+  computerMacbook: string | number | readonly string[];
+  computerIpad: string | number | readonly string[];
+}
+
 'use client';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { handleEventFormSubmit } from '@/actions/actions';
+
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
+  orderCustomrDlts: orderCustomrDlts;
+  totalPriced: number;
 }
 
 const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '';
@@ -11,7 +36,7 @@ const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '';
 const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
 
 export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
-  const { setFormStep } = props;
+  const { setFormStep, orderCustomrDlts, totalPriced } = props;
 
   var templateParams = {
     client_name: 'John Doe',
@@ -160,7 +185,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                 Name
               </h2>
               <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                Quidem amet praesen Fugit excepteur lab
+                {orderCustomrDlts.firstName + ' ' + orderCustomrDlts.lastName}
               </p>
             </div>
             <div className=''>
@@ -168,7 +193,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                 Compnay Name
               </h2>
               <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                Franco and Baird Plc
+                {orderCustomrDlts.compnayName}
               </p>
             </div>
             <div className=''>
@@ -176,7 +201,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                 Email
               </h2>
               <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                cahig@mailinator.com
+                {orderCustomrDlts.email}
               </p>
             </div>
             <div className=''>
@@ -184,61 +209,87 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                 Phone Number
               </h2>
               <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                +1 234 66768
+                {orderCustomrDlts.phone}
               </p>
             </div>
             <div className=''>
               <h2 className='text-base font-semibold leading-7 text-white'>
                 Booth Number
               </h2>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>600</p>
+              <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                {orderCustomrDlts.booth}
+              </p>
             </div>
             <div className=''>
               <h2 className='text-base font-semibold leading-7 text-white'>
                 Audio Equipment
               </h2>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                Sound System - Speaker, Stand, Mixer, Wireless Microphone and
-                Music Player Connection - $ 450.00 PC Audio Sound System
-                <br />
-                Only - $ 200.00
-              </p>
+              {orderCustomrDlts.soundSystem ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  Sound System - Speaker, Stand, Mixer, Wireless Microphone and
+                  Music Player Connection - $ 450.00 PC Audio Sound System
+                  <br />
+                  Only - $ 200.00
+                </p>
+              ) : orderCustomrDlts.pcAudio ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  PC Audio Sound System Only - $ 200.00
+                </p>
+              ) : (
+                ''
+              )}
             </div>
             <div className=''>
               <h2 className='text-base font-semibold leading-7 text-white'>
                 Video Displays
               </h2>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                24” LCD Flat Panel Display (table top only) - $ 200.00
-              </p>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                55” LCD Display w/Stand - $ 650.00
-              </p>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                70” LCD Display w/Stand - $ 850.00
-              </p>
+              {orderCustomrDlts.display24 ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  24” LCD Flat Panel Display (table top only) - $ 200.00
+                </p>
+              ) : orderCustomrDlts.display42 ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  42” LCD Display w/Stand - $ 450.00
+                </p>
+              ) : orderCustomrDlts.display55 ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  55” LCD Display w/Stand - $ 650.00
+                </p>
+              ) : orderCustomrDlts.display70 ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  70” LCD Display w/Stand - $ 850.00
+                </p>
+              ) : (
+                ''
+              )}
             </div>
 
             <div className=''>
               <h2 className='text-base font-semibold leading-7 text-white'>
-                Video Displays
+                Computers
               </h2>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                24” LCD Flat Panel Display (table top only) - $ 200.00
-              </p>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                55” LCD Display w/Stand - $ 650.00
-              </p>
-              <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                Ipad - $ 225.00
-              </p>
+              {orderCustomrDlts.computerWindows ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  Windows Laptop - $ 250.00
+                </p>
+              ) : orderCustomrDlts.computerMacbook ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  MacBook - $ 350.00
+                </p>
+              ) : orderCustomrDlts.computerIpad ? (
+                <p className='mt-1 text-sm font-thin leading-6 text-white'>
+                  Ipad - $ 225.00
+                </p>
+              ) : (
+                ''
+              )}
             </div>
             <div className=''>
               <h2 className='text-base font-semibold leading-7 text-white'>
                 Additional Items, Quantity or Information
               </h2>
               <p className='mt-1 text-sm font-thin leading-6 text-white'>
-                deasfgew hl kulotu
+                {orderCustomrDlts.info}
               </p>
             </div>
 
@@ -246,7 +297,9 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
               <h2 className='text-base font-semibold leading-7 text-white'>
                 Total
               </h2>
-              <p className='mt-1 text-sm leading-6 text-white'>$ 0.00</p>
+              <p className='mt-1 text-sm leading-6 text-white'>
+                ${totalPriced}
+              </p>
             </div>
             <div className='mt-6 space-y-10'>
               <fieldset>
@@ -297,11 +350,10 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
             </div>
           </div>
 
-          <div className='mt-6 flex items-center justify-start gap-x-6'>
+          <div className='mt-6 flex items-center justify-start gap-5'>
             <button
               type='submit'
               className='rounded-sm bg-[#066AAB] px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4490c2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#066AAB]'
-              onClick={(e) => setFormStep(false)}
             >
               Submit
             </button>
