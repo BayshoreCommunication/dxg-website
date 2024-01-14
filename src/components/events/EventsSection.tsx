@@ -10,6 +10,7 @@ interface Product {
 
 const EventsSection: React.FC = () => {
   const [formStep, setFormStep] = useState<boolean>(true);
+
   const [orderCustomrDlts, setOrderCustomerItems] = useState<any>({
     firstName: '',
     lastName: '',

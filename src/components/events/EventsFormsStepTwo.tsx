@@ -6,6 +6,7 @@ import {
   handleProposalFormSubmit,
 } from '@/actions/actions';
 import { useRouter } from 'next/navigation';
+import { Button } from '../ui/button';
 
 interface orderCustomrDlts {
   firstName: string;
@@ -39,6 +40,7 @@ const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
 export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   const router = useRouter();
   const { setFormStep, orderCustomrDlts, totalPriced } = props;
+  const [isLoading, setIsLoading] = useState(false);
   const audio_equipments = [];
   const video_displays = [];
   const computers = [];
@@ -196,6 +198,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   };
 
   const sendEmail = async () => {
+    setIsLoading(true);
     const formData = new FormData();
     formData.append('First Name', orderCustomrDlts.firstName);
     formData.append('Last Name', orderCustomrDlts.lastName);
@@ -301,7 +304,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                   Sound System - Speaker, Stand, Mixer, Wireless Microphone and
                   Music Player Connection
                   <br />
-                  Only - $ 400.00
+                  Only - $ 450.00
                 </p>
               ) : (
                 ''
@@ -406,6 +409,8 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                         id='comments'
                         name='comments'
                         type='checkbox'
+                        checked
+                        disabled
                         className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                       />
                     </div>
@@ -425,6 +430,8 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                         id='candidates'
                         name='candidates'
                         type='checkbox'
+                        checked
+                        disabled
                         className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                       />
                     </div>
@@ -444,12 +451,35 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
           </div>
 
           <div className='mt-6 flex items-center justify-start gap-5'>
-            <button
+            <Button
+              variant='default'
               type='submit'
-              className='rounded-sm bg-[#066AAB] px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4490c2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#066AAB]'
+              className=' border-brand bg-[#066AAB] font-bold text-white hover:border hover:bg-[#4490c2]'
             >
-              Submit
-            </button>
+              {isLoading && (
+                <svg
+                  className='-ml-1 mr-3 h-5 w-5 animate-spin text-white'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                >
+                  <circle
+                    className='opacity-25'
+                    cx='12'
+                    cy='12'
+                    r='10'
+                    stroke='currentColor'
+                    stroke-width='4'
+                  ></circle>
+                  <path
+                    className='opacity-75'
+                    fill='currentColor'
+                    d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+                  ></path>
+                </svg>
+              )}
+              SUBMIT
+            </Button>
 
             <button
               type='submit'
