@@ -45,6 +45,10 @@ const EventsSection: React.FC = () => {
     .filter((product: Product) => orderCustomrDlts[product.product])
     .reduce((acc: number, product: Product) => acc + product.price, 0);
 
+  console.log('====================================');
+  console.log('chekc data', orderCustomrDlts);
+  console.log('====================================');
+
   return (
     <div>
       {formStep ? (

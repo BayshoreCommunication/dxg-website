@@ -4,7 +4,6 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { OutlineTextStyle } from '@/components/TextStyle';
 import BannerImage from '../../../public/events/eventsSectionBg.png';
 import { MotionDiv, MotionP } from '@/components/Motion';
-
 import NumberAnimation from '@/components/NumberAnimation';
 import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
 import { TypingText } from '@/components/CustomTexts';

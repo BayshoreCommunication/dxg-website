@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface orderCustomrDlts {
   firstName: string;
@@ -19,61 +18,19 @@ interface orderCustomrDlts {
   computerMacbook: string | number | readonly string[];
   computerIpad: string | number | readonly string[];
 }
-
-'use client';
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { handleEventFormSubmit } from '@/actions/actions';
-
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
   orderCustomrDlts: orderCustomrDlts;
   totalPriced: number;
 }
 
-const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '';
-const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '';
-const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
-
 export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   const { setFormStep, orderCustomrDlts, totalPriced } = props;
 
-  var templateParams = {
-    from_name: 'James',
-    message: 'I need 24” LCD Flat Panel Display (table top only) - $ 200.00',
-  };
-
-  const sendEmail = async () => {
-    const formData = new FormData();
-    formData.append('First Name', 'James');
-    formData.append('Last Name', 'Cahig');
-    formData.append('Company', 'DXG');
-    formData.append('Email', 'james@gmail.com');
-    formData.append('Mobile', '123456789');
-    emailjs
-      .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
-      .then(
-        (result) => {
-          console.log(result.text);
-          handleEventFormSubmit(formData).then((res: any) => {
-            console.log(res);
-          });
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   return (
     <div className=' bg-black'>
       <div className='container flex justify-center'>
-        <form
-          className='mb-16 mt-[500px] sm:mt-[250px]'
-          onSubmit={(e) => {
-            e.preventDefault();
-            sendEmail();
-          }}
-        >
+        <form className='mb-16 mt-[500px] sm:mt-[250px]'>
           <div className='space-y-4'>
             <div className='mb-6 border-b border-gray-900/10 pb-5'>
               <h2 className='text-base font-semibold leading-7 text-white'>
@@ -147,7 +104,10 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                   <br />
                   Only - $ 200.00
                 </p>
-              ) : orderCustomrDlts.pcAudio ? (
+              ) : (
+                ''
+              )}
+              {orderCustomrDlts.pcAudio ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   PC Audio Sound System Only - $ 200.00
                 </p>
@@ -159,19 +119,31 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
               <h2 className='text-base font-semibold leading-7 text-white'>
                 Video Displays
               </h2>
+
               {orderCustomrDlts.display24 ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   24” LCD Flat Panel Display (table top only) - $ 200.00
                 </p>
-              ) : orderCustomrDlts.display42 ? (
+              ) : (
+                ''
+              )}
+
+              {orderCustomrDlts.display42 ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   42” LCD Display w/Stand - $ 450.00
                 </p>
-              ) : orderCustomrDlts.display55 ? (
+              ) : (
+                ''
+              )}
+              {orderCustomrDlts.display55 ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   55” LCD Display w/Stand - $ 650.00
                 </p>
-              ) : orderCustomrDlts.display70 ? (
+              ) : (
+                ''
+              )}
+
+              {orderCustomrDlts.display70 ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   70” LCD Display w/Stand - $ 850.00
                 </p>
@@ -188,11 +160,17 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   Windows Laptop - $ 250.00
                 </p>
-              ) : orderCustomrDlts.computerMacbook ? (
+              ) : (
+                ''
+              )}
+              {orderCustomrDlts.computerMacbook ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   MacBook - $ 350.00
                 </p>
-              ) : orderCustomrDlts.computerIpad ? (
+              ) : (
+                ''
+              )}
+              {orderCustomrDlts.computerIpad ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   Ipad - $ 225.00
                 </p>
@@ -273,6 +251,14 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
             >
               Submit
             </button>
+
+            <button
+              type='submit'
+              className='rounded-sm bg-[#066AAB] px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4490c2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#066AAB]'
+              onClick={() => setFormStep(true)}
+            >
+              Back
+            </button>
           </div>
         </form>
       </div>
@@ -281,3 +267,104 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
 };
 
 export default EventsFormsStepTwo;
+
+// import { useState, useEffect } from 'react';
+// import './App.css';
+
+// function App() {
+//   const initialValues = { username: '', email: '', password: '' };
+//   const [formValues, setFormValues] = useState(initialValues);
+//   const [formErrors, setFormErrors] = useState({});
+//   const [isSubmit, setIsSubmit] = useState(false);
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormValues({ ...formValues, [name]: value });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     setFormErrors(validate(formValues));
+//     setIsSubmit(true);
+//   };
+
+//   useEffect(() => {
+//     console.log(formErrors);
+//     if (Object.keys(formErrors).length === 0 && isSubmit) {
+//       console.log(formValues);
+//     }
+//   }, [formErrors]);
+//   const validate = (values) => {
+//     const errors = {};
+//     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+//     if (!values.username) {
+//       errors.username = 'Username is required!';
+//     }
+//     if (!values.email) {
+//       errors.email = 'Email is required!';
+//     } else if (!regex.test(values.email)) {
+//       errors.email = 'This is not a valid email format!';
+//     }
+//     if (!values.password) {
+//       errors.password = 'Password is required';
+//     } else if (values.password.length < 4) {
+//       errors.password = 'Password must be more than 4 characters';
+//     } else if (values.password.length > 10) {
+//       errors.password = 'Password cannot exceed more than 10 characters';
+//     }
+//     return errors;
+//   };
+
+//   return (
+//     <div className='container'>
+//       {Object.keys(formErrors).length === 0 && isSubmit ? (
+//         <div className='ui message success'>Signed in successfully</div>
+//       ) : (
+//         <pre>{JSON.stringify(formValues, undefined, 2)}</pre>
+//       )}
+
+//       <form onSubmit={handleSubmit}>
+//         <h1>Login Form</h1>
+//         <div className='ui divider'></div>
+//         <div className='ui form'>
+//           <div className='field'>
+//             <label>Username</label>
+//             <input
+//               type='text'
+//               name='username'
+//               placeholder='Username'
+//               value={formValues.username}
+//               onChange={handleChange}
+//             />
+//           </div>
+//           <p>{formErrors.username}</p>
+//           <div className='field'>
+//             <label>Email</label>
+//             <input
+//               type='text'
+//               name='email'
+//               placeholder='Email'
+//               value={formValues.email}
+//               onChange={handleChange}
+//             />
+//           </div>
+//           <p>{formErrors.email}</p>
+//           <div className='field'>
+//             <label>Password</label>
+//             <input
+//               type='password'
+//               name='password'
+//               placeholder='Password'
+//               value={formValues.password}
+//               onChange={handleChange}
+//             />
+//           </div>
+//           <p>{formErrors.password}</p>
+//           <button className='fluid ui button blue'>Submit</button>
+//         </div>
+//       </form>
+//     </div>
+//   );
+// }
+
+// export default App;
