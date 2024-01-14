@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface orderCustomrDlts {
@@ -18,19 +19,61 @@ interface orderCustomrDlts {
   computerMacbook: string | number | readonly string[];
   computerIpad: string | number | readonly string[];
 }
+
+'use client';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { handleEventFormSubmit } from '@/actions/actions';
+
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
   orderCustomrDlts: orderCustomrDlts;
   totalPriced: number;
 }
 
+const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '';
+const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '';
+const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+
 export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   const { setFormStep, orderCustomrDlts, totalPriced } = props;
 
+  var templateParams = {
+    from_name: 'James',
+    message: 'I need 24” LCD Flat Panel Display (table top only) - $ 200.00',
+  };
+
+  const sendEmail = async () => {
+    const formData = new FormData();
+    formData.append('First Name', 'James');
+    formData.append('Last Name', 'Cahig');
+    formData.append('Company', 'DXG');
+    formData.append('Email', 'james@gmail.com');
+    formData.append('Mobile', '123456789');
+    emailjs
+      .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
+      .then(
+        (result) => {
+          console.log(result.text);
+          handleEventFormSubmit(formData).then((res: any) => {
+            console.log(res);
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className=' bg-black'>
       <div className='container flex justify-center'>
-        <form className='mb-16 mt-[500px] sm:mt-[250px]'>
+        <form
+          className='mb-16 mt-[500px] sm:mt-[250px]'
+          onSubmit={(e) => {
+            e.preventDefault();
+            sendEmail();
+          }}
+        >
           <div className='space-y-4'>
             <div className='mb-6 border-b border-gray-900/10 pb-5'>
               <h2 className='text-base font-semibold leading-7 text-white'>
