@@ -14,8 +14,82 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   const { setFormStep } = props;
 
   var templateParams = {
-    from_name: 'James',
-    message: 'I need 24” LCD Flat Panel Display (table top only) - $ 200.00',
+    client_name: 'John Doe',
+    from_name: 'John Doe',
+    client_phone: '123456789',
+    client_id: 'john@gmail.com',
+    company: 'John Agency',
+    total: '1000',
+    invoice_date: new Date().toLocaleDateString(),
+    audio_equipments: `<table style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:15px 0 15px 0;height:24px" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <p style="font-size:14px;line-height:24px;margin:0;background:#fafafa;padding-left:10px;font-weight:500">Audio Equipments</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+          <td style="padding-left:22px">
+            <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">Speaker, Stand, Mixer, Wireless Microphone and Music Player Connection</p>
+          </td>
+          <td align="right" style="display:table-cell;padding:0px 20px 0px 0px;width:100px;vertical-align:top">
+            <p style="font-size:12px;line-height:24px;margin:0;font-weight:600">$14.99</p>
+          </td>
+          </td>
+        </tr>
+      </tbody>
+    </table>`,
+    video_displays: `<table style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:15px 0 15px 0;height:24px" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <p style="font-size:14px;line-height:24px;margin:0;background:#fafafa;padding-left:10px;font-weight:500">Video Displays</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+          <td style="padding-left:22px">
+            <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">24” LCD Flat Panel Display (table top only)</p>
+          </td>
+          <td align="right" style="display:table-cell;padding:0px 20px 0px 0px;width:100px;vertical-align:top">
+            <p style="font-size:12px;line-height:24px;margin:0;font-weight:600">$14.99</p>
+          </td>
+          </td>
+        </tr>
+      </tbody>
+    </table>`,
+    computers: `<table style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:15px 0 15px 0;height:24px" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <p style="font-size:14px;line-height:24px;margin:0;background:#fafafa;padding-left:10px;font-weight:500">Computers</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+          <td style="padding-left:22px">
+            <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">iMac 21.5”</p>
+          </td>
+          <td align="right" style="display:table-cell;padding:0px 20px 0px 0px;width:100px;vertical-align:top">
+            <p style="font-size:12px;line-height:24px;margin:0;font-weight:600">$14.99</p>
+          </td>
+          </td>
+        </tr>
+      </tbody>
+    </table>`,
   };
 
   const sendEmail = async () => {
@@ -28,16 +102,26 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
     emailjs
       .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
       .then(
-        (result) => {
-          console.log(result.text);
-          handleEventFormSubmit(formData).then((res: any) => {
-            console.log(res);
-          });
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
         },
-        (error) => {
-          console.log(error.text);
+        function (error) {
+          console.log('FAILED...', error);
         }
       );
+    // emailjs
+    //   .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       handleEventFormSubmit(formData).then((res: any) => {
+    //         console.log(res);
+    //       });
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
   return (
     <div className=' bg-black'>
