@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { OutlineTextStyle } from '@/components/TextStyle';
@@ -6,12 +6,62 @@ import BannerImage from '../../../public/events/eventsSectionBg.png';
 import { MotionDiv, MotionP } from '@/components/Motion';
 import ClientMap from './ClientMap';
 
+interface orderCustomrDlts {
+  firstName: string;
+  lastName: string;
+  compnayName: string;
+  email: string;
+  phone: string;
+  booth: string;
+  info: string;
+  soundSystem: string | number | readonly string[];
+  pcAudio: string | number | readonly string[];
+  display24: string | number | readonly string[];
+  display42: string | number | readonly string[];
+  display55: string | number | readonly string[];
+  display70: string | number | readonly string[];
+  computerWindows: string | number | readonly string[];
+  computerMacbook: string | number | readonly string[];
+  computerIpad: string | number | readonly string[];
+}
+
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
+  setOrderCustomerItems: React.Dispatch<React.SetStateAction<any>>;
+  totalPriced: number;
+  orderCustomrDlts: orderCustomrDlts;
 }
 
 export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
-  const { setFormStep } = props;
+  const { setFormStep, setOrderCustomerItems, totalPriced, orderCustomrDlts } =
+    props;
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setOrderCustomerItems({
+      ...orderCustomrDlts,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const onTextAreaInput = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setOrderCustomerItems({
+      ...orderCustomrDlts,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  const onCheckProductItems = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLInputElement>
+  ) => {
+    setOrderCustomerItems({
+      ...orderCustomrDlts,
+      [event.target.name]:
+        event.target.type === 'checkbox'
+          ? event.target.checked
+          : event.target.value,
+    });
+  };
+
   return (
     <div>
       <div className=' bg-black'>
@@ -38,10 +88,12 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     <div className='mt-2'>
                       <input
                         type='text'
-                        name='first-name'
+                        name='firstName'
                         id='first-name'
                         autoComplete='given-name'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.firstName}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -56,10 +108,12 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     <div className='mt-2'>
                       <input
                         type='text'
-                        name='last-name'
+                        name='lastName'
                         id='last-name'
                         autoComplete='family-name'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.lastName}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -74,10 +128,12 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     <div className='mt-2'>
                       <input
                         type='text'
-                        name='street-address'
+                        name='compnayName'
                         id='street-address'
                         autoComplete='street-address'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.compnayName}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -91,10 +147,12 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     <div className='mt-2'>
                       <input
                         type='text'
-                        name='street-address'
+                        name='email'
                         id='street-address'
                         autoComplete='street-address'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.email}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -108,11 +166,13 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     </label>
                     <div className='mt-2'>
                       <input
-                        type='text'
-                        name='street-address'
+                        type='number'
+                        name='phone'
                         id='street-address'
                         autoComplete='street-address'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.phone}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -126,10 +186,12 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     <div className='mt-2'>
                       <input
                         type='text'
-                        name='street-address'
+                        name='booth'
                         id='street-address'
                         autoComplete='street-address'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.booth}
+                        onChange={handleChange}
                       />
                     </div>
                     <p className='mt-1 text-sm font-normal leading-6 text-white opacity-50'>
@@ -158,8 +220,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='comments'
-                            name='comments'
+                            value={orderCustomrDlts.soundSystem}
+                            onChange={onCheckProductItems}
+                            name='soundSystem'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -177,8 +240,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='candidates'
-                            name='candidates'
+                            value={orderCustomrDlts.pcAudio}
+                            onChange={onCheckProductItems}
+                            name='pcAudio'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -204,8 +268,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='comments'
-                            name='comments'
+                            value={orderCustomrDlts.display24}
+                            onChange={onCheckProductItems}
+                            name='display24'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -223,8 +288,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='candidates'
-                            name='candidates'
+                            value={orderCustomrDlts.display42}
+                            onChange={onCheckProductItems}
+                            name='display42'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -241,8 +307,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='candidates'
-                            name='candidates'
+                            value={orderCustomrDlts.display55}
+                            onChange={onCheckProductItems}
+                            name='display55'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -259,8 +326,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='candidates'
-                            name='candidates'
+                            value={orderCustomrDlts.display70}
+                            onChange={onCheckProductItems}
+                            name='display70'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -286,8 +354,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='comments'
-                            name='comments'
+                            value={orderCustomrDlts.computerWindows}
+                            onChange={onCheckProductItems}
+                            name='computerWindows'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -304,8 +373,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='candidates'
-                            name='candidates'
+                            value={orderCustomrDlts.computerMacbook}
+                            onChange={onCheckProductItems}
+                            name='computerMacbook'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -322,8 +392,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       <div className='relative flex gap-x-3'>
                         <div className='flex h-6 items-center'>
                           <input
-                            id='candidates'
-                            name='candidates'
+                            value={orderCustomrDlts.computerIpad}
+                            onChange={onCheckProductItems}
+                            name='computerIpad'
                             type='checkbox'
                             className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                           />
@@ -353,10 +424,12 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                     <div className='mt-2'>
                       <textarea
                         rows={4}
-                        name='street-address'
-                        id='street-address'
-                        autoComplete='street-address'
+                        name='info'
+                        id='info'
+                        autoComplete='info'
                         className='block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6'
+                        value={orderCustomrDlts.info}
+                        onChange={onTextAreaInput}
                       />
                     </div>
                   </div>
@@ -373,7 +446,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                 <h2 className='text-base font-semibold leading-7 text-white'>
                   Total
                 </h2>
-                <p className='mt-1 text-sm leading-6 text-white'>$ 0.00</p>
+                <p className='mt-1 text-sm leading-6 text-white'>
+                  ${totalPriced}
+                </p>
               </div>
               <div className=''>
                 <h2 className='text-base font-semibold leading-7 text-white'>
