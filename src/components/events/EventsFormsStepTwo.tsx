@@ -1,5 +1,7 @@
-
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { handleEventFormSubmit } from '@/actions/actions';
 
 interface orderCustomrDlts {
   firstName: string;
@@ -19,11 +21,6 @@ interface orderCustomrDlts {
   computerMacbook: string | number | readonly string[];
   computerIpad: string | number | readonly string[];
 }
-
-'use client';
-import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { handleEventFormSubmit } from '@/actions/actions';
 
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
