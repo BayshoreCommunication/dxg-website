@@ -9,6 +9,9 @@ import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
+import '@/app/globals.css';
+import './myStyle.css';
+
 
 
 // Slugify function to convert title to URL-friendly slug
