@@ -235,7 +235,8 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                       htmlFor='street-address'
                       className='block text-sm font-medium leading-6 text-white'
                     >
-                      Phone Number<span className='text-orange-600'>*</span>
+                      Phone Number(10 numbers, no dashes)
+                      <span className='text-orange-600'>*</span>
                     </label>
                     <div className='mt-2'>
                       <input
@@ -530,7 +531,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
                   Service Charge
                 </h2>
                 <p className='mt-1 text-sm leading-6 text-white'>
-                  Please Note: A 22% Service charge will be added to your final
+                  Please Note: A 25% Service charge will be added to your final
                   invoice. This will cover all logistic and setup at the event.
                   <br />
                   Including Technical Support.

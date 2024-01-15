@@ -204,7 +204,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
     formData.append('Last Name', orderCustomrDlts.lastName);
     formData.append('Company', orderCustomrDlts.compnayName);
     formData.append('Email', orderCustomrDlts.email);
-    formData.append('Mobile', orderCustomrDlts.phone);
+    formData.append('Phone', orderCustomrDlts.phone);
     emailjs
       .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
       .then(
