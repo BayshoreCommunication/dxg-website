@@ -59,9 +59,9 @@ export default function TestimonialSliderTwo() {
                     <h4 className='text-base text-white md:text-xl'>
                       {item.quote}
                     </h4>
-                    <h1 className='my-2 text-2xl font-semibold text-white'>
+                    <h2 className='my-2 text-2xl font-semibold text-white'>
                       {item.name}
-                    </h1>
+                    </h2>
                     <h2 className='font-bold text-brand'>{item.title}</h2>
                   </div>
                 </div>

@@ -6,7 +6,7 @@ import { Icons } from '@/components/Icons';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import MaxWidthWrapper from '../MaxWidthWrapper';
-import { H1, P, Paragraph, Title } from '../Typography';
+import { Paragraph, Title } from '../Typography';
 import { motion, Variants } from 'framer-motion';
 import { BottomToTop } from '../Animation';
 import { MotionDiv } from '../Motion';
@@ -69,9 +69,9 @@ export default function Services() {
                           {item.heading.split(';').map((word, index) => {
                             return (
                               <div key={index} className=''>
-                                <h1 className='text-xl font-bold uppercase text-white'>
+                                <h2 className='text-xl font-bold uppercase text-white'>
                                   {word}
-                                </h1>
+                                </h2>
                               </div>
                             );
                           })}
@@ -89,12 +89,12 @@ export default function Services() {
                           staggerChildren: 0.5,
                           staggerDirection: -1,
                         }}
-                        className='hidden flex-row  px-5 group-hover:flex md:flex-col fadeInAnimation'
+                        className='fadeInAnimation hidden  flex-row px-5 group-hover:flex md:flex-col'
                       >
                         <motion.div className='min-h-[300px] pt-10 md:min-h-[420px]'>
-                          <h1 className='text-xl font-bold uppercase text-white'>
+                          <h2 className='text-xl font-bold uppercase text-white'>
                             {item.title}
-                          </h1>
+                          </h2>
                           <p
                             className=' mt-3 h-full text-base text-white'
                             style={{

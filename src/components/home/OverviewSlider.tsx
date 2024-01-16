@@ -61,9 +61,9 @@ export default function OverviewSlider({ data }: SliderProps) {
                   )}
                 </div>
                 <div className='px-5 py-5 text-center'>
-                  <h1 className='py-2 text-2xl font-bold uppercase text-white'>
+                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
                     {item.title}
-                  </h1>
+                  </h2>
                   <p className='text-base text-white'>{item.description}</p>
 
                   {/* <div className='mt-6 h-20'>

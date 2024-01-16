@@ -2,7 +2,7 @@
 
 import { textContainer, textVariant2 } from '@/lib/motion';
 import { motion } from 'framer-motion';
-import { MotionDiv, MotionH1 } from './Motion';
+import { MotionDiv, MotionH1, MotionH2 } from './Motion';
 
 interface CustomTextProps {
   preText: string;
@@ -15,7 +15,7 @@ export const TypingText = ({
   coloredText,
   textStyles,
 }: CustomTextProps) => (
-  <MotionH1
+  <MotionH2
     variants={textContainer}
     className={`text-5xl font-bold uppercase text-white md:text-6xl ${textStyles}`}
   >
@@ -33,5 +33,5 @@ export const TypingText = ({
         {letter === ' ' ? '\u00A0' : letter}
       </motion.span>
     ))}
-  </MotionH1>
+  </MotionH2>
 );

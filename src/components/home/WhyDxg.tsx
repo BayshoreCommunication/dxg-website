@@ -4,7 +4,7 @@ import MaxWidthWrapper from '../MaxWidthWrapper';
 import Image from 'next/image';
 import { SITECONFIG } from '@/config/site';
 import { Icons } from '@/components/Icons';
-import { H1, P, H4, Title, Paragraph } from '../Typography';
+import { P, Title, Paragraph } from '../Typography';
 import { MotionDiv } from '../Motion';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 
@@ -62,22 +62,22 @@ export default function WhyDxg() {
               >
                 <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
                   <Icons.repeat className='h-16 w-16' />
-                  <h1 className='py-2 text-2xl font-extrabold uppercase text-white'>
+                  <h2 className='py-2 text-2xl font-extrabold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
                       Process
                     </span>
-                  </h1>
+                  </h2>
                   <P text={WHY_DXG_DATA[0].description} />
                 </div>
                 <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
                   <Icons.happyFace className='h-16 w-16' />
-                  <h1 className='py-2 text-2xl font-bold uppercase text-white'>
+                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
                       Service
                     </span>
-                  </h1>
+                  </h2>
                   <P text={WHY_DXG_DATA[1].description} />
                 </div>
               </MotionDiv>
@@ -96,12 +96,12 @@ export default function WhyDxg() {
                       height={60}
                     />
                   </div>
-                  <h1 className='py-2 text-2xl font-bold uppercase text-white'>
+                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
                       Mission
                     </span>
-                  </h1>
+                  </h2>
                   <P text={WHY_DXG_DATA[2].description} />
                 </div>
                 <div className='flex flex-1 flex-col items-center py-0 md:items-start md:py-6 '>
@@ -114,12 +114,12 @@ export default function WhyDxg() {
                       height={60}
                     />
                   </div>
-                  <h1 className='py-2 text-2xl font-bold uppercase text-white'>
+                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
                     Our{' '}
                     <span className='  outline-text tracking-wider text-brand'>
                       Experience
                     </span>
-                  </h1>
+                  </h2>
                   <P text={WHY_DXG_DATA[3].description} />
                 </div>
               </MotionDiv>

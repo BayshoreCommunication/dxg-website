@@ -72,9 +72,9 @@ export default function Overview() {
                     )}
                   </div>
                   <div className='px-10 py-5 text-center'>
-                    <h1 className='py-2 text-2xl font-bold uppercase text-white'>
+                    <h2 className='py-2 text-2xl font-bold uppercase text-white'>
                       {item.title}
-                    </h1>
+                    </h2>
                     <P className='text-white' text={item.description} />
 
                     <div className='mt-6 h-20'>

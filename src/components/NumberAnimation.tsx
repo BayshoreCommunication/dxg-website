@@ -28,7 +28,7 @@ const NumberAnimation = ({
     return () => clearInterval(intervalId);
   }, [value]);
 
-  return <h1 className={cn('font-bold text-brand', className)}>{count}+</h1>;
+  return <div className={cn('font-bold text-brand', className)}>{count}+</div>;
 };
 
 export default NumberAnimation;

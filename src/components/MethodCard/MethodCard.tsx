@@ -28,12 +28,12 @@ export const MethodCard: React.FC<MethodCardProps> = ({
       <div className='absolute inset-0 flex flex-col items-center justify-center '>
         <div className='flex flex-1 flex-col items-center justify-center hover:bg-brand hover:bg-opacity-30'>
           <SelectedIcon />
-          <h1 className='my-3 text-center text-2xl font-bold uppercase text-white'>
+          <h2 className='my-3 text-center text-2xl font-bold uppercase text-white'>
             {titleArray[0]}{' '}
             <span className='outline-with-shaddow text-2xl font-bold uppercase text-white'>
               {titleArray[1]}
             </span>
-          </h1>
+          </h2>
           <p className='px-2 text-center text-white'>{description}</p>
         </div>
       </div>
