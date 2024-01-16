@@ -209,173 +209,200 @@ export const RECENT_BLOG_POST = [
     title: 'Pros and Cons of Using LED Walls For Your Event',
     image: 'https://drive.google.com/uc?id=1o2ouolSHNTUB93lsgyQ9_Pcy9gavgBVP',
     description: `
-    <p>
-  Let&rsquo;s mind back something - when did you last experience an event
+    <p style="font-size: 16px;">
+  Let’s mind back something - when did you last experience an event
   without their dazzling presence? See, LED walls are everywhere these days,
   from concerts and festivals to conferences and exhibitions. They are the
   ultimate display technology for turning any event into a stunning spectacle of
   light and color.
-</p>
+</p><br>
 
-<p>
+<p style="font-size: 16px;">
   But are LED walls always the best option for your event? Or are there some
   situations where you might want to consider other alternatives? Find this out
   from their pros and cons.
-</p>
+</p><br>
 
-<p>
+<p style="font-size: 16px;">
   LED walls can provide a visually stunning and immersive experience for your
-  event. However, they also come with some disadvantages. Let&rsquo;s have a
+  event. However, they also come with some disadvantages. Let’s have a
   look at pros and cons of using LED walls for your event:
-</p>
-<h2>Pros:</h2>
-<p>
+</p><br>
+
+<strong style="font-size: 28px;">Pros:</strong><br>
+
+<p style="font-size: 16px;">
   If you are <a href="#"> planning an event</a> that requires a large and bright
   display, you can consider using LED walls. Here are some of the pros of using
   LED walls for your event:
-</p>
-<h3>1.High-resolution visuals:</h3>
-<p>
+</p><br>
+
+<strong style="font-size: 21px;">1. High-resolution visuals:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls offer sharp and clear images, making them ideal for displaying
   high-quality content, such as videos, presentations, and graphics. They have a
   high resolution, wide color gamut, and a high contrast ratio, enabling them to
   deliver realistic and immersive visual experiences.
-</p>
+</p><br>
 
-<h3>2.Wide viewing angles:</h3>
-<p>
+<strong style="font-size: 21px;">2. Wide viewing angles:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls have wide viewing angles, allowing attendees to see the content
   clearly from various positions in the event space. Their feature - wide
   viewing angles of up to 160 degrees, ensuring clear visibility and consistent
   image quality from nearly any direction. This eliminates the distortion and
   color shift common in LCD screens, guaranteeing that your content remains
   impactful and engaging throughout the event.
-</p>
+</p><br>
 
-<h3>3.Brightness and contrast:</h3>
-<p>
+<strong style="font-size: 21px;">3. Brightness and contrast:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls offer high brightness and contrast, making them suitable for indoor
   and outdoor events, even in direct sunlight. They shine in bright
   environments, offering high brightness for clear visibility. LED wall
   auto-adjust brightness to save energy and enhance visibility. Their high
   contrast ratio produces deep blacks and vivid colors for exceptional content
   quality.
-</p>
-
-<h3>4.Customizable sizes and shapes:</h3>
-<p>
+</p><br>
+<p style="font-size: 16px;">
   LED walls can be assembled in various sizes and configurations, providing
   flexibility in designing your event space. They offer unmatched versatility,
   with modular panels that can be arranged in various shapes and sizes,
   including curved, flat, or irregular configurations. Customize color, content,
-  and mode to match your event&#39;s mood and atmosphere.
-</p>
+  and mode to match your event's mood and atmosphere.
+</p><br>
 
-<h3>5.Durability and reliability:</h3>
-<p>
+<strong style="font-size: 21px;">4. Customizable sizes and shapes:</strong><br>
+
+<p style="font-size: 16px;">
   LED technology is generally more durable and reliable than other display
   options, such as projectors or LCD screens. They are resilient to harsh
   conditions like rain, snow, heat, and cold due to their shock, vibration, and
   temperature resistance. Their long lifespan, up to 100,000 hours without
   losing brightness or quality, minimizes maintenance costs.
-</p>
+</p><br>
 
-<h3>6.Seamless image display:</h3>
-<p>
+<strong style="font-size: 21px;">5. Durability and reliability:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls have minimal gaps between panels,resulting in a more seamless and
   visually appealing display. They boast exceptional pixel densities, with pixel
   pitches as low as 0.9mm, resulting in smooth surfaces and minimal visible
   seams or bezels. This ensures seamless image displays that captivate your
   audience without distractions.
-</p>
+</p><br>
 
-<h3>7.Energy-efficient:</h3>
-<p>
+<strong style="font-size: 21px;">6. Seamless image display:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls consume less energy than other display technologies, making them a
   more environmentally friendly option. They use light-emitting diodes (LEDs) to
   create images and videos, saving more energy and being more eco-friendly than
   traditional lights. By reducing energy consumption and carbon footprint, LED
   walls can lower your electricity bills and contribute to a more sustainable
   event.
-</p>
+</p><br>
 
-<h2>Cons:</h2>
-<p>
+<strong style="font-size: 21px;">7. Energy-efficient:</strong><br>
+
+<p style="font-size: 16px;">
   However, LED walls are not without drawbacks. They can also pose some
   challenges that you should be aware of before using them. Here are some of the
   cons of using LED walls:
-</p>
-<h3>1.Cost:</h3>
-<p>
+</p><br><br><br><br><br>
+
+<strong style="font-size: 28px;">Cons:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls can be expensive in terms of initial investment and ongoing
   maintenance. In particular, it can range from $600 to $3,000 per panel. Though
   this range depends on size, resolution, installation, and maintenance. Renting
   LED walls may also be costly, especially for high-quality options. For
   example, $500 to $10,000 per day, depending on the pixel pitch and quality of
   the LED wall.
-</p>
+</p><br>
 
-<h3>2.Complex setup:</h3>
-<p>
+<strong style="font-size: 21px;">1. Cost:</strong><br>
+
+<p style="font-size: 16px;">
   Setting up an LED wall can be time-consuming and may require professional
   assistance, especially for larger or more complex configurations. To be
   specific they consist of modular panels that need to be interconnected using
   power cables, data cables, and a video processor. Even some LED walls may
   require additional support structures, like frames, brackets, or scaffolds, to
   accommodate their weight or shape.
-</p>
+</p><br>
 
-<h3>3.Potential technical issues:</h3>
-<p>
+<strong style="font-size: 21px;">2. Complex setup:</strong><br>
+<p style="font-size: 16px;">
+  Setting up an LED wall can be time-consuming and may require professional
+  assistance, especially for larger or more complex configurations. To be
+  specific they consist of modular panels that need to be interconnected using
+  power cables, data cables, and a video processor. Even some LED walls may
+  require additional support structures, like frames, brackets, or scaffolds, to
+  accommodate their weight or shape.
+</p><br>
+
+<strong style="font-size: 21px;">3. Potential technical issues:</strong><br>
+
+<p style="font-size: 16px;">
   As with any technology, LED walls can sometimes experience technical issues,
   such as individual LED failures or color inconsistencies. These issues can
   disrupt the visual quality and overall operation of the wall. Some common
   problems are bad cables, faulty power, broken or wrong LED modules, and
   incorrect or outdated software settings, potentially necessitating
   troubleshooting or repair.
-</p>
+</p><br>
 
-<h3>4.Weight and transport:</h3>
-<p>
+<strong style="font-size: 21px;">4. Weight and transport:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls can be heavy and bulky, making transportation and installation more
   challenging and potentially requiring additional infrastructure to support
   their weight. For example, reinforced flooring or specialized lifting
   equipment, to ensure safe and secure handling. If we talk about the
   installation process, large ones may require specialized hoisting equipment
   like cranes or forklifts, for lifting and maneuvering into place.
-</p>
+</p><br>
 
-<h3>5.Limited close-up viewing:</h3>
-<p>
+<strong style="font-size: 21px;">5. Limited close-up viewing:</strong><br>
+
+<p style="font-size: 16px;">
   Although LED walls offer high resolution, they may not be the best choice for
   close-up viewing, as individual LEDs could become visible at short distances.
   The optimal viewing distance depends on pixel pitch, the distance between two
   LEDs. For example, 2.5 mm pixel pitch allows viewing from 5 meters, 10 mm
   pixel pitch requires 20 meters. If viewers are too close, the image may look
   pixelated or distorted.
-</p>
+</p><br>
 
-<h3>6.Noise:</h3>
-<p>
+<strong style="font-size: 21px;">6. Noise:</strong><br>
+
+<p style="font-size: 16px;">
   LED walls need cooling to avoid overheating and damage. Some walls,
   particularly those with built-in cooling systems, can generate noise that may
-  interfere with the event&#39;s audio experience. Multiple cooling systems can
+  interfere with the event's audio experience. Multiple cooling systems can
   elevate noise levels, especially near the audience. Ambient noise may mask or
-  amplify the cooling system&#39;s sound, while site acoustics, such as
+  amplify the cooling system's sound, while site acoustics, such as
   reflective surfaces or sound-absorbing materials, can influence the perceived
   noise level.
-</p>
+</p><br>
 
-<h2>LED Walls: Balanced Evaluation and Recommendations</h2>
-<p>
+<p style="text-align: left"><strong style="font-size: 28px;">LED Walls: Balanced Evaluation and Recommendations</strong></p><br>
+
+<p style="font-size: 16px;">
   In conclusion, LED walls can be an excellent choice for events that require
   high-quality visuals, brightness, and customization. However, they may not be
   suitable for all events due to their cost, complexity, and potential technical
-  issues. Carefully consider your event&#39;s specific requirements before using
+  issues. Carefully consider your event's specific requirements before using
   an LED wall. You should weigh the pros and cons of LED walls, from their
   resolution, viewing angle, contrast, energy efficiency, to cost, weight,
   transport, close-up viewing, and noise.
-</p>
+</p><br>
+
       `,
     tag: ['Read More'],
   },
@@ -385,667 +412,680 @@ export const RECENT_BLOG_POST = [
     title: 'Steps For A Great Event Run Of Show: No More Boring Events!',
     image: 'https://drive.google.com/uc?id=1WTKYYQAxK7I3qG-47kAB7mOfYMnCaLuD',
     description:
-      `<p>
+      `<p style="font-size: 16px;">
       Ever been to an event where the speaker went on forever, the coffee ran out
-      halfway through, and the &quot;surprise entertainment&quot; turned out to be
+      halfway through, and the "surprise entertainment" turned out to be
       interpretive dance? Yeah, not exactly the stuff of event planning dreams.
-    </p>
+</p><br>
     
-    <p>
-      But it doesn&#39;t have to be that way. Your event can be a smooth, seamless
-      symphony of awesome &ndash; and it all starts with the run of show (ROS). It
+<p style="font-size: 16px;">
+      But it doesn't have to be that way. Your event can be a smooth, seamless
+      symphony of awesome – and it all starts with the run of show (ROS). It
       keeps your speakers on track, your volunteers in the loop, and your guests
-      saying, &quot;Wow, this is actually fun!&quot;
-    </p>
+      saying, "Wow, this is actually fun!"
+</p><br>
     
-    <p>
-      So ditch the stress because we&#39;re about to turn your event from a hot mess
-      to a masterpiece. We&#39;ll talk setting goals, assigning roles, scheduling
+<p style="font-size: 16px;">
+      So ditch the stress because we're about to turn your event from a hot mess
+      to a masterpiece. We'll talk setting goals, assigning roles, scheduling
       like a pro (even with those flaky speakers), and building in enough buffer
       time for those inevitable hiccups.
-    </p>
-    <h2>1)Setting the Stage: Defining Event Objectives</h2>
-    <p>
-      Before we start, let&rsquo;s assume you&#39;re building a house. You
-      wouldn&#39;t just start hammering nails without a blueprint, right? The same
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+      Setting the Stage: Defining Event Objectives
+</h2><br>
+
+<p style="font-size: 16px;">
+      Before we start, let’s assume you're building a house. You
+      wouldn't just start hammering nails without a blueprint, right? The same
       goes for your event. Before you start scheduling speakers and booking
-      catering, you need to define your event&#39;s objectives.
-    </p>
+      catering, you need to define your event's objectives.
+</p><br>
     
-    <p>
-      Think of your objectives as the foundation of your event. They&#39;re the
-      &quot;why&quot; behind everything you do. What do you want to achieve with
+<p style="font-size: 16px;">
+      Think of your objectives as the foundation of your event. They're the
+      "why" behind everything you do. What do you want to achieve with
       this event? Do you want to:
-    </p>
+</p><br>
     
-    <ol>
-      <li>
-        <span style="font-size: 16px;"><strong>Educate your audience:</strong>
-        >Are you launching a new product? Sharing industry insights? Then your
-        objective might be to increase attendees&#39; knowledge by X% or have them
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Educate your audience:</strong>
+        Are you launching a new product? Sharing industry insights? Then your
+        objective might be to increase attendees' knowledge by X% or have them
         leave with 3 key takeaways.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Generate leads:Is your event a networking goldmine? Then your goal might be
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Generate leads:</strong> Is your event a networking goldmine? Then your goal might be
         to collect 100 qualified leads or have attendees schedule 20 follow-up
         meetings.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Build brand awareness:Are you introducing your company to a new market? Then
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Build brand awareness: </strong>Are you introducing your company to a new market? Then
         your objective could be to have Y% of attendees recall your brand name or
         associate it with specific keywords.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Boost morale:Is this a team-building retreat? Then your goal might be to
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Boost morale: </strong>Is this a team-building retreat? Then your goal might be to
         improve employee satisfaction by Z% or have X% of attendees report feeling
         more connected to their colleagues.
       </li>
-    </ol>
+</ol><br>
     
-    <p>
-      The key is to be specific and measurable. Don&#39;t just say you want to
-      &quot;have a successful event.&quot; What does &quot;successful&quot; look
-      like for you? Define your objectives clearly, and you&#39;ll have a much
+<p style="font-size: 16px;">
+      The key is to be specific and measurable. Don't just say you want to
+      "have a successful event." What does "successful" look
+      like for you? Define your objectives clearly, and you'll have a much
       easier time creating ROS that actually helps you achieve them.
-    </p>
+</p><br>
     
-    <p>Here are some tips for setting clear and measurable event objectives:</p>
+<p style="font-size: 16px;">Here are some tips for setting clear and measurable event objectives:</p><br>
     
-    <ul>
-      <li>
-        Use the SMART framework:Make your objectives Specific, Measurable,
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Use the SMART framework: </strong>Make your objectives Specific, Measurable,
         Achievable, Relevant, and Time-bound. For example, instead of saying
-        &quot;increase brand awareness,&quot; say &quot;have 80% of attendees recall
-        our brand name within 3 months of the event.&quot;
+        "increase brand awareness," say "have 80% of attendees recall
+        our brand name within 3 months of the event."
       </li>
-    </ul>
+</ul><br>
     
-    <ul>
-      <li>
-        Focus on outcomes, not outputs:Don&#39;t just focus on the number of
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Focus on outcomes, not outputs: </strong>Don't just focus on the number of
         attendees or the amount of food served. What do you want those attendees to
         do or feel as a result of your event?
       </li>
-    </ul>
-    
-    <ul>
-      <li>
-        Get input from stakeholders:Talk to your team, sponsors, and target audience
+</ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Get input from stakeholders: </strong>Talk to your team, sponsors, and target audience
         to understand their expectations and what they hope to achieve from the
         event.
       </li>
-    </ul>
+</ul><br>
     
-    <p>
-      Once you have your objectives nailed down, you&#39;ll be in a much better
+<p style="font-size: 16px;">
+      Once you have your objectives nailed down, you'll be in a much better
       position to start building your ROS. Remember, every decision you make, from
       the speakers you choose to the breaks you schedule, should be aligned with
       your overall event goals.
-    </p>
-    <h2>2) Building Your Event Dream Team: Assign Roles &amp; Rule the Show</h2>
-    <p>
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Building Your Event Dream Team: Assign Roles & Rule the Show
+</h2><br>
+
+<p style="font-size: 16px;">
       Imagine a football team without a quarterback, or a bakery without a baker.
       Pretty chaotic, right? Your event needs the same strong, well-coordinated team
       to bring your run of show to life. Here are some key roles:
-    </p>
+</p><br>
     
-    <ol>
-      <li>
-        Event Planner: Your conductor, overseeing everything from budget to crisis
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Event Planner:</strong> Your conductor, overseeing everything from budget to crisis
         communication. Choose someone organized, detail-oriented, and able to think
         on their feet.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Speakers &amp; Performers:The stars! Captivate your audience with their
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Speakers & Performers: </strong>The stars! Captivate your audience with their
         knowledge, skills, or talent. Choose experts, engaging presenters, and those
-        aligned with your event&#39;s goals.
+        aligned with your event's goals.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Technical Crew:Invisible heroes making lights shine and slides click. Find
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Technical Crew: </strong>Invisible heroes making lights shine and slides click. Find
         reliable techies who can troubleshoot any audio-visual hiccups.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Volunteers:The smiling faces welcoming, guiding, and answering questions.
-        They&#39;re the backbone that keeps the experience smooth.
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Volunteers: </strong>The smiling faces welcoming, guiding, and answering questions.
+        They're the backbone that keeps the experience smooth.
       </li>
-    </ol>
+</ol><br>
     
-    <ol>
-      <li>
-        Sponsors &amp; Vendors:Sponsors provide financial support, while vendors
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Sponsors & Vendors: </strong>Sponsors provide financial support, while vendors
         help with everything from catering to entertainment. Choose partners who
         share your vision, values, and target audience.
       </li>
-    </ol>
+</ol><br>
     
-    <p>
+<p style="font-size: 16px;">
       Once your team is assembled, assign roles and responsibilities clearly. Give
       them the authority they need to shine, and provide training and support.
-    </p>
+</p><br>
     
-    <h2>3) Sketching the Timeline: Developing a Preliminary Schedule</h2>
-    <p>
-      With your team assembled and goals in sight, let&#39;s paint a broad picture
-      of your event&#39;s flow. This is where we build the preliminary schedule, the
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Sketching the Timeline: Developing a Preliminary Schedule
+</h2><br>
+
+<p style="font-size: 16px;">
+      With your team assembled and goals in sight, let's paint a broad picture
+      of your event's flow. This is where we build the preliminary schedule, the
       rough sketch of your masterpiece.
-    </p>
+</p><br>
     
-    <p>Step 1: Mark Your Milestones:</p>
-    
-    <p>
-      First, block out the big rocks &ndash; your event&#39;s start and end times,
+<p style="font-size: 16px;"><strong>Step 1: Mark Your Milestones:</strong></p><br>
+<p style="font-size: 16px;">
+      First, block out the big rocks – your event's start and end times,
       speaker slots, key presentations, performances, breaks, and networking
       opportunities. Treat these as the pillars of your schedule, ensuring they fit
       within the overall timeframe.
-    </p>
+</p><br>
     
-    <p>Step 2: Be Flexible Friend:</p>
+<p style="font-size: 16px;"><strong>Step 2: Be Flexible Friend:</strong></p><br>
     
-    <p>
-      Remember, this isn&#39;t etched in stone! Leave wiggle room around your
+<p style="font-size: 16px;">
+      Remember, this isn't etched in stone! Leave wiggle room around your
       milestones. Unexpected delays? Technical glitches? No problem. Your buffer
       time has got your back.
-    </p>
+</p><br>
     
-    <p>Step 3: Think Like a Time Traveler:</p>
+<p style="font-size: 16px;"><strong>Step 3: Think Like a Time Traveler:</strong></p><br>
     
-    <p>
+<p style="font-size: 16px;">
       Now, imagine yourself at the event. Walk through each element in your mind.
       How long will registration take? How long should lunch be? Factor in setup,
       transition time, and that extra five minutes for the speaker who loves a good
       story.
-    </p>
+</p><br>
     
-    <p>Step 4: Don&#39;t Be Afraid to Get Granular:</p>
+<p style="font-size: 16px;"><strong>Step 4: Don't Be Afraid to Get Granular:</strong></p><br>
     
-    <p>
+<p style="font-size: 16px;">
       Even in this preliminary stage, break down key sections into smaller chunks. A
-      panel discussion? Estimate each speaker&#39;s time, Q&amp;A, and moderator
+      panel discussion? Estimate each speaker's time, Q&A, and moderator
       transitions. This helps you visualize the flow and identify potential
       bottlenecks.
-    </p>
+</p><br>
     
-    <p>Step 5: Embrace the Spreadsheet (or App) of Your Dreams:</p>
+<p style="font-size: 16px;"><strong>Step 5: Embrace the Spreadsheet (or App) of Your Dreams:</strong></p><br>
     
-    <p>
+<p style="font-size: 16px;">
       Use visual tools to map out your schedule. Timelines, Gantt charts, project
-      management apps &ndash; choose your weapon! Seeing everything laid out helps
+      management apps – choose your weapon! Seeing everything laid out helps
       you identify overlaps, gaps, and opportunities for improvement.
-    </p>
+</p><br>
     
-    <p>Step 6: Keep It Real:</p>
+<p style="font-size: 16px;"><strong>Step 6: Keep It Real:</strong></p><br>
     
-    <p>
+<p style="font-size: 16px;">
       Be honest about your resources. Do you have enough volunteers to handle
       registration and crowd control? Can your venue accommodate all the activities
       you have in mind? Reality checks are key to avoiding a logistical nightmare.
-    </p>
+</p><br>
     
-    <p>Step 7: Remember, It&#39;s a Draft:</p>
+<p style="font-size: 16px;"><strong>Step 7: Remember, It's a Draft:</strong></p><br>
     
-    <p>
+<p style="font-size: 16px;">
       This is just the first brushstroke. As you gather more information and
       collaborate with your team, your schedule will evolve. Embrace the iterative
       process!
-    </p>
+</p><br>
     
-    <p>
+<p style="font-size: 16px;">
       Just remember, flexibility is your friend. Things will change, hiccups will
       happen, but with a solid foundation, you can adapt and keep your event on
       track.
-    </p>
-    <h2>4) Identifying Event Components: Mapping Out the Event Structure</h2>
-    <p>
-      We&#39;ve got a basic plan for the event. Now, let&#39;s dig in deeper.
-      We&#39;ll list and sort out all the different parts of the event.
-    </p>
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Identifying Event Components: Mapping Out the Event Structure
+</h2><br>
+
+<p style="font-size: 16px;">
+      We've got a basic plan for the event. Now, let's dig in deeper.
+      We'll list and sort out all the different parts of the event.
+</p><br>
+      <p style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+         <strong style="font-size: 18px;">Pre-Event:</strong></p>
+<br>
     
-    <ol>
-      <li>Pre-Event:</li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Registration: </strong>How will attendees sign up? Online, on-site? Make it seamless!</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Registration:How will attendees sign up? Online, on-site? Make it seamless!
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Welcome & Logistics: </strong>Greet guests with warmth, provide clear directions,
+        ease their anxieties.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Welcome &amp; Logistics:Greet guests with warmth, provide clear directions,
-        ease their anxieties.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Icebreakers & Networking: </strong>Help attendees connect and break the ice.
+        Awkward silences are no fun!</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Icebreakers &amp; Networking:Help attendees connect and break the ice.
-        Awkward silences are no fun!
-      </li>
-    </ol>
+      <p style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <strong style="font-size: 18px;">During Event:</strong></p>
+<br>
     
-    <ol>
-      <li>During Event:</li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Presentations & Performances: </strong>Speakers, panels, workshops – the
+        content that draws them in.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Presentations &amp; Performances:Speakers, panels, workshops &ndash; the
-        content that draws them in.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Breaks & Refreshments: </strong>Recharge those batteries! Fuel their brains and
+        bodies.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Breaks &amp; Refreshments:Recharge those batteries! Fuel their brains and
-        bodies.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Activities & Entertainment: </strong>Interactive fun, engaging experiences, keep
+        them on their toes.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Activities &amp; Entertainment:Interactive fun, engaging experiences, keep
-        them on their toes.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Q&A Sessions: </strong>Foster dialogue, answer burning questions, make it a
+        two-way street.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Q&amp;A Sessions:Foster dialogue, answer burning questions, make it a
-        two-way street.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Networking Opportunities:</strong> Let connections happen organically, facilitate
+        meaningful interactions.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Networking Opportunities:Let connections happen organically, facilitate
-        meaningful interactions.
-      </li>
-    </ol>
+<ol>
+      <p style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <strong style="font-size: 18px;">During Event:</strong></p>
+<br>
+</ol>
     
-    <ol>
-      <li>Post-Event:</li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Thank You: </strong>Show your appreciation, keep the conversation going.</span>
+</ol><br>
     
-    <ol>
-      <li>Thank Yous:Show your appreciation, keep the conversation going.</li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Feedback & Evaluation: </strong>Learn from your experience, what worked, what
+        didn't?</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Feedback &amp; Evaluation:Learn from your experience, what worked, what
-        didn&#39;t?
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Content Sharing & Promotion: </strong>Extend the event's reach, share
+        recordings, articles, keep the buzz going.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Content Sharing &amp; Promotion:Extend the event&#39;s reach, share
-        recordings, articles, keep the buzz going.
-      </li>
-    </ol>
-    
-    <p>
-      It&#39;s more than just completing tasks. Think about how each thing
-      you&#39;re doing helps reach your main goals. Ask yourself: Does talking and
+<p style="font-size: 16px;">
+      It's more than just completing tasks. Think about how each thing
+      you're doing helps reach your main goals. Ask yourself: Does talking and
       meeting people in the networking session help get new customers? Is the talk
-      going on for too long, making people lose interest? It&#39;s about making sure
+      going on for too long, making people lose interest? It's about making sure
       each part of the event helps achieve what you want in the end
-    </p>
-    <h2>5) Scheduling Speakers &amp; Performers: Finding the Perfect Fit</h2>
-    <p>
-      With your event&#39;s structure built, it&#39;s time to call in the stars! But
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Identifying Event Components: Mapping Out the Event Structure
+</h2><br>
+
+<p style="font-size: 16px;">
+      We've got a basic plan for the event. Now, let's dig in deeper.
+      We'll list and sort out all the different parts of the event.
+</p><br>
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Scheduling Speakers & Performers: Finding the Perfect Fit
+</h2><br>
+
+<p style="font-size: 16px;">
+      With your event's structure built, it's time to call in the stars! But
       before you get starstruck, remember: availability and fit are key.
-    </p>
+</p><br>
     
-    <ol>
-      <li>
-        Prioritize relevance:Don&#39;t just book names. Align expertise with your
-        theme and audience. Relevance is magic for engagement.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Prioritize relevance: </strong>Don't just book names. Align expertise with your
+        theme and audience. Relevance is magic for engagement.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Do your research:Check schedules, travel time, and previous gigs. A
-        jet-lagged speaker won&#39;t do you justice.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Do your research: </strong>Check schedules, travel time, and previous gigs. A
+        jet-lagged speaker won't do you justice.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Be clear and upfront: Communicate expectations. How long will they speak?
-        What format? What tech support? Transparency builds trust.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong><strong><strong>Be clear and upfront:</strong> </strong></strong> Communicate expectations. How long will they speak?
+        What format? What tech support? Transparency builds trust.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Offer incentives:Money isn&#39;t everything, but it helps. Consider fees,
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Offer incentives: </strong>Money isn't everything, but it helps. Consider fees,
         travel reimbursement, or a platform to promote their work. Show you value
-        them.
-      </li>
-    </ol>
+        them.</span>
+</ol><br>
     
-    <p>Now, let&#39;s talk slots:</p>
+<p style="font-size: 16px;">Now, let's talk slots:</p><br>
     
-    <ul>
-      <li>
-        Primetime vs. off-peak:Consider audience energy levels and competing events.
-        Keynote in the morning or afternoon?
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Primetime vs. off-peak: </strong>Consider audience energy levels and competing events.
+        Keynote in the morning or afternoon?</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Speaker compatibility:Group them with complementary styles or topics for a
-        cohesive flow.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Speaker compatibility: </strong>Group them with complementary styles or topics for a
+        cohesive flow.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Buffer time:Don&#39;t forget breaks and transitions! Give speakers time to
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Buffer time: </strong>Don't forget breaks and transitions! Give speakers time to
         set up, attendees time to breathe, and yourself time to avoid scheduling
-        meltdowns.
-      </li>
-    </ul>
+        meltdowns.</span>
+</ul><br>
     
-    <p>
-      Scheduling&#39;s an art, not a science. Be flexible, be creative, and most
+<p style="font-size: 16px;">
+      Scheduling's an art, not a science. Be flexible, be creative, and most
       importantly, be respectful of their time and expertise.
-    </p>
-    <h2>6) Buffer Time: Your Secret Weapon for Smooth Sailing</h2>
-    <p>
-      Remember that beautiful schedule? Yeah, it&#39;s about to get a reality check.
-      Events, like life, rarely go according to plan. That&#39;s where your secret
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Buffer Time: Your Secret Weapon for Smooth Sailing
+</h2><br>
+
+<p style="font-size: 16px;">
+      Remember that beautiful schedule? Yeah, it's about to get a reality check.
+      Events, like life, rarely go according to plan. That's where your secret
       weapon comes in: buffer time. Why is buffer time your best friend? Because it
       provides smooth transitions, reduces stress, and absorbs domino effects before
       they snowball
-    </p>
+</p><br>
     
-    <p>Buffer time depends on your event&#39;s risk factor:</p>
+<p style="font-size: 16px;">Buffer time depends on your event's risk factor:</p><br>
     
-    <ul>
-      <li>High risk (live performances): 20-30%</li>
-      <li>Medium risk (panels): 15-20%</li>
-      <li>Low risk (keynotes): 10-15%</li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>High risk (live performances):</strong> 20-30%</span>
+</ul><br>
     
-    <p>
-      It&#39;s not wasted time, it&#39;s an investment in sanity. Plan for the
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Medium risk (panels):</strong> 15-20%</span>
+</ul><br>
+    
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Low risk (keynotes):</strong> 10-15%</span>
+</ul><br>
+    
+<p style="font-size: 16px;">
+      It's not wasted time, it's an investment in sanity. Plan for the
       worst, build micro-buffers, and empower your team to adjust on the fly.
-    </p>
-    <h2>7) Crafting a Comprehensive Agenda: The Core of the ROS</h2>
-    <p>
-      This isn&#39;t just a list of activities. It&#39;s a roadmap for everyone
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Crafting a Comprehensive Agenda: The Core of the ROS
+</h2><br>
+
+<p style="font-size: 16px;">
+      This isn't just a list of activities. It's a roadmap for everyone
       involved, from speakers to volunteers to attendees. It tells them what
-      happens, when it happens, and who&#39;s responsible for making it happen.
-    </p>
+      happens, when it happens, and who's responsible for making it happen.
+</p><br>
     
-    <p>Here&#39;s how to create the masterpiece:</p>
+<p style="font-size: 16px;">Here's how to create the masterpiece:</p><br>
     
-    <ul>
-      <li>
-        Gather your tools:Whatever helps you visualize and organize (sticky notes,
-        spreadsheets, online planners).
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Gather your tools: </strong>Whatever helps you visualize and organize (sticky notes,
+        spreadsheets, online planners).</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Pull it all together:Schedule, components, timings, responsible parties,
-        resources &ndash; slot it all in.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Pull it all together: </strong>Schedule, components, timings, responsible parties,
+        resources – slot it all in.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Get specific:No &quot;speaker 1&quot; here. Include names, topics, timings
-        &ndash; leave no detail to guesswork.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Get specific: </strong>No "speaker 1" here. Include names, topics, timings
+        – leave no detail to guesswork.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Mind the flow:Transitions are crucial. Factor in setup/teardown, breaks,
-        even bathroom lines.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Mind the flow: </strong>Transitions are crucial. Factor in setup/teardown, breaks,
+        even bathroom lines.</span>
+</ul><br>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Be visually clear: </strong>Headings, colors, symbols – make it an infographic,
+        not a grocery list.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Be visually clear:Headings, colors, symbols &ndash; make it an infographic,
-        not a grocery list.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Share and iterate: </strong>Get feedback from your team, speakers, even volunteers. A
+        good agenda is collaborative.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Share and iterate:Get feedback from your team, speakers, even volunteers. A
-        good agenda is collaborative.
-      </li>
-    </ul>
-    
-    <p>
+<p style="font-size: 16px;">
       Remember, a good agenda is dynamic, not static. Things change, so be flexible.
       Embrace updates and revisions as needed.
-    </p>
-    
-    <h2>8) Communication Symphony: Keeping Everyone in Harmony</h2>
-    <p>
-      Your masterpiece is taking shape! But what&#39;s the point of a beautiful
-      score if the musicians don&#39;t know their parts? That&#39;s where
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Communication Symphony: Keeping Everyone in Harmony
+</h2><br>
+
+<p style="font-size: 16px;">
+      Your masterpiece is taking shape! But what's the point of a beautiful
+      score if the musicians don't know their parts? That's where
       communication takes center stage.
-    </p>
+</p><br>
     
-    <p>Here&#39;s your communication checklist:</p>
+<p style="font-size: 16px;">Here's your communication checklist:</p><br>
     
-    <ol>
-      <li>
-        Share the agenda widely:Make it the gospel. Distribute it to everyone
-        involved, online or printed.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Share the agenda widely: </strong>Make it the gospel. Distribute it to everyone
+        involved, online or printed.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Conduct pre-event briefings:Go beyond the agenda. Explain the
-        &quot;why&quot; behind each element and address any questions or concerns.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Conduct pre-event briefings: </strong>Go beyond the agenda. Explain the
+        "why" behind each element and address any questions or concerns.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Facilitate communication channels:Create a platform for real-time updates
-        and discussions. A dedicated Slack channel, anyone?
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Facilitate communication channels: </strong>Create a platform for real-time updates
+        and discussions. A dedicated Slack channel, anyone?</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Foster open communication:Encourage questions, feedback, and even
-        suggestions. A collaborative approach breeds success.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Foster open communication: </strong>Encourage questions, feedback, and even
+        suggestions. A collaborative approach breeds success.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Be responsive and proactive:Address issues promptly and don&#39;t shy away
-        from updates, even if they&#39;re last-minute. Transparency builds trust.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Be responsive and proactive: </strong>Address issues promptly and don't shy away
+        from updates, even if they're last-minute. Transparency builds trust.</span>
+</ol><br>
     
-    <p>
-      Remember, clear communication isn&#39;t a one-way street. Actively listen,
+<p style="font-size: 16px;">
+      Remember, clear communication isn't a one-way street. Actively listen,
       address concerns, and empower your team to be proactive.
-    </p>
-    <h2>9) Rehearsals and Refinements: Polishing for Perfection</h2>
-    <p>
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Rehearsals and Refinements: Polishing for Perfection
+</h2><br>
+
+<p style="font-size: 16px;">
       Your event is almost ready to take the stage, but wait! Before you unleash it
-      on the world, it&#39;s time for some final dress rehearsals. Think of it as a
+      on the world, it's time for some final dress rehearsals. Think of it as a
       chance to iron out any wrinkles and ensure your masterpiece shines under the
       spotlight.
-    </p>
+</p><br>
     
-    <ol>
-      <li>
-        Walk-through the venue:Get a feel for the space, check transitions, and
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Walk-through the venue: </strong>Get a feel for the space, check transitions, and
         identify potential bottlenecks. Is there enough room for that live
-        performance? Can everyone see the projector screen?
-      </li>
-    </ol>
+        performance? Can everyone see the projector screen?</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Rehearse speakers and performers: Help them refine timings, troubleshoot
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Rehearse speakers and performers:</strong> Help them refine timings, troubleshoot
         technical hiccups, and practice transitions. A confident speaker translates
-        to a captivated audience.
-      </li>
-    </ol>
+        to a captivated audience.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Run a tech rehearsal:Test lights, sound, and presentations. Practice
-        transitions between elements to ensure seamless flow. Don&#39;t let a
-        technical glitch steal the show.
-      </li>
-    </ol>
-    
-    <ol>
-      <li>
-        Time it all out:Do a full run-through, incorporating breaks and transitions.
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Run a tech rehearsal: </strong>Test lights, sound, and presentations. Practice
+        transitions between elements to ensure seamless flow. Don't let a
+        technical glitch steal the show.</span>
+</ol><br>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Time it all out: </strong>Do a full run-through, incorporating breaks and transitions.
         Does the schedule hold up? Are there any unexpected delays? Remember, a
-        tight ship is a happy ship (and audience).
-      </li>
-    </ol>
+        tight ship is a happy ship (and audience).</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Debrief and adapt:Gather feedback from everyone involved. Did anything feel
-        clunky? Were there any confusing moments? Be open to tweaks and adjustments.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Debrief and adapt: </strong>Gather feedback from everyone involved. Did anything feel
+        clunky? Were there any confusing moments? Be open to tweaks and adjustments.</span>
+</ol><br>
     
-    <p>
-      Remember, rehearsals aren&#39;t about finding fault; they&#39;re about finding
-      polish. It&#39;s a chance to anticipate problems, build confidence, and ensure
+<p style="font-size: 16px;">
+      Remember, rehearsals aren't about finding fault; they're about finding
+      polish. It's a chance to anticipate problems, build confidence, and ensure
       your event is an unforgettable experience for everyone involved.
-    </p>
-    <h2>10) Monitoring and Adapting: Staying on Track</h2>
-    <p>
+</p><br>
+
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Monitoring and Adapting: Staying on Track
+</h2><br>
+
+<p style="font-size: 16px;">
       Your event is live! The stage lights are on, the speakers are buzzing, and
-      excitement fills the air. But wait, the conductor doesn&#39;t just put down
+      excitement fills the air. But wait, the conductor doesn't just put down
       their baton and relax, do they? No, they stay vigilant, adjusting the tempo,
-      guiding the musicians, ensuring the harmony stays intact. That&#39;s your role
-      now and It&#39;s time to monitor and adapt.
-    </p>
+      guiding the musicians, ensuring the harmony stays intact. That's your role
+      now and It's time to monitor and adapt.
+</p><br>
     
-    <ol>
-      <li>
-        Monitor like a hawk:Delegate a team member to track the run of show and flag
-        any detours. They&#39;re your on-the-ground eyes and ears.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Monitor like a hawk: </strong>Delegate a team member to track the run of show and flag
+        any detours. They're your on-the-ground eyes and ears.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Embrace the bend:Remember that buffer time? Use it! Adapt timings, adjust
-        breaks, even switch elements if needed. Flow is your friend.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Embrace the bend: </strong>Remember that buffer time? Use it! Adapt timings, adjust
+        breaks, even switch elements if needed. Flow is your friend.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Communicate like a pro:Keep everyone in the loop about changes. Speakers,
-        volunteers, even the audience &ndash; transparency builds trust and avoids
-        chaos.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Communicate like a pro: </strong>Keep everyone in the loop about changes. Speakers,
+        volunteers, even the audience – transparency builds trust and avoids
+        chaos.</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Solve like a champ:Unexpected hiccups? Don&#39;t sweat it. Think on your
-        feet, find creative solutions, always have a Plan B (or C!).
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong><strong>Solve like a champ:</strong> </strong>Unexpected hiccups? Don't sweat it. Think on your
+        feet, find creative solutions, always have a Plan B (or C!).</span>
+</ol><br>
     
-    <ol>
-      <li>
-        Learn from every note:Every blip is a lesson. Take notes, observe reactions,
-        and incorporate learnings into future events. Growth is key.
-      </li>
-    </ol>
+<ol>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Learn from every note: </strong>Every blip is a lesson. Take notes, observe reactions,
+        and incorporate learnings into future events. Growth is key.</span>
+</ol><br>
     
-    <h2>
-      11) Curtain Call and Encore: Post-Event Evaluation for Continuous Brilliance
-    </h2>
-    
-    <p>
-      The applause has faded, the lights have dimmed, but your work isn&#39;t done
-      yet, It&#39;s time to step off the stage, take a deep breath, and reflect on
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
+       Curtain Call and Encore: Post-Event Evaluation for Continuous Brilliance
+</h2><br>
+
+<p style="font-size: 16px;">
+      The applause has faded, the lights have dimmed, but your work isn't done
+      yet, It's time to step off the stage, take a deep breath, and reflect on
       your masterpiece.
-    </p>
-    <ul>
-      <li>
-        Gather feedback:survey your audience, speakers, and volunteers. Honest
-        opinions are your golden ticket.
-      </li>
-    </ul>
+</p><br>
+
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Gather feedback: </strong>survey your audience, speakers, and volunteers. Honest
+        opinions are your golden ticket.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Dive into data:registration numbers, engagement metrics, social media buzz.
-        Did you hit your goals? Data speaks volumes, listen closely.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Dive into data: </strong>registration numbers, engagement metrics, social media buzz.
+        Did you hit your goals? Data speaks volumes, listen closely.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Analyze your ROS:was the schedule realistic? Did transitions flow smoothly?
-        Revisit it with a critical eye.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Analyze your ROS: </strong>was the schedule realistic? Did transitions flow smoothly?
+        Revisit it with a critical eye.</span>
+</ul><br>
     
-    <ul>
-      <li>
-        Celebrate successes: acknowledge what went well! Team wins, speaker
-        brilliance, pure event magic. Appreciation fuels motivation.
-      </li>
-    </ul>
+<ul>
+      <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
+        <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Celebrate successes:</strong> acknowledge what went well! Team wins, speaker
+        brilliance, pure event magic. Appreciation fuels motivation.</span>
+</ul><br>
     
-    <p>
+<p style="font-size: 16px;">
       Finally, be honest. Could you have done better? Learning from mistakes is key
-      to continuous improvement. &nbsp;And a great event also needs some great
+      to continuous improvement.  And a great event also needs some great
       support while adapting to quick changes, like hiring
-      <a href="#">experienced travel AV </a>vendors quickly, Don&rsquo;t stress, you
+      <a href="#">experienced travel AV </a>vendors quickly, Don’t stress, you
       can <a href="#">change your vendor without a big headache</a>.
-    </p>
+</p><br>
     
-    <p>
-      So, spill the tea! What&#39;s the biggest event fail you&#39;ve ever seen?
-      (Bonus points for cringe-worthy details!) Don&rsquo;t forget to share it with
+<p style="font-size: 16px;">
+      So, spill the tea! What's the biggest event fail you've ever seen?
+      (Bonus points for cringe-worthy details!) Don’t forget to share it with
       a friend who needs this knowledge like they need oxygen! Sharing is caring,
       after all.
-    </p>`,
+</p><br>
+`,
       tag: ['Read More'],
     },
     {
@@ -1073,7 +1113,7 @@ export const RECENT_BLOG_POST = [
         include the following:
       </p><br>
             
-      <h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+      <h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
         Centralized Information Management: 
       </h2><br>
       <p style="font-size: 16px;">
@@ -1094,21 +1134,24 @@ export const RECENT_BLOG_POST = [
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Speaker profiles:</strong> Store speaker biographies, contact details, expertise, and
           experience.
         </li>
+<br>
         <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Presentation materials:</strong> Manage speaker slides, videos, handouts, and other presentation
           materials.
         </li>
+<br>
         <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Travel arrangements:</strong> Track speaker travel arrangements, including flights, accommodations, and
           transportation.
         </li>
+<br>
         <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Schedule and logistics:</strong> Manage speaker schedules, assignments, and logistical
           arrangements.
         </li>
       </ul><br>
       
-      <h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+      <h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
         Efficient Communication:
       </h2><br>
       <p style="font-size: 16px;">
@@ -1122,17 +1165,19 @@ export const RECENT_BLOG_POST = [
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Announcements and updates:</strong> Broadcast important messages to speakers, keeping them informed about
           event schedules, changes, and requirements.
         </li>
+<br>
         <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Feedback and discussion:</strong> Encourage feedback from speakers to gather insights and address
           concerns.
         </li>
+<br>
         <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
           <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Task management:</strong> Assign tasks to speakers and track their completion to ensure
           timely delivery of materials and adherence to schedules. This helps to
           avoid miscommunication and ensures that everyone stays informed.</span>
         </li>
       </ul><br>
-      <h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+      <h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
   Simplified Scheduling: 
 </h2><br>
 <p style="font-size: 16px;">
@@ -1148,17 +1193,19 @@ export const RECENT_BLOG_POST = [
     speakers are assigned to sessions that align with their expertise and
     interests.</span> 
   </li>
+<br>
   <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
     <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Session allocation and time management: </strong>Allocate time slots for sessions and presentations, considering speaker
     availability, session length, and venue capacity.</span>  
   </li>
+<br>
   <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
     <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Schedule visualization and conflict resolution: </strong>Present a clear and organized view of the event schedule, allowing
     organizers to identify and resolve scheduling conflicts promptly.</span>
   </li>
 </ul><br>
 
-<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
   Speaker Selection and Evaluation:
 </h2><br>
 <p style="font-size: 16px;">
@@ -1172,16 +1219,18 @@ export const RECENT_BLOG_POST = [
     <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Speaker database and search: </strong>Maintain a database of potential speakers with searchable filters
     based on expertise, experience, and presentation style.</span> 
   </li>
+<br>
   <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
     <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Speaker evaluation and feedback: </strong> Collect feedback from previous events to evaluate speaker performance and
     identify highly qualified speakers.</span>
   </li>
+<br>
   <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
     <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span><span style="font-size: 16px;"><strong>Speaker engagement and recruitment: </strong> Facilitate communication with potential speakers to gauge their
     interest, negotiate terms, and finalize speaker participation.</span> 
   </li>
 </ul><br>
-<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
 Content Management:
 </h2><br>
 <p style="font-size: 16px;">
@@ -1195,17 +1244,19 @@ presentation materials are accessible to all stakeholders:
   materials, allowing organizers to review, approve, and provide
   feedback.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Content storage and organization:</strong> Store presentation materials securely and organize them by speaker,
   session, or event.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Content sharing and distribution:</strong> Distribute approved presentation materials to attendees, event
   staff, and other stakeholders.
 </li>
 </ul><br>
 
-<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
 Enhanced Attendee Experience: 
 </h2><br>
 <p style="font-size: 16px;">
@@ -1220,16 +1271,18 @@ their time at the event.
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Easy access to speaker information:</strong> Provide attendees with easy access to speaker profiles,
   biographies, and contact details.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Accessible presentation materials:</strong> Allow attendees to download or access presentation materials
   before, during, or after the event.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Clearly defined session schedules:</strong> Present clear and accessible session schedules, allowing attendees
   to plan their attendance and maximize their event experience.
 </li>
 </ul><br>
-<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
 Time and Resource Savings: 
 </h2><br>
 <p style="font-size: 16px;">
@@ -1244,17 +1297,19 @@ with the management.
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Automated speaker invitations and reminders:</strong> Automate speaker invitations, follow-ups, and reminders to reduce
   manual effort and ensure timely speaker responses.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Streamlined communication and feedback collection:</strong> Automate communication workflows, feedback requests, and data
   collection to minimize manual tasks and improve efficiency.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Centralized data management and reporting:</strong> Generate reports on speaker participation, feedback, and content
   management to inform future event planning and resource allocation.
 </li>
 </ul><br>
 
-<h2 style="font-size: 30px; font-weight: bold; text-align: left;">
+<h2 style="font-size: 30px; font-weight: bold; text-align: left;line-height: 1.5;">
 Post-Event Analysis:
 </h2><br>
 <p style="font-size: 16px;">
@@ -1273,11 +1328,13 @@ This post-event analysis offers a wealth of opportunities to:
   stakeholder feedback. Identify speakers who resonated with the audience
   and aligned with the event's goals.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Optimize Scheduling and Content:</strong> Analyze session formats, topics, and speaker styles that captivated
   the audience. Utilize this data to tailor future schedules and ensure
   content aligns with attendee expectations.
 </li>
+<br>
 <li style="font-size: 16px;" class="grid grid-cols-[auto,1fr] items-start gap-2">
   <span class="block text-xl" style="font-size: 33px; line-height: 1rem;">•</span> <span style="font-size: 16px;"><strong>Elevate Event Reputation:</strong> Consistently evaluate speaker performance and incorporate feedback
   to maintain a high standard of speaker quality. Cultivate a positive event
@@ -1502,7 +1559,7 @@ effectively, resulting in a more successful, <a href="#">engaging, and enjoyable
   // {
   //   id: 3,
   //   date: 1700973637000,
-  //   title: 'Microsoft Event Planning (post 4)',
+  //   title: 'Microsoft Event Planning (post ',
   //   image: 'https://picsum.photos/523/430',
   //   description:
   //     '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
@@ -1511,7 +1568,7 @@ effectively, resulting in a more successful, <a href="#">engaging, and enjoyable
   // {
   //   id: 4,
   //   date: 1700973637000,
-  //   title: 'Microsoft Event Planning (post 4)',
+  //   title: 'Microsoft Event Planning (post ',
   //   image: 'https://picsum.photos/523/430',
   //   description:
   //     '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
@@ -1520,7 +1577,7 @@ effectively, resulting in a more successful, <a href="#">engaging, and enjoyable
   // {
   //   id: 5,
   //   date: 1700973637000,
-  //   title: 'Microsoft Event Planning (post 4)',
+  //   title: 'Microsoft Event Planning (post ',
   //   image: 'https://picsum.photos/523/430',
   //   description:
   //     '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
@@ -1529,7 +1586,7 @@ effectively, resulting in a more successful, <a href="#">engaging, and enjoyable
   // {
   //   id: 6,
   //   date: 1700973637000,
-  //   title: 'Microsoft Event Planning (post 4)',
+  //   title: 'Microsoft Event Planning (post ',
   //   image: 'https://picsum.photos/523/430',
   //   description:
   //     '4Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.',
