@@ -300,3 +300,6 @@ display: none;
 .imageEntryAnimation {
   animation: slideAndFadeIn 1s ease forwards; /* Adjust time as needed */
 }
+.blogButton:hover {
+  background-color: rgb(45,198,245) !important;
+}

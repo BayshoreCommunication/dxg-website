@@ -47,7 +47,7 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
               <Button
                 key={index}
                 variant={item === 'Read More' ? 'destructive' : 'outline'}
-                className={`m-0 rounded-full bg-transparent ${item === 'Read More' ? 'border-white border-2 rounded-l-full rounded-r-full box-border' : ''}`}
+                className={`m-0 rounded-full bg-transparent ${item === 'Read More' ? 'border-white border-2 rounded-l-full rounded-r-full box-border' : ''} blogButton`}
               >
                 {item}
               </Button>
