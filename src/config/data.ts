@@ -141,7 +141,7 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     id: 2,
     image: Service3,
     captionPosition: 'top',
-    caption: 'Virtual & Hybrid Events',
+    caption: 'VIRTUAL & HYBRID EVENTS',
     url: '/services/virtual-hybrid-events',
   },
   {
@@ -162,7 +162,7 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     id: 5,
     captionPosition: 'bottom',
     image: Service6,
-    caption: 'VIDEO EDITING & PRODUCTION',
+    caption: 'PHOTOGRAPHY & VIDEOGRAPHY',
     url: '/services/video-production-photography',
   },
 ];
