@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
           <h1 className='py-2 text-center text-3xl font-bold'>
             Privacy Policy
           </h1>
-          <p className='pt-5'>Last updated: December 03, 2023</p>
+          <p className='pt-5'>Last updated: January 28, 2024</p>
 
           <p className='pt-5'>
             This Privacy Policy describes Our policies and procedures on the
@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
             </li>
             <li>
               <h1>Privacy Policy</h1>
-              <p className='pt-5'>Last updated: December 03, 2023</p>
+              <p className='pt-5'>Last updated: January 28, 2024</p>
               <p className='pt-5'>
                 This Privacy Policy describes Our policies and procedures on the
                 collection, use and disclosure of Your information when You use
