@@ -154,7 +154,7 @@ export default function Footer() {
                 <div className='ml flex flex-col'>
                   <div className='text-right md:w-1/2 md:text-left'>
                     <h2 className='mb-2 text-2xl font-bold text-brand'>
-                      Service
+                      Services
                     </h2>
                     {SITECONFIG.footerNav.services.map((item, index) => {
                       return (
