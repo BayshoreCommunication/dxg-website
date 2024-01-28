@@ -3,7 +3,7 @@ import Testimonial from '@/components/Testimonial';
 import WhyDxg from '@/components/home/WhyDxg';
 import { EventExperienceDesignBannerSection } from '@/components/Sections/EventExperienceDesignBannerSection';
 
-export default function AudioVisualTechnology() {
+export default function EventExperienceDesign() {
   return (
     <div className='bg-black'>
       <EventExperienceDesignBannerSection />
@@ -17,19 +17,7 @@ export default function AudioVisualTechnology() {
               textAlign: 'justify',
             }}
           >
-            At DXG, we specialize in turning your vision into a seamless
-            audiovisual spectacle. Our production management service is the
-            cornerstone of your event&apos;s success. We handle every aspect of
-            production, from initial concept to final execution, with meticulous
-            attention to detail. Our team of experienced professionals is
-            equipped with the latest technology and industry insights to manage
-            logistics, coordinate with vendors, and oversee technical
-            requirements. We understand the complexities of audiovisual
-            production and are dedicated to ensuring that everything runs
-            smoothly. We aim to bring your event to life while providing you
-            complete peace of mind. Trust us to handle the intricacies of
-            production management so you can focus on what truly matters - your
-            message and your audience.
+            At DXG, we believe that the heart of every memorable event lies in its experience design. Our Event Experience Design service is dedicated to creating immersive and impactful environments that resonate with your audience. We blend creativity with strategic planning to craft experiences that are not only visually stunning but also emotionally engaging and in line with your brand&#39;s message. Our team of experienced designers and planners work closely with you to understand your vision and audience, ensuring every aspect of the event, from the decor to the lighting and sound, is meticulously tailored to create the desired atmosphere and mood. Whether it&#39;s a corporate gala, a product launch, or a thematic exhibition, we bring your story to life in a way that captivates, inspires, and leaves a lasting impression on every attendee.
           </p>
         </div>
         <div className='w-full md:w-1/2 p-4'>
