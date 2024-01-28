@@ -49,9 +49,9 @@ const SupportCardMobile = ({
           <div className=''>
             <Icons.monitor className='h-12 w-12 text-white' />
           </div>
-          <h1 className=' py-2 text-3xl font-bold uppercase text-white'>
+          <h2 className=' py-2 text-3xl font-bold uppercase text-white'>
             {title}
-          </h1>
+          </h2>
           <p className=' text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
             {description}
           </p>

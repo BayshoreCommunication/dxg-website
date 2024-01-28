@@ -4,8 +4,8 @@ export const VideoProductionPhotographySection = () => {
   return (
     <BreadCrumbWithoutButton
       titleProps={{
-        coloredText: 'Video Production',
-        postText: '& Photography',
+        coloredText: 'Photography',
+        postText: '& Videography',
         texAlign: 'text-center',
         variant: 'caps',
       }}

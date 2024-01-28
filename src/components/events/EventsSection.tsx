@@ -10,6 +10,7 @@ interface Product {
 
 const EventsSection: React.FC = () => {
   const [formStep, setFormStep] = useState<boolean>(true);
+
   const [orderCustomrDlts, setOrderCustomerItems] = useState<any>({
     firstName: '',
     lastName: '',
@@ -44,10 +45,6 @@ const EventsSection: React.FC = () => {
   const totalPriced: number = productPriceList
     .filter((product: Product) => orderCustomrDlts[product.product])
     .reduce((acc: number, product: Product) => acc + product.price, 0);
-
-  console.log('====================================');
-  console.log('chekc data', orderCustomrDlts);
-  console.log('====================================');
 
   return (
     <div>

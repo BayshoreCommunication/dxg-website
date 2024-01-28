@@ -2,7 +2,7 @@ import React from 'react';
 import MaxWidthWrapper from './MaxWidthWrapper';
 import TestimonialSlider from './TestimonialSlider';
 import { Icons } from './Icons';
-import { H1, P, Paragraph, Title } from './Typography';
+import { Paragraph, Title } from './Typography';
 import TestimonialSliderTwo from './TestimonialSliderTwo';
 
 const infos = {

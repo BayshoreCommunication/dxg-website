@@ -37,17 +37,17 @@ export const BannerSection = () => {
                 <div className='h-14 w-14'>
                   {<Icons.arrowSVG className='inline' />}
                 </div>
-                <h1 className='outline-with-shaddow text-4xl font-bold uppercase md:text-6xl '>
+                <div className='outline-with-shaddow text-4xl font-bold uppercase md:text-6xl '>
                   {' '}
                   mind to{' '}
-                </h1>
-                <h1 className='text-4xl font-bold uppercase text-white md:text-6xl'>
+                </div>
+                <div className='text-4xl font-bold uppercase text-white md:text-6xl'>
                   your
-                </h1>
+                </div>
               </div>
-              <h1 className='text-center text-4xl font-bold uppercase text-white md:text-6xl'>
+              <div className='text-center text-4xl font-bold uppercase text-white md:text-6xl'>
                 event experience
-              </h1>
+              </div>
             </div>
             <div>
               <MotionP
@@ -58,7 +58,7 @@ export const BannerSection = () => {
                 variants={fadeIn('up', 'tween', 0.2, 1)}
                 className=' text-md mt-5 text-center font-light text-white'
               >{`At DXG, the success of any event lies in meticulous attention to every detail. Our team of seasoned professionals brings expertise in every phase of event production, from the initial planning stages to the post-event action review. Our planning process is thorough and collaborative, involving state-of-the-art technology and innovative solutions to meet and exceed your expectations. With us, you're not just hosting an event but crafting an experience.
-              `}</MotionP>
+`}</MotionP>
             </div>
             <div className='mt-5 flex w-full justify-around'>
               <div className='flex flex-col items-center'>

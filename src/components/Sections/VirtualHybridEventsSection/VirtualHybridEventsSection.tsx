@@ -4,8 +4,8 @@ export const VirtualHybridEventsSection = () => {
   return (
     <BreadCrumbWithoutButton
       titleProps={{
-        coloredText: 'Virtual Hybrid',
-        postText: 'Events',
+        coloredText: 'Event Platform',
+        postText: 'Services',
         texAlign: 'text-center',
         variant: 'caps',
       }}

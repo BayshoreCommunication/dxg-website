@@ -1,4 +1,4 @@
-import { MotionDiv, MotionH1, MotionP } from '@/components/Motion';
+import { MotionDiv, MotionH1, MotionH2, MotionP } from '@/components/Motion';
 import meeting from '../../../../public/why-dxg/service.png';
 import presentation from '../../../../public/why-dxg/process.png';
 import experience from '../../../../public/why-dxg/experience.png';
@@ -35,13 +35,13 @@ export const WhyChooseUsSection = () => {
                 variants={fadeIn('down', 'tween', 0.2, 1)}
                 className='absolute right-4 top-[-16px] flex h-16 w-12 flex-col items-center justify-center bg-brand md:right-10 md:top-[-24px] md:h-14 md:w-12'
               >
-                <h1 className='md:text-md text-center font-bold leading-none text-white'>
+                <h2 className='md:text-md text-center font-bold leading-none text-white'>
                   20+
-                </h1>
+                </h2>
 
-                <h1 className='md:text-md text-center font-light leading-none text-white'>
+                <h2 className='md:text-md text-center font-light leading-none text-white'>
                   Years
-                </h1>
+                </h2>
               </MotionDiv>
               <MotionDiv variants={zoomIn(0.3, 0.5)}>
                 <Image
@@ -71,12 +71,12 @@ export const WhyChooseUsSection = () => {
             >
               Why Choose Us
             </MotionP>
-            <MotionH1
+            <MotionH2
               variants={fadeIn('up', 'tween', 0.3, 0.5)}
               className='text-2xl font-bold text-white'
             >
               Take Your Business to the Next Level
-            </MotionH1>
+            </MotionH2>
             <MotionP
               variants={fadeIn('up', 'tween', 0.4, 0.5)}
               className='text-white'

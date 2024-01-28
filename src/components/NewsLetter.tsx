@@ -8,11 +8,14 @@ export default function NewsLetter() {
   const ref = useRef<HTMLFormElement>(null);
   return (
     <div className='container py-16'>
-      <div className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10' style={{padding:'1rem'}}>
+      <div
+        className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10'
+        style={{ padding: '1rem' }}
+      >
         <div className='col-span-3'>
-          <h1 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>
+          <h2 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>
             Keep up with industry news and best practices
-          </h1>
+          </h2>
           <h2 className='line my-1 text-center text-xl capitalize text-white md:text-left md:text-2xl'>
             Subscribe To Our NewsLetter
           </h2>
@@ -34,7 +37,9 @@ export default function NewsLetter() {
           >
             <Input className='mb-4' placeholder='Name' />
             <Input className='mb-4' placeholder='Email' />
-            <Button className='subscribe-button w-full bg-slate-800'>Subscribe</Button>
+            <Button className='subscribe-button w-full bg-slate-800'>
+              Subscribe
+            </Button>
           </form>
         </div>
       </div>

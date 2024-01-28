@@ -36,9 +36,9 @@ const ExploreCard = ({
     onMouseLeave={() => handleCardHover(null)}
   >
     {active !== id ? (
-      <h1 className='absolute z-0 text-3xl font-extrabold  uppercase text-white lg:bottom-16 lg:origin-[0,0] lg:rotate-[-90deg]'>
+      <h2 className='absolute z-0 text-3xl font-extrabold  uppercase text-white lg:bottom-16 lg:origin-[0,0] lg:rotate-[-90deg]'>
         {title}
-      </h1>
+      </h2>
     ) : (
       <div className=' flex h-full w-full flex-col items-center justify-center bg-[rgba(0,0,0,0.5)] p-8'>
         <MotionDiv
@@ -50,9 +50,9 @@ const ExploreCard = ({
             <div className=' '>
               <Icons.monitor className='h-12 w-12 text-white' />
             </div>
-            <h1 className=' py-4 text-xl font-bold uppercase text-white'>
+            <h2 className=' py-4 text-xl font-bold uppercase text-white'>
               {title}
-            </h1>
+            </h2>
             <div className='  mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
               {description}
             </div>

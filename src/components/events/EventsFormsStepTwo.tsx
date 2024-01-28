@@ -1,4 +1,12 @@
+'use client';
 import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import {
+  handleEventFormSubmit,
+  handleProposalFormSubmit,
+} from '@/actions/actions';
+import { useRouter } from 'next/navigation';
+import { Button } from '../ui/button';
 
 interface orderCustomrDlts {
   firstName: string;
@@ -18,19 +26,213 @@ interface orderCustomrDlts {
   computerMacbook: string | number | readonly string[];
   computerIpad: string | number | readonly string[];
 }
+
 interface MyComponentProps {
   setFormStep: React.Dispatch<React.SetStateAction<boolean>>;
   orderCustomrDlts: orderCustomrDlts;
   totalPriced: number;
 }
 
-export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
-  const { setFormStep, orderCustomrDlts, totalPriced } = props;
+const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '';
+const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '';
+const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
 
+export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
+  const router = useRouter();
+  const { setFormStep, orderCustomrDlts, totalPriced } = props;
+  const [isLoading, setIsLoading] = useState(false);
+  const audio_equipments = [];
+  const video_displays = [];
+  const computers = [];
+  if (orderCustomrDlts.soundSystem) {
+    audio_equipments.push({
+      product: `Sound System - Speaker, Stand, Mixer, Wireless Microphone and
+                  Music Player Connection`,
+      price: 450.0,
+    });
+  }
+  if (orderCustomrDlts.pcAudio) {
+    audio_equipments.push({
+      product: `PC Audio Sound System Only`,
+      price: 200.0,
+    });
+  }
+  if (orderCustomrDlts.display24) {
+    video_displays.push({
+      product: `24” LCD Flat Panel Display (table top only)`,
+      price: 200.0,
+    });
+  }
+  if (orderCustomrDlts.display42) {
+    video_displays.push({
+      product: `42” LCD Display w/Stand`,
+      price: 450.0,
+    });
+  }
+  if (orderCustomrDlts.display55) {
+    video_displays.push({
+      product: `55” LCD Display w/Stand`,
+      price: 650.0,
+    });
+  }
+  if (orderCustomrDlts.display70) {
+    video_displays.push({
+      product: `70” LCD Display w/Stand`,
+      price: 850.0,
+    });
+  }
+  if (orderCustomrDlts.computerWindows) {
+    computers.push({
+      product: `Windows Laptop`,
+      price: 250.0,
+    });
+  }
+  if (orderCustomrDlts.computerMacbook) {
+    computers.push({
+      product: `MacBook`,
+      price: 350.0,
+    });
+  }
+  if (orderCustomrDlts.computerIpad) {
+    computers.push({
+      product: `Ipad`,
+      price: 225.0,
+    });
+  }
+
+  let audio_str = '';
+  if (audio_equipments.length > 0) {
+    audio_str += `<table style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:15px 0 15px 0;height:24px" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <p style="font-size:14px;line-height:24px;margin:0;background:#fafafa;padding-left:10px;font-weight:500">Audio Equipments</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>`;
+    audio_equipments.forEach((item) => {
+      audio_str += `<table align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+          <td style="padding-left:22px">
+            <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">${item.product}</p>
+          </td>
+          <td align="right" style="display:table-cell;padding:0px 20px 0px 0px;width:100px;vertical-align:top">
+            <p style="font-size:12px;line-height:24px;margin:0;font-weight:600">$${item.price}</p>
+          </td>
+          </td>
+        </tr>
+      </tbody>
+    </table>`;
+    });
+  }
+  let video_str = '';
+  if (video_displays.length > 0) {
+    video_str += `<table style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:15px 0 15px 0;height:24px" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <p style="font-size:14px;line-height:24px;margin:0;background:#fafafa;padding-left:10px;font-weight:500">Video Displays</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>`;
+    video_displays.forEach((item) => {
+      video_str += `<table align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+          <td style="padding-left:22px">
+            <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">${item.product}</p>
+          </td>
+          <td align="right" style="display:table-cell;padding:0px 20px 0px 0px;width:100px;vertical-align:top">
+            <p style="font-size:12px;line-height:24px;margin:0;font-weight:600">$${item.price}</p>
+          </td>
+          </td>
+        </tr>
+      </tbody>
+    </table>`;
+    });
+  }
+  let computer_str = '';
+  if (computers.length > 0) {
+    computer_str += `<table style="border-collapse:collapse;border-spacing:0px;color:rgb(51,51,51);background-color:rgb(250,250,250);border-radius:3px;font-size:12px;margin:15px 0 15px 0;height:24px" align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+            <p style="font-size:14px;line-height:24px;margin:0;background:#fafafa;padding-left:10px;font-weight:500">Computers</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>`;
+    computers.forEach((item) => {
+      computer_str += `<table align="center" border="0" cellPadding="0" cellSpacing="0" role="presentation" width="100%">
+      <tbody>
+        <tr>
+          <td>
+          <td style="padding-left:22px">
+            <p style="font-size:12px;line-height:1.4;margin:0;font-weight:600;padding:0">${item.product}</p>
+          </td>
+          <td align="right" style="display:table-cell;padding:0px 20px 0px 0px;width:100px;vertical-align:top">
+            <p style="font-size:12px;line-height:24px;margin:0;font-weight:600">$${item.price}</p>
+          </td>
+          </td>
+        </tr>
+      </tbody>
+    </table>`;
+    });
+  }
+  var templateParams = {
+    client_name: `${orderCustomrDlts.firstName} ${orderCustomrDlts.lastName}`,
+    from_name: `${orderCustomrDlts.firstName} ${orderCustomrDlts.lastName}`,
+    client_phone: orderCustomrDlts.phone,
+    client_id: orderCustomrDlts.email,
+    company: orderCustomrDlts.compnayName,
+    total: totalPriced,
+    invoice_date: new Date().toLocaleDateString(),
+    audio_equipments: audio_str,
+    video_displays: video_str,
+    computers: computer_str,
+  };
+
+  const sendEmail = async () => {
+    setIsLoading(true);
+    const formData = new FormData();
+    formData.append('First Name', orderCustomrDlts.firstName);
+    formData.append('Last Name', orderCustomrDlts.lastName);
+    formData.append('Company', orderCustomrDlts.compnayName);
+    formData.append('Email', orderCustomrDlts.email);
+    formData.append('Phone', orderCustomrDlts.phone);
+    emailjs
+      .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
+      .then(
+        function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        function (error) {
+          console.log('FAILED...', error);
+        }
+      );
+    const result = await handleProposalFormSubmit(formData);
+    if (result) {
+      setTimeout(() => {
+        // Close the modal
+        router.push('/thank-you');
+      }, 1000);
+    }
+  };
   return (
     <div className=' bg-black'>
       <div className='container flex justify-center'>
-        <form className='mb-16 mt-[500px] sm:mt-[250px]'>
+        <form
+          className='mb-16 mt-[500px] sm:mt-[250px]'
+          onSubmit={(e) => {
+            e.preventDefault();
+            sendEmail();
+          }}
+        >
           <div className='space-y-4'>
             <div className='mb-6 border-b border-gray-900/10 pb-5'>
               <h2 className='text-base font-semibold leading-7 text-white'>
@@ -100,9 +302,9 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
               {orderCustomrDlts.soundSystem ? (
                 <p className='mt-1 text-sm font-thin leading-6 text-white'>
                   Sound System - Speaker, Stand, Mixer, Wireless Microphone and
-                  Music Player Connection - $ 450.00 PC Audio Sound System
+                  Music Player Connection
                   <br />
-                  Only - $ 200.00
+                  Only - $ 450.00
                 </p>
               ) : (
                 ''
@@ -207,6 +409,8 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                         id='comments'
                         name='comments'
                         type='checkbox'
+                        checked
+                        disabled
                         className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                       />
                     </div>
@@ -226,6 +430,8 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                         id='candidates'
                         name='candidates'
                         type='checkbox'
+                        checked
+                        disabled
                         className='h-4 w-4 rounded border-gray-300 text-[#2EC6F5] focus:ring-[#2EC6F5]'
                       />
                     </div>
@@ -245,12 +451,35 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
           </div>
 
           <div className='mt-6 flex items-center justify-start gap-5'>
-            <button
+            <Button
+              variant='default'
               type='submit'
-              className='rounded-sm bg-[#066AAB] px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#4490c2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#066AAB]'
+              className=' border-brand bg-[#066AAB] font-bold text-white hover:border hover:bg-[#4490c2]'
             >
-              Submit
-            </button>
+              {isLoading && (
+                <svg
+                  className='-ml-1 mr-3 h-5 w-5 animate-spin text-white'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                >
+                  <circle
+                    className='opacity-25'
+                    cx='12'
+                    cy='12'
+                    r='10'
+                    stroke='currentColor'
+                    stroke-width='4'
+                  ></circle>
+                  <path
+                    className='opacity-75'
+                    fill='currentColor'
+                    d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+                  ></path>
+                </svg>
+              )}
+              SUBMIT
+            </Button>
 
             <button
               type='submit'
