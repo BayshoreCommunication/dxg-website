@@ -4,7 +4,7 @@ export const GraphicsAnimationSection = () => {
   return (
     <BreadCrumbWithoutButton
       titleProps={{
-        coloredText: 'Graphics',
+        coloredText: 'Graphics &',
         postText: 'Animation',
         texAlign: 'text-center',
         variant: 'caps',

@@ -141,7 +141,7 @@ export const SERVICES_PAGE_DATA: ServicesData[] = [
     id: 2,
     image: Service3,
     captionPosition: 'top',
-    caption: 'VIRTUAL & HYBRID EVENTS',
+    caption: 'EVENT PLATFORM SERVICES',
     url: '/services/virtual-hybrid-events',
   },
   {

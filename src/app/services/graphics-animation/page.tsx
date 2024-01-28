@@ -17,19 +17,7 @@ export default function GraphicsAnimation() {
               textAlign: 'justify',
             }}
           >
-            At DXG, we specialize in turning your vision into a seamless
-            audiovisual spectacle. Our production management service is the
-            cornerstone of your event&apos;s success. We handle every aspect of
-            production, from initial concept to final execution, with meticulous
-            attention to detail. Our team of experienced professionals is
-            equipped with the latest technology and industry insights to manage
-            logistics, coordinate with vendors, and oversee technical
-            requirements. We understand the complexities of audiovisual
-            production and are dedicated to ensuring that everything runs
-            smoothly. We aim to bring your event to life while providing you
-            complete peace of mind. Trust us to handle the intricacies of
-            production management so you can focus on what truly matters - your
-            message and your audience.
+            In the dynamic world of events, captivating visuals can make a profound impact. At DXG, our Graphics and Animation services are designed to bring your event&#39;s narrative to life. Our skilled graphic designers and animators specialize in creating custom, high-quality visual content that resonates with your audience and leaves a lasting impression. Whether sophisticated 3D animations, engaging motion graphics, impactful stage backdrops, or stunning visual effects, our creations are tailored to complement your event&#39;s theme and amplify its message. We understand that each element of graphic design plays a crucial role in storytelling, and we&#39;re committed to ensuring that your visuals look spectacular and communicate your message effectively.
           </p>
         </div>
         <div className='w-full md:w-1/2 p-4'>

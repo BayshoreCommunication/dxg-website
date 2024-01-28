@@ -45,8 +45,20 @@ export const SITECONFIG = {
         slug: '/services/audiovisual-technology',
       },
       {
+        title: 'Event Platfom Services',
+        slug: '/services/virtual-hybrid-events',
+      },
+      {
         title: 'Event Experience Design',
         slug: '/services/event-experience-design',
+      },
+      {
+        title: ' Graphics & Animation',
+        slug: '/services/graphics-animation',
+      },
+      {
+        title: 'Photography & Videography',
+        slug: '/services/video-production-photography',
       },
     ],
     whyDXG: [

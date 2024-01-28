@@ -40,6 +40,13 @@ type Post = {
   tag: string[];
 } | null;
 
+// Define your CSS here
+const css = `
+  html {
+    background-color: black;
+  }
+`;
+
 export default function PostPage() {
   const router = useRouter();
   const { slug } = router.query;
@@ -62,6 +69,7 @@ export default function PostPage() {
   return (
     <>
       <Header /> {/* Include the Header at the top */}
+      <style>{css}</style>
       <div className="bg-black">
         <MaxWidthWrapper>
           <h1 className="pt-4 text-white text-2xl font-bold">{post.title}</h1>

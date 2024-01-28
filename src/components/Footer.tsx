@@ -152,9 +152,9 @@ export default function Footer() {
                 </div>
                 {/* Second Column */}
                 <div className='ml flex flex-col'>
-                  <div className='text-right md:w-1/2 md:text-left'>
+                  <div className='md:w-2/2 text-right md:text-left'>
                     <h2 className='mb-2 text-2xl font-bold text-brand'>
-                      Service
+                      Services
                     </h2>
                     {SITECONFIG.footerNav.services.map((item, index) => {
                       return (
@@ -166,7 +166,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='mb-4 whitespace-pre-line pr-0   text-right text-white hover:text-brand md:pl-0 md:text-left'
+                              className='mb-1 whitespace-pre-line pr-0   text-right text-white hover:text-brand md:pl-0 md:text-left'
                             >
                               {item.title}
                             </Button>
@@ -241,7 +241,7 @@ export default function Footer() {
         {/* Second Row */}
         <div className='flex h-[80px] flex-col justify-center'>
           <div className='text-center text-xs text-white'>
-            ©2023 Digital Xperience Group (DXG) ®All Rights Reserved. <br />
+            ©2024 Digital Xperience Group (DXG) ®All Rights Reserved. <br />
             Design & Developed by{' '}
             <Link
               className='text-brand'
