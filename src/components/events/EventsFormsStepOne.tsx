@@ -551,7 +551,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
         </div>
       </div>
       <div className='bg-[#111617] py-24'>
-        <div className='container opacity-10'>
+        <div className='container opacity-20'>
           <ClientMap />
         </div>
         <div className='container mt-8 grid grid-cols-1 gap-2 sm:grid-cols-4 '>
@@ -572,7 +572,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
             </svg>
 
             <p className='pl-2 text-[16px] font-thin text-white'>
-              conference2022@design.com
+              Info@dxg.agency
             </p>
           </div>
           <div className='flex items-center justify-center p-5'>
@@ -591,7 +591,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
               />
             </svg>
             <p className='pl-2 text-[16px] font-thin text-white'>
-              conference2022@design.com
+              855.450.2823
             </p>
           </div>
 
@@ -603,10 +603,8 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
               LOCATION
             </label>
             <h1 className='text-3xl font-semibold leading-normal text-white'>
-              Charlotte Convention Center
-              <br /> 501 South College Street Charlotte,
-              <br />
-              NC 28202
+              Tampa Convention Center <br /> 333 S Franklin St, Tampa,
+              <br /> FL 33602
             </h1>
           </div>
         </div>

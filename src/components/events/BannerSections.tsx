@@ -26,14 +26,14 @@ export const BannerSection = () => {
               SEPC
             </h1>
             {/* <div className='w-10 bg-[#D8D8D8] p-5'>
-              <p className='text-lg text-white'>
-                20
-                <br />
-                24
-              </p>
-            </div> */}
+            <p className='text-lg text-white'>
+              20
+              <br />
+              24
+            </p>
+          </div> */}
             <h1 className='flex-none text-[45px] font-bold uppercase text-white sm:text-[120px]'>
-            SOUTHERN EXPOSURE
+              SOUTHERN EXPOSURE
             </h1>
             <p className='text-[16px] font-normal text-white sm:text-lg'>
               Vendor Booth - Audio Visual Order Page
