@@ -166,7 +166,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='mb-1 whitespace-pre-line pr-0   text-right text-white hover:text-brand md:pl-0 md:text-left'
+                              className='mb-4 whitespace-pre-line pr-0   text-right text-white hover:text-brand md:pl-0 md:text-left'
                             >
                               {item.title}
                             </Button>
