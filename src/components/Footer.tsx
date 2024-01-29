@@ -195,7 +195,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='pl-0 text-white hover:text-brand'
+                              className='mb-4 pl-0 text-white hover:text-brand'
                             >
                               {item.title}
                             </Button>
@@ -221,7 +221,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='pr-0 text-white hover:text-brand md:pl-0'
+                              className='mb-4 pr-0 text-white hover:text-brand md:pl-0'
                             >
                               {item.title}
                             </Button>
