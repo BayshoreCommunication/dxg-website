@@ -98,7 +98,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 5,
-    heading: 'Graphics &;Animation',
+    heading: 'Graphics & Animation',
     title: 'Graphics & Animation',
     image: '/service/dxg-agency-graphics-and-animation.png',
     excerpt: `DXG brings visuals to life with captivating graphics and animations. Our creative team combines artistic flair with technical expertise to deliver stunning visual elements that enhance presentations, engage audiences, and contribute to the overall aesthetic appeal of your event.`,
@@ -106,7 +106,7 @@ export const SERVICE_DATA = [
   },
   {
     id: 6,
-    heading: 'Video Production &;Photography',
+    heading: 'Photography & Videography',
     title: 'Video Production Photography',
     image: '/service/dxg-agency-video-production-and-photography.png',
     excerpt: `DXG's Photography and Videography services excel in capturing the unique story of your event. Our professionals, with a keen eye for detail, document the emotions and defining moments, creating stunning visuals and high-definition videos that endure as timeless memories.`,
@@ -411,8 +411,7 @@ export const RECENT_BLOG_POST = [
     date: 1700973637000,
     title: 'Steps For A Great Event Run Of Show: No More Boring Events!',
     image: 'https://drive.google.com/uc?id=1WTKYYQAxK7I3qG-47kAB7mOfYMnCaLuD',
-    description:
-      `<p style="font-size: 16px;">
+    description: `<p style="font-size: 16px;">
       Ever been to an event where the speaker went on forever, the coffee ran out
       halfway through, and the "surprise entertainment" turned out to be
       interpretive dance? Yeah, not exactly the stuff of event planning dreams.
@@ -1086,15 +1085,16 @@ export const RECENT_BLOG_POST = [
       after all.
 </p><br>
 `,
-      tag: ['Read More'],
-    },
-    {
-      id: 2,
-      date: 1700973637000,
-      title: 'What Is The Benefit To Having A Speaker Management System For An Event',
-      image: 'https://lh3.googleusercontent.com/fife/AGXqzDmFVSALlv6O6C0Uj1Ty23Hrypoj5JtHBEZnt6OfOL251j-JMgCztYmN2UCJgIXfG1PFv3ihLU3JLcqfD7E-CXjtBERpRzIMpo6kk-DbypwbZFGJBwAydJ6ewDMm2E258CfdKFmDB46tSQGv7BkaagiCePBvYPXsafI7vGCh2h3SrsItmCx5M4_3exO_-s06PBmTnUdQdq3P4SHF7xPDHJnYHmggfkQEOr3ULAAgl_dRMM_fRv8wPOsZg7KtFfgX0u_Mh0I3ZcFWvdUKTg6BOlHbt8e1HoB3iZsT40s9pVfM3o4C2ZpFgA2ll0e5dlQQ_Tkm0nrRCbiUrz2Pn0Mrfjls03_0TA4aZlvg7fYaJLoV0JWdzSrow8hM-MTH46dMp7PEp4Rd0Kcg7iq-jLTzBr7yRWVG5gJdSYac2JXguo_9InEOd0vDQf-3sGbtOyAc5V5DI3RotJl5sisL4mMjmcmX1FCSnQwyzU5QjmHypJVsTj-8JnchRkVEd_ZhHGhU_zW9p3Hc5UNcCyLIaIV1Nq2RaClFodO9nakUNJ9GYTDnS8fLArXUkAZbrdrvHgp7GAdBQeoQgUBp0v1CnMnH3uswFt-e8pbIiLAAPAkKGYUfqeGQCu2ztFF9iE66Q8s36hD2kCxO-1Gs_zt_m3cVvEUfzd0Bu8qroyqITdwtCgbR5--oWrQgpk0H7DNiS2X0LMm6MQFNmsGmk2TDBv-rCxQUgNUbk6TBjolzVjB2Q8OFXzymfQp68bMa7G-0V1k0nWn-izzKFIrd0ZSxnuUdwd_M00dI-n2MzS5qNciQbQXUJiWlmByRPWWp5rid35O17Epzh-dY37L9V1Efp9FWgIsd_AF4PVcFwEfmd8InGoyMQX578gKkAjOUYOVoCCGNTFEz3diSMBnZr1XE-bc5JGMi-gWT9UHEAWj4EgscEri5t0Kb63myILOCa-_7UJVmMvA3ntI6JQ0SysUSpBbyYWYf9g8glQBssLfkTteTUOcGz7uwsT6_90SGe-9wvsZn2A5xICeLY0dzUnVLigHDvJ6vMZ7KU9_R4m6lR-A94BYTFLd7YE51OcjFt9vvIenAIDbgxt6ONeX8Px3ZIPFUf4i2VwbotHQaQGbNQOYxi25QWtCnyCXnXipYYepJiCjI16oWkOHmGOAfbnrmgck1YVTSJEnE20zHx1rzOUKxXx8jDWtnnDanJlMFTQyAvZFb3acEqYqX53bwFMXuRiBZWiwPAioyzHR8-hmCsSx-mkCVkRqHUykCk0_SrwzCp3bQbUkenRENjXnvHz-AGfToUBGDC8FtWX2ZazdsDzG6PJ9KRp39T2cDSt_t0DTJHpyfdfAItgoRk1gfB5n-KsIagObdt-gzTS0o_3Ca8shzPizIMXBpUz1hUHqsTdb6mpWWeNZxNCJAfz2n7GiPVhKrv4oY1RGz8Yc-sMCysrTFaJqsZpUnZypRj_BN55fM3yYRyDIKmetWtF2jVYqqMjIXCMbV8tTy0j5FTROg0qXL7SRqC77u0cuTH5FXCHhQ7Rzw=w1872-h966',
-      description:
-        `<p style="font-size: 16px;">
+    tag: ['Read More'],
+  },
+  {
+    id: 2,
+    date: 1700973637000,
+    title:
+      'What Is The Benefit To Having A Speaker Management System For An Event',
+    image:
+      'https://lh3.googleusercontent.com/fife/AGXqzDmFVSALlv6O6C0Uj1Ty23Hrypoj5JtHBEZnt6OfOL251j-JMgCztYmN2UCJgIXfG1PFv3ihLU3JLcqfD7E-CXjtBERpRzIMpo6kk-DbypwbZFGJBwAydJ6ewDMm2E258CfdKFmDB46tSQGv7BkaagiCePBvYPXsafI7vGCh2h3SrsItmCx5M4_3exO_-s06PBmTnUdQdq3P4SHF7xPDHJnYHmggfkQEOr3ULAAgl_dRMM_fRv8wPOsZg7KtFfgX0u_Mh0I3ZcFWvdUKTg6BOlHbt8e1HoB3iZsT40s9pVfM3o4C2ZpFgA2ll0e5dlQQ_Tkm0nrRCbiUrz2Pn0Mrfjls03_0TA4aZlvg7fYaJLoV0JWdzSrow8hM-MTH46dMp7PEp4Rd0Kcg7iq-jLTzBr7yRWVG5gJdSYac2JXguo_9InEOd0vDQf-3sGbtOyAc5V5DI3RotJl5sisL4mMjmcmX1FCSnQwyzU5QjmHypJVsTj-8JnchRkVEd_ZhHGhU_zW9p3Hc5UNcCyLIaIV1Nq2RaClFodO9nakUNJ9GYTDnS8fLArXUkAZbrdrvHgp7GAdBQeoQgUBp0v1CnMnH3uswFt-e8pbIiLAAPAkKGYUfqeGQCu2ztFF9iE66Q8s36hD2kCxO-1Gs_zt_m3cVvEUfzd0Bu8qroyqITdwtCgbR5--oWrQgpk0H7DNiS2X0LMm6MQFNmsGmk2TDBv-rCxQUgNUbk6TBjolzVjB2Q8OFXzymfQp68bMa7G-0V1k0nWn-izzKFIrd0ZSxnuUdwd_M00dI-n2MzS5qNciQbQXUJiWlmByRPWWp5rid35O17Epzh-dY37L9V1Efp9FWgIsd_AF4PVcFwEfmd8InGoyMQX578gKkAjOUYOVoCCGNTFEz3diSMBnZr1XE-bc5JGMi-gWT9UHEAWj4EgscEri5t0Kb63myILOCa-_7UJVmMvA3ntI6JQ0SysUSpBbyYWYf9g8glQBssLfkTteTUOcGz7uwsT6_90SGe-9wvsZn2A5xICeLY0dzUnVLigHDvJ6vMZ7KU9_R4m6lR-A94BYTFLd7YE51OcjFt9vvIenAIDbgxt6ONeX8Px3ZIPFUf4i2VwbotHQaQGbNQOYxi25QWtCnyCXnXipYYepJiCjI16oWkOHmGOAfbnrmgck1YVTSJEnE20zHx1rzOUKxXx8jDWtnnDanJlMFTQyAvZFb3acEqYqX53bwFMXuRiBZWiwPAioyzHR8-hmCsSx-mkCVkRqHUykCk0_SrwzCp3bQbUkenRENjXnvHz-AGfToUBGDC8FtWX2ZazdsDzG6PJ9KRp39T2cDSt_t0DTJHpyfdfAItgoRk1gfB5n-KsIagObdt-gzTS0o_3Ca8shzPizIMXBpUz1hUHqsTdb6mpWWeNZxNCJAfz2n7GiPVhKrv4oY1RGz8Yc-sMCysrTFaJqsZpUnZypRj_BN55fM3yYRyDIKmetWtF2jVYqqMjIXCMbV8tTy0j5FTROg0qXL7SRqC77u0cuTH5FXCHhQ7Rzw=w1872-h966',
+    description: `<p style="font-size: 16px;">
         Are you tired of juggling multiple spreadsheets, emails, and documents to
         manage your speakers? And now you're wishing there was a simpler and
         smarter way to handle the speaker management process.
@@ -1349,16 +1349,16 @@ effectively, resulting in a more successful, <a href="#">engaging, and enjoyable
 </p><br>
 
       `,
-        tag: ['Read More'],
-      },
-      
-      {
-        id: 3,
-        date: 1700973637000,
-        title: 'Challenges Event Planners Face with In-House AV Companies',
-        image: 'https://drive.google.com/uc?export=download&id=1_62TO8FHoOFU7fPzDeG-QJrrrKwXVcjn',
-        description:
-          `
+    tag: ['Read More'],
+  },
+
+  {
+    id: 3,
+    date: 1700973637000,
+    title: 'Challenges Event Planners Face with In-House AV Companies',
+    image:
+      'https://drive.google.com/uc?export=download&id=1_62TO8FHoOFU7fPzDeG-QJrrrKwXVcjn',
+    description: `
           
 
           <p style="font-size: 16px;">If you're an event planner chances are you've faced the wrath of an in-house AV company at some point in your career. They lure you in with promises of convenience and familiarity with the venue but often leave you feeling trapped in a tech-challenged purgatory.</p>
@@ -1554,8 +1554,8 @@ effectively, resulting in a more successful, <a href="#">engaging, and enjoyable
 
           
 `,
-          tag: ['Read More'],
-        },
+    tag: ['Read More'],
+  },
   // {
   //   id: 3,
   //   date: 1700973637000,
@@ -1602,8 +1602,8 @@ export const SPECIAL_OFFER = [
     image: 'https://picsum.photos/523/430',
     description:
       'Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events. Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on.',
-      tag: ['Read More'],
-    },
+    tag: ['Read More'],
+  },
 ];
 
 export const MULTIPLE_SERVICE = [
