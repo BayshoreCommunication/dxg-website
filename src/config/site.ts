@@ -46,7 +46,7 @@ export const SITECONFIG = {
       },
       {
         title: 'Event Platfom Services',
-        slug: '/services/virtual-hybrid-events',
+        slug: '/services/event-platform-services',
       },
       {
         title: 'Event Experience Design',

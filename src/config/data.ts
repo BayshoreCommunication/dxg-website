@@ -86,7 +86,7 @@ export const SERVICE_DATA = [
     image: '/service/dxg-agency-event-platform-service.png',
     excerpt: `DXG specializes in crafting dynamic event platforms tailored to your needs. Whether it's a virtual space, a hybrid platform, or a customized digital environment, we design and optimize platforms to enhance engagement, foster networking, and create a seamless digital extension of your event.
 `,
-    url: '/services/virtual-hybrid-events',
+    url: '/services/event-platform-services',
   },
   {
     id: 4,
