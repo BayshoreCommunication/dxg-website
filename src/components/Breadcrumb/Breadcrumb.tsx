@@ -57,7 +57,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
               className='mt-6 md:ml-10 md:mt-0 md:max-w-2xl'
             >
               {description && (
-                <p className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
+                <p className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white' style={{textAlign:'left'}}>
                   {description}
                 </p>
               )}
