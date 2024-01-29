@@ -10,7 +10,7 @@ export const BlogHeaderSection = () => {
         variant: 'caps',
       }}
       buttonTitle='Book An Appointment'
-      description='Demo Digital Xperience Group (DXG), a pioneering division of WLJ Consulting, is a premier partner in transforming events into unforgettable experiences. With our roots firmly planted in the event hospitality industry. We pride ourselves on elevating the digital and production quality of in-person, virtual, and hybrid events.'
+      description='At DXG, we&#39;re more than just event planners. We&#39;re dream weavers, experience architects, and memory makers. We believe every event is a blank canvas, waiting to be transformed into a masterpiece. Whether it&#39;s a corporate gala under the stars, a product launch that electrifies the room, we pour our hearts and expertise into crafting unforgettable moments.'
     />
   );
 };
