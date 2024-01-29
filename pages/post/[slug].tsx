@@ -63,7 +63,7 @@ export default function PostPage() {
   }, [slug]);
 
   if (!post) {
-    return  <div className='bg-black' style={{height:"100vw", width: "100vw"}}>
+    return  <div className='bg-black' style={{height:"100vh", width: "100vw"}}>
       <div className='loading-gif'>
       <img src="/loader.gif"/>
     </div>
