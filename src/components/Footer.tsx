@@ -28,7 +28,7 @@ export default function Footer() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: false, amount: 0.25 }}
-            className='flex h-[500px] flex-col md:h-[300px] '
+            className='flex h-[520px] flex-col md:h-[300px] '
           >
             <div className='flex flex-col md:flex-row md:justify-between'>
               <div className=' mb-5 flex flex-1 justify-between  md:flex-[.85]'>
