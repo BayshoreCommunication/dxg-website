@@ -59,7 +59,7 @@ export const RecentBlogSection = () => {
               {/* <BlogBigImageCard {...selectedPost} /> */}
             </Suspense>
           </MotionDiv>
-          <div className='w-full' style={{ maxHeight: '75vh', position: 'sticky', top: '0' }}>
+          <div className='w-full' style={{ overflowX: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
             <div className='flex flex-wrap justify-between gap-5'>
             {RECENT_BLOG_POST.map((item, index) => {
               const postSlug = slugify(item.title);
