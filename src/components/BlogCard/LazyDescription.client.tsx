@@ -70,7 +70,7 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
         if (element.nodeType === Node.ELEMENT_NODE) {
           const htmlElement = element as Element;
           return (
-            <div key={index} className="lazyTextElement">
+            <div key={index} className="lazyTextElement" style={{lineHeight:"1.5"}}>
               {parse(htmlElement.outerHTML)}
             </div>
           );
