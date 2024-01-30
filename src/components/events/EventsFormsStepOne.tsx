@@ -591,7 +591,7 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
               />
             </svg>
             <p className='pl-2 text-[16px] font-thin text-white'>
-              855.450.2823
+              855.282.9394
             </p>
           </div>
 
