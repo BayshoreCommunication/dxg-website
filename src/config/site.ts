@@ -109,7 +109,7 @@ export const SITECONFIG = {
     },
   ],
   address: '2202 N. Westshore Blvd, Suite 200, Tampa, FL 33602',
-  phone: '855.450.2823',
+  phone: '855.282.9394',
   email: 'Info@dxg.agency',
   appointmentBookingUrl:
     process.env.NEXT_PUBLIC_ZOHO_APPOINTMENT_BOOKING_URL || '',
