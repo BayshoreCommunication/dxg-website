@@ -16,7 +16,11 @@ const nextConfig = {
         hostname: 'lh3.googleusercontent.com',
         port: '',
       },
-      // ... any other remote patterns
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+      },
     ],
   },
   skipTrailingSlashRedirect: true,

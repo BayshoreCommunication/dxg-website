@@ -1,4 +1,4 @@
-"use client";
+// 'use client';
 import React, { useState, Suspense } from 'react';
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
@@ -6,24 +6,32 @@ import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
+import GetAllBlogPost from '@/lib/GetAllBlogPost';
 
 function slugify(text: string) {
-  return text.toString().toLowerCase()
-    .replace(/\s+/g, '-')           // Replace spaces with -
-    .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
-    .replace(/\-\-+/g, '-')         // Replace multiple - with single -
-    .replace(/^-+/, '')             // Trim - from start of text
-    .replace(/-+$/, '');            // Trim - from end of text
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+    .replace(/\-\-+/g, '-') // Replace multiple - with single -
+    .replace(/^-+/, '') // Trim - from start of text
+    .replace(/-+$/, ''); // Trim - from end of text
 }
 
-
-export const RecentBlogSection = () => {
-  const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
+export const RecentBlogSection = async () => {
+  // const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
+  const blogsData = await GetAllBlogPost();
 
   return (
-    <div className='mb-4' style={{height: '36vw'}}>
+    <div className='mb-4 bg-black' style={{ height: '36vw' }}>
       <MaxWidthWrapper>
-        <h1 className='pt-4 text-white' style={{ fontSize: '2em', fontWeight: 'bold' }}>Recent Blog Post</h1>
+        <h1
+          className='pt-4 text-white'
+          style={{ fontSize: '2em', fontWeight: 'bold' }}
+        >
+          Recent Blog Post
+        </h1>
         <hr className='mb-4 h-2 border-gray-500' />
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
@@ -35,26 +43,39 @@ export const RecentBlogSection = () => {
           <MotionDiv
             variants={slideIn('left', 'tween', 0.2, 1)}
             className='w-full py-2 lg:w-9/12'
-          style={{display:'none'}}>
+            style={{ display: 'none' }}
+          >
             <Suspense fallback={<div>Loading...</div>}>
               {/* <BlogBigImageCard {...selectedPost} /> */}
             </Suspense>
           </MotionDiv>
-          <div className='w-full' style={{ overflowY: 'auto', maxHeight: '75vh', position: 'sticky', top: '0' }}>
-            <div className='flex flex-wrap justify-between gap-5'>
-            {RECENT_BLOG_POST.map((item, index) => {
-              const postSlug = slugify(item.title);
-              return (
-                <Link href={`/post/${postSlug}`} key={item.id} style={{maxWidth: '45%'}}>
-                  <MotionDiv
-                    variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                    className='w-full cursor-pointer'
+          <div
+            className='w-full'
+            style={{
+              overflowY: 'auto',
+              maxHeight: '75vh',
+              position: 'sticky',
+              top: '0',
+              background: 'black',
+            }}
+          >
+            <div className='flex flex-wrap justify-between gap-5 bg-black'>
+              {blogsData?.data?.map((item: any, index: number) => {
+                return (
+                  <Link
+                    href={`/post/${item.slug}`}
+                    key={item._id}
+                    style={{ maxWidth: '45%' }}
                   >
-                    <BlogWideCard {...item} />
-                  </MotionDiv>
-                </Link>
-              );
-            })}
+                    <MotionDiv
+                      variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                      className='w-full cursor-pointer'
+                    >
+                      <BlogWideCard {...item} />
+                    </MotionDiv>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </MotionDiv>
