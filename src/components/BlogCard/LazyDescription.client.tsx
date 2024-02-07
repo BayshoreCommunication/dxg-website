@@ -95,21 +95,6 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
   }, [loadedElements]);
 
   return (
-<<<<<<< HEAD
-    <div className='text-justify text-sm'>
-      {loadedElements.map((element, index) => {
-        if (element.nodeType === Node.ELEMENT_NODE) {
-          const htmlElement = element as Element;
-          return (
-            <div key={index} className="lazyTextElement" style={{lineHeight:"1.5"}}>
-              {parse(htmlElement.outerHTML)}
-            </div>
-          );
-        }
-        return null;
-      })}
-    </div>
-=======
     <>
       <style>{css}</style>
       <div className='text-justify'>
@@ -126,7 +111,6 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
         })}
       </div>
     </>
->>>>>>> arsahak
   );
 };
 
