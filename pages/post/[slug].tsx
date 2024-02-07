@@ -28,7 +28,9 @@ function slugify(text: string) {
 // Replace this with your actual data fetching logic
 async function getPostBySlug(slug: string): Promise<Post> {
   const blogsData = await GetAllBlogPost();
-  const post = blogsData?.data?.find((post) => slugify(post.slug) === slug);
+  const post = blogsData?.data?.find(
+    (post: any) => slugify(post.slug) === slug
+  );
   return post || null;
 }
 
@@ -116,7 +118,7 @@ export default function PostPage() {
                 <h2 className='text mb-3 text-xl font-bold text-brand'>
                   Recent Posts
                 </h2>
-                {blogData?.data
+                {(blogData as any)?.data
                   ?.filter((blog: any) => blog.published === true)
                   ?.map((item: any, index: number) => {
                     return (
