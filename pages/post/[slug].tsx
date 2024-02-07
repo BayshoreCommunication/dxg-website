@@ -28,7 +28,9 @@ function slugify(text: string) {
 // Replace this with your actual data fetching logic
 async function getPostBySlug(slug: string): Promise<Post> {
   const blogsData = await GetAllBlogPost();
-  const post = blogsData?.data?.find((post) => slugify(post.slug) === slug);
+  const post = blogsData?.data?.find(
+    (post: any) => slugify(post.slug) === slug
+  );
   return post || null;
 }
 
@@ -76,11 +78,13 @@ export default function PostPage() {
   }, [slug]);
 
   if (!post) {
-    return  <div className='bg-black' style={{height:"100vh", width: "100vw"}}>
-      <div className='loading-gif'>
-      <img src="/loader.gif"/>
-    </div>
-    </div>;
+    return (
+      <div className='bg-black' style={{ height: '100vh', width: '100vw' }}>
+        <div className='loading-gif'>
+          <img src='/loader.gif' />
+        </div>
+      </div>
+    );
   }
 
   return (
