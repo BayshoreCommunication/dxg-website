@@ -55,6 +55,10 @@ export const RecentBlogSection = async () => {
   // const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
   const blogsData = await GetAllBlogPost();
 
+  console.log('====================================');
+  console.log('check data 27', blogsData);
+  console.log('====================================');
+
   return (
     <div className='mb-4 h-full bg-black' style={{}}>
 >>>>>>> arsahak

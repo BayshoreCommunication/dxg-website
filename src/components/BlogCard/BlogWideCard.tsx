@@ -11,7 +11,7 @@ interface BlogBigImageCardProps {
   body: string;
 }
 
-export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
+export const BlogWideCard: React.FC<any> = ({
   _id,
   createdAt,
   title,
@@ -31,7 +31,6 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
 
   return (
     <div className='flex w-full items-stretch gap-4 text-white'>
-      {' '}
       {/* Adjusted for equal height */}
       <div
         className='relative flex-shrink-0'
