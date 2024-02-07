@@ -30,7 +30,7 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
   };
 
   return (
-    <div className='flex w-full items-stretch gap-4 bg-black text-white'>
+    <div className='flex w-full items-stretch gap-4 text-white'>
       {' '}
       {/* Adjusted for equal height */}
       <div

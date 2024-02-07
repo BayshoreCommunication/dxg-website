@@ -12,7 +12,6 @@ import Link from 'next/link';
 import '@/app/globals.css';
 import './myStyle.css';
 import GetAllBlogPost from '@/lib/GetAllBlogPost';
-import { log } from 'console';
 
 // Slugify function to convert title to URL-friendly slug
 function slugify(text: string) {
@@ -80,10 +79,6 @@ export default function PostPage() {
     return <div>Loading...</div>;
   }
 
-  console.log('====================================');
-  console.log('check data 84', blogData);
-  console.log('====================================');
-
   return (
     <>
       <Header /> {/* Include the Header at the top */}
@@ -121,18 +116,20 @@ export default function PostPage() {
                 <h2 className='text mb-3 text-xl font-bold text-brand'>
                   Recent Posts
                 </h2>
-                {blogData?.data?.map((item: any, index: number) => {
-                  return (
-                    <Link href={`/post/${item.slug}`} key={item._id}>
-                      <MotionDiv
-                        variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                        className='w-full cursor-pointer'
-                      >
-                        <BlogWideCard {...item} />
-                      </MotionDiv>
-                    </Link>
-                  );
-                })}
+                {blogData?.data
+                  ?.filter((blog: any) => blog.published === true)
+                  ?.map((item: any, index: number) => {
+                    return (
+                      <Link href={`/post/${item.slug}`} key={item._id}>
+                        <MotionDiv
+                          variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                          className='w-full cursor-pointer'
+                        >
+                          <BlogWideCard {...item} />
+                        </MotionDiv>
+                      </Link>
+                    );
+                  })}
               </div>
             </div>
           </MotionDiv>

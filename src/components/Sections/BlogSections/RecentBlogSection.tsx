@@ -24,7 +24,7 @@ export const RecentBlogSection = async () => {
   const blogsData = await GetAllBlogPost();
 
   return (
-    <div className='mb-4 bg-black' style={{ height: '36vw' }}>
+    <div className='mb-4 h-full bg-black' style={{}}>
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
@@ -56,26 +56,28 @@ export const RecentBlogSection = async () => {
               maxHeight: '75vh',
               position: 'sticky',
               top: '0',
-              background: 'black',
             }}
           >
-            <div className='flex flex-wrap justify-between gap-5 bg-black'>
-              {blogsData?.data?.map((item: any, index: number) => {
-                return (
-                  <Link
-                    href={`/post/${item.slug}`}
-                    key={item._id}
-                    style={{ maxWidth: '45%' }}
-                  >
-                    <MotionDiv
-                      variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                      className='w-full cursor-pointer'
+            <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row'>
+              {blogsData?.data
+                ?.filter((blog: any) => blog.published === true)
+                ?.map((item: any, index: number) => {
+                  return (
+                    <Link
+                      href={`/post/${item.slug}`}
+                      key={item._id}
+                      // style={{ maxWidth: '100%' }}
+                      className='w-full lg:w-[45%]'
                     >
-                      <BlogWideCard {...item} />
-                    </MotionDiv>
-                  </Link>
-                );
-              })}
+                      <MotionDiv
+                        variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                        className='w-full cursor-pointer'
+                      >
+                        <BlogWideCard {...item} />
+                      </MotionDiv>
+                    </Link>
+                  );
+                })}
             </div>
           </div>
         </MotionDiv>
