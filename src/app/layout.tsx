@@ -30,7 +30,7 @@ export default function RootLayout({
       >
         <Navbar />
         <main className='relative flex min-h-screen flex-col'>
-          <div className='flex-1 flex-grow'>{children}</div>
+          <div className='flex-1 flex-grow bg-black'>{children}</div>
         </main>
         <Footer />
         <TailwindIndicator />

@@ -13,6 +13,5 @@ export default function page() {
       {/* <CreateAService />
       <MultipleServiceSection /> */}
     </div>
-    
   );
 }

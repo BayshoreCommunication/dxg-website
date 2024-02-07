@@ -1,10 +1,37 @@
-"use client"
+'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import parse from 'html-react-parser';
 
 interface LazyDescriptionProps {
   description: string;
 }
+
+const css = `
+  h1{
+    padding-top: 10px;
+    font-size: 40px;
+    padding-bottom: 10px;
+  }
+  h2{
+    padding-top: 10px;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  p{
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  ul{
+    list-style-type: disc;
+    margin-left: 30px;
+
+  }
+  br{
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+`;
 
 const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
   const parser = new DOMParser();
@@ -23,11 +50,11 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
 
       // Initialize Intersection Observer
       observer.current = new IntersectionObserver(
-        entries => {
-          entries.forEach(entry => {
+        (entries) => {
+          entries.forEach((entry) => {
             if (entry.isIntersecting) {
               loadNextElements();
-              entry.target.classList.add("textEntryAnimation");
+              entry.target.classList.add('textEntryAnimation');
             }
           });
         },
@@ -46,8 +73,11 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
 
   const loadNextElements = () => {
     if (loadIndex.current < allElements.length) {
-      const nextElement = allElements.slice(loadIndex.current, loadIndex.current + 1);
-      setLoadedElements(loaded => [...loaded, ...nextElement]);
+      const nextElement = allElements.slice(
+        loadIndex.current,
+        loadIndex.current + 1
+      );
+      setLoadedElements((loaded) => [...loaded, ...nextElement]);
       loadIndex.current += 1;
     }
   };
@@ -57,14 +87,15 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
     const currentObserver = observer.current;
     const currentElements = document.querySelectorAll('.lazyTextElement');
 
-    currentElements.forEach(element => currentObserver?.observe(element));
+    currentElements.forEach((element) => currentObserver?.observe(element));
 
     return () => {
-      currentElements.forEach(element => currentObserver?.unobserve(element));
+      currentElements.forEach((element) => currentObserver?.unobserve(element));
     };
   }, [loadedElements]);
 
   return (
+<<<<<<< HEAD
     <div className='text-justify text-sm'>
       {loadedElements.map((element, index) => {
         if (element.nodeType === Node.ELEMENT_NODE) {
@@ -78,6 +109,24 @@ const LazyDescription: React.FC<LazyDescriptionProps> = ({ description }) => {
         return null;
       })}
     </div>
+=======
+    <>
+      <style>{css}</style>
+      <div className='text-justify'>
+        {loadedElements.map((element, index) => {
+          if (element.nodeType === Node.ELEMENT_NODE) {
+            const htmlElement = element as Element;
+            return (
+              <div key={index} className='lazyTextElement'>
+                {parse(htmlElement.outerHTML)}
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
+    </>
+>>>>>>> arsahak
   );
 };
 
