@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 'use client';
-=======
-// 'use client';
->>>>>>> arsahak
 import React, { useState, Suspense } from 'react';
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
@@ -10,7 +6,6 @@ import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
-<<<<<<< HEAD
 import styled from 'styled-components';
 
 const StyledLink = styled(Link)`
@@ -29,9 +24,6 @@ const StyledDiv = styled.div`
     overflow: hidden;
   }
 `;
-=======
-import GetAllBlogPost from '@/lib/GetAllBlogPost';
->>>>>>> arsahak
 
 function slugify(text: string) {
   return text
@@ -44,20 +36,11 @@ function slugify(text: string) {
     .replace(/-+$/, ''); // Trim - from end of text
 }
 
-<<<<<<< HEAD
 export const RecentBlogSection = () => {
   const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
 
   return (
     <StyledDiv className='mb-4'>
-=======
-export const RecentBlogSection = async () => {
-  // const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
-  const blogsData = await GetAllBlogPost();
-
-  return (
-    <div className='mb-4 h-full bg-black' style={{}}>
->>>>>>> arsahak
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
@@ -87,16 +70,12 @@ export const RecentBlogSection = async () => {
             className='w-full'
             style={{
               overflowY: 'auto',
-<<<<<<< HEAD
               overflowX: 'hidden',
-=======
->>>>>>> arsahak
               maxHeight: '75vh',
               position: 'sticky',
               top: '0',
             }}
           >
-<<<<<<< HEAD
             <div className='flex flex-wrap justify-between gap-5'>
               {RECENT_BLOG_POST.map((item, index) => {
                 const postSlug = slugify(item.title);
@@ -115,28 +94,6 @@ export const RecentBlogSection = async () => {
                   </StyledLink>
                 );
               })}
-=======
-            <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row'>
-              {blogsData?.data
-                ?.filter((blog: any) => blog.published === true)
-                ?.map((item: any, index: number) => {
-                  return (
-                    <Link
-                      href={`/post/${item.slug}`}
-                      key={item._id}
-                      // style={{ maxWidth: '100%' }}
-                      className='w-full lg:w-[45%]'
-                    >
-                      <MotionDiv
-                        variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                        className='w-full cursor-pointer'
-                      >
-                        <BlogWideCard {...item} />
-                      </MotionDiv>
-                    </Link>
-                  );
-                })}
->>>>>>> arsahak
             </div>
           </div>
         </MotionDiv>

@@ -12,7 +12,7 @@ interface BlogBigImageCardProps {
   body: string;
 }
 
-export const BlogBigImageCard: React.FC<BlogBigImageCardProps> = ({
+export const BlogBigImageCard: React.FC<any> = ({
   _id,
   createdAt,
   title,

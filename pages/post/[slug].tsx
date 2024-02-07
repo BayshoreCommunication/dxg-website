@@ -124,7 +124,7 @@ export default function PostPage() {
                 <h2 className='text mb-3 text-xl font-bold text-brand'>
                   Recent Posts
                 </h2>
-                {blogData?.data
+                {(blogData as any)?.data
                   ?.filter((blog: any) => blog.published === true)
                   ?.map((item: any, index: number) => {
                     return (

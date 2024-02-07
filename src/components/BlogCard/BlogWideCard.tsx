@@ -11,7 +11,7 @@ interface BlogBigImageCardProps {
   body: string;
 }
 
-export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
+export const BlogWideCard: React.FC<any> = ({
   _id,
   createdAt,
   title,
@@ -28,6 +28,10 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
     });
     return formattedDate;
   };
+
+  console.log('====================================');
+  console.log('check data 33', body);
+  console.log('====================================');
 
   return (
     <div className='flex w-full items-stretch gap-4 text-white'>
@@ -50,7 +54,7 @@ export const BlogWideCard: React.FC<BlogBigImageCardProps> = ({
         {/* Adjusted for vertical center alignment */}
         <p className='text-xs'>{postDate(createdAt)}</p>
         <h4 className='line-clamp-1 text-lg font-bold text-brand'>{title}</h4>
-        <div className='line-clamp-2 text-sm'>{parse(body)}</div>
+        {/* <div className='line-clamp-2 text-sm'>{parse(body)}</div> */}
         <div className='mt-2 flex flex-wrap gap-2'>
           {/* {tag.map((item, index) => {
             return (
