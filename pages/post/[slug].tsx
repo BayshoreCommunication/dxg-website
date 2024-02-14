@@ -94,7 +94,7 @@ export default function PostPage() {
       <div className='bg-black'>
         <MaxWidthWrapper>
           <h1 className='pt-4 text-2xl font-bold text-white'>{post.title}</h1>
-          <hr className='mb-4 h-2 border-gray-500' />
+          <hr className='h-2 mb-4 border-gray-500' />
           <MotionDiv
             variants={staggerContainer(0.2, 0.1)}
             initial='hidden'
@@ -121,7 +121,7 @@ export default function PostPage() {
               }}
             >
               <div className='flex flex-col gap-5'>
-                <h2 className='text mb-3 text-xl font-bold text-brand'>
+                <h2 className='mb-3 text-xl font-bold text text-brand'>
                   Recent Posts
                 </h2>
                 {(blogData as any)?.data

@@ -47,10 +47,10 @@ const ExploreCard = ({
           whileInView='show'
         >
           <div className='flex flex-[0.5] flex-col items-center justify-center'>
-            <div className=' '>
-              <Icons.monitor className='h-12 w-12 text-white' />
+            <div className=''>
+              <Icons.monitor className='w-12 h-12 text-white' />
             </div>
-            <h2 className=' py-4 text-xl font-bold uppercase text-white'>
+            <h2 className='py-4 text-xl font-bold text-white uppercase '>
               {title}
             </h2>
             <div className='  mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
@@ -59,7 +59,7 @@ const ExploreCard = ({
             {/* <div className='mt-5'>
               <Button
                 variant='outline'
-                className='rounded-full border-brand bg-transparent text-brand  bg-brand px-5 py-2 font-semibold text-white capsule-hover capsule-button'
+                className='px-5 py-2 font-semibold text-white bg-transparent rounded-full border-brand text-brand bg-brand capsule-hover capsule-button'
               >
                 <Link href='/'>Learn More</Link>
               </Button>

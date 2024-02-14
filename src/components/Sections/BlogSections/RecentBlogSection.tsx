@@ -7,6 +7,7 @@ import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
 import styled from 'styled-components';
+import GetAllBlogPost from '@/lib/GetAllBlogPost';
 
 const StyledLink = styled(Link)`
   max-width: 45%;
@@ -36,11 +37,11 @@ function slugify(text: string) {
     .replace(/-+$/, ''); // Trim - from end of text
 }
 
-export const RecentBlogSection = () => {
-  const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
+export const RecentBlogSection = async () => {
+  const blogsData = await GetAllBlogPost();
 
   return (
-    <StyledDiv className='mb-4'>
+    <div className='h-full mb-4 bg-black' style={{}}>
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
@@ -48,7 +49,7 @@ export const RecentBlogSection = () => {
         >
           Recent Blog Post
         </h1>
-        <hr className='mb-4 h-2 border-gray-500' />
+        <hr className='h-2 mb-4 border-gray-500' />
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
@@ -98,6 +99,6 @@ export const RecentBlogSection = () => {
           </div>
         </MotionDiv>
       </MaxWidthWrapper>
-    </StyledDiv>
+    </div>
   );
 };

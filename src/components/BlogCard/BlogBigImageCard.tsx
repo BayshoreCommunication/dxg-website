@@ -34,7 +34,7 @@ export const BlogBigImageCard: React.FC<any> = ({
         {' '}
         {/* Added animation class here */}
         <Image
-          src={`https://res.cloudinary.com/djrkvmpxe/image/upload/${featuredImage?.image?.public_id}`}
+          src={`${featuredImage?.image?.url}`}
           alt={title}
           fill
           style={{
@@ -43,8 +43,8 @@ export const BlogBigImageCard: React.FC<any> = ({
           }}
         />
       </div>
-      <p className='text-light mt-3'>{postDate(createdAt)}</p>
-      <h4 className='text mb-3 text-xl font-bold text-brand'>{title}</h4>
+      <p className='mt-3 text-light'>{postDate(createdAt)}</p>
+      <h4 className='mb-3 text-xl font-bold text text-brand'>{title}</h4>
       <LazyDescription description={body} />
     </div>
   );

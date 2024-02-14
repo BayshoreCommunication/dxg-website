@@ -107,7 +107,7 @@ export const SERVICE_DATA = [
   {
     id: 6,
     heading: 'Photography & Videography',
-    title: 'Video Production Photography',
+    title: 'Photography & Videography',
     image: '/service/dxg-agency-video-production-and-photography.png',
     excerpt: `DXG's Photography and Videography services excel in capturing the unique story of your event. Our professionals, with a keen eye for detail, document the emotions and defining moments, creating stunning visuals and high-definition videos that endure as timeless memories.`,
     url: '/services/video-production-photography',
