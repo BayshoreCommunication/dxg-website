@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import React, { useState, Suspense } from 'react';
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
@@ -6,25 +6,7 @@ import { MotionDiv } from '@/components/Motion';
 import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
-import styled from 'styled-components';
 import GetAllBlogPost from '@/lib/GetAllBlogPost';
-
-const StyledLink = styled(Link)`
-  max-width: 45%;
-  color: red;
-  /* Add more styles here */
-
-  @media (max-width: 900px) {
-    max-width: 100%;
-  }
-`;
-
-const StyledDiv = styled.div`
-  @media (max-width: 900px) {
-    height: 100%;
-    overflow: hidden;
-  }
-`;
 
 function slugify(text: string) {
   return text
@@ -71,30 +53,31 @@ export const RecentBlogSection = async () => {
             className='w-full'
             style={{
               overflowY: 'auto',
-              overflowX: 'hidden',
               maxHeight: '75vh',
               position: 'sticky',
               top: '0',
             }}
           >
-            <div className='flex flex-wrap justify-between gap-5'>
-              {RECENT_BLOG_POST.map((item, index) => {
-                const postSlug = slugify(item.title);
-                return (
-                  <StyledLink
-                    className='post_link'
-                    href={`/post/${postSlug}`}
-                    key={item.id}
-                  >
-                    <MotionDiv
-                      variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                      className='w-full cursor-pointer'
+            <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row'>
+              {blogsData?.data
+                ?.filter((blog: any) => blog.published === true)
+                ?.map((item: any, index: number) => {
+                  return (
+                    <Link
+                      href={`/post/${item.slug}`}
+                      key={item._id}
+                      // style={{ maxWidth: '100%' }}
+                      className='w-full lg:w-[45%]'
                     >
-                      <BlogWideCard {...item} />
-                    </MotionDiv>
-                  </StyledLink>
-                );
-              })}
+                      <MotionDiv
+                        variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                        className='w-full cursor-pointer'
+                      >
+                        <BlogWideCard {...item} />
+                      </MotionDiv>
+                    </Link>
+                  );
+                })}
             </div>
           </div>
         </MotionDiv>
