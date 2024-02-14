@@ -30,7 +30,7 @@ export const BlogWideCard: React.FC<any> = ({
   };
 
   return (
-    <div className='flex w-full items-stretch gap-4 text-white'>
+    <div className='flex items-stretch w-full gap-4 text-white'>
       {/* Adjusted for equal height */}
       <div
         className='relative flex-shrink-0'
@@ -38,19 +38,19 @@ export const BlogWideCard: React.FC<any> = ({
       >
         <div style={{ paddingTop: '100%' }}></div>
         <Image
-          src={`https://res.cloudinary.com/djrkvmpxe/image/upload/${featuredImage?.image?.public_id}`}
+          src={`${featuredImage?.image?.url}`}
           alt={'featuredImage.altText'}
           layout='fill'
           objectFit='cover'
-          className='absolute left-0 top-0'
+          className='absolute top-0 left-0'
         />
       </div>
-      <div className='flex flex-grow flex-col justify-center'>
+      <div className='flex flex-col justify-center flex-grow'>
         {/* Adjusted for vertical center alignment */}
         <p className='text-xs'>{postDate(createdAt)}</p>
-        <h4 className='line-clamp-1 text-lg font-bold text-brand'>{title}</h4>
-        <div className='line-clamp-2 text-sm'>{parse(body)}</div>
-        <div className='mt-2 flex flex-wrap gap-2'>
+        <h4 className='text-lg font-bold line-clamp-1 text-brand'>{title}</h4>
+        <div className='text-sm line-clamp-2 h-11'>{parse(body)}</div>
+        <div className='flex flex-wrap gap-2 mt-2'>
           {/* {tag.map((item, index) => {
             return (
               <Button
@@ -68,7 +68,7 @@ export const BlogWideCard: React.FC<any> = ({
           })} */}
           <Button
             variant={'outline'}
-            className={`blogButton m-0 box-border rounded-full rounded-l-full rounded-r-full border-2 border-white bg-transparent`}
+            className={`blogButton m-0 mt-2 box-border rounded-full rounded-l-full rounded-r-full border-2 border-white bg-transparent`}
           >
             Read More
           </Button>

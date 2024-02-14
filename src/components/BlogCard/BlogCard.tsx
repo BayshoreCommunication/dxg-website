@@ -26,7 +26,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ data }) => {
   const newDate = formatDate(date);
 
   return (
-    <div className='m-4 overflow-hidden rounded-2xl bg-white shadow-lg'>
+    <div className='m-4 overflow-hidden bg-white shadow-lg rounded-2xl'>
       <div className=''>
         <Image
           style={{ width: '100%' }}
@@ -34,15 +34,15 @@ export const BlogCard: React.FC<BlogCardProps> = ({ data }) => {
           height={400}
           src={image}
           alt={`Blog: ${title}`}
-          className='h-48 w-full object-cover object-center'
+          className='object-cover object-center w-full h-48'
         />
       </div>
       <div className='relative p-6'>
         <div className='absolute left-[30px] top-[-30px] flex h-12 w-12 flex-col items-center justify-center bg-brand'>
-          <p className='text-center text-sm font-bold text-white'>
+          <p className='text-sm font-bold text-center text-white'>
             {newDate.day}
           </p>
-          <p className='text-center text-sm font-bold text-white'>
+          <p className='text-sm font-bold text-center text-white'>
             {newDate.month}
           </p>
         </div>
@@ -50,7 +50,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ data }) => {
           {feature}
         </div>
         <h2 className='text-base font-bold text-gray-800'>{title}</h2>
-        <p className='mb-3 mt-2 text-xs text-gray-600'>{description}</p>
+        <p className='mt-2 mb-3 text-xs text-gray-600'>{description}</p>
         <Link href={link} target='_blank' className=''>
           <Button
             variant={'outline'}

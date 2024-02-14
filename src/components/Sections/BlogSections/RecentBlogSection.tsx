@@ -20,15 +20,10 @@ function slugify(text: string) {
 }
 
 export const RecentBlogSection = async () => {
-  // const [selectedPost, setSelectedPost] = useState(RECENT_BLOG_POST[0]);
   const blogsData = await GetAllBlogPost();
 
-  console.log('====================================');
-  console.log('check data 27', blogsData);
-  console.log('====================================');
-
   return (
-    <div className='mb-4 h-full bg-black' style={{}}>
+    <div className='h-full mb-4 bg-black' style={{}}>
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
@@ -36,7 +31,7 @@ export const RecentBlogSection = async () => {
         >
           Recent Blog Post
         </h1>
-        <hr className='mb-4 h-2 border-gray-500' />
+        <hr className='h-2 mb-4 border-gray-500' />
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
