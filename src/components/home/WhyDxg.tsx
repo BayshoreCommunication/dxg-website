@@ -7,6 +7,7 @@ import { Icons } from '@/components/Icons';
 import { P, Title, Paragraph } from '../Typography';
 import { MotionDiv } from '../Motion';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
+import MotionEffect from '../Animation/MotionEffect';
 
 const infos = {
   title: 'Why DXG',
@@ -56,73 +57,77 @@ export default function WhyDxg() {
             className='flex items-center justify-center gap-5 pb-5'
           >
             <div className='flex flex-[2] flex-col'>
-              <MotionDiv
-                variants={slideIn('up', 'tween', 0.5, 0.5)}
-                className='flex flex-col gap-10 md:flex-row '
-              >
-                <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
-                  <Icons.repeat className='h-16 w-16' />
-                  <h2 className='py-2 text-2xl font-extrabold uppercase text-white'>
-                    Our{' '}
-                    <span className='  outline-text tracking-wider text-brand'>
-                      Process
-                    </span>
-                  </h2>
-                  <P text={WHY_DXG_DATA[0].description} />
+              <MotionEffect effect='fade-right' duration={1000}>
+                <div
+                  // variants={slideIn('up', 'tween', 0.5, 0.5)}
+                  className='flex flex-col gap-10 md:flex-row '
+                >
+                  <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
+                    <Icons.repeat className='h-16 w-16' />
+                    <h2 className='py-2 text-2xl font-extrabold uppercase text-white'>
+                      Our{' '}
+                      <span className='  outline-text tracking-wider text-brand'>
+                        Process
+                      </span>
+                    </h2>
+                    <P text={WHY_DXG_DATA[0].description} />
+                  </div>
+                  <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
+                    <Icons.happyFace className='h-16 w-16' />
+                    <h2 className='py-2 text-2xl font-bold uppercase text-white'>
+                      Our{' '}
+                      <span className='  outline-text tracking-wider text-brand'>
+                        Service
+                      </span>
+                    </h2>
+                    <P text={WHY_DXG_DATA[1].description} />
+                  </div>
                 </div>
-                <div className='flex flex-1 flex-col items-center py-0 md:items-start'>
-                  <Icons.happyFace className='h-16 w-16' />
-                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
-                    Our{' '}
-                    <span className='  outline-text tracking-wider text-brand'>
-                      Service
-                    </span>
-                  </h2>
-                  <P text={WHY_DXG_DATA[1].description} />
-                </div>
-              </MotionDiv>
+              </MotionEffect>
 
-              <MotionDiv
-                variants={slideIn('left', 'tween', 0.5, 0.5)}
-                className='mb-5 flex flex-col gap-10 md:flex-row'
-              >
-                <div className='flex flex-1 flex-col items-center py-0 pt-10 md:items-start'>
-                  {/* <Icons.group className='h-12 w-12' /> */}
-                  <div>
-                    <Image
-                      alt='mission'
-                      src='/mission.png'
-                      width={60}
-                      height={60}
-                    />
+              <MotionEffect effect='fade-right' duration={1000}>
+                <div
+                  // variants={slideIn('left', 'tween', 0.5, 0.5)}
+                  className='mb-5 flex flex-col gap-10 md:flex-row'
+                >
+                  <div className='flex flex-1 flex-col items-center py-0 pt-10 md:items-start'>
+                    {/* <Icons.group className='h-12 w-12' /> */}
+                    <div>
+                      <Image
+                        alt='mission'
+                        src='/mission.png'
+                        width={60}
+                        height={60}
+                      />
+                    </div>
+                    <h2 className='py-2 text-2xl font-bold uppercase text-white'>
+                      Our{' '}
+                      <span className='  outline-text tracking-wider text-brand'>
+                        Mission
+                      </span>
+                    </h2>
+                    <P text={WHY_DXG_DATA[2].description} />
                   </div>
-                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
-                    Our{' '}
-                    <span className='  outline-text tracking-wider text-brand'>
-                      Mission
-                    </span>
-                  </h2>
-                  <P text={WHY_DXG_DATA[2].description} />
-                </div>
-                <div className='flex flex-1 flex-col items-center py-0 md:items-start md:py-6 '>
-                  {/* <Icons.mechanics className='h-10 w-10' /> */}
-                  <div>
-                    <Image
-                      alt='experience'
-                      src='/experience.png'
-                      width={60}
-                      height={60}
-                    />
+                  <div className='flex flex-1 flex-col items-center py-0 md:items-start md:py-6 '>
+                    {/* <Icons.mechanics className='h-10 w-10' /> */}
+                    <div>
+                      <Image
+                        alt='experience'
+                        src='/experience.png'
+                        width={60}
+                        height={60}
+                      />
+                    </div>
+                    <h2 className='py-2 text-2xl font-bold uppercase text-white'>
+                      Our{' '}
+                      <span className='  outline-text tracking-wider text-brand'>
+                        Experience
+                      </span>
+                    </h2>
+                    <P text={WHY_DXG_DATA[3].description} />
                   </div>
-                  <h2 className='py-2 text-2xl font-bold uppercase text-white'>
-                    Our{' '}
-                    <span className='  outline-text tracking-wider text-brand'>
-                      Experience
-                    </span>
-                  </h2>
-                  <P text={WHY_DXG_DATA[3].description} />
                 </div>
-              </MotionDiv>
+              </MotionEffect>
             </div>
             <MotionDiv
               variants={fadeIn('left', 'tween', 0.2, 1)}

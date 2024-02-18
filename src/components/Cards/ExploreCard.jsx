@@ -26,7 +26,7 @@ const ExploreCard = ({
     } duration-[0.7s] ease-out-flex flex h-[500px] min-w-[100px] cursor-pointer items-center justify-center transition-[flex]`}
     style={{
       backgroundImage: `linear-gradient(rgba(45, 198, 245, 0.6), rgba(45, 198, 245, 0)), url(${imgUrl})`,
-      transition: '0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95)',
+      transition: '0.9s cubic-bezier(0.05, 0.61, 0.41, 0.95)',
       backgroundSize: 'auto 100%',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
@@ -48,12 +48,12 @@ const ExploreCard = ({
         >
           <div className='flex flex-[0.5] flex-col items-center justify-center'>
             <div className=''>
-              <Icons.monitor className='w-12 h-12 text-white' />
+              <Icons.monitor className='h-12 w-12 text-white' />
             </div>
-            <h2 className='py-4 text-xl font-bold text-white uppercase '>
+            <h2 className='py-4 text-xl font-bold uppercase text-white '>
               {title}
             </h2>
-            <div className='  mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
+            <div className='mb-3 text-center text-base font-medium leading-[27px] tracking-[0.18px] text-white'>
               {description}
             </div>
             {/* <div className='mt-5'>

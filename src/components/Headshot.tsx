@@ -1,5 +1,5 @@
 'use client';
-import { zoomIn } from '@/lib/motion';
+import { fadeIn, zoomIn } from '@/lib/motion';
 import Image from 'next/image';
 import { MotionDiv } from './Motion';
 
@@ -17,7 +17,8 @@ export const HeadShot = ({ path }: HeadShotProps) => (
       </div>
     </div>
     <MotionDiv
-      variants={zoomIn(0.4, 0.5)}
+      // variants={zoomIn(0.4, 0.5)}
+      variants={fadeIn('left', 'tween', 0.2, 0.75)}
       initial='hidden'
       whileInView='show'
       viewport={{ once: false, amount: 0.2 }}
