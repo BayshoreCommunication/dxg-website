@@ -81,7 +81,7 @@ export default function PostPage() {
     return (
       <div className='bg-black' style={{ height: '100vh', width: '100vw' }}>
         <div className='loading-gif'>
-          <img src='/loader.gif' />
+          <img src='/loader.gif' height={300} width={300}/>
         </div>
       </div>
     );
