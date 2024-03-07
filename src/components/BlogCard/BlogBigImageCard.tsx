@@ -30,7 +30,7 @@ export const BlogBigImageCard: React.FC<any> = ({
 
   return (
     <div className='w-full text-white'>
-      <div className='imageEntryAnimation relative h-[445px] w-full bg-red-200'>
+      <div className='imageEntryAnimation relative h-[220px] w-full bg-red-200 md:h-[445px]'>
         {' '}
         {/* Added animation class here */}
         <Image
@@ -43,8 +43,8 @@ export const BlogBigImageCard: React.FC<any> = ({
           }}
         />
       </div>
-      <p className='mt-3 text-light'>{postDate(createdAt)}</p>
-      <h4 className='mb-3 text-xl font-bold text text-brand'>{title}</h4>
+      <p className='text-light mt-3'>{postDate(createdAt)}</p>
+      <h4 className='text mb-3 text-xl font-bold text-brand'>{title}</h4>
       <LazyDescription description={body} />
     </div>
   );
