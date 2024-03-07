@@ -30,7 +30,7 @@ export const BlogBigImageCard: React.FC<any> = ({
 
   return (
     <div className='w-full text-white'>
-      <div className='imageEntryAnimation relative h-[445px] w-full bg-red-200'>
+      <div className='imageEntryAnimation relative h-[220px] md:h-[445px] w-full bg-red-200'>
         {' '}
         {/* Added animation class here */}
         <Image
