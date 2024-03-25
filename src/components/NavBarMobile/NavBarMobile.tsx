@@ -6,9 +6,10 @@ import { MouseEvent, useState } from 'react';
 import { Icons } from '../Icons';
 import { Button } from '../ui/button';
 import Image from 'next/image';
+import { usePathname } from "next/navigation";
 export const NavBarMobile = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-
+  const pathname = usePathname();
   const dropDownShownHandler = () => {
     setShowDropdown(true);
   };
@@ -46,7 +47,7 @@ export const NavBarMobile = () => {
                   href={item.slug}
                 >
                   <Button
-                    className=' text-base font-semibold text-white hover:text-brand active:text-brand'
+                    className={`text-base font-semibold text-white hover:text-brand active:text-brand ${pathname === item.slug ? "text-brand" : ""}`}
                     variant='link'
                   >
                     {item.title}

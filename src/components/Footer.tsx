@@ -209,7 +209,7 @@ export default function Footer() {
                 {/* Fourth Column */}
                 <div className='flex flex-col  md:items-center'>
                   <div className='text-right md:text-left'>
-                    <h2 className='mb-2 text-2xl font-bold text-brand'>
+                    <h2 className='mb-2 text-2xl font-bold text-brand text-right md:text-left'>
                       Legal
                     </h2>
                     {SITECONFIG.footerNav.legal.map((item, index) => {
