@@ -17,7 +17,8 @@ export const BannerSection = () => {
         style={{ backgroundImage: `url(${BannerImage.src})` }}
       />
       <MaxWidthWrapper>
-        <MotionDiv
+       <div className='pb-6 md:pb-0'>
+       <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
@@ -183,6 +184,7 @@ export const BannerSection = () => {
             </div>
           </div>
         </MotionDiv>
+       </div>
       </MaxWidthWrapper>
     </div>
   );

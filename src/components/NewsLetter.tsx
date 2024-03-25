@@ -10,7 +10,7 @@ export default function NewsLetter() {
     <div className='container py-16'>
       <div
         className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10'
-        style={{ padding: '1rem' }}
+        style={{ padding: '1.5rem' }}
       >
         <div className='col-span-3'>
           <h2 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>

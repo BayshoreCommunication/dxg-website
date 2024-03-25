@@ -60,7 +60,7 @@ export default function Overview() {
                 style={{ backgroundImage: `url('${item.image}')` }}
               >
                 <div
-                  className={`group flex h-full flex-col items-center justify-center bg-black bg-opacity-50 py-12  hover:bg-sky-700 hover:bg-opacity-60`}
+                  className={`group flex h-full flex-col items-center justify-start bg-black bg-opacity-50 py-12  hover:bg-sky-700 hover:bg-opacity-60`}
                 >
                   <div className='relative mt-10 text-sky-500 group-hover:text-white'>
                     {item.icon === 'man' && <Icons.man className='h-20 w-20' />}
@@ -72,7 +72,7 @@ export default function Overview() {
                     )}
                   </div>
                   <div className='px-10 py-5 text-center'>
-                    <h2 className='py-2 text-2xl font-bold uppercase text-white'>
+                    <h2 className='py-2 text-2xl font-bold uppercase text-white text-center'>
                       {item.title}
                     </h2>
                     <P className='text-white' text={item.description} />

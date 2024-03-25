@@ -43,9 +43,9 @@ export default function WhyDxg() {
     <div className="h-full w-full bg-[url('/bgWhyDxg.png')] bg-cover bg-center bg-no-repeat">
       <div className='bg-black bg-opacity-60'>
         <MaxWidthWrapper>
-          <div className='m-auto flex max-w-3xl flex-col items-center justify-center'>
+          <div className='mx-auto flex max-w-3xl flex-col items-center justify-center'>
             <div className='my-10 text-center'>
-              <Title text={infos.title} />
+              <Title className='text-center' text={infos.title} />
               <Paragraph key={0} text={infos.description} />
             </div>
           </div>

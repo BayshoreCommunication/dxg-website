@@ -166,7 +166,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='mb-1 whitespace-pre-line pr-0   text-right text-white hover:text-brand md:pl-0 md:text-left'
+                              className='mb-3 md:mb-1 whitespace-pre-line pr-0 text-right text-white hover:text-brand md:pl-0 md:text-left text-[12px] md:text-[14px]'
                             >
                               {item.title}
                             </Button>
@@ -195,7 +195,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='mb-1 pl-0 text-white hover:text-brand'
+                              className='mb-1 pl-0 text-white hover:text-brand text-[12px] md:text-[14px]'
                             >
                               {item.title}
                             </Button>
@@ -221,7 +221,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='mb-3 pr-0 text-white hover:text-brand md:pl-0'
+                              className='mb-3 pr-0 text-white hover:text-brand md:pl-0 text-[12px] md:text-[14px]'
                             >
                               {item.title}
                             </Button>

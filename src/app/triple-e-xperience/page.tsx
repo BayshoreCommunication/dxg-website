@@ -10,7 +10,7 @@ import Script from 'next/script';
 import AppointmentBooking from '@/components/AppointmentBooking';
 export default function TripleExperience() {
   return (
-    <div className='bg-black'>
+    <div className='bg-black mb-64'>
       <BreadCrumb
         buttonTitle='Book an appointment'
         description='When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver what we call The Triple E Xperience™'
@@ -50,7 +50,7 @@ export default function TripleExperience() {
         sectionImage={ExchangeImage}
         sectionImageOverlay={''}
       />
-      <div className='bg-black'>
+      <div className='bg-black mb-[-250px]'>
         <NewsLetter />
       </div>
     </div>

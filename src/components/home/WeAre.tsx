@@ -22,7 +22,7 @@ const dotArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 export default function WeAre() {
   return (
     <MaxWidthWrapper>
-      <div className='flex flex-col items-center justify-center md:flex-row-reverse'>
+      <div className='flex flex-col items-center justify-center md:flex-row-reverse overflow-x-hidden'>
         <HeadShot path={infos.image} />
         <div className='flex-1'>
           <Title text={infos.title} />

@@ -102,7 +102,7 @@ export const Paragraph = ({ text, className }: TypographyProps) => (
     whileInView='show'
     viewport={{ once: false, amount: 0.25 }}
     className={cn(
-      'mb-3  text-base font-medium leading-[27px] tracking-[0.18px] text-white',
+      'mb-3 text-base font-medium leading-[27px] tracking-[0.18px] text-white',
       className
     )}
   >

@@ -29,7 +29,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
 }) => {
   return (
     <div
-      className='min-h-[400px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat md:min-h-[300px]'
+      className='min-h-[200px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat md:min-h-[300px]'
       {...rest}
     >
       <MaxWidthWrapper>

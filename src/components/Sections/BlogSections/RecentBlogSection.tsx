@@ -23,7 +23,7 @@ export const RecentBlogSection = async () => {
   const blogsData = await GetAllBlogPost();
 
   return (
-    <div className='h-full mb-4 bg-black' style={{}}>
+    <div className='h-full mb-0 md:mb-[-180px] bg-black' style={{}}>
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
