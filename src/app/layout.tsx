@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang='en' className='h-full scroll-smooth bg-black'>
       <body
-        className={cn('relative h-full font-sans antialiased', inter.className)}
+        className={cn('relative h-full font-sans antialiased overflow-x-hidden', inter.className)}
       >
         <Navbar />
         <main className='relative flex min-h-screen flex-col'>

@@ -11,7 +11,7 @@ export default function Home() {
     <div className='bg-black'>
       <BannerSection />
       <Overview />
-      <WeAre />
+      {/* <WeAre /> */}
       <WeSupport />
       <Services />
       <WhyDxg />
