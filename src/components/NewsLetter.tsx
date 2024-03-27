@@ -7,7 +7,8 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 export default function NewsLetter() {
   const ref = useRef<HTMLFormElement>(null);
   return (
-      <div className='mx-auto w-full px-2.5 md:px-72 py-16'>
+    <MaxWidthWrapper>       
+      <div className='py-16'>
       <div
         className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10 items-center justify-center'
         // style={{ padding: '1.5rem' }}
@@ -44,6 +45,6 @@ export default function NewsLetter() {
         </div>
       </div>
     </div>
-    
+  </MaxWidthWrapper>
   );
 }
