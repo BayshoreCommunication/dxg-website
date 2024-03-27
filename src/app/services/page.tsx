@@ -8,6 +8,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { staggerContainer, zoomIn } from '@/lib/motion';
 import Link from 'next/link'; // Make sure to import Link from Next.js
+import MotionEffect from '@/components/Animation/MotionEffect';
 
 export default function Services() {
   return (
@@ -33,21 +34,24 @@ export default function Services() {
           >
             {SERVICES_PAGE_DATA.map((service) => {
               return (
-                <MotionDiv
-                  variants={zoomIn(service.id * 0.2, 0.5)}
+                
+                <div
+                  // variants={zoomIn(service.id * 0.2, 0.5)}
                   key={service.id}
                   className='col-span-12 md:col-span-6 lg:col-span-4'
                 >
-                  <Link href={service.url}>
-                    {' '}
-                    {/* Add this line */}
-                    <ServiceCard
-                      cardImage={service.image}
-                      captionPosition={service.captionPosition}
-                      cardTitle={service.caption}
-                    />
-                  </Link>
-                </MotionDiv>
+                  <MotionEffect effect='fade-up' duration={1000}> 
+                    <Link href={service.url}>
+                      {/* Add this line */}
+                      <ServiceCard
+                        cardImage={service.image}
+                        captionPosition={service.captionPosition}
+                        cardTitle={service.caption}
+                      />
+                    </Link>
+                  </MotionEffect>
+                 
+                </div>
               );
             })}
           </MotionDiv>

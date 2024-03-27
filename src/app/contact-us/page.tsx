@@ -6,6 +6,8 @@ import Form from '@/components/Form';
 import Script from 'next/script';
 import Link from 'next/link';
 import { SliderDemo } from '@/components/SliderDemo';
+import MotionEffect from '@/components/Animation/MotionEffect';
+
 export default async function Contact() {
   return (
     <div className='min-h-screen bg-black'>
@@ -125,16 +127,23 @@ export default async function Contact() {
               </Link>
             </MotionDiv>
           </div>
+         
           <MotionDiv
-            variants={zoomIn(0.2, 1)}
+            // variants={zoomIn(0.2, 1)}
             className='col-span-12 lg:col-span-6'
           >
-            <Form />
-            <p className='mt-10 text-justify text-base  font-normal text-white'>
-              *I understand that the use of this form for communication with
-              Digital Xperience Group (DXG).
-            </p>
+             <MotionEffect effect={"fade-up"} duration={1500}>
+             <div>
+                <Form />
+                <p className='mt-10 text-justify text-base  font-normal text-white'>
+                  *I understand that the use of this form for communication with
+                  Digital Xperience Group (DXG).
+                </p>
+             </div>
+            </MotionEffect>
+            
           </MotionDiv>
+     
         </MotionDiv>
       </div>
       <Script

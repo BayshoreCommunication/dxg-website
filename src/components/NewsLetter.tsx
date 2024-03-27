@@ -9,8 +9,8 @@ export default function NewsLetter() {
   return (
     <div className='container py-16'>
       <div
-        className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10'
-        style={{ padding: '1.5rem' }}
+        className='grid grid-cols-1 rounded-3xl bg-sky-500 px-5 py-8 md:grid-cols-5 md:px-10 items-center justify-center'
+        // style={{ padding: '1.5rem' }}
       >
         <div className='col-span-3'>
           <h2 className='text-center text-2xl font-semibold capitalize text-white md:text-left md:text-3xl'>
@@ -37,7 +37,7 @@ export default function NewsLetter() {
           >
             <Input className='mb-4' placeholder='Name' />
             <Input className='mb-4' placeholder='Email' />
-            <Button className='subscribe-button w-full bg-slate-800'>
+            <Button className='w-full hover:border-brand hover:bg-brand font-bold text-white'>
               Subscribe
             </Button>
           </form>

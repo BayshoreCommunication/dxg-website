@@ -21,7 +21,7 @@ const infos = {
 export default function WeSupport() {
   const [active, setActive] = useState(0);
   return (
-    <div className='bg-black'>
+    <div className='bg-black mt-4'>
       <MaxWidthWrapper>
         <div className='flex flex-col  items-end py-5 md:py-10 '>
           <div className=' md:max-w-2xl'>

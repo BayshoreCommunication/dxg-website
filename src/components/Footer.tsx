@@ -56,7 +56,7 @@ export default function Footer() {
                           />
                         }
                       </div>
-                      <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                      <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-20px] md:ml-[-8px]'>
                         {SITECONFIG.address}
                       </p>
                     </MotionDiv>
@@ -74,7 +74,7 @@ export default function Footer() {
                             />
                           }
                         </div>
-                        <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                        <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-20px] md:ml-[-8px]'>
                           {SITECONFIG.phone}
                         </p>
                       </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                             />
                           }
                         </div>
-                        <p className='flex-[.8] text-sm text-white md:flex-[.9]'>
+                        <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-20px] md:ml-[-8px]'>
                           {SITECONFIG.email}
                         </p>
                       </Link>
@@ -221,7 +221,7 @@ export default function Footer() {
                           <Link key={index} href={item.slug}>
                             <Button
                               variant={'link'}
-                              className='mb-3 pr-0 text-white hover:text-brand md:pl-0 text-[12px] md:text-[14px]'
+                              className='mb-1 pr-0 text-white hover:text-brand md:pl-0 text-[12px] md:text-[14px]'
                             >
                               {item.title}
                             </Button>

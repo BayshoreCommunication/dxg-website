@@ -1,3 +1,4 @@
+
 import Image, { StaticImageData } from 'next/image';
 
 interface ServiceProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
