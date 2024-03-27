@@ -21,7 +21,7 @@ const dotArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function WeAre() {
   return (
-  <div className='overflow-x-hidden'>
+
     <div className='bg-black'>
     <MaxWidthWrapper>
       <div className='flex flex-col items-center justify-center md:flex-row-reverse'>
@@ -44,6 +44,5 @@ export default function WeAre() {
       </div>
     </MaxWidthWrapper>
     </div>
-  </div>
   );
 }

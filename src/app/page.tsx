@@ -8,7 +8,7 @@ import WeSupport from '@/components/home/WeSupport';
 import WhyDxg from '@/components/home/WhyDxg';
 export default function Home() {
   return (
-    <div className='bg-black'>
+    <div className='bg-black overflow-x-hidden'>
       <BannerSection />
       <Overview />
       <WeAre />
