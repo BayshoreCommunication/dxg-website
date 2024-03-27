@@ -11,7 +11,7 @@ import { fadeIn, staggerContainer, zoomIn } from '@/lib/motion';
 
 export default function Footer() {
   return (
-    <div className='  '>
+    <div className=''>
       <footer
         className='relative'
         style={{
@@ -21,7 +21,7 @@ export default function Footer() {
         }}
       >
         {/* <MaxWidthWrapper> */}
-        <div className='container py-8'>
+        <div className='mx-auto w-full px-2.5 md:px-72 py-8'>
           <MotionDiv
             // variants={staggerContainer(0.2, 0.1)}
             variants={fadeIn('up', 'tween', 0.3, 0.5)}
@@ -56,7 +56,7 @@ export default function Footer() {
                           />
                         }
                       </div>
-                      <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-20px] md:ml-[-8px]'>
+                      <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-14px] md:ml-[-4px]'>
                         {SITECONFIG.address}
                       </p>
                     </MotionDiv>
@@ -74,7 +74,7 @@ export default function Footer() {
                             />
                           }
                         </div>
-                        <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-20px] md:ml-[-8px]'>
+                        <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-14px] md:ml-[-4px]'>
                           {SITECONFIG.phone}
                         </p>
                       </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
                             />
                           }
                         </div>
-                        <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-20px] md:ml-[-8px]'>
+                        <p className='flex-[.8] text-sm text-white md:flex-[.9] ml-[-14px] md:ml-[-4px]'>
                           {SITECONFIG.email}
                         </p>
                       </Link>
@@ -151,9 +151,9 @@ export default function Footer() {
                   </MotionDiv>
                 </div>
                 {/* Second Column */}
-                <div className='ml flex flex-col'>
+                <div className='flex flex-col'>
                   <div className='md:w-2/2 text-right md:text-left'>
-                    <h2 className='mb-2 text-2xl font-bold text-brand'>
+                    <h2 className='mb-2 text-2xl font-bold text-brand text-right md:text-left'>
                       Services
                     </h2>
                     {SITECONFIG.footerNav.services.map((item, index) => {
