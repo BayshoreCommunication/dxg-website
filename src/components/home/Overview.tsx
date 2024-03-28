@@ -79,7 +79,7 @@ export default function Overview() {
 
                     <div className='mt-6 h-20'>
                       <Button
-                        className='capsule-hover capsule-button rounded-full bg-brand  px-5 py-2 font-semibold text-white hover:bg-white group-hover:inline-flex'
+                        className='capsule-hover capsule-button hidden rounded-full bg-brand  px-5 py-2 font-semibold text-white hover:bg-white group-hover:inline-flex'
                         asChild
                       >
                         <Link href={item.href}>Read More</Link>
