@@ -32,7 +32,7 @@ export const RecentBlogSection = async () => {
           Recent Blog Post
         </h1>
         {/* <hr className='h-2 mb-4 border-gray-500' /> */}
-        <div className=' border border-gray-500 p-4 mt-4 rounded-md'>
+        <div className=' border border-gray-500 p-2 md:p-4 mt-2 md:mt-4 rounded-2xl'>
 
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
