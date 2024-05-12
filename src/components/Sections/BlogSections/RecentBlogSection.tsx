@@ -23,7 +23,7 @@ export const RecentBlogSection = async () => {
   const blogsData = await GetAllBlogPost();
 
   return (
-    <div className='h-full mb-0 md:mb-[-180px] bg-black' style={{}}>
+    <div className='h-full bg-black' style={{}}>
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
@@ -31,14 +31,16 @@ export const RecentBlogSection = async () => {
         >
           Recent Blog Post
         </h1>
-        <hr className='h-2 mb-4 border-gray-500' />
+        {/* <hr className='h-2 mb-4 border-gray-500' /> */}
+        <div className=' border border-gray-500 p-4 mt-4 rounded-md'>
+
         <MotionDiv
           variants={staggerContainer(0.2, 0.1)}
           initial='hidden'
           whileInView='show'
           viewport={{ once: false, amount: 0.25 }}
-          className='flex flex-col gap-4 lg:flex-row'
-          style={{ overflow: 'hidden', paddingBottom: '13vw' }}
+          className='flex flex-col gap-4 lg:flex-row '
+          style={{ overflow: 'hidden', paddingBottom: '2vw' }}
         >
           <MotionDiv
             variants={slideIn('left', 'tween', 0.2, 1)}
@@ -81,6 +83,8 @@ export const RecentBlogSection = async () => {
             </div>
           </div>
         </MotionDiv>
+        </div>
+      
       </MaxWidthWrapper>
     </div>
   );
