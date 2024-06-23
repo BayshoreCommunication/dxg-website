@@ -108,7 +108,7 @@ export const SITECONFIG = {
       url: '',
     },
   ],
-  address: '2202 N. Westshore Blvd, Suite 200, Tampa, FL 33602',
+  address: '12824 Dupont Circle Tampa, FL 33626',
   phone: '855.282.9394',
   email: 'Info@dxg.agency',
   appointmentBookingUrl:
