@@ -102,12 +102,12 @@ export const WhyChooseUsSection = () => {
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center rounded-s-2xl border-b-2 border-l-2 border-t-2 border-brand bg-header'
               >
                 <NumberAnimation
-                  className='text-3xl'
+                  className='text-2xl md:text-3xl'
                   value={5000}
                   incrementPlus={100}
                   duration={100}
                 />
-                <p className='text-xs font-light text-white md:text-base'>
+                <p className='text-[10px] font-light text-white md:text-base'>
                   Project Complete
                 </p>
               </MotionDiv>
@@ -116,12 +116,12 @@ export const WhyChooseUsSection = () => {
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center border-b-2 border-t-2 border-brand bg-header'
               >
                 <NumberAnimation
-                  className='text-3xl'
+                  className='text-2xl md:text-3xl'
                   value={500}
                   incrementPlus={10}
                   duration={100}
                 />
-                <p className=' text-xs font-light text-white md:text-base'>
+                <p className='text-[10px] font-light text-white md:text-base'>
                   Client Happy
                 </p>
               </MotionDiv>
@@ -130,12 +130,12 @@ export const WhyChooseUsSection = () => {
                 className='flex h-[120px] w-1/3 flex-col items-center justify-center rounded-e-2xl border-b-2 border-r-2 border-t-2 border-brand bg-header'
               >
                 <NumberAnimation
-                  className='text-3xl'
+                  className='text-2xl md:text-3xl'
                   value={5}
                   incrementPlus={1}
                   duration={500}
                 />
-                <p className=' text-xs font-light text-white md:text-base'>
+                <p className='text-[10px] font-light text-white md:text-base'>
                   Project Running
                 </p>
               </MotionDiv>
