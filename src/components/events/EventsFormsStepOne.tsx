@@ -603,8 +603,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
               LOCATION
             </label>
             <h1 className='text-3xl font-semibold leading-normal text-white'>
-              Tampa Convention Center <br /> 333 S Franklin St, Tampa,
-              <br /> FL 33602
+              12824 Dupont
+              <br /> Circle Tampa,
+              <br /> FL 33626
             </h1>
           </div>
         </div>

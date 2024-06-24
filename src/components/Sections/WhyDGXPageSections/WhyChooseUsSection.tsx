@@ -99,7 +99,7 @@ export const WhyChooseUsSection = () => {
             <div className='mt-4 flex w-full gap-4'>
               <MotionDiv
                 variants={fadeIn('up', 'tween', 0.4, 1)}
-                className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
+                className='flex h-[120px] w-1/3 flex-col items-center justify-center rounded-s-2xl border-b-2 border-l-2 border-t-2 border-brand bg-header'
               >
                 <NumberAnimation
                   className='text-3xl'
@@ -113,7 +113,7 @@ export const WhyChooseUsSection = () => {
               </MotionDiv>
               <MotionDiv
                 variants={fadeIn('up', 'tween', 0.5, 1)}
-                className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
+                className='flex h-[120px] w-1/3 flex-col items-center justify-center border-b-2 border-t-2 border-brand bg-header'
               >
                 <NumberAnimation
                   className='text-3xl'
@@ -127,7 +127,7 @@ export const WhyChooseUsSection = () => {
               </MotionDiv>
               <MotionDiv
                 variants={fadeIn('up', 'tween', 0.6, 1)}
-                className='flex h-[120px] w-1/3 flex-col items-center justify-center bg-header'
+                className='flex h-[120px] w-1/3 flex-col items-center justify-center rounded-e-2xl border-b-2 border-r-2 border-t-2 border-brand bg-header'
               >
                 <NumberAnimation
                   className='text-3xl'
