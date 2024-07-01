@@ -15,13 +15,13 @@ import ExploreCard from '../Cards/ExploreCard';
 import SupportCardMobile from '../Cards/SupportCardMobile';
 const infos = {
   title: 'Who We Support - 3 P’s of Partnership',
-  description: `Our core teams have an average of 15+ years of experience with backgrounds in live events, virtual and hybrid corporate events, broadcast, and entertainment & performances. With this experience, we are a sought-after resource and view ourselves as the missing piece to your puzzle. At DXG, we support... `,
+  description: `Our core teams have an average of 15+ years of experience with backgrounds in live events, virtual and hybrid corporate events, broadcast, and entertainment & performances. With this experience, we are a sought-after resource and view ourselves as the missing piece to your puzzle. At DXG Agency, we support`,
 };
 
 export default function WeSupport() {
   const [active, setActive] = useState(0);
   return (
-    <div className='bg-black mt-4'>
+    <div className='mb-10 mt-4 bg-black md:mb-28'>
       <MaxWidthWrapper>
         <div className='flex flex-col  items-end py-5 md:py-10 '>
           <div className=' md:max-w-2xl'>

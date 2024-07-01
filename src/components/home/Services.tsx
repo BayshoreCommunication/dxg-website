@@ -15,7 +15,7 @@ import { fadeIn, staggerContainer } from '@/lib/motion';
 const infos = {
   title: 'Our Service',
   description:
-    'With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.',
+    'Whether you need us to produce, project manage, or be a complete turnkey partner, DXG Agency has the resources and experience to deliver several solutions that fit your needs.',
 };
 
 const delay = 0.5;

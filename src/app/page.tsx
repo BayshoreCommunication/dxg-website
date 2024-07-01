@@ -8,12 +8,12 @@ import WeSupport from '@/components/home/WeSupport';
 import WhyDxg from '@/components/home/WhyDxg';
 export default function Home() {
   return (
-    <div className='bg-black overflow-x-hidden'>
+    <div className='overflow-x-hidden bg-black'>
       <BannerSection />
-      <Overview />
+      {/* <Overview /> */}
       <WeAre />
-      <WeSupport />
       <Services />
+      <WeSupport />
       <WhyDxg />
       {/* <OurBlogSection /> */}
       <Testimonial />

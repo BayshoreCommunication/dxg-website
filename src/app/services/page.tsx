@@ -15,7 +15,7 @@ export default function Services() {
     <div className='bg-black'>
       <BreadCrumb
         buttonTitle='Book an appointment'
-        description='With the average experience of our team members being ten-plus years in the event space, DXG is a sought-after resource by event planners, event production companies, and event platforms.'
+        description='Whether you need us to produce, project manage, or be a complete turnkey partner, DXG Agency has the resources and experience to deliver several solutions that fit your needs.'
         titleProps={{
           coloredText: 'Our',
           postText: 'Services',
@@ -34,13 +34,12 @@ export default function Services() {
           >
             {SERVICES_PAGE_DATA.map((service) => {
               return (
-                
                 <div
                   // variants={zoomIn(service.id * 0.2, 0.5)}
                   key={service.id}
                   className='col-span-12 md:col-span-6 lg:col-span-4'
                 >
-                  <MotionEffect effect='fade-up' duration={1000}> 
+                  <MotionEffect effect='fade-up' duration={1000}>
                     <Link href={service.url}>
                       {/* Add this line */}
                       <ServiceCard
@@ -50,7 +49,6 @@ export default function Services() {
                       />
                     </Link>
                   </MotionEffect>
-                 
                 </div>
               );
             })}
