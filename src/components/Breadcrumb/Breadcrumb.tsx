@@ -29,7 +29,7 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
 }) => {
   return (
     <div
-      className='min-h-[200px] bg-differentBackground bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat md:min-h-[300px]'
+      className='min-h-[200px] bg-differentBackground  bg-[url("/breadcrumb-bg.png")] bg-cover bg-no-repeat md:min-h-[300px]'
       {...rest}
     >
       <MaxWidthWrapper>
@@ -57,7 +57,10 @@ export const BreadCrumb: React.FC<BreadCrumbProps> = ({
               className='mt-6 md:ml-10 md:mt-0 md:max-w-2xl'
             >
               {description && (
-                <p className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white' style={{textAlign:'left'}}>
+                <p
+                  className='text-justify text-base font-medium leading-[27px] tracking-[0.18px] text-white'
+                  style={{ textAlign: 'left' }}
+                >
                   {description}
                 </p>
               )}
