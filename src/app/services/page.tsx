@@ -15,7 +15,7 @@ export default function Services() {
     <div className='bg-black'>
       <BreadCrumb
         buttonTitle='Book an appointment'
-        description='Whether you need us to produce, project manage, or be a complete turnkey partner, DXG Agency has the resources and experience to deliver several solutions that fit your needs.'
+        description={`Whether you need us to produce, project manage, or be a complete turnkey partner, DXG Agency has the resources and experience to deliver several solutions that fit your needs.`}
         titleProps={{
           coloredText: 'Our',
           postText: 'Services',

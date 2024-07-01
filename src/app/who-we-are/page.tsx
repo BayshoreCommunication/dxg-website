@@ -51,11 +51,11 @@ export default function WhoWeAre() {
               variants={fadeIn('up', 'spring', 0.2, 1)}
               className='mb-4 text-justify text-base font-normal leading-[30px] tracking-[0.18px] text-white lg:mb-10'
             >
-              Our diverse team of audiovisual technical producers, directors,
+              {` Our diverse team of audiovisual technical producers, directors,
               project managers, engineers, technicians, and creatives brings a
               collective wealth of experience to your event. We've orchestrated
               the marvel of audiovisuals for many notable events, pushing the
-              boundaries of what's possible in event production.
+              boundaries of what's possible in event production.`}
             </MotionP>
             <MotionP
               variants={fadeIn('up', 'spring', 0.3, 1)}
