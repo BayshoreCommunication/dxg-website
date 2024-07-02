@@ -2,7 +2,7 @@ import React from 'react';
 import { Icons } from '@/components/Icons';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { OutlineTextStyle } from '@/components/TextStyle';
-import BannerImage from '../../../../public/bgHeader.png';
+import BannerImage from '../../../../public/bgHeader.jpg';
 import { MotionDiv, MotionP } from '@/components/Motion';
 
 import NumberAnimation from '@/components/NumberAnimation';
