@@ -139,7 +139,7 @@ export const BannerSection = () => {
                     <MotionP
                       variants={fadeIn('up', 'tween', 0.2, 1)}
                       className=' w-2/3 text-justify text-base font-normal text-white'
-                    >{`At DXG, the success of any event lies in meticulous attention to every detail. Our team of seasoned professionals brings expertise in every phase of event production, from the initial planning stages to the post-event action review. Our planning process is thorough and collaborative, involving state-of-the-art technology and innovative solutions to meet and exceed your expectations. With us, you're not just hosting an event but crafting an experience.
+                    >{`At DXG Agency, the success of any event lies in meticulous attention to every detail. Our team of seasoned audiovisual production professionals brings expertise in every phase of event production, from the initial planning stages to the post-event action review. Our planning process is thorough and collaborative, involving state-of-the-art technology and innovative solutions to meet and exceed your expectations. With us, you're not just hosting an event but crafting an experience.
 `}</MotionP>
 
                     <div className='flex-start mt-5 flex w-full gap-16'>
