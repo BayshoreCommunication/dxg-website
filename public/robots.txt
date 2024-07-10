@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.dxg.agency
+
+# Sitemaps
+Sitemap: https://www.dxg.agency/sitemap.xml
