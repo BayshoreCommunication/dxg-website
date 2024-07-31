@@ -6,7 +6,7 @@ import { MouseEvent, useState } from 'react';
 import { Icons } from '../Icons';
 import { Button } from '../ui/button';
 import Image from 'next/image';
-import { usePathname } from "next/navigation";
+import { usePathname } from 'next/navigation';
 export const NavBarMobile = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const pathname = usePathname();
@@ -36,7 +36,12 @@ export const NavBarMobile = () => {
         </div>
         <div className='items-left mt-3 flex flex-col justify-center '>
           <div className='ml-3'>
-            <Image width={56} height={20} src={'/dxgLogo.svg'} alt='DXG Logo' />
+            <Image
+              width={56}
+              height={20}
+              src={'/dxgLogo.svg'}
+              alt='Digital Xperience Group'
+            />
           </div>
           <div className='items-left mt-2 flex flex-col justify-center'>
             {SITECONFIG.mainNav.map((item, index) => {
@@ -47,7 +52,9 @@ export const NavBarMobile = () => {
                   href={item.slug}
                 >
                   <Button
-                    className={`text-base font-semibold text-white hover:text-brand active:text-brand ${pathname === item.slug ? "text-brand" : ""}`}
+                    className={`text-base font-semibold text-white hover:text-brand active:text-brand ${
+                      pathname === item.slug ? 'text-brand' : ''
+                    }`}
                     variant='link'
                   >
                     {item.title}
