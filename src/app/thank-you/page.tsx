@@ -6,8 +6,10 @@ const ThankYouPage: React.FC = () => {
     <div className='h-screen bg-differentBackground'>
       <MaxWidthWrapper>
         <div className='flex flex-col items-center justify-center py-20'>
-          <h1 className='text-3xl font-bold'>Thank You!</h1>
-          <p>Thank you for your submission. We appreciate your feedback.</p>
+          <h1 className='text-3xl font-bold text-white'>Thank You!</h1>
+          <p className='text-white'>
+            Thank you for your submission. We appreciate your feedback.
+          </p>
         </div>
       </MaxWidthWrapper>
     </div>

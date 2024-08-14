@@ -7,6 +7,12 @@ import {
 } from '@/actions/actions';
 import { useRouter } from 'next/navigation';
 import { Button } from '../ui/button';
+import {
+  Dialog,
+  DialogBackdrop,
+  DialogPanel,
+  DialogTitle,
+} from '@headlessui/react';
 
 interface orderCustomrDlts {
   firstName: string;
@@ -33,12 +39,17 @@ interface MyComponentProps {
   totalPriced: number;
 }
 
-const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '';
-const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '';
-const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+// const YOUR_SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '';
+// const YOUR_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '';
+// const YOUR_PUBLIC_ID = process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY;
+
+const YOUR_SERVICE_ID = 'service_1hhoamr';
+const YOUR_TEMPLATE_ID = 'template_3aabfhp';
+const YOUR_PUBLIC_ID = 'AqGG9lPkRTJhUceLQ';
 
 export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
   const router = useRouter();
+  const [openPopup, setOpenPopup] = useState(false);
   const { setFormStep, orderCustomrDlts, totalPriced } = props;
   const [isLoading, setIsLoading] = useState(false);
   const audio_equipments = [];
@@ -197,6 +208,8 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
     computers: computer_str,
   };
 
+  console.log('check data value 211', templateParams);
+
   const sendEmail = async () => {
     setIsLoading(true);
     const formData = new FormData();
@@ -209,7 +222,9 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
       .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, templateParams, YOUR_PUBLIC_ID)
       .then(
         function (response) {
-          console.log('SUCCESS!', response.status, response.text);
+          console.log('SUCCESS!', response);
+          setIsLoading(false);
+          setOpenPopup(true);
         },
         function (error) {
           console.log('FAILED...', error);
@@ -219,12 +234,63 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
     if (result) {
       setTimeout(() => {
         // Close the modal
-        router.push('/thank-you');
-      }, 1000);
+        setOpenPopup(false);
+      }, 4000);
     }
   };
+
   return (
     <div className=' bg-black'>
+      <Dialog open={openPopup} onClose={setOpenPopup} className='relative z-10'>
+        <DialogBackdrop
+          transition
+          className='fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in'
+        />
+
+        <div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
+          <div className='flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0'>
+            <DialogPanel
+              transition
+              className='relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in sm:my-8 sm:w-full sm:max-w-lg data-[closed]:sm:translate-y-0 data-[closed]:sm:scale-95'
+            >
+              <div className='bg-[#2C2C2C] p-10'>
+                <div className='flex items-start justify-center'>
+                  <div className='mb-3 mt-3 px-5 text-center md:mb-8 md:mt-8 md:px-0 '>
+                    <div className='mx-auto mb-6 h-16 w-16'>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        fill='none'
+                        viewBox='0 0 24 24'
+                        strokeWidth={1.5}
+                        stroke='currentColor'
+                        className='size-2 text-[#4490c2]'
+                      >
+                        <path
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
+                          d='M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z'
+                        />
+                      </svg>
+                    </div>
+                    <DialogTitle
+                      as='h3'
+                      className='text-center text-xl font-bold leading-6 text-[#4490c2] md:text-2xl'
+                    >
+                      Thank you for your submission!{' '}
+                    </DialogTitle>
+                    <div className='mt-3'>
+                      <p className='md:text-md text-center text-sm text-[#4490c2]'>
+                        Your purchase has been confirmed successfully. We will
+                        contact you shortly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </DialogPanel>
+          </div>
+        </div>
+      </Dialog>
       <div className='container flex justify-center'>
         <form
           className='mb-16 mt-[500px] sm:mt-[250px]'
