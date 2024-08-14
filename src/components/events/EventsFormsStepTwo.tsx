@@ -263,7 +263,7 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                         viewBox='0 0 24 24'
                         strokeWidth={1.5}
                         stroke='currentColor'
-                        className='size-2 text-[#4490c2]'
+                        className='size-2 text-[#2EC6F5]'
                       >
                         <path
                           strokeLinecap='round'
@@ -274,13 +274,13 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
                     </div>
                     <DialogTitle
                       as='h3'
-                      className='text-center text-xl font-bold leading-6 text-[#4490c2] md:text-2xl'
+                      className='text-center text-xl font-bold leading-6 text-[#2EC6F5] md:text-2xl'
                     >
                       Thank you for your submission!{' '}
                     </DialogTitle>
                     <div className='mt-3'>
-                      <p className='md:text-md text-center text-sm text-[#4490c2]'>
-                        Your purchase has been confirmed successfully. We will
+                      <p className='md:text-md text-center text-sm text-[#2EC6F5]'>
+                        Your order has been confirmed successfully. We will
                         contact you shortly.
                       </p>
                     </div>
