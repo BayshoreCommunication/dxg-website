@@ -603,9 +603,9 @@ export const EventsFormsStepOne: React.FC<MyComponentProps> = (props) => {
               LOCATION
             </label>
             <h1 className='text-3xl font-semibold leading-normal text-white'>
-              12824 Dupont
-              <br /> Circle Tampa,
-              <br /> FL 33626
+              DXG Agency
+              <br /> HQ Office
+              <br /> Location
             </h1>
           </div>
         </div>

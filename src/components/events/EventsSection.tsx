@@ -46,6 +46,8 @@ const EventsSection: React.FC = () => {
     .filter((product: Product) => orderCustomrDlts[product.product])
     .reduce((acc: number, product: Product) => acc + product.price, 0);
 
+  const totalWith25PercentAdded: number = totalPriced * 1.25;
+
   return (
     <div>
       {formStep ? (
@@ -53,13 +55,13 @@ const EventsSection: React.FC = () => {
           setFormStep={setFormStep}
           orderCustomrDlts={orderCustomrDlts}
           setOrderCustomerItems={setOrderCustomerItems}
-          totalPriced={totalPriced}
+          totalPriced={totalWith25PercentAdded}
         />
       ) : (
         <EventsFormsStepTwo
           setFormStep={setFormStep}
           orderCustomrDlts={orderCustomrDlts}
-          totalPriced={totalPriced}
+          totalPriced={totalWith25PercentAdded}
         />
       )}
     </div>
