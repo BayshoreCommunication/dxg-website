@@ -60,7 +60,7 @@ export async function generateMetadata({
 
   // Find blog post details by slug
   const blogDetails: BlogPost | undefined = blogPostData?.data?.find(
-    (blogs: BlogPost) => blogs.slug === slug
+    (blogs: BlogPost) => slugify(blogs.slug) === slug
   );
 
   // If no blog is found, return default metadata
