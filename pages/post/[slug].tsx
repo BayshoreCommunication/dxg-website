@@ -54,13 +54,13 @@ function slugify(text: string) {
 export async function generateMetadata({
   slug,
 }: {
-  slug: { slug: string };
+  slug: string;
 }): Promise<Metadata> {
   const blogPostData = await GetAllBlogPost();
 
   // Find blog post details by slug
   const blogDetails: BlogPost | undefined = blogPostData?.data?.find(
-    (blogs: BlogPost) => blogs.slug === slug.slug
+    (blogs: BlogPost) => blogs.slug === slug
   );
 
   // If no blog is found, return default metadata
