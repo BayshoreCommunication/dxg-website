@@ -90,6 +90,9 @@ export async function generateMetadata({
     (blogs: BlogPost) => blogs.slug === params.slug
   );
 
+  // Default image URL in case there's no featured image
+  const defaultImageUrl = 'https://www.dxg.agency/default-og-image.jpg';
+
   // If no blog is found, return default metadata
   if (!blogDetails) {
     return {
@@ -98,7 +101,7 @@ export async function generateMetadata({
       openGraph: {
         title: 'Blog not found',
         description: 'No blog post available.',
-        images: [],
+        images: [defaultImageUrl],
         url: 'https://www.dxg.agency/post/not-found',
         type: 'article',
         site_name: 'Digital Xperience Group',
@@ -113,13 +116,16 @@ export async function generateMetadata({
   const parsedDescription =
     description?.[0]?.props?.children?.toString() || blogDetails.excerpt;
 
+  // Get the featured image URL, or use a default if none exists
+  const ogImageUrl = blogDetails.featuredImage?.image?.url || defaultImageUrl;
+
   return {
     title: blogDetails.title,
     description: parsedDescription,
     openGraph: {
       title: blogDetails.title,
       description: parsedDescription,
-      images: [blogDetails.featuredImage?.image?.url || ''],
+      images: [ogImageUrl], // Use the featured image or fallback
       url: `https://www.dxg.agency/post/${blogDetails.slug}`,
       type: 'article',
       site_name: 'Digital Xperience Group',
