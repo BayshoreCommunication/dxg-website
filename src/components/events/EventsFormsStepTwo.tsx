@@ -208,7 +208,6 @@ export const EventsFormsStepTwo: React.FC<MyComponentProps> = (props) => {
     computers: computer_str,
   };
 
-  console.log('check data value 211', templateParams);
 
   const sendEmail = async () => {
     setIsLoading(true);
