@@ -40,6 +40,44 @@ interface Metadata {
   };
 }
 
+// Slugify function to convert title to URL-friendly slug
+function slugify(text: string) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+    .replace(/\-\-+/g, '-') // Replace multiple - with single -
+    .replace(/^-+/, '') // Trim - from start of text
+    .replace(/-+$/, ''); // Trim - from end of text
+}
+
+// Replace this with your actual data fetching logic
+async function getPostBySlug(slug: string): Promise<Post> {
+  const blogsData = await GetAllBlogPost();
+  const post = blogsData?.data?.find(
+    (post: any) => slugify(post.slug) === slug
+  );
+  return post || null;
+}
+
+// Define the type for your post
+type Post = {
+  id: number;
+  date: number;
+  title: string;
+  image: string;
+  description: string;
+  tag: string[];
+} | null;
+
+// Define your CSS here
+const css = `
+  html {
+    background-color: black;
+  }
+`;
+
 export async function generateMetadata({
   params,
 }: {
@@ -88,44 +126,6 @@ export async function generateMetadata({
     },
   };
 }
-
-// Slugify function to convert title to URL-friendly slug
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
-    .replace(/\-\-+/g, '-') // Replace multiple - with single -
-    .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, ''); // Trim - from end of text
-}
-
-// Replace this with your actual data fetching logic
-async function getPostBySlug(slug: string): Promise<Post> {
-  const blogsData = await GetAllBlogPost();
-  const post = blogsData?.data?.find(
-    (post: any) => slugify(post.slug) === slug
-  );
-  return post || null;
-}
-
-// Define the type for your post
-type Post = {
-  id: number;
-  date: number;
-  title: string;
-  image: string;
-  description: string;
-  tag: string[];
-} | null;
-
-// Define your CSS here
-const css = `
-  html {
-    background-color: black;
-  }
-`;
 
 export default function PostPage() {
   const router = useRouter();
