@@ -30,7 +30,7 @@ export const BlogWideCard: React.FC<any> = ({
   };
 
   return (
-    <div className='flex items-stretch w-full gap-4 text-white'>
+    <div className='flex w-full items-stretch gap-4 text-white'>
       {/* Adjusted for equal height */}
       <div
         className='relative flex-shrink-0'
@@ -42,15 +42,15 @@ export const BlogWideCard: React.FC<any> = ({
           alt={'featuredImage.altText'}
           layout='fill'
           objectFit='cover'
-          className='absolute top-0 left-0'
+          className='absolute left-0 top-0'
         />
       </div>
-      <div className='flex flex-col justify-center flex-grow'>
+      <div className='flex flex-grow flex-col justify-center'>
         {/* Adjusted for vertical center alignment */}
         <p className='text-xs'>{postDate(createdAt)}</p>
-        <h4 className='text-lg font-bold line-clamp-1 text-brand'>{title}</h4>
-        <div className='text-sm line-clamp-2 h-11'>{parse(body)}</div>
-        <div className='flex flex-wrap gap-2 mt-2'>
+        <h4 className='line-clamp-1 text-lg font-bold text-brand'>{title}</h4>
+        <div className='line-clamp-2 h-11 text-sm'>{parse(body)}</div>
+        <div className='mt-2 flex flex-wrap gap-2'>
           {/* {tag.map((item, index) => {
             return (
               <Button

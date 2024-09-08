@@ -46,6 +46,11 @@ const EventsSection: React.FC = () => {
     .filter((product: Product) => orderCustomrDlts[product.product])
     .reduce((acc: number, product: Product) => acc + product.price, 0);
 
+  const serviceChargeRate: number = 0.25;
+
+  const totalPriceWithServiceCharge: number =
+    totalPriced * (1 + serviceChargeRate);
+
   return (
     <div>
       {formStep ? (

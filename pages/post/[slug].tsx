@@ -2,6 +2,8 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState, Suspense } from 'react';
 import Header from '@/components/Navbar'; // Adjust the import path as necessary
+import parse from 'html-react-parser';
+
 import Footer from '@/components/Footer'; // Adjust the import path as necessary
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
@@ -12,6 +14,80 @@ import Link from 'next/link';
 import '@/app/globals.css';
 import './myStyle.css';
 import GetAllBlogPost from '@/lib/GetAllBlogPost';
+
+interface BlogPost {
+  slug: string;
+  title: string;
+  body: string;
+  excerpt: string;
+  featuredImage: {
+    image: {
+      url: string;
+    };
+  };
+}
+
+interface Metadata {
+  title: string;
+  description: string;
+  openGraph: {
+    title: string;
+    description: string;
+    images: string[];
+    url: string;
+    type: string;
+    site_name: string;
+  };
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const blogPostData = await GetAllBlogPost();
+
+  // Find blog post details by slug
+  const blogDetails: BlogPost | undefined = blogPostData?.data?.find(
+    (blogs: BlogPost) => blogs.slug === params.slug
+  );
+
+  // If no blog is found, return default metadata
+  if (!blogDetails) {
+    return {
+      title: 'Blog not found',
+      description: 'No blog post available.',
+      openGraph: {
+        title: 'Blog not found',
+        description: 'No blog post available.',
+        images: [],
+        url: 'https://www.dxg.agency/post/not-found',
+        type: 'article',
+        site_name: 'Digital Xperience Group',
+      },
+    };
+  }
+
+  // Parse the blog body and extract description
+  let description: any[] = parse(blogDetails.body) as any[];
+
+  // Fallback to blogDetails.excerpt if description parsing fails
+  const parsedDescription =
+    description?.[0]?.props?.children?.toString() || blogDetails.excerpt;
+
+  return {
+    title: blogDetails.title,
+    description: parsedDescription,
+    openGraph: {
+      title: blogDetails.title,
+      description: parsedDescription,
+      images: [blogDetails.featuredImage?.image?.url || ''],
+      url: `https://www.dxg.agency/post/${blogDetails.slug}`,
+      type: 'article',
+      site_name: 'Digital Xperience Group',
+    },
+  };
+}
 
 // Slugify function to convert title to URL-friendly slug
 function slugify(text: string) {
@@ -81,7 +157,7 @@ export default function PostPage() {
     return (
       <div className='bg-black' style={{ height: '100vh', width: '100vw' }}>
         <div className='loading-gif'>
-          <img src='/loader.gif' height={300} width={300}/>
+          <img src='/loader.gif' height={300} width={300} />
         </div>
       </div>
     );
@@ -94,7 +170,7 @@ export default function PostPage() {
       <div className='bg-black'>
         <MaxWidthWrapper>
           <h1 className='pt-4 text-2xl font-bold text-white'>{post.title}</h1>
-          <hr className='h-2 mb-4 border-gray-500' />
+          <hr className='mb-4 h-2 border-gray-500' />
           <MotionDiv
             variants={staggerContainer(0.2, 0.1)}
             initial='hidden'
@@ -121,7 +197,7 @@ export default function PostPage() {
               }}
             >
               <div className='flex flex-col gap-5'>
-                <h2 className='mb-3 text-xl font-bold text text-brand'>
+                <h2 className='text mb-3 text-xl font-bold text-brand'>
                   Recent Posts
                 </h2>
                 {(blogData as any)?.data

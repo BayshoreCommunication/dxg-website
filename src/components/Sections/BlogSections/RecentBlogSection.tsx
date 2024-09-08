@@ -32,59 +32,57 @@ export const RecentBlogSection = async () => {
           Recent Blog Post
         </h1>
         {/* <hr className='h-2 mb-4 border-gray-500' /> */}
-        <div className=' border border-gray-500 p-2 md:p-4 mt-2 md:mt-4 rounded-2xl'>
-
-        <MotionDiv
-          variants={staggerContainer(0.2, 0.1)}
-          initial='hidden'
-          whileInView='show'
-          viewport={{ once: false, amount: 0.25 }}
-          className='flex flex-col gap-4 lg:flex-row '
-          style={{ overflow: 'hidden', paddingBottom: '2vw' }}
-        >
+        <div className=' mt-2 rounded-2xl border border-gray-500 p-2 md:mt-4 md:p-4'>
           <MotionDiv
-            variants={slideIn('left', 'tween', 0.2, 1)}
-            className='w-full py-2 lg:w-9/12'
-            style={{ display: 'none' }}
+            variants={staggerContainer(0.2, 0.1)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: false, amount: 0.25 }}
+            className='flex flex-col gap-4 lg:flex-row '
+            style={{ overflow: 'hidden', paddingBottom: '2vw' }}
           >
-            <Suspense fallback={<div>Loading...</div>}>
-              {/* <BlogBigImageCard {...selectedPost} /> */}
-            </Suspense>
-          </MotionDiv>
-          <div
-            className='w-full'
-            style={{
-              overflowY: 'auto',
-              maxHeight: '75vh',
-              position: 'sticky',
-              top: '0',
-            }}
-          >
-            <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row'>
-              {blogsData?.data
-                ?.filter((blog: any) => blog.published === true)
-                ?.map((item: any, index: number) => {
-                  return (
-                    <Link
-                      href={`/post/${item.slug}`}
-                      key={item._id}
-                      // style={{ maxWidth: '100%' }}
-                      className='w-full lg:w-[45%]'
-                    >
-                      <MotionDiv
-                        variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                        className='w-full cursor-pointer'
+            <MotionDiv
+              variants={slideIn('left', 'tween', 0.2, 1)}
+              className='w-full py-2 lg:w-9/12'
+              style={{ display: 'none' }}
+            >
+              <Suspense fallback={<div>Loading...</div>}>
+                {/* <BlogBigImageCard {...selectedPost} /> */}
+              </Suspense>
+            </MotionDiv>
+            <div
+              className='w-full'
+              style={{
+                overflowY: 'auto',
+                maxHeight: '75vh',
+                position: 'sticky',
+                top: '0',
+              }}
+            >
+              <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row'>
+                {blogsData?.data
+                  ?.filter((blog: any) => blog.published === true)
+                  ?.map((item: any, index: number) => {
+                    return (
+                      <Link
+                        href={`/post/${item.slug}`}
+                        key={item._id}
+                        // style={{ maxWidth: '100%' }}
+                        className='w-full lg:w-[45%]'
                       >
-                        <BlogWideCard {...item} />
-                      </MotionDiv>
-                    </Link>
-                  );
-                })}
+                        <MotionDiv
+                          variants={fadeIn('up', 'tween', index * 0.2, 1)}
+                          className='w-full cursor-pointer'
+                        >
+                          <BlogWideCard {...item} />
+                        </MotionDiv>
+                      </Link>
+                    );
+                  })}
+              </div>
             </div>
-          </div>
-        </MotionDiv>
+          </MotionDiv>
         </div>
-      
       </MaxWidthWrapper>
     </div>
   );
