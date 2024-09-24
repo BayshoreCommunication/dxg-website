@@ -358,8 +358,8 @@ export default function PostPage() {
         <meta property="og:url" content={metadata.ogUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Digital Xperience Group" />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="300" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>
       <Header />
       <style>{css}</style>
