@@ -344,7 +344,7 @@ export default function PostPage() {
   const resizedImageUrl = post.featuredImage?.image?.url
     ? post.featuredImage.image.url.replace(
         '/upload/',
-        '/upload/w_800,h_400,q_auto,f_auto/'
+        '/upload/w_5209,h_2736,q_auto,f_auto/'
       )
     : '/default-image.jpg';
 
@@ -366,8 +366,8 @@ export default function PostPage() {
         <meta property="og:url" content={metadata.ogUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Digital Xperience Group" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="400" />
+        <meta property="og:image:width" content="5209" />
+        <meta property="og:image:height" content="2736" />
       </Head>
       <Header />
       <style>{css}</style>
