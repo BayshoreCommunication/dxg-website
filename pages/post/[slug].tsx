@@ -231,7 +231,6 @@ import Footer from '@/components/Footer';
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
-import { RECENT_BLOG_POST } from '@/config/data';
 import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import Link from 'next/link';
 import '@/app/globals.css';
@@ -253,19 +252,6 @@ interface BlogPost {
   };
 }
 
-interface Metadata {
-  title: string;
-  description: string;
-  openGraph: {
-    title: string;
-    description: string;
-    images: string[];
-    url: string;
-    type: string;
-    site_name: string;
-  };
-}
-
 // Slugify function to convert title to URL-friendly slug
 const slugify = (text: string): string =>
   text
@@ -276,50 +262,6 @@ const slugify = (text: string): string =>
     .replace(/\-\-+/g, '-') // Replace multiple - with single -
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, ''); // Trim - from end of text
-
-// Metadata generation
-export async function generateMetadata({
-  slug,
-}: {
-  slug: string;
-}): Promise<Metadata> {
-  const blogPostData = await GetAllBlogPost();
-  const blogDetails: BlogPost | undefined = blogPostData?.data?.find(
-    (blogs: BlogPost) => slugify(blogs.slug) === slug
-  );
-
-  if (!blogDetails) {
-    return {
-      title: 'Blog not found',
-      description: 'No blog post available.',
-      openGraph: {
-        title: 'Blog not found',
-        description: 'No blog post available.',
-        images: [],
-        url: 'https://www.dxg.agency/post/not-found',
-        type: 'article',
-        site_name: 'Digital Xperience Group',
-      },
-    };
-  }
-
-  const description = parse(blogDetails.body) as any[];
-  const parsedDescription =
-    description?.[0]?.props?.children?.toString() || blogDetails.excerpt;
-
-  return {
-    title: blogDetails.title,
-    description: parsedDescription,
-    openGraph: {
-      title: blogDetails.title,
-      description: parsedDescription,
-      images: [blogDetails.featuredImage?.image?.url || ''],
-      url: `https://www.dxg.agency/post/${blogDetails.slug}`,
-      type: 'article',
-      site_name: 'Digital Xperience Group',
-    },
-  };
-}
 
 // Fetch post by slug
 const getPostBySlug = async (slug: string): Promise<BlogPost | null> => {
@@ -416,6 +358,8 @@ export default function PostPage() {
         <meta property="og:url" content={metadata.ogUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Digital Xperience Group" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
       </Head>
       <Header />
       <style>{css}</style>
