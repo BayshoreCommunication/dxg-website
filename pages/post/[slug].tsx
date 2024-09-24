@@ -344,7 +344,7 @@ export default function PostPage() {
   const resizedImageUrl = post.featuredImage?.image?.url
     ? post.featuredImage.image.url.replace(
         '/upload/',
-        '/upload/w_5209,h_2736,q_auto,f_auto,f_jpg/'
+        '/upload/w_5209,h_2736,q_auto,f_jpg/'
       )
     : '/default-image.jpg';
 
