@@ -237,6 +237,7 @@ import Link from 'next/link';
 import '@/app/globals.css';
 import GetAllBlogPost from '@/lib/GetAllBlogPost';
 import parse from 'html-react-parser';
+import Head from 'next/head'; // Import Head for SEO
 
 // TypeScript Types
 interface BlogPost {
@@ -367,7 +368,7 @@ export default function PostPage() {
           <Link href={`/post/${item.slug}`} key={item.slug}>
             <MotionDiv
               variants={fadeIn('up', 'tween', index * 0.2, 1)}
-              className='w-full cursor-pointer'
+              className="w-full cursor-pointer"
             >
               <BlogWideCard {...item} />
             </MotionDiv>
@@ -378,39 +379,67 @@ export default function PostPage() {
 
   if (!post) {
     return (
-      <div className='bg-black' style={{ height: '100vh', width: '100vw' }}>
-        <div className='loading-gif'>
-          <img src='/loader.gif' height={300} width={300} />
+      <div className="bg-black" style={{ height: '100vh', width: '100vw' }}>
+        <div className="loading-gif">
+          <img src="/loader.gif" height={300} width={300} />
         </div>
       </div>
     );
   }
 
+  // Metadata for the current post
+  const parsedDescription = (() => {
+    const parsedBody = parse(post.body);
+    if (Array.isArray(parsedBody)) {
+      return parsedBody[0]?.props?.children?.toString();
+    } else if (typeof parsedBody === 'object' && parsedBody !== null) {
+      return parsedBody?.props?.children?.toString();
+    }
+    return post.excerpt;
+  })();
+
+  const metadata = {
+    title: post.title,
+    description: parsedDescription,
+    ogImage: post.featuredImage?.image?.url || '/default-image.jpg',
+    ogUrl: `https://www.dxg.agency/post/${post.slug}`,
+  };
+
   return (
     <>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content={metadata.ogImage} />
+        <meta property="og:url" content={metadata.ogUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="Digital Xperience Group" />
+      </Head>
       <Header />
       <style>{css}</style>
-      <div className='bg-black'>
+      <div className="bg-black">
         <MaxWidthWrapper>
-          <h1 className='pt-4 text-2xl font-bold text-white'>{post.title}</h1>
-          <hr className='mb-4 h-2 border-gray-500' />
+          <h1 className="pt-4 text-2xl font-bold text-white">{post.title}</h1>
+          <hr className="mb-4 h-2 border-gray-500" />
           <MotionDiv
             variants={staggerContainer(0.2, 0.1)}
-            initial='hidden'
-            whileInView='show'
+            initial="hidden"
+            whileInView="show"
             viewport={{ once: true, amount: 0 }}
-            className='flex flex-col gap-4 lg:flex-row'
+            className="flex flex-col gap-4 lg:flex-row"
           >
             <MotionDiv
               variants={slideIn('up', 'tween', 0.2, 1)}
-              className='w-full py-2 lg:w-9/12'
+              className="w-full py-2 lg:w-9/12"
             >
               <Suspense fallback={<div>Loading...</div>}>
                 <BlogBigImageCard {...post} />
               </Suspense>
             </MotionDiv>
             <div
-              className='w-full p-2 lg:w-3/12'
+              className="w-full p-2 lg:w-3/12"
               style={{
                 overflowY: 'auto',
                 maxHeight: '84vh',
@@ -419,8 +448,8 @@ export default function PostPage() {
                 overflowX: 'hidden',
               }}
             >
-              <div className='flex flex-col gap-5'>
-                <h2 className='mb-3 text-xl font-bold text-brand'>
+              <div className="flex flex-col gap-5">
+                <h2 className="mb-3 text-xl font-bold text-brand">
                   Recent Posts
                 </h2>
                 {recentPosts}
