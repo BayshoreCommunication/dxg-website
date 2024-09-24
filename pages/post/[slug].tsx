@@ -340,10 +340,18 @@ export default function PostPage() {
     return post.excerpt;
   })();
 
+  // Modify the Cloudinary URL for dynamic resizing
+  const resizedImageUrl = post.featuredImage?.image?.url
+    ? post.featuredImage.image.url.replace(
+        '/upload/',
+        '/upload/w_800,h_400,q_auto,f_auto/'
+      )
+    : '/default-image.jpg';
+
   const metadata = {
     title: post.title,
     description: parsedDescription,
-    ogImage: post.featuredImage?.image?.url || '/default-image.jpg',
+    ogImage: resizedImageUrl,
     ogUrl: `https://www.dxg.agency/post/${post.slug}`,
   };
 
@@ -358,8 +366,8 @@ export default function PostPage() {
         <meta property="og:url" content={metadata.ogUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Digital Xperience Group" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="400" />
       </Head>
       <Header />
       <style>{css}</style>
