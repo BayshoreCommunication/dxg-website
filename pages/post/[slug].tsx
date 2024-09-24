@@ -333,12 +333,13 @@ export default function PostPage() {
   const parsedDescription = (() => {
     const parsedBody = parse(post.body);
     if (Array.isArray(parsedBody)) {
-      return parsedBody[0]?.props?.children?.toString();
+      return parsedBody[0]?.props?.children?.toString() || post.excerpt; // Ensure this is a string
     } else if (typeof parsedBody === 'object' && parsedBody !== null) {
-      return parsedBody?.props?.children?.toString();
+      return parsedBody?.props?.children?.toString() || post.excerpt; // Convert to string
     }
     return post.excerpt;
   })();
+  
 
   // Modify the Cloudinary URL for dynamic resizing
   const resizedImageUrl = post.featuredImage?.image?.url
@@ -360,9 +361,9 @@ export default function PostPage() {
     <>
       <Head>
         <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <meta name="description" content={metadata.description || 'Default description'} />
         <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
+        <meta property="og:description" content={metadata.description || 'Default description'} />
         <meta property="og:image" content={metadata.ogImage} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:url" content={metadata.ogUrl} />
@@ -371,6 +372,7 @@ export default function PostPage() {
         <meta property="og:image:width" content="5209" />
         <meta property="og:image:height" content="2736" />
       </Head>
+
       <Header />
       <style>{css}</style>
       <div className="bg-black">
