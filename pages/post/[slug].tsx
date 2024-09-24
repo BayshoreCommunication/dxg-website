@@ -342,11 +342,12 @@ export default function PostPage() {
 
   // Modify the Cloudinary URL for dynamic resizing
   const resizedImageUrl = post.featuredImage?.image?.url
-    ? post.featuredImage.image.url.replace(
-        '/upload/',
-        '/upload/w_5209,h_2736,q_auto,f_auto/'
-      )
-    : '/default-image.jpg';
+  ? post.featuredImage.image.url.replace(
+      '/upload/',
+      '/upload/w_5209,h_2736,q_auto,f_auto,f_jpg/'
+    )
+  : '/default-image.jpg';
+
 
   const metadata = {
     title: post.title,
@@ -363,6 +364,7 @@ export default function PostPage() {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:image" content={metadata.ogImage} />
+        <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:url" content={metadata.ogUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Digital Xperience Group" />
