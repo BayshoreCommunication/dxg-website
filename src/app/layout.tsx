@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { SITECONFIG } from '@/config/site';
+import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
 
 // export const metadata: Metadata = {
@@ -43,6 +44,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='h-full scroll-smooth bg-black'>
+      <Head>
+        <meta
+          name='google-site-verification'
+          content='O9gSathY_8rXRa2F2CClJ6BTSszxkf7cCrCCcjMXdLg'
+        />
+      </Head>
       <body
         className={cn(
           'relative h-full overflow-x-hidden font-sans antialiased',
