@@ -339,31 +339,36 @@ export default function PostPage() {
     }
     return post.excerpt;
   })();
-  
 
   // Modify the Cloudinary URL for dynamic resizing
   const resizedImageUrl = post.featuredImage?.image?.url
-  ? post.featuredImage.image.url.replace(
-      '/upload/',
-      '/upload/w_5209,h_2736,q_auto,f_auto,f_jpg/'
-    )
-  : '/default-image.jpg';
-
+    ? post.featuredImage.image.url.replace(
+        '/upload/',
+        '/upload/w_5209,h_2736,q_auto,f_jpg/'
+      )
+    : '/default-image.jpg';
 
   const metadata = {
     title: post.title,
     description: parsedDescription,
     ogImage: resizedImageUrl,
     ogUrl: `https://www.dxg.agency/post/${post.slug}`,
+    canonicalUrl: `https://www.dxg.agency/post/${post.slug}` // Canonical URL
   };
 
   return (
     <>
       <Head>
         <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description || 'Default description'} />
+        <meta
+          name="description"
+          content={metadata.description || 'Default description'}
+        />
         <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description || 'Default description'} />
+        <meta
+          property="og:description"
+          content={metadata.description || 'Default description'}
+        />
         <meta property="og:image" content={metadata.ogImage} />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:url" content={metadata.ogUrl} />
@@ -371,6 +376,7 @@ export default function PostPage() {
         <meta property="og:site_name" content="Digital Xperience Group" />
         <meta property="og:image:width" content="5209" />
         <meta property="og:image:height" content="2736" />
+        <link rel="canonical" href={metadata.canonicalUrl} /> {/* Canonical tag */}
       </Head>
 
       <Header />
@@ -417,4 +423,4 @@ export default function PostPage() {
       <Footer />
     </>
   );
-}
+} 
