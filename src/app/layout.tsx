@@ -6,7 +6,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { SITECONFIG } from '@/config/site';
-import Head from 'next/head';
 const inter = Inter({ subsets: ['latin'] });
 
 // export const metadata: Metadata = {
@@ -35,13 +34,6 @@ export const metadata: Metadata = {
   openGraph: {
     images: '/opengraph-image.jpg',
   },
-  // Add the Google site verification meta tag here
-  meta: [
-    {
-      name: 'google-site-verification',
-      content: 'O9gSathY_8rXRa2F2CClJ6BTSszxkf7cCrCCcjMXdLg',
-    },
-  ],
 };
 
 export default function RootLayout({
