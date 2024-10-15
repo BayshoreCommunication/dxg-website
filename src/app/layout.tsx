@@ -35,6 +35,13 @@ export const metadata: Metadata = {
   openGraph: {
     images: '/opengraph-image.jpg',
   },
+  // Add the Google site verification meta tag here
+  meta: [
+    {
+      name: 'google-site-verification',
+      content: 'O9gSathY_8rXRa2F2CClJ6BTSszxkf7cCrCCcjMXdLg',
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -44,12 +51,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='h-full scroll-smooth bg-black'>
-      <Head>
-        <meta
-          name='google-site-verification'
-          content='O9gSathY_8rXRa2F2CClJ6BTSszxkf7cCrCCcjMXdLg'
-        />
-      </Head>
       <body
         className={cn(
           'relative h-full overflow-x-hidden font-sans antialiased',
