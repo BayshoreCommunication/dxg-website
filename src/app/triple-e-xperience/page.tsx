@@ -8,6 +8,13 @@ import { SectionInformationWithImage } from '@/components/Sections';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import Script from 'next/script';
 import AppointmentBooking from '@/components/AppointmentBooking';
+
+export const metadata: Metadata = {
+  title: ' Exceptional Event Production, AV, Graphics, Animation & More | DXG Agency',
+  description:
+    'Transform your events into truly unforgettable experiences with DXG Agency. We offer exceptional event production management, cutting-edge AV technology, stunning graphics, dynamic animation, and innovative solutions for virtual and hybrid events. Elevate your event’s impact with our expertise.',
+};
+
 export default function TripleExperience() {
   return (
     <div className='bg-black mb-64'>

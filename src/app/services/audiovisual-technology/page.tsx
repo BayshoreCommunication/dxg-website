@@ -3,6 +3,13 @@ import Testimonial from '@/components/Testimonial';
 import WhyDxg from '@/components/home/WhyDxg';
 import { AudiovisualTechnologyBannerSection } from '@/components/Sections/AudiovisualTechnologyBannerSection';
 
+export const metadata: Metadata = {
+  title: ' Exceptional Event Production, AV, Graphics, Animation & More | DXG Agency',
+  description:
+    'Transform your events into truly unforgettable experiences with DXG Agency. We offer exceptional event production management, cutting-edge AV technology, stunning graphics, dynamic animation, and innovative solutions for virtual and hybrid events. Elevate your event’s impact with our expertise.',
+};
+
+
 export default function AudioVisualTechnology() {
   return (
     <div className='bg-black'>
