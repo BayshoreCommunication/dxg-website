@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { SERVICE_DATA } from '@/config/data';
 import { Icons } from '@/components/Icons';
@@ -24,7 +24,47 @@ const iconVariants = {
   visible: { x: 0, opacity: 1 },
 };
 
+const keyServiceData = [
+  {
+    activeImg: '/landing-pages/our-portfolio/hublot.jpg',
+    img: '/landing-pages/our-portfolio/hublot-2.jpg',
+    title: 'Hublot',
+    subtitle: 'New Product Launch',
+    desc: `Hublot proudly unveils its latest product, a stunning fusion of modern innovation and timeless elegance. This new timepiece showcases the brand’s commitment to pushing the boundaries of craftsmanship and design. Featuring cutting-edge technology, meticulous attention to detail, and the signature bold aesthetics that Hublot is known for, this watch embodies the perfect blend of style and precision. `,
+  },
+  {
+    activeImg: '/landing-pages/our-portfolio/savannah-nguyen.jpg',
+    img: '/landing-pages/our-portfolio/savannah-nguyen-2.jpg',
+    title: 'Savannah Nguyen',
+    subtitle: 'New Product Launch',
+    desc: `Hublot proudly unveils its latest product, a stunning fusion of modern innovation and timeless elegance. This new timepiece showcases the brand’s commitment to pushing the boundaries of craftsmanship and design. Featuring cutting-edge technology, meticulous attention to detail, and the signature bold aesthetics that Hublot is known for, this watch embodies the perfect blend of style and precision. `,
+  },
+  {
+    activeImg: '/landing-pages/our-portfolio/annette-black.jpg',
+    img: '/landing-pages/our-portfolio/annette-black-2.jpg',
+    title: 'Annette Black',
+    subtitle: 'New Product Launch',
+    desc: `Hublot proudly unveils its latest product, a stunning fusion of modern innovation and timeless elegance. This new timepiece showcases the brand’s commitment to pushing the boundaries of craftsmanship and design. Featuring cutting-edge technology, meticulous attention to detail, and the signature bold aesthetics that Hublot is known for, this watch embodies the perfect blend of style and precision. `,
+  },
+  {
+    activeImg: '/landing-pages/our-portfolio/robert-fox.jpg',
+    img: '/landing-pages/our-portfolio/robert-fox-2.jpg',
+    title: 'Robert Fox',
+    subtitle: 'New Product Launch',
+    desc: `Hublot proudly unveils its latest product, a stunning fusion of modern innovation and timeless elegance. This new timepiece showcases the brand’s commitment to pushing the boundaries of craftsmanship and design. Featuring cutting-edge technology, meticulous attention to detail, and the signature bold aesthetics that Hublot is known for, this watch embodies the perfect blend of style and precision. `,
+  },
+  {
+    activeImg: '/landing-pages/our-portfolio/floyd-miles.jpg',
+    img: '/landing-pages/our-portfolio/floyd-miles-2.jpg',
+    title: 'Floyd Miles',
+    subtitle: 'New Product Launch',
+    desc: `Hublot proudly unveils its latest product, a stunning fusion of modern innovation and timeless elegance. This new timepiece showcases the brand’s commitment to pushing the boundaries of craftsmanship and design. Featuring cutting-edge technology, meticulous attention to detail, and the signature bold aesthetics that Hublot is known for, this watch embodies the perfect blend of style and precision. `,
+  },
+];
+
 export default function OurEventGallery() {
+  // Set activeIndex to accept either a number or null
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
   return (
     <div className='md:mb10 mb-6 bg-black lg:mb-20'>
       <MaxWidthWrapper>
@@ -44,12 +84,75 @@ export default function OurEventGallery() {
           </div>
           {/* Our Event Gallery */}
 
-          <div className='grid grid-cols-6 gap-6'>
-            <div className='  col-span-2 h-64 bg-white duration-300'></div>
-            <div className='  h-64 bg-white'></div>
-            <div className='  h-64 bg-white'></div>
-            <div className='  h-64 bg-white'></div>
-            <div className='  h-64 bg-white'></div>
+          {/* Key Services Card */}
+          <div className='flex max-h-[400px] flex-col items-stretch overflow-hidden lg:flex-row'>
+            {keyServiceData.map((item, index) => (
+              <div
+                key={index}
+                className={`group relative overflow-hidden duration-500 ${activeIndex === index ? 'h-full w-full max-w-xl' : ''}`}
+                onMouseEnter={() => setActiveIndex(index)}
+              >
+                <div>
+                  {/* mobile */}
+                  <div className='block lg:hidden'>
+                    <Image
+                      // src={item.img}
+                      src={item.img}
+                      alt={item.title}
+                      width={295}
+                      height={460}
+                      className='w-full'
+                    />
+                  </div>
+                  {/* desktop */}
+                  <div className='hidden lg:block'>
+                    <Image
+                      // src={item.img}
+                      src={activeIndex === index ? item.activeImg : item.img}
+                      alt={item.title}
+                      width={activeIndex === index ? 740 : 295}
+                      height={460}
+                      className={`${activeIndex === index ? 'h-[400px] w-full' : ''}`}
+                    />
+                  </div>
+                  <div
+                    className={`absolute bottom-0 flex w-full items-start justify-start bg-black/40 p-6 text-white duration-500 ${
+                      activeIndex === index
+                        ? 'invisible opacity-0'
+                        : 'visible opacity-100'
+                    }`}
+                  >
+                    <div>
+                      <h3 className='mb-1 text-start text-xl font-semibold md:text-2xl'>
+                        {item.title}
+                      </h3>
+                      <p className='font-light text-white opacity-70'>
+                        {item.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={`absolute bottom-0 flex w-full items-start justify-start bg-black/40 p-6 text-white duration-500 ${
+                      activeIndex === index
+                        ? 'visible top-0 opacity-100'
+                        : 'invisible top-full opacity-0'
+                    }`}
+                  >
+                    <div>
+                      <h3 className='text-start text-xl font-semibold md:text-2xl'>
+                        {item.title}
+                      </h3>
+                      <p className='font-light text-white opacity-70'>
+                        {item.subtitle}
+                      </p>
+                      <p className='mt-2 text-start text-base opacity-70 md:text-xl'>
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
           {/* <div className='flex justify-center'>
             <Button
