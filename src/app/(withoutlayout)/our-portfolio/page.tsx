@@ -1,4 +1,4 @@
-import CallToAction from '@/components/LandingPages/MyEvent/CallToAction';
+import CallToAction from '@/components/LandingPages/Shared/CallToAction';
 import HeroSection from '@/components/LandingPages/OurPortfolio/HeroSection';
 import OurEventGallery from '@/components/LandingPages/OurPortfolio/OurEventGallery';
 import Services from '@/components/LandingPages/OurPortfolio/Services';
