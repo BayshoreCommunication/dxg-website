@@ -6,11 +6,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import Link from 'next/link';
-import Image from 'next/image';
 
-import { Divide } from 'lucide-react';
 import { IoArrowBack, IoArrowForwardOutline } from 'react-icons/io5';
 
 const HomeSilderSection: React.FC = () => {

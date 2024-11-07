@@ -1,13 +1,30 @@
 import React from 'react';
+import ExclusiveOfferSlider from './ExclusiveOfferSlider';
+import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 
-const ExclusiveOffer = () => {
+const Home: React.FC = () => {
   return (
-    <div className=' bg-black'>
-      <h1 className='mx-auto flex min-h-svh items-center justify-center text-center text-6xl text-white'>
-        Exclusive Offer
-      </h1>
+    <div
+      className='w-full  bg-black bg-cover bg-center py-3 md:py-10 lg:py-20'
+      style={{
+        backgroundImage: `url('/landing-pages/discount/exclusive-offer-bg.png')`,
+      }}
+    >
+      <MaxWidthWrapper className='md:!pe-0'>
+        <div className='mb-10 max-w-3xl'>
+          <p className='text-base uppercase text-white'>exclusive</p>
+          <h2 className='mb-6 mt-2 text-5xl font-semibold  text-white'>
+            Our <br />
+            Successful Events.
+          </h2>
+        </div>
+        <div>
+          {/* Slider Content */}
+          <ExclusiveOfferSlider />
+        </div>
+      </MaxWidthWrapper>
     </div>
   );
 };
 
-export default ExclusiveOffer;
+export default Home;
