@@ -11,6 +11,7 @@ interface CountdownTime {
 const OfferCountdown: React.FC = () => {
   const targetDate = new Date('2024-12-20T17:25:00');
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const calculateTimeLeft = (): CountdownTime => {
     const difference = targetDate.getTime() - new Date().getTime();
     const timeLeft: CountdownTime = {
@@ -30,7 +31,7 @@ const OfferCountdown: React.FC = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
 
   return (
     <div className='flex flex-col items-center  justify-center text-white'>
