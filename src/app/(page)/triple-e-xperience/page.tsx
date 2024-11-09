@@ -1,6 +1,6 @@
 import { BreadCrumb } from '@/components/Breadcrumb';
 import React from 'react';
-import EngageImage from '../../../public/triple-e-xperience/dxg-agency-banner-engage.png';
+import EngageImage from '../../(page)/triple-e-xperience/dxg-agency-banner-exchange.png';
 import EnlightImage from '../../../public/triple-e-xperience/dxg-agency-banner-exchange.png';
 import ExchangeImage from '../../../public/triple-e-xperience/dxg-agency-banner-enlight.png';
 import NewsLetter from '@/components/NewsLetter';
@@ -10,7 +10,7 @@ import Script from 'next/script';
 import AppointmentBooking from '@/components/AppointmentBooking';
 export default function TripleExperience() {
   return (
-    <div className='bg-black mb-64'>
+    <div className='mb-64 bg-black'>
       <BreadCrumb
         buttonTitle='Book an appointment'
         description='When it comes to putting on an event, event organizers and managers need to ensure they have the right partner to deliver what we call The Triple E Xperience™'
@@ -50,7 +50,7 @@ export default function TripleExperience() {
         sectionImage={ExchangeImage}
         sectionImageOverlay={''}
       />
-      <div className='bg-black mb-[-250px]'>
+      <div className='mb-[-250px] bg-black'>
         <NewsLetter />
       </div>
     </div>
