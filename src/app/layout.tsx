@@ -53,8 +53,8 @@ export default function RootLayout({
         <main className='relative flex min-h-screen flex-col'>
           <div className='flex-1 flex-grow bg-black'>{children}</div>
         </main>
-        {/* <Footer />
-        <TailwindIndicator /> */}
+        <Footer />
+        <TailwindIndicator />
       </body>
     </html>
   );
