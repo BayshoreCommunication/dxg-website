@@ -10,12 +10,11 @@ const Home: React.FC = () => {
         backgroundImage: `url('/landing-pages/discount/exclusive-offer-bg.png')`,
       }}
     >
-      <MaxWidthWrapper className='md:!pe-0'>
+      <MaxWidthWrapper className='lg:!pe-0'>
         <div className='mb-10 max-w-3xl'>
           <p className='text-base uppercase text-white'>exclusive</p>
           <h2 className='mb-6 mt-2 text-5xl font-semibold  text-white'>
-            Our <br />
-            Successful Events.
+            Limited <br /> Time Special Offer
           </h2>
         </div>
         <div>

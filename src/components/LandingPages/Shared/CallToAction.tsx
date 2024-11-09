@@ -24,14 +24,16 @@ const CallToAction = () => {
 
           <div className='flex w-full justify-center lg:w-[20%]'>
             {' '}
-            <ScrollMotionEffect effect='fade-left' duration='2000'>
-              <Link
-                href='#'
-                className=' mx-auto shrink-0 rounded-lg bg-[#F5982D] px-8 py-3 text-lg font-bold text-white duration-300 hover:bg-[#2DC6F5]'
-              >
-                Free Consultation
-              </Link>
-            </ScrollMotionEffect>
+            <div className=' shrink-0'>
+              <ScrollMotionEffect effect='fade-left' duration='2000'>
+                <Link
+                  href='#'
+                  className=' mx-auto shrink-0 rounded-lg bg-[#F5982D] px-8 py-3 text-lg font-bold text-white duration-300 hover:bg-[#2DC6F5]'
+                >
+                  Free Consultation
+                </Link>
+              </ScrollMotionEffect>
+            </div>
           </div>
         </div>
       </MaxWidthWrapper>

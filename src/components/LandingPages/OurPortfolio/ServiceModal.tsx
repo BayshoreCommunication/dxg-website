@@ -65,7 +65,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({
             </button>
           </div>
           <div className='!mt-0 space-y-4 p-4 !pt-0 md:p-10'>
-            <div className='overflow-hidden rounded-[30px]'>
+            <div className='overflow-hidden rounded-[8px] lg:rounded-[30px]'>
               <Image
                 src={modalData?.img}
                 alt={modalData?.title}

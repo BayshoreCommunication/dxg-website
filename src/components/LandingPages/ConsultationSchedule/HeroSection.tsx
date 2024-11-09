@@ -25,7 +25,7 @@ const HeroSection = () => {
                     alt='Decoration Image'
                     width={400}
                     height={70}
-                    className='absolute right-0 top-full'
+                    className='top-100 absolute right-[10%] w-[60%] lg:w-1/2'
                   />
                 </ScrollMotionEffect>
               </span>

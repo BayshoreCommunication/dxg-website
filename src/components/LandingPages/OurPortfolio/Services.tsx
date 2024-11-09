@@ -403,7 +403,7 @@ export default function KeyService() {
             {keyServiceData.map((item, index) => (
               <div
                 key={index}
-                className='group relative overflow-hidden rounded-2xl duration-500 md:rounded-[30px]'
+                className='group relative overflow-hidden rounded-xl duration-500 md:rounded-[30px]'
                 onClick={() => setSelectModal(index)}
               >
                 <ScrollMotionEffect effect='fade-up' duration='2000'>
