@@ -1,16 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { SERVICE_DATA } from '@/config/data';
-import { Icons } from '@/components/Icons';
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
 import { fadeIn, staggerContainer } from '@/lib/motion';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { Paragraph, Title } from '@/components/Typography';
-import { BottomToTop } from '@/components/Animation';
+import ScrollMotionEffect from '../Shared/motion/ScrollMotionEffect';
 
 const infos = {
   title: 'Our Event Gallery',
@@ -85,72 +81,76 @@ export default function OurEventGallery() {
           {/* Our Event Gallery */}
 
           {/* Key Services Card */}
-          <div className='flex max-h-[400px] flex-col items-stretch overflow-hidden lg:flex-row'>
+          <div className='flex h-full flex-col items-stretch overflow-hidden lg:max-h-[400px] lg:flex-row'>
             {keyServiceData.map((item, index) => (
               <div
                 key={index}
-                className={`group relative overflow-hidden duration-500 ${activeIndex === index ? 'h-full w-full max-w-xl' : ''}`}
+                className={`group relative overflow-hidden duration-500 ${activeIndex === index ? 'h-full w-[100%] max-w-2xl' : ''}`}
                 onMouseEnter={() => setActiveIndex(index)}
               >
-                <div>
-                  {/* mobile */}
-                  <div className='block lg:hidden'>
-                    <Image
-                      // src={item.img}
-                      src={item.img}
-                      alt={item.title}
-                      width={295}
-                      height={460}
-                      className='w-full'
-                    />
-                  </div>
-                  {/* desktop */}
-                  <div className='hidden lg:block'>
-                    <Image
-                      // src={item.img}
-                      src={activeIndex === index ? item.activeImg : item.img}
-                      alt={item.title}
-                      width={activeIndex === index ? 740 : 295}
-                      height={460}
-                      className={`${activeIndex === index ? 'h-[400px] w-full' : ''}`}
-                    />
-                  </div>
-                  <div
-                    className={`absolute bottom-0 flex w-full items-start justify-start bg-black/40 p-6 text-white duration-500 ${
-                      activeIndex === index
-                        ? 'invisible opacity-0'
-                        : 'visible opacity-100'
-                    }`}
-                  >
-                    <div>
-                      <h3 className='mb-1 text-start text-xl font-semibold md:text-2xl'>
-                        {item.title}
-                      </h3>
-                      <p className='font-light text-white opacity-70'>
-                        {item.subtitle}
-                      </p>
+                <ScrollMotionEffect effect='fade-up' duration='2000'>
+                  <div>
+                    {/* mobile */}
+                    <div className='block max-h-[400px] lg:hidden'>
+                      <Image
+                        // src={item.img}
+                        src={item.img}
+                        alt={item.title}
+                        width={295}
+                        height={460}
+                        className=' w-full bg-cover'
+                      />
+                    </div>
+                    {/* desktop */}
+
+                    <div className='hidden lg:block'>
+                      <Image
+                        // src={item.img}
+                        src={activeIndex === index ? item.activeImg : item.img}
+                        alt={item.title}
+                        width={activeIndex === index ? 740 : 295}
+                        height={460}
+                        className={`${activeIndex === index ? ' w-full ' : ''}`}
+                      />
+                    </div>
+
+                    <div
+                      className={`absolute bottom-0 flex w-full items-start justify-start bg-black/40 p-4 text-white duration-500 ${
+                        activeIndex === index
+                          ? 'invisible opacity-0'
+                          : 'visible opacity-100'
+                      }`}
+                    >
+                      <div>
+                        <h3 className='mb-1 text-start text-xl font-semibold 2xl:text-2xl'>
+                          {item.title}
+                        </h3>
+                        <p className='font-light text-white opacity-70'>
+                          {item.subtitle}
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      className={`absolute bottom-0 flex w-full items-start justify-start bg-black/40 p-6 text-white duration-500 ${
+                        activeIndex === index
+                          ? 'visible top-0 opacity-100'
+                          : 'invisible top-full opacity-0'
+                      }`}
+                    >
+                      <div>
+                        <h3 className='text-start text-xl font-semibold md:text-2xl'>
+                          {item.title}
+                        </h3>
+                        <p className='font-light text-white opacity-70'>
+                          {item.subtitle}
+                        </p>
+                        <p className='mt-2 text-start text-base opacity-70 2xl:text-xl'>
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className={`absolute bottom-0 flex w-full items-start justify-start bg-black/40 p-6 text-white duration-500 ${
-                      activeIndex === index
-                        ? 'visible top-0 opacity-100'
-                        : 'invisible top-full opacity-0'
-                    }`}
-                  >
-                    <div>
-                      <h3 className='text-start text-xl font-semibold md:text-2xl'>
-                        {item.title}
-                      </h3>
-                      <p className='font-light text-white opacity-70'>
-                        {item.subtitle}
-                      </p>
-                      <p className='mt-2 text-start text-base opacity-70 md:text-xl'>
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </ScrollMotionEffect>
               </div>
             ))}
           </div>

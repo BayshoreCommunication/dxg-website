@@ -5,6 +5,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { Paragraph, Title } from '@/components/Typography';
 import ContactSection from './ContactSection';
+import ScrollMotionEffect from './motion/ScrollMotionEffect';
 
 const infos = {
   title: 'Get In Touch',
@@ -37,7 +38,11 @@ export default function GetInTouch() {
             />
           </div>
           {/* GetInTouch */}
-          <ContactSection />
+          <ScrollMotionEffect effect='fade-up' duration='2000'>
+            <div>
+              <ContactSection />
+            </div>
+          </ScrollMotionEffect>
         </MotionDiv>
       </MaxWidthWrapper>
     </div>

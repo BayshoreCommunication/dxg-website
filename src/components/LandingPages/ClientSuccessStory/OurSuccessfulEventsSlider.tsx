@@ -14,6 +14,7 @@ import {
 } from 'react-icons/io5';
 import Image from 'next/image';
 import Link from 'next/link';
+import ScrollMotionEffect from '../Shared/motion/ScrollMotionEffect';
 
 const successfulEventsData = [
   {
@@ -53,10 +54,24 @@ const OurSuccessfulEventsSlider: React.FC = () => {
     <div className=''>
       <div className=''>
         <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
+          // slidesPerView={3}
+          // spaceBetween={30}
           pagination={{
             clickable: true,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
           }}
           modules={[Pagination]}
           className='mySwiper'
@@ -65,28 +80,33 @@ const OurSuccessfulEventsSlider: React.FC = () => {
             {successfulEventsData.map((item, index) => (
               <SwiperSlide key={index}>
                 <div className='group max-w-xl pb-10 duration-300 md:pb-20'>
-                  <Image
-                    src={item.img}
-                    alt={item.title}
-                    width={720}
-                    height={400}
-                    className='w-full'
-                  ></Image>
-                  <div className='flex items-center justify-between bg-white p-5'>
-                    <div>
-                      <p className='font-bold uppercase  opacity-70'>
-                        {item.category}
-                      </p>
-                      <h4 className='text-xl font-semibold md:text-2xl'>
-                        {item.title}
-                      </h4>
-                    </div>
-                    <Link
-                      href='#'
-                      className='bg-[#C7C7C7] p-4 duration-300 group-hover:bg-[#1FB1E9] group-hover:text-white'
-                    >
-                      <IoArrowForward className='text-2xl' />
-                    </Link>
+                  <div>
+                    {' '}
+                    <ScrollMotionEffect effect='fade-up' duration='1000'>
+                      <Image
+                        src={item.img}
+                        alt={item.title}
+                        width={720}
+                        height={400}
+                        className='w-full'
+                      ></Image>
+                      <div className='flex items-center justify-between bg-white p-5'>
+                        <div>
+                          <p className='font-bold uppercase  opacity-70'>
+                            {item.category}
+                          </p>
+                          <h4 className='text-xl font-semibold md:text-2xl'>
+                            {item.title}
+                          </h4>
+                        </div>
+                        <Link
+                          href='#'
+                          className='bg-[#C7C7C7] p-3 duration-300 group-hover:bg-[#1FB1E9] group-hover:text-white'
+                        >
+                          <IoArrowForward className='text-2xl' />
+                        </Link>
+                      </div>
+                    </ScrollMotionEffect>
                   </div>
                 </div>
               </SwiperSlide>

@@ -8,6 +8,7 @@ import { Paragraph, Title } from '@/components/Typography';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import Link from 'next/link';
 import ServiceModal from './ServiceModal';
+import ScrollMotionEffect from '../Shared/motion/ScrollMotionEffect';
 
 const infos = {
   title: 'Key Service',
@@ -405,24 +406,28 @@ export default function KeyService() {
                 className='group relative overflow-hidden rounded-2xl duration-500 md:rounded-[30px]'
                 onClick={() => setSelectModal(index)}
               >
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  width={540}
-                  height={380}
-                  className='w-full'
-                />
-                <div className='absolute bottom-0 flex w-full items-center justify-between p-5 md:p-8 lg:p-10'>
-                  <h3 className='max-w-[60%] text-xl font-semibold text-white md:text-2xl lg:text-3xl'>
-                    {item.title}
-                  </h3>
-                  <button
-                    onClick={() => setIsModalOpen(true)}
-                    className='inline-block rounded-full bg-white bg-opacity-20 p-3 duration-300 hover:bg-[#2DC6F5] group-hover:-rotate-45 group-hover:bg-opacity-100 md:p-4'
-                  >
-                    <FaArrowRightLong className='text-xl text-white group-hover:text-primary md:text-2xl' />
-                  </button>
-                </div>
+                <ScrollMotionEffect effect='fade-up' duration='2000'>
+                  <div>
+                    <Image
+                      src={item.img}
+                      alt={item.title}
+                      width={540}
+                      height={380}
+                      className='w-full'
+                    />
+                    <div className='absolute bottom-0 flex w-full items-center justify-between p-5 md:p-8 2xl:p-10'>
+                      <h3 className='max-w-[60%] text-xl font-semibold text-white md:text-2xl 2xl:text-3xl'>
+                        {item.title}
+                      </h3>
+                      <button
+                        onClick={() => setIsModalOpen(true)}
+                        className='inline-block rounded-full bg-white bg-opacity-20 p-3 duration-300 hover:bg-[#2DC6F5] group-hover:-rotate-45 group-hover:bg-opacity-100 md:p-4'
+                      >
+                        <FaArrowRightLong className='text-xl text-white group-hover:text-primary 2xl:text-2xl' />
+                      </button>
+                    </div>
+                  </div>
+                </ScrollMotionEffect>
               </div>
             ))}
           </div>

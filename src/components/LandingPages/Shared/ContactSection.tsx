@@ -43,7 +43,7 @@ const ContactSection = () => {
               type='date' // Changed to 'date' type to enable date picker
               name='date'
             />
-            <span className='text-primary'></span>
+            <span className='text-white'></span>
           </div>
 
           {/* Event Type */}

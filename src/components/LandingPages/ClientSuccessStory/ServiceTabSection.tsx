@@ -18,7 +18,7 @@ const ServiceTabSection = () => {
       content: `  <ol className='relative ms-3 max-w-2xl  border-s border-gray-200'>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>1</p>
+                  <span>1</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -32,7 +32,7 @@ const ServiceTabSection = () => {
               </li>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>2</p>
+                  <span>2</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -47,7 +47,7 @@ const ServiceTabSection = () => {
               </li>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>3</p>
+                  <span>3</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -61,7 +61,7 @@ const ServiceTabSection = () => {
               </li>
               <li className=' ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>4</p>
+                  <span>4</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -81,7 +81,7 @@ const ServiceTabSection = () => {
       content: `  <ol className='relative ms-3 max-w-2xl  border-s border-gray-200'>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>1</p>
+                  <span>1</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -95,7 +95,7 @@ const ServiceTabSection = () => {
               </li>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>2</p>
+                  <span>2</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -110,7 +110,7 @@ const ServiceTabSection = () => {
               </li>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>3</p>
+                  <span>3</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -124,7 +124,7 @@ const ServiceTabSection = () => {
               </li>
               <li className=' ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>4</p>
+                  <span>4</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -144,7 +144,7 @@ const ServiceTabSection = () => {
       content: `  <ol className='relative ms-3 max-w-2xl  border-s border-gray-200'>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>1</p>
+                  <span>1</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -158,7 +158,7 @@ const ServiceTabSection = () => {
               </li>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>2</p>
+                  <span>2</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -173,7 +173,7 @@ const ServiceTabSection = () => {
               </li>
               <li className='mb-10 ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>3</p>
+                  <span>3</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -187,7 +187,7 @@ const ServiceTabSection = () => {
               </li>
               <li className=' ms-6'>
                 <span className='absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full bg-[#2DC6F5] ring-2 ring-[#2DC6F5]  '>
-                  <p>4</p>
+                  <span>4</span>
                 </span>
                 <div className=' ms-3'>
                   <h3 className='mb-1 text-lg font-semibold text-white '>
@@ -221,7 +221,7 @@ const ServiceTabSection = () => {
             </button>
             {activeTab === tab?.key && (
               <motion.div
-                className='absolute bottom-0 left-0 right-0 h-[2px] bg-primary'
+                // className='absolute bottom-0 left-0 right-0 h-[2px] bg-primary'
                 layoutId='underline'
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

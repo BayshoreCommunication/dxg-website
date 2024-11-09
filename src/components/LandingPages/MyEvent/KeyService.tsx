@@ -11,6 +11,7 @@ import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
 import { Paragraph, Title } from '@/components/Typography';
 import { BottomToTop } from '@/components/Animation';
+import ScrollMotionEffect from '../Shared/motion/ScrollMotionEffect';
 
 const infos = {
   title: 'Key Service',
@@ -70,45 +71,48 @@ export default function KeyService() {
                 className='group relative overflow-hidden duration-500'
                 onMouseEnter={() => setActiveIndex(index)}
               >
-                <div>
+                <ScrollMotionEffect effect='fade-up' duration='2000'>
+                  {' '}
                   <div>
-                    <Image
-                      src={item.img}
-                      alt={item.title}
-                      width={540}
-                      height={380}
-                    />
-                  </div>
-                  <div
-                    className={`absolute bottom-0 flex w-full items-center justify-center bg-black/70 p-6 text-white duration-300 ${
-                      activeIndex === index
-                        ? 'invisible opacity-0'
-                        : 'visible opacity-100'
-                    }`}
-                  >
                     <div>
-                      <h3 className='text-center text-xl font-semibold md:text-2xl'>
-                        {item.title}
-                      </h3>
+                      <Image
+                        src={item.img}
+                        alt={item.title}
+                        width={540}
+                        height={380}
+                      />
+                    </div>
+                    <div
+                      className={`absolute bottom-0 flex w-full items-center justify-center bg-black/70 p-6 text-white duration-300 ${
+                        activeIndex === index
+                          ? 'invisible opacity-0'
+                          : 'visible opacity-100'
+                      }`}
+                    >
+                      <div>
+                        <h3 className='text-center text-xl font-semibold md:text-2xl'>
+                          {item.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      className={`absolute bottom-0 flex w-full items-center justify-center bg-black/70 p-6 text-white duration-500 ${
+                        activeIndex === index
+                          ? 'visible top-0 opacity-100'
+                          : 'invisible top-full opacity-0'
+                      }`}
+                    >
+                      <div>
+                        <h3 className='text-center text-xl font-semibold md:text-2xl'>
+                          {item.title}
+                        </h3>
+                        <p className='mt-4 text-center text-base opacity-70 2xl:text-xl'>
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    className={`absolute bottom-0 flex w-full items-center justify-center bg-black/70 p-6 text-white duration-500 ${
-                      activeIndex === index
-                        ? 'visible top-0 opacity-100'
-                        : 'invisible top-full opacity-0'
-                    }`}
-                  >
-                    <div>
-                      <h3 className='text-center text-xl font-semibold md:text-2xl'>
-                        {item.title}
-                      </h3>
-                      <p className='mt-4 text-center text-base opacity-70 md:text-xl'>
-                        {item.desc}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </ScrollMotionEffect>
               </div>
             ))}
           </div>

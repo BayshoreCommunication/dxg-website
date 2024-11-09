@@ -33,8 +33,31 @@ const OfferCountdown: React.FC = () => {
   }, []);
 
   return (
-    <div className='flex flex-col items-center justify-center  text-white'>
-      <div className='flex items-center space-x-6 rounded-xl border border-white border-opacity-20 p-10 text-center'>
+    <div className='flex flex-col items-center  justify-center text-white'>
+      {/* Mobile */}
+      <div className='mx-8 flex items-center  rounded-xl border border-white border-opacity-20 px-6 py-10 text-center  lg:hidden'>
+        <div className='flex min-w-24 items-end justify-center gap-1 text-[#2DC6F5]'>
+          <p className='text-xl font-semibold'>{timeLeft.days}</p>
+          <span className='text-sm'>Days</span>
+        </div>
+        <p className='text-base font-medium text-white opacity-60'>:</p>
+        <div className='flex min-w-24 items-end justify-center gap-1 text-[#2DC6F5]'>
+          <p className='text-xl font-semibold'>{timeLeft.hours}</p>
+          <span className='text-sm'>Hours</span>
+        </div>
+        <p className='text-base font-medium text-white opacity-60'>:</p>
+        <div className='flex min-w-24 items-end justify-center gap-1 text-[#2DC6F5]'>
+          <p className='text-xl font-semibold'>{timeLeft.minutes}</p>
+          <span className='text-sm'>Minutes</span>
+        </div>
+        <p className='text-base font-medium text-white opacity-60'>:</p>
+        <div className='flex min-w-24 items-end justify-center gap-1 text-[#2DC6F5]'>
+          <p className='text-xl font-semibold'>{timeLeft.seconds}</p>
+          <span className='text-sm'>Seconds</span>
+        </div>
+      </div>
+      {/* Desktop */}
+      <div className='hidden items-center space-x-6 rounded-xl border border-white border-opacity-20 p-10 text-center lg:flex'>
         <div className='flex min-w-36 items-end justify-center gap-1 text-[#2DC6F5]'>
           <p className='text-6xl font-semibold'>{timeLeft.days}</p>
           <span className='text-lg'>Days</span>

@@ -23,7 +23,7 @@ const OurSuccessfulEvents = () => {
             </p>
           </div>
           <div className='relative'>
-            <div className=' absolute -top-[40%] right-0'>
+            <div className=' absolute -top-[40%] right-0 hidden lg:block'>
               <Image
                 src='/landing-pages/client-success-story/successful-events-bg.png'
                 alt='successful-event'
