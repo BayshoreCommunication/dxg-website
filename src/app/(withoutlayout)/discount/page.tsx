@@ -10,9 +10,9 @@ const page = () => {
       {/* Components */}
       <HeroSection />
       <ExclusiveOffer />
+      <NewsLetter />
       <CallToAction />
       <LimitedTimeOffer />
-      <NewsLetter />
     </div>
   );
 };
