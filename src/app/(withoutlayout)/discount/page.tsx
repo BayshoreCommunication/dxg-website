@@ -11,8 +11,8 @@ const page = () => {
       <HeroSection />
       <ExclusiveOffer />
       <CallToAction />
-      <LimitedTimeOffer />
       <NewsLetter />
+      <LimitedTimeOffer />
     </div>
   );
 };
