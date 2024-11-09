@@ -2,7 +2,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -121,15 +120,15 @@ const ExclusiveOfferSlider: React.FC = () => {
   const [startIdx, setStartIdx] = useState(0);
 
   const handleScrollUp = () => {
-    if (startIdx > 0) {
-      setStartIdx(startIdx - 1);
-    }
+    setStartIdx((prevIdx) =>
+      prevIdx > 0 ? prevIdx - 1 : exclusiveEventData.length - 1
+    );
   };
 
   const handleScrollDown = () => {
-    if (startIdx < months.length - 5) {
-      setStartIdx(startIdx + 1);
-    }
+    setStartIdx((prevIdx) =>
+      prevIdx < exclusiveEventData.length - 1 ? prevIdx + 1 : 0
+    );
   };
 
   return (
@@ -150,27 +149,27 @@ const ExclusiveOfferSlider: React.FC = () => {
           <div className='relative h-[300px]'>
             <motion.ul
               className='space-y-2'
-              initial={{ opacity: 0 }} // Start with zero opacity for the first render
-              animate={{ opacity: 1 }} // Fade in the list
-              exit={{ opacity: 0 }} // Fade out the list on exit
-              transition={{ duration: 0.5 }} // Smooth transition for the opacity change
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
             >
               {exclusiveEventData
                 .slice(startIdx, startIdx + 5)
                 .map((el, index) => {
-                  const isCenter = index === 2; // Center item
+                  const isCenter = index === 2;
                   return (
                     <motion.li
                       key={el.month}
-                      className={`rounded-md p-4 text-center text-xl transition-all ${
+                      className={`rounded-md p-4 text-center text-xl ${
                         isCenter
-                          ? 'bg-white/10 px-2 py-3 text-center text-2xl font-semibold text-white'
+                          ? 'bg-white/10 px-2 py-3 text-2xl font-semibold text-white'
                           : 'text-gray-600'
                       }`}
-                      initial={{ y: 10, opacity: 0 }} // Initial position and opacity
-                      animate={{ y: 0, opacity: 1 }} // Final position and opacity (fade-in effect)
-                      exit={{ y: -10, opacity: 0 }} // Exit animation (move up and fade out)
-                      transition={{ duration: 0.3 }} // Smooth transition for each item
+                      initial={{ y: 10, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: -10, opacity: 0 }}
+                      transition={{ duration: 0.6 }}
                     >
                       {el.month}
                     </motion.li>
@@ -189,46 +188,54 @@ const ExclusiveOfferSlider: React.FC = () => {
           </div>
         </div>
 
-        <div className='grid w-full grid-cols-1  lg:w-[60%] '>
+        <motion.div className='grid w-full grid-cols-1  lg:w-[60%] '>
           {exclusiveEventData
             .filter((el, i) => i === startIdx)
             .map((item, index) => (
-              <div key={index}>
+              <motion.div
+                key={startIdx}
+                initial={{ x: 100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                exit={{ x: -100, opacity: 0 }}
+                transition={{ duration: 0.6, ease: 'easeInOut' }}
+              >
                 <div className='group duration-300'>
-                  <div>
-                    <ScrollMotionEffect effect='fade-left' duration='2000'>
-                      <div className='relative'>
-                        {/* Mobile */}
-                        <Image
-                          src={item.img}
-                          alt={item.title}
-                          width={700}
-                          height={500}
-                          className='block w-full lg:hidden'
-                        />
-                        {/* Desktop */}
-                        <Image
-                          src={item.img2}
-                          alt={item.title}
-                          width={700}
-                          height={500}
-                          className='hidden w-full lg:block'
-                        />
-                        <div className='absolute bottom-0 w-full p-5 lg:p-10'>
-                          <p className='mb-1 uppercase text-white opacity-80'>
-                            {item.date}
-                          </p>
-                          <h4 className='text-xl font-semibold text-white'>
-                            {item.title}
-                          </h4>
-                        </div>
-                      </div>
-                    </ScrollMotionEffect>
+                  <div className='relative'>
+                    {/* Mobile */}
+                    <motion.div>
+                      <Image
+                        src={item.img}
+                        alt={item.title}
+                        width={700}
+                        height={500}
+                        className='block w-full lg:hidden'
+                      />
+                    </motion.div>
+
+                    {/* Desktop */}
+                    <motion.div>
+                      <Image
+                        src={item.img2}
+                        alt={item.title}
+                        width={700}
+                        height={500}
+                        className='hidden w-full lg:block'
+                      />
+                    </motion.div>
+
+                    <div className='absolute bottom-0 w-full p-5 lg:p-10'>
+                      <p className='mb-1 uppercase text-white opacity-80'>
+                        {item.date}
+                      </p>
+                      <h4 className='text-xl font-semibold text-white'>
+                        {item.title}
+                      </h4>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
