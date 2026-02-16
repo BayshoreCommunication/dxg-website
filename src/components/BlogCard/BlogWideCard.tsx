@@ -1,7 +1,8 @@
-import { formatTimestamp } from '@/lib/utils';
-import Image from 'next/image';
-import { Button } from '../ui/button';
+'use client';
 import parse from 'html-react-parser';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { Button } from '../ui/button';
 
 interface BlogBigImageCardProps {
   _id: number;
@@ -9,6 +10,7 @@ interface BlogBigImageCardProps {
   title: string;
   featuredImage: string;
   body: string;
+  slug?: string;
 }
 
 export const BlogWideCard: React.FC<any> = ({
@@ -17,8 +19,9 @@ export const BlogWideCard: React.FC<any> = ({
   title,
   body,
   featuredImage,
+  slug,
 }) => {
-  // const time = formatTimestamp(createdAt);
+  const router = useRouter();
 
   const postDate = (date: any) => {
     const formattedDate = new Date(date).toLocaleDateString('en-US', {
@@ -29,8 +32,17 @@ export const BlogWideCard: React.FC<any> = ({
     return formattedDate;
   };
 
+  const handleClick = () => {
+    if (slug) {
+      router.push(`/post/${slug}`);
+    }
+  };
+
   return (
-    <div className='flex w-full items-stretch gap-4 text-white'>
+    <div
+      className='flex w-full items-stretch gap-4 text-white cursor-pointer hover:opacity-90 transition-opacity relative z-30'
+      onClick={handleClick}
+    >
       {/* Adjusted for equal height */}
       <div
         className='relative flex-shrink-0'

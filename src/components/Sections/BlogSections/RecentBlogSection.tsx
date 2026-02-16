@@ -1,29 +1,54 @@
-// 'use client';
-import React, { useState, Suspense } from 'react';
-import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
+'use client';
+import { BlogWideCard } from '@/components/BlogCard';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
-import { RECENT_BLOG_POST } from '@/config/data';
-import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
-import Link from 'next/link';
+import { Pagination } from '@/components/ui/Pagination';
 import GetAllBlogPost from '@/lib/GetAllBlogPost';
+import { staggerContainer } from '@/lib/motion';
+import { useEffect, useState } from 'react';
 
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .replace(/\s+/g, '-') // Replace spaces with -
-    .replace(/[^\w\-]+/g, '') // Remove all non-word chars
-    .replace(/\-\-+/g, '-') // Replace multiple - with single -
-    .replace(/^-+/, '') // Trim - from start of text
-    .replace(/-+$/, ''); // Trim - from end of text
+interface BlogData {
+  data: any[];
+  pagination: {
+    currentPage: number;
+    totalPages: number;
+    totalBlogs: number;
+    limit: number;
+    hasNextPage: boolean;
+    hasPrevPage: boolean;
+  };
 }
 
-export const RecentBlogSection = async () => {
-  const blogsData = await GetAllBlogPost();
+export const RecentBlogSection = () => {
+  const [blogsData, setBlogsData] = useState<BlogData | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      setLoading(true);
+      try {
+        const data = await GetAllBlogPost({ page: currentPage, limit: 10 });
+        setBlogsData(data);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+        setBlogsData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, [currentPage]);
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    // Scroll to top of blog section
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
-    <div className='h-full bg-black' style={{}}>
+    <div className='h-full bg-black relative z-10'>
       <MaxWidthWrapper>
         <h1
           className='pt-4 text-white'
@@ -41,17 +66,8 @@ export const RecentBlogSection = async () => {
             className='flex flex-col gap-4 lg:flex-row '
             style={{ overflow: 'hidden', paddingBottom: '2vw' }}
           >
-            <MotionDiv
-              variants={slideIn('left', 'tween', 0.2, 1)}
-              className='w-full py-2 lg:w-9/12'
-              style={{ display: 'none' }}
-            >
-              <Suspense fallback={<div>Loading...</div>}>
-                {/* <BlogBigImageCard {...selectedPost} /> */}
-              </Suspense>
-            </MotionDiv>
             <div
-              className='w-full'
+              className='w-full relative z-20'
               style={{
                 overflowY: 'auto',
                 maxHeight: '75vh',
@@ -59,27 +75,47 @@ export const RecentBlogSection = async () => {
                 top: '0',
               }}
             >
-              <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row'>
-                {blogsData?.data
-                  ?.filter((blog: any) => blog.published === true)
-                  ?.map((item: any, index: number) => {
-                    return (
-                      <Link
-                        href={`/post/${item.slug}`}
-                        key={item._id}
-                        // style={{ maxWidth: '100%' }}
-                        className='w-full lg:w-[45%]'
-                      >
-                        <MotionDiv
-                          variants={fadeIn('up', 'tween', index * 0.2, 1)}
-                          className='w-full cursor-pointer'
-                        >
-                          <BlogWideCard {...item} />
-                        </MotionDiv>
-                      </Link>
-                    );
-                  })}
-              </div>
+              {loading ? (
+                <div className='flex items-center justify-center py-20'>
+                  <div className='text-white text-lg'>Loading...</div>
+                </div>
+              ) : !blogsData || !blogsData.data || blogsData.data.length === 0 ? (
+                <div className='flex items-center justify-center py-20'>
+                  <div className='text-white text-lg'>No blog posts available.</div>
+                </div>
+              ) : (
+                <>
+                  <div className='flex flex-col flex-wrap justify-between gap-5 lg:flex-row relative z-50'>
+
+                   
+                    {blogsData.data
+                      .filter((blog: any) => blog.published === true)
+                      .map((item: any, index: number) => {
+                        return (
+                          <div
+                            key={item._id || item.slug || `blog-${index}`}
+                            className='w-full lg:w-[45%]'
+                          >
+                        
+                              <BlogWideCard {...item} />
+                      
+                          </div>
+                        );
+                      })}
+                  </div>
+
+                  {/* Pagination */}
+                  {blogsData?.pagination && (
+                    <Pagination
+                      currentPage={blogsData.pagination.currentPage}
+                      totalPages={blogsData.pagination.totalPages}
+                      hasNextPage={blogsData.pagination.hasNextPage}
+                      hasPrevPage={blogsData.pagination.hasPrevPage}
+                      onPageChange={handlePageChange}
+                    />
+                  )}
+                </>
+              )}
             </div>
           </MotionDiv>
         </div>

@@ -224,19 +224,19 @@
 // }
 
 // pages/post/[slug].tsx
-import { useRouter } from 'next/router';
-import { useEffect, useState, Suspense, useMemo } from 'react';
-import Header from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import '@/app/globals.css';
 import { BlogBigImageCard, BlogWideCard } from '@/components/BlogCard';
+import Footer from '@/components/Footer';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { MotionDiv } from '@/components/Motion';
-import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
-import Link from 'next/link';
-import '@/app/globals.css';
+import Header from '@/components/Navbar';
 import GetAllBlogPost from '@/lib/GetAllBlogPost';
+import { fadeIn, slideIn, staggerContainer } from '@/lib/motion';
 import parse from 'html-react-parser';
 import Head from 'next/head'; // Import Head for SEO
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 
 // TypeScript Types
 interface BlogPost {
@@ -263,15 +263,6 @@ const slugify = (text: string): string =>
     .replace(/^-+/, '') // Trim - from start of text
     .replace(/-+$/, ''); // Trim - from end of text
 
-// Fetch post by slug
-const getPostBySlug = async (slug: string): Promise<BlogPost | null> => {
-  const blogsData = await GetAllBlogPost();
-  const post = blogsData?.data?.find(
-    (post: BlogPost) => slugify(post.slug) === slug
-  );
-  return post || null;
-};
-
 // CSS string for styling
 const css = `
   html {
@@ -285,19 +276,30 @@ export default function PostPage() {
   const [post, setPost] = useState<BlogPost | null>(null);
   const [blogData, setBlogData] = useState<BlogPost[] | null>(null);
 
-  // Fetch all blog posts once
+// Fetch all blog posts once and find the specific post
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await GetAllBlogPost();
-      setBlogData(data?.data || null);
-    };
-    fetchData();
-  }, []);
+    const fetchAllData = async () => {
+      try {
+        const data = await GetAllBlogPost(); // Fetch all posts once
+        const allPosts = data?.data || [];
+        setBlogData(allPosts);
 
-  // Fetch specific post by slug
-  useEffect(() => {
-    if (typeof slug === 'string') {
-      getPostBySlug(slug).then((post) => setPost(post));
+        // Find the specific post by slug
+        if (typeof slug === 'string') {
+          const foundPost = allPosts.find(
+            (blog: BlogPost) => slugify(blog.slug) === slug
+          );
+          setPost(foundPost || null);
+        }
+      } catch (error) {
+        console.error('Error fetching blog data:', error);
+        setPost(null);
+        setBlogData(null);
+      }
+    };
+
+    if (slug) {
+      fetchAllData();
     }
   }, [slug]);
 
